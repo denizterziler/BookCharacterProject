@@ -5,10 +5,14 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 GOLD_PATH = PROJECT_ROOT / "gold" / "T01_gold.json"
-# PRED_PATH = PROJECT_ROOT / "predictions" / "name_only" / "T01_output.json"
-# RESULT_PATH = PROJECT_ROOT / "results" / "T01_name_only_eval.json"
+"""
+PRED_PATH = PROJECT_ROOT / "predictions" / "name_only" / "T01_output.json"
+RESULT_PATH = PROJECT_ROOT / "results" / "T01_name_only_eval.json"
 PRED_PATH = PROJECT_ROOT / "predictions" / "berturk" / "T01_output.json"
 RESULT_PATH = PROJECT_ROOT / "results" / "T01_berturk_eval.json"
+"""
+PRED_PATH = PROJECT_ROOT / "predictions" / "sentence_transformer" / "T01_emrecan__bert-base-turkish-cased-mean-nli-stsb-tr_top2_output.json"
+RESULT_PATH = PROJECT_ROOT / "results" / "T01_sentence_transformer_top2_eval.json"
 
 def load_json(path: Path) -> dict:
     if not path.exists():
