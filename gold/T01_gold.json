@@ -1,0 +1,279 @@
+{
+  "text_id": "T01",
+  "title": "Kurt ve Köylüler",
+  "annotation_type": "light_gold",
+  "version": "v1.0",
+  "taxonomy_note": "This light-gold annotation includes character inventory, paragraph-level character presence, and major relations. Generic background animals are grouped under 'Köy hayvanları' only when they represent the collective victim group. Individually important animals such as 'Eşek' and 'Sıpa' are annotated separately.",
+  "characters": [
+    {
+      "char_id": "C01",
+      "canonical_name": "Kurt",
+      "aliases": [
+        "kurt",
+        "canavar",
+        "yaratık",
+        "kurnaz kurt",
+        "ziyankâr yaratık"
+      ],
+      "character_type": "animal",
+      "notes": "Ana hayvan karakterdir. Köyün hayvanlarına zarar verir, köylülerle konuşur, pazarlık yapar, onları tehdit eder ve sonunda kaçar."
+    },
+    {
+      "char_id": "C02",
+      "canonical_name": "Köylüler",
+      "aliases": [
+        "köylüler",
+        "odadakiler",
+        "fakir fukara"
+      ],
+      "character_type": "group",
+      "notes": "Köyde yaşayan insanlardan oluşan kolektif karakter grubudur. Kurdu yakalar, sorgular, besler ve ondan korkar."
+    },
+    {
+      "char_id": "C03",
+      "canonical_name": "Köy hayvanları",
+      "aliases": [
+        "hayvanlar",
+        "köyün hayvanları",
+        "keçi",
+        "at",
+        "dana"
+      ],
+      "character_type": "group",
+      "notes": "Köydeki genel hayvan grubudur. Kurtun köye zarar vermesini temsil eden kolektif hayvan karakteridir. 'Eşek' ve 'sıpa' bu gruba alias olarak eklenmemiştir çünkü hikâyede daha sonra bireysel olarak önemli hale gelirler ve ayrı karakterler olarak anotlanırlar."
+    },
+    {
+      "char_id": "C04",
+      "canonical_name": "Eşek",
+      "aliases": [
+        "eşek"
+      ],
+      "character_type": "animal",
+      "notes": "Kurt tarafından saldırıya uğrayan bireysel hayvandır. Sıpasıyla birlikte eve geri döner."
+    },
+    {
+      "char_id": "C05",
+      "canonical_name": "Sıpa",
+      "aliases": [
+        "sıpa",
+        "sıpası",
+        "sıpasından"
+      ],
+      "character_type": "animal",
+      "notes": "Eşeğin yavrusudur. Kurt tarafından saldırıya uğrar."
+    },
+    {
+      "char_id": "C06",
+      "canonical_name": "Eşeğin sahibi",
+      "aliases": [
+        "sahibi",
+        "eşeğin sahibi",
+        "sahibinin"
+      ],
+      "character_type": "human",
+      "notes": "Eşeğin sahibidir. Eşek ve sıpasının zarar gördüğünü anlayınca köy odasına giderek olayı köylülere taşır."
+    }
+  ],
+  "paragraph_presence": [
+    {
+      "paragraph_id": "P001",
+      "characters_present": [
+        "C01"
+      ]
+    },
+    {
+      "paragraph_id": "P002",
+      "characters_present": [
+        "C01",
+        "C02",
+        "C03",
+        "C04"
+      ]
+    },
+    {
+      "paragraph_id": "P003",
+      "characters_present": [
+        "C01",
+        "C02"
+      ]
+    },
+    {
+      "paragraph_id": "P004",
+      "characters_present": [
+        "C01",
+        "C02",
+        "C03"
+      ]
+    },
+    {
+      "paragraph_id": "P005",
+      "characters_present": [
+        "C01",
+        "C02",
+        "C03"
+      ]
+    },
+    {
+      "paragraph_id": "P006",
+      "characters_present": [
+        "C01",
+        "C02",
+        "C03"
+      ]
+    },
+    {
+      "paragraph_id": "P007",
+      "characters_present": [
+        "C01",
+        "C02"
+      ]
+    },
+    {
+      "paragraph_id": "P008",
+      "characters_present": [
+        "C01",
+        "C04",
+        "C05"
+      ]
+    },
+    {
+      "paragraph_id": "P009",
+      "characters_present": [
+        "C01",
+        "C04",
+        "C05",
+        "C06"
+      ]
+    },
+    {
+      "paragraph_id": "P010",
+      "characters_present": [
+        "C01",
+        "C02",
+        "C04",
+        "C05"
+      ]
+    },
+    {
+      "paragraph_id": "P011",
+      "characters_present": [
+        "C01",
+        "C02",
+        "C03"
+      ]
+    },
+    {
+      "paragraph_id": "P012",
+      "characters_present": [
+        "C01",
+        "C02"
+      ]
+    },
+    {
+      "paragraph_id": "P013",
+      "characters_present": [
+        "C01",
+        "C02"
+      ]
+    },
+    {
+      "paragraph_id": "P014",
+      "characters_present": [
+        "C01",
+        "C03"
+      ]
+    }
+  ],
+    "relations": [
+    {
+      "source": "C01",
+      "target": "C02",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "strong",
+      "evidence_paragraphs": [
+        "P002",
+        "P003",
+        "P004",
+        "P010",
+        "P011",
+        "P012"
+      ],
+      "evidence_text": "Kurt köyün hayvanlarını yer; köylüler onu yakalayıp köy odasına getirir ve sorgular. Daha sonra kurt, et getirmezlerse köylüleri de yiyeceğini söyleyerek onları tehdit eder."
+    },
+    {
+      "source": "C01",
+      "target": "C03",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "strong",
+      "evidence_paragraphs": [
+        "P002",
+        "P005",
+        "P006",
+        "P011",
+        "P014"
+      ],
+      "evidence_text": "Kurt köye girerek keçi, at ve diğer köy hayvanlarını yer. Kendi sözlerinde de hayvanları yemeyi beslenme gerekçesiyle açıklar. Zamanla köyün hayvanlarının bitmeye ramak kaldığı belirtilir. Sonunda kurdun kaçmasından sonra köyün hayvanlarını yiyen kimse kalmaz."
+    },
+    {
+      "source": "C01",
+      "target": "C04",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "moderate",
+      "evidence_paragraphs": [
+        "P008",
+        "P010"
+      ],
+      "evidence_text": "Kurt düzde otlayan eşeği görür ve eşekten bir kilo et yiyerek ona zarar verir. Daha sonra köylüler kurda eşeği neden yediğini sorar."
+    },
+    {
+      "source": "C01",
+      "target": "C05",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "moderate",
+      "evidence_paragraphs": [
+        "P008",
+        "P010"
+      ],
+      "evidence_text": "Kurt eşeğin sıpasını da görür ve sıpadan yarım kilo et yiyerek ona zarar verir. Köylüler daha sonra kurda eşek ile sıpasını neden yediğini sorar."
+    },
+    {
+      "source": "C06",
+      "target": "C04",
+      "relation_type": "ownership/caretaker",
+      "valence": "positive",
+      "strength": "moderate",
+      "evidence_paragraphs": [
+        "P009"
+      ],
+      "evidence_text": "Eşek eve geri döndüğünde sahibinin yüreği dağlanır. Bu ifade, sahibinin eşekle doğrudan bağlı olduğunu ve ona zarar gelmesinden etkilendiğini gösterir."
+    },
+    {
+      "source": "C06",
+      "target": "C05",
+      "relation_type": "ownership/caretaker",
+      "valence": "positive",
+      "strength": "moderate",
+      "evidence_paragraphs": [
+        "P009"
+      ],
+      "evidence_text": "Sıpa eşekle birlikte eve geri döner ve olay sahibini üzer. Sıpanın eşeğe bağlı olarak sahibinin hayvanı olduğu anlaşılır."
+    },
+    {
+      "source": "C02",
+      "target": "C03",
+      "relation_type": "ownership/caretaker",
+      "valence": "positive",
+      "strength": "moderate",
+      "evidence_paragraphs": [
+        "P002",
+        "P006",
+        "P011"
+      ],
+      "evidence_text": "Köy hayvanları köylülerin geçim düzeninin parçasıdır. Köylüler hayvanlarının yenmesinden dolayı kurdu yakalar; daha sonra köyde çift sürecek ve güdülecek hayvan kalmadığını söyleyerek bu kaybın kendileri için önemli olduğunu belirtirler."
+    }
+  ]
+}

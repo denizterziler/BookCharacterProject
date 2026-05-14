@@ -1,0 +1,213 @@
+Right now, your code is doing a dictionary/alias-based character detection baseline.
+
+In plain terms:
+
+It reads the story paragraph by paragraph, searches for known character names/aliases, and outputs which characters it thinks appear in each paragraph.
+
+What the code does step by step
+
+1. Reads your files
+
+It reads:
+
+corpus/T01_story.txt
+gold/T01_gold.json
+
+The story file contains paragraphs like:
+
+[P001]
+...
+[P002]
+...
+
+The gold file contains characters and their aliases, for example:
+
+{
+  "char_id": "C01",
+  "canonical_name": "Kurt",
+  "aliases": ["kurt", "canavar", "yaratık"]
+}
+
+⸻
+
+2. Splits the story into paragraphs
+
+It detects:
+
+[P001], [P002], [P003] ...
+
+and stores them like:
+
+{
+  "P001": "Bir varmış bir yokmuş...",
+  "P002": "Kurt da kurtmuş hani...",
+  ...
+}
+
+⸻
+
+3. Loads character aliases from your gold JSON
+
+For each character, it collects the canonical name and aliases.
+
+For example:
+
+C01 = Kurt
+aliases = Kurt, kurt, canavar, yaratık, kurnaz kurt...
+C02 = Köylüler
+aliases = Köylüler, köylüler, odadakiler, fakir fukara
+
+⸻
+
+4. Searches each paragraph for aliases
+
+For each paragraph, it checks:
+
+Does this paragraph contain “kurt”?
+Does it contain “köylüler”?
+Does it contain “eşek”?
+Does it contain “sahibi”?
+
+If yes, it adds that character to characters_present.
+
+Example:
+
+In P002, it finds:
+
+Kurt
+canavar
+eşek
+köylüler
+keçi
+at
+
+So it predicts:
+
+"characters_present": ["C01", "C02", "C03", "C04"]
+
+⸻
+
+5. Saves detected paragraph presence
+
+It creates output like:
+
+{
+  "paragraph_id": "P002",
+  "characters_present": ["C01", "C02", "C03", "C04"],
+  "matched_aliases": {
+    "C01": ["Kurt", "kurt", "canavar"],
+    "C02": ["Köylüler", "köylüler"],
+    "C03": ["keçi", "at"],
+    "C04": ["Eşek", "eşek"]
+  }
+}
+
+This tells you both:
+
+which characters were detected
+which aliases caused the detection
+
+⸻
+
+6. Builds a co-occurrence graph
+
+If two characters are found in the same paragraph, the code creates an edge between them.
+
+Example:
+
+If P002 contains:
+
+C01 = Kurt
+C02 = Köylüler
+C03 = Köy hayvanları
+C04 = Eşek
+
+then it creates edges:
+
+C01 — C02
+C01 — C03
+C01 — C04
+C02 — C03
+C02 — C04
+C03 — C04
+
+Each time the same pair appears together in another paragraph, the edge weight increases.
+
+Example:
+
+{
+  "source": "C01",
+  "target": "C02",
+  "weight": 4,
+  "evidence_paragraphs": ["P002", "P004", "P010", "P013"]
+}
+
+This means:
+
+The baseline found Kurt and Köylüler together in 4 paragraphs.
+
+⸻
+
+What the code does NOT do
+
+It does not understand meaning.
+
+It does not resolve pronouns like:
+
+sizi
+onlar
+o
+bizler
+
+It does not understand zero-subject verbs like:
+
+gitmişler
+görmüşler
+tuzak kurmuşlar
+
+It does not understand Turkish morphology well. For example, it may miss:
+
+kurdu
+kurdun
+hayvanlarınızı
+
+unless those exact forms are in your alias list or your regex handles them.
+
+It does not label semantic relations like:
+
+enemy/conflict
+ownership/caretaker
+
+It only creates co-occurrence edges.
+
+⸻
+
+Why this is useful
+
+This is your simple baseline.
+
+Its purpose is to show:
+
+“If we only use exact alias matching, how much can we extract?”
+
+Then later you compare it with:
+
+BERTurk / Turkish embeddings
+local LLM
+hybrid method
+
+You expect the later methods to do better because they can handle:
+
+implicit subjects
+pronouns
+morphology
+context
+relations
+
+So right now, your code is producing the first automatic system output:
+
+predictions/name_only/T01_output.json
+
+This output will later be compared against:
+
+gold/T01_gold.json
