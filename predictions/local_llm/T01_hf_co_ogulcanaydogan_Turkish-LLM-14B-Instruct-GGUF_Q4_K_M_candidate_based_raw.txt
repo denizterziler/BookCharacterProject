@@ -1,0 +1,127 @@
+{
+  "text_id": "T01",
+  "system": "local_llm_candidate_based",
+  "paragraph_presence": [
+    {
+      "paragraph_id": "P001",
+      "characters_present": ["C02"]
+    },
+    {
+      "paragraph_id": "P002",
+      "characters_present": ["C02"]
+    },
+    {
+      "paragraph_id": "P003",
+      "characters_present": ["C02", "C01"]
+    },
+    {
+      "paragraph_id": "P004",
+      "characters_present": ["C02", "C01"]
+    },
+    {
+      "paragraph_id": "P005",
+      "characters_present": ["C02", "C01"]
+    },
+    {
+      "paragraph_id": "P006",
+      "characters_present": ["C02", "C01"]
+    },
+    {
+      "paragraph_id": "P007",
+      "characters_present": ["C01"]
+    },
+    {
+      "paragraph_id": "P008",
+      "characters_present": ["C04", "C05", "C02", "C01"]
+    },
+    {
+      "paragraph_id": "P009",
+      "characters_present": ["C06", "C04", "C05"]
+    },
+    {
+      "paragraph_id": "P010",
+      "characters_present": ["C02", "C01"]
+    },
+    {
+      "paragraph_id": "P011",
+      "characters_present": ["C02", "C01"]
+    },
+    {
+      "paragraph_id": "P012",
+      "characters_present": ["C02", "C01"]
+    },
+    {
+      "paragraph_id": "P013",
+      "characters_present": ["C02"]
+    },
+    {
+      "paragraph_id": "P014",
+      "characters_present": ["C02", "C01"]
+    }
+  ],
+  "relations": [
+    {
+      "source": "C02",
+      "target": "C01",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "strong",
+      "evidence_paragraphs": ["P003", "P004", "P007", "P010"],
+      "evidence_text": "<p>Köylüler, bakmışlar ki, olacak gibi değil; sarılmışlar silâha, koyulmuşlar etekleri bağ yüce dağ yoluna.</p>"
+    },
+    {
+      "source": "C02",
+      "target": "C01",
+      "relation_type": "reward/benefactor",
+      "valence": "neutral",
+      "strength": "weak",
+      "evidence_paragraphs": ["P004", "P005", "P006"],
+      "evidence_text": "<p>\"Ben bir kurdum. Bende de can var. Sizin gıdanız ekmek ise benimkisi de et. Hayvanlarınızı yemeyeyim de ne yiyeyim? İstiyorsanız hayvanlarınızın kurtulmasını, getirirsiniz her gün bir kilo et bana, O zaman yemem hayvanlarınızı.”</p>"
+    },
+    {
+      "source": "C02",
+      "target": "C01",
+      "relation_type": "servant/master",
+      "valence": "negative",
+      "strength": "weak",
+      "evidence_paragraphs": ["P003", "P004", "P005", "P006"],
+      "evidence_text": "<p>\"Ben bir kurdum. Bende de can var. Sizin gıdanız ekmek ise benimkisi de et. Hayvanlarınızı yemeyeyim de ne yiyeyim? İstiyorsanız hayvanlarınızın kurtulmasını, getirirsiniz her gün bir kilo et bana, O zaman yemem hayvanlarınızı.”</p>"
+    },
+    {
+      "source": "C04",
+      "target": "C05",
+      "relation_type": "family",
+      "valence": "positive",
+      "strength": "strong",
+      "evidence_paragraphs": ["P008", "P009"],
+      "evidence_text": "<p>Bakmış ki, bir eşekle sıpası otluyor düzde. Eşeğin sıpasından yarım kilo kararlayıp yemiş.</p>"
+    },
+    {
+      "source": "C01",
+      "target": "C04",
+      "relation_type": "conflict/enemy",
+      "valence": "negative",
+      "strength": "strong",
+      "evidence_paragraphs": ["P008", "P009"],
+      "evidence_text": "<p>Bakmış ki, bir eşekle sıpası otluyor düzde. Eşeğin sıpasından yarım kilo kararlayıp yemiş.</p>"
+    },
+    {
+      "source": "C06",
+      "target": "C04",
+      "relation_type": "family",
+      "valence": "positive",
+      "strength": "strong",
+      "evidence_paragraphs": ["P009"],
+      "evidence_text": "<p>Sahibinin yüreği dağlanmış. En sonunda sahibi soluğu köy odasında almış.</p>"
+    },
+    {
+      "source": "C06",
+      "target": "C05",
+      "relation_type": "family",
+      "valence": "positive",
+      "strength": "strong",
+      "evidence_paragraphs": ["P009"],
+      "evidence_text": "<p>Sahibinin yüreği dağlanmış. En sonunda sahibi soluğu köy odasında almış.</p>"
+    }
+  ]
+}

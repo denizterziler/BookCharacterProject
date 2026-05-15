@@ -1,0 +1,146 @@
+<think>
+Hmm, kullanıcı Türkçe halk anlatıları üzerine çalışan bir NLP asistanı rolü vermiş. Bana iki girdi sağlamış: bölünmüş paragraflar ve karakter envanteri JSON'u. Görevim her paragrafta hangi karakterlerin var olduğunu belirlemek ve ana ilişkileri çıkarmak.
+
+Öncelikle kuralları dikkatlice incelemeliyim. Sadece verilen character_inventory içindeki karakterleri kullanabilirim, yeni karakter ekleyemem. Varlık tespiti için oldukça detaylı kriterler verilmiş - isim geçişi, zamir kullanımı, bağlamdan çıkarım gibi faktörler var ama mekân geçmesi tek başına yetmez.
+
+Paragrafları analiz edelim:
+- P001'de sadece "kurt" karakteri açıkça tanımlanıyor. C01 (Kurt) bu paragrafta var olmalı. Diğer karakterler henüz yok.
+- P002'de yine "kurt"tan bahsediliyor ve köylülerin eylemleri geçiyor. Hem C01 hem de kolektif olarak C02 (Köylüler) bu paragrafta bulunuyor.
+- Sonraki paragraflarda da benzer şekilde kurt ve köylülerin etkileşimi devam ediyor. Örneğin P004'te köy odası sahnesinde her ikisi de var.
+
+İlişkiler için dikkat etmem gerekenler:
+- Sadece metinsel kanıtı olan ilişkileri eklemeliyim
+- Kullanılabilecek relation_type değerleri arasında "enemy/conflict" uygun görünüyor çünkü kurt köylülere zarar veriyor, onlar da onu yakalamaya çalışıyor.
+- P013'teki tehdit diyaloğu için "threaten" değil ama verilen seçenekler içinde "negative valence" ile enemy/conflict ilişkisini kullanabilirim.
+
+Paragraf varlığını işaretlerken:
+- C04 ve C05 (Eşek ve Sıpa) sadece P008'de geçiyor, diğer paragraflarda yoklar. 
+- Köy hayvanları genel bir grup olduğu için her köyle ilgili paragrafta mevcut sayılabilir ama karakter envanterinde zaten group olarak tanımlanmış.
+
+JSON yapısını titizlikle oluşturmalıyım:
+- text_id ve system alanlarını verilen T01 ve local_llm_candidate_based olarak aynen kullanacağım
+- paragraph_presence için her paragrafta var olan karakterleri listeleyeceğim
+- relations bölümünde sadece kanıtlanmış ilişkileri ekleyeceğim, özellikle kurt ile köylüler arasındaki düşmanca ilişkiyi not edeceğim
+
+En kritik nokta: evidence_text alanlarına Türkçe metinler yazmalıyım. Örneğin P002 için "Köylüler kurdu yakalamak için dağa çıkar" gibi ifadeler kullanabilirim ama doğrudan alıntılardan ziyade anlamı yansıtan kısa açıklamalar yapacağım.
+
+Son olarak, karakter envanterinde olmayan C07 ve üzeri karakterleri kesinlikle dahil etmeyeceğim. Örneğin "Eşeğin sahibi" (C06) sadece P009'da geçiyor ama ilişkiler bölümünde özellikle belirtilmediği için eklemeye gerek yok.
+</think>
+{
+  "text_id": "T01",
+  "system": "local_llm_candidate_based",
+  "paragraph_presence": [
+    {
+      "paragraph_id": "P001",
+      "characters_present": ["C01"]
+    },
+    {
+      "paragraph_id": "P002",
+      "characters_present": ["C01", "C02"]
+    },
+    {
+      "paragraph_id": "P003",
+      "characters_present": ["C01", "C02"]
+    },
+    {
+      "paragraph_id": "P004",
+      "characters_present": ["C01", "C02"]
+    },
+    {
+      "paragraph_id": "P005",
+      "characters_present": ["C01"]
+    },
+    {
+      "paragraph_id": "P006",
+      "characters_present": ["C01", "C02"]
+    },
+    {
+      "paragraph_id": "P007",
+      "characters_present": ["C01"]
+    },
+    {
+      "paragraph_id": "P008",
+      "characters_present": ["C01", "C04", "C05"]
+    },
+    {
+      "paragraph_id": "P009",
+      "characters_present": ["C02", "C06"]
+    },
+    {
+      "paragraph_id": "P010",
+      "characters_present": ["C01", "C02"]
+    },
+    {
+      "paragraph_id": "P011",
+      "characters_present": ["C01", "C02"]
+    },
+    {
+      "paragraph_id": "P012",
+      "characters_present": ["C01", "C02"]
+    },
+    {
+      "paragraph_id": "P013",
+      "characters_present": ["C01", "C02"]
+    },
+    {
+      "paragraph_id": "P014",
+      "characters_present": ["C01"]
+    }
+  ],
+  "relations": [
+    {
+      "source": "C01",
+      "target": "C02",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "moderate",
+      "evidence_paragraphs": ["P002"],
+      "evidence_text": "Köylüler kurdu köye zarar verdiği için yakalamak üzere dağa çıkar."
+    },
+    {
+      "source": "C01",
+      "target": "C02",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "strong",
+      "evidence_paragraphs": ["P004", "P012"],
+      "evidence_text": "Kurt köylülere tehditlerde bulunur ve onları korkutur; köylüler de onu köy odasında sorgular ve korkar."
+    },
+    {
+      "source": "C02",
+      "target": "C03",
+      "relation_type": "same_group",
+      "valence": "neutral",
+      "strength": "moderate",
+      "evidence_paragraphs": ["P001"],
+      "evidence_text": "Köylüler, kurdun saldırdığı köy hayvanlarının sahipleridir."
+    },
+    {
+      "source": "C02",
+      "target": "C03",
+      "relation_type": "caretaker",
+      "valence": "positive",
+      "strength": "weak",
+      "evidence_paragraphs": ["P006"],
+      "evidence_text": "Köylüler kurtla anlaşma yaptığında hayvanları beslemeye devam eder."
+    },
+    {
+      "source": "C01",
+      "target": "C04",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "moderate",
+      "evidence_paragraphs": ["P008"],
+      "evidence_text": "Kurt eşeği saldırıya uğratır."
+    },
+    {
+      "source": "C01",
+      "target": "C05",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "moderate",
+      "evidence_paragraphs": ["P008"],
+      "evidence_text": "Kurt sıpayı saldırıya uğratır."
+    }
+  ]
+}

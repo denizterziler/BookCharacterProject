@@ -1,0 +1,170 @@
+{
+  "text_id": "T01",
+  "system": "local_llm_candidate_based",
+  "paragraph_presence": [
+    {
+      "paragraph_id": "P001",
+      "characters_present": [
+        "C01"
+      ]
+    },
+    {
+      "paragraph_id": "P002",
+      "characters_present": [
+        "C01",
+        "C02"
+      ]
+    },
+    {
+      "paragraph_id": "P003",
+      "characters_present": [
+        "C01",
+        "C02"
+      ]
+    },
+    {
+      "paragraph_id": "P004",
+      "characters_present": [
+        "C01",
+        "C02"
+      ]
+    },
+    {
+      "paragraph_id": "P005",
+      "characters_present": [
+        "C01"
+      ]
+    },
+    {
+      "paragraph_id": "P006",
+      "characters_present": [
+        "C01",
+        "C02"
+      ]
+    },
+    {
+      "paragraph_id": "P007",
+      "characters_present": [
+        "C01"
+      ]
+    },
+    {
+      "paragraph_id": "P008",
+      "characters_present": [
+        "C01",
+        "C04",
+        "C05"
+      ]
+    },
+    {
+      "paragraph_id": "P009",
+      "characters_present": [
+        "C02",
+        "C06"
+      ]
+    },
+    {
+      "paragraph_id": "P010",
+      "characters_present": [
+        "C01",
+        "C02"
+      ]
+    },
+    {
+      "paragraph_id": "P011",
+      "characters_present": [
+        "C01",
+        "C02"
+      ]
+    },
+    {
+      "paragraph_id": "P012",
+      "characters_present": [
+        "C01",
+        "C02"
+      ]
+    },
+    {
+      "paragraph_id": "P013",
+      "characters_present": [
+        "C01",
+        "C02"
+      ]
+    },
+    {
+      "paragraph_id": "P014",
+      "characters_present": [
+        "C01"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "source": "C01",
+      "target": "C02",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "moderate",
+      "evidence_paragraphs": [
+        "P002"
+      ],
+      "evidence_text": "Köylüler kurdu köye zarar verdiği için yakalamak üzere dağa çıkar."
+    },
+    {
+      "source": "C01",
+      "target": "C02",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "strong",
+      "evidence_paragraphs": [
+        "P004",
+        "P012"
+      ],
+      "evidence_text": "Kurt köylülere tehditlerde bulunur ve onları korkutur; köylüler de onu köy odasında sorgular ve korkar."
+    },
+    {
+      "source": "C02",
+      "target": "C03",
+      "relation_type": "same_group",
+      "valence": "neutral",
+      "strength": "moderate",
+      "evidence_paragraphs": [
+        "P001"
+      ],
+      "evidence_text": "Köylüler, kurdun saldırdığı köy hayvanlarının sahipleridir."
+    },
+    {
+      "source": "C02",
+      "target": "C03",
+      "relation_type": "caretaker",
+      "valence": "positive",
+      "strength": "weak",
+      "evidence_paragraphs": [
+        "P006"
+      ],
+      "evidence_text": "Köylüler kurtla anlaşma yaptığında hayvanları beslemeye devam eder."
+    },
+    {
+      "source": "C01",
+      "target": "C04",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "moderate",
+      "evidence_paragraphs": [
+        "P008"
+      ],
+      "evidence_text": "Kurt eşeği saldırıya uğratır."
+    },
+    {
+      "source": "C01",
+      "target": "C05",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "moderate",
+      "evidence_paragraphs": [
+        "P008"
+      ],
+      "evidence_text": "Kurt sıpayı saldırıya uğratır."
+    }
+  ]
+}

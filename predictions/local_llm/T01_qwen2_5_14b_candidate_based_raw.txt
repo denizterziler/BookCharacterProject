@@ -1,0 +1,109 @@
+{
+  "text_id": "T01",
+  "system": "local_llm_candidate_based",
+  "paragraph_presence": [
+    {
+      "paragraph_id": "P001",
+      "characters_present": ["C01"]
+    },
+    {
+      "paragraph_id": "P002",
+      "characters_present": ["C01", "C03"]
+    },
+    {
+      "paragraph_id": "P003",
+      "characters_present": ["C02", "C03"]
+    },
+    {
+      "paragraph_id": "P004",
+      "characters_present": ["C01", "C02"]
+    },
+    {
+      "paragraph_id": "P005",
+      "characters_present": ["C01", "C02"]
+    },
+    {
+      "paragraph_id": "P006",
+      "characters_present": ["C01", "C02", "C03"]
+    },
+    {
+      "paragraph_id": "P007",
+      "characters_present": ["C01"]
+    },
+    {
+      "paragraph_id": "P008",
+      "characters_present": ["C01", "C04", "C05"]
+    },
+    {
+      "paragraph_id": "P009",
+      "characters_present": ["C06"]
+    },
+    {
+      "paragraph_id": "P010",
+      "characters_present": ["C01", "C02"]
+    },
+    {
+      "paragraph_id": "P011",
+      "characters_present": ["C01", "C02"]
+    },
+    {
+      "paragraph_id": "P012",
+      "characters_present": ["C01", "C02"]
+    },
+    {
+      "paragraph_id": "P013",
+      "characters_present": ["C01", "C02"]
+    },
+    {
+      "paragraph_id": "P014",
+      "characters_present": ["C01", "C02", "C03"]
+    }
+  ],
+  "relations": [
+    {
+      "source": "C01",
+      "target": "C02",
+      "relation_type": "conflict",
+      "valence": "negative",
+      "strength": "strong",
+      "evidence_paragraphs": ["P004", "P005", "P010"],
+      "evidence_text": "Köylüler, kurdu yakalayıp sorguya çekiyorlar ve kurt köylülere hayvanlarını yediği için öfkeyle cevap veriyor."
+    },
+    {
+      "source": "C02",
+      "target": "C01",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "strong",
+      "evidence_paragraphs": ["P004", "P005", "P010"],
+      "evidence_text": "Köylüler, kurdu yakalayıp sorguya çekiyorlar ve kurt köylülere hayvanlarını yediği için öfkeyle cevap veriyor."
+    },
+    {
+      "source": "C04",
+      "target": "C05",
+      "relation_type": "family",
+      "valence": "neutral",
+      "strength": "weak",
+      "evidence_paragraphs": ["P008"],
+      "evidence_text": "Eşek ve sıpa birlikte oturuyorlar."
+    },
+    {
+      "source": "C06",
+      "target": "C04",
+      "relation_type": "ownership/caretaker",
+      "valence": "neutral",
+      "strength": "weak",
+      "evidence_paragraphs": ["P009"],
+      "evidence_text": "Eşek sahibinin eşekle ilişkisi."
+    },
+    {
+      "source": "C01",
+      "target": "C04",
+      "relation_type": "enemy/conflict",
+      "valence": "negative",
+      "strength": "strong",
+      "evidence_paragraphs": ["P008", "P009"],
+      "evidence_text": "Kurt, eşeği ve sıpasını yiyor ve eşek sahibi bu olayı köy odasına bildiriyor."
+    }
+  ]
+}

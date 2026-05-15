@@ -1,0 +1,48 @@
+{
+  "text_id": "T01",
+  "title": "Kurt ve Köylüler",
+  "characters": [
+    {
+      "char_id": "C01",
+      "canonical_name": "Kurt",
+      "aliases": ["kurt", "canavar", "yaratık", "kurnaz kurt", "ziyankâr yaratık"],
+      "character_type": "animal",
+      "notes": "Ana hayvan karakterdir. Köyün hayvanlarına zarar verir, köylülerle konuşur, pazarlık yapar, onları tehdit eder ve sonunda kaçar."
+    },
+    {
+      "char_id": "C02",
+      "canonical_name": "Köylüler",
+      "aliases": ["köylüler", "odadakiler", "fakir fukara"],
+      "character_type": "group",
+      "notes": "Köyde yaşayan insanlardan oluşan kolektif karakter grubudur. Kurdu yakalar, sorgular, besler ve ondan korkar."
+    },
+    {
+      "char_id": "C03",
+      "canonical_name": "Köy hayvanları",
+      "aliases": ["hayvanlar", "köyün hayvanları", "keçi", "at", "dana"],
+      "character_type": "group",
+      "notes": "Köydeki genel hayvan grubudur. Kurtun köye zarar vermesini temsil eden kolektif hayvan karakteridir."
+    },
+    {
+      "char_id": "C04",
+      "canonical_name": "Eşek",
+      "aliases": ["eşek"],
+      "character_type": "animal",
+      "notes": "Kurt tarafından saldırıya uğrayan bireysel hayvandır. Sıpasıyla birlikte eve geri döner."
+    },
+    {
+      "char_id": "C05",
+      "canonical_name": "Sıpa",
+      "aliases": ["sıpa", "sıpası", "sıpasından"],
+      "character_type": "animal",
+      "notes": "Eşeğin yavrusudur. Kurt tarafından saldırıya uğrar."
+    },
+    {
+      "char_id": "C06",
+      "canonical_name": "Eşeğin sahibi",
+      "aliases": ["sahibi", "eşeğin sahibi", "sahibinin"],
+      "character_type": "human",
+      "notes": "Eşeğin sahibidir. Eşek ve sıpasının zarar gördüğünü anlayınca köy odasına giderek olayı köylülere taşır."
+    }
+  ]
+}

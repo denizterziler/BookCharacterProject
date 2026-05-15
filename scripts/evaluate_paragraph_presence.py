@@ -23,10 +23,21 @@ RESULT_PATH = PROJECT_ROOT / "results" / "T01_sentence_transformer_top3_eval.jso
 
 PRED_PATH = PROJECT_ROOT / "predictions" / "sentence_transformer" / "T01_trmteb__turkish-embedding-model_top3_output.json"
 RESULT_PATH = PROJECT_ROOT / "results" / "T01_sentence_transformer_trmteb_top3_eval.json"
-"""
 
 PRED_PATH = PROJECT_ROOT / "predictions" / "sentence_transformer" / "T01_mertcobanov__mpnet-base-all-nli-triplet-turkish-v2_top3_output.json"
 RESULT_PATH = PROJECT_ROOT / "results" / "T01_sentence_transformer_mertcobanov_top3_eval.json"
+
+
+PRED_PATH = PROJECT_ROOT / "predictions" / "local_llm" / "T01_qwen2_5_14b_candidate_based_output.json"
+RESULT_PATH = PROJECT_ROOT / "results" / "T01_qwen2_5_14b_candidate_based_eval.json"
+
+PRED_PATH = PROJECT_ROOT / "predictions" / "local_llm" / "T01_hf_co_ogulcanaydogan_Turkish-LLM-14B-Instruct-GGUF_Q4_K_M_candidate_based_output.json"
+RESULT_PATH = PROJECT_ROOT / "results" / "T01_hf_co_ogulcanaydogan_Turkish-LLM-14B-Instruct-GGUF_Q4_K_M_candidate_based_eval.json"
+
+"""
+
+PRED_PATH = PROJECT_ROOT / "predictions" / "local_llm" / "T01_hf_co_ytu-ce-cosmos_Turkish-Gemma-9b-T1-GGUF_Q4_K_M_candidate_based_output.json"
+RESULT_PATH = PROJECT_ROOT / "results" / "T01_hf_co_ytu-ce-cosmos_Turkish-Gemma-9b-T1-GGUF_Q4_K_M_candidate_based_eval.json"
 
 def load_json(path: Path) -> dict:
     if not path.exists():
