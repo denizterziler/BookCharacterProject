@@ -15,10 +15,11 @@ STORY_PATH = PROJECT_ROOT / "corpus" / "T01_story.txt"
 GOLD_PATH = PROJECT_ROOT / "gold" / "T01_gold.json"
 
 # Change this name for each model you want to test.
-MODEL_NAME = "emrecan/bert-base-turkish-cased-mean-nli-stsb-tr"
-
+#MODEL_NAME = "emrecan/bert-base-turkish-cased-mean-nli-stsb-tr"
+#MODEL_NAME = "trmteb/turkish-embedding-model"
+MODEL_NAME = "mertcobanov/mpnet-base-all-nli-triplet-turkish-v2"
 # Try 1, 2, and 3 separately.
-TOP_K = 2
+TOP_K = 3
 
 # Output name is created from model name safely.
 SAFE_MODEL_NAME = MODEL_NAME.replace("/", "__")

@@ -1,0 +1,14 @@
+System,TOP_K,Precision,Recall,F1
+Exact alias baseline, -,1.0000,0.5789,0.7333
+BERTurk mean-pooling,1,0.6429,0.2368,0.3462
+BERTurk mean-pooling,2,0.6429,0.4737,0.5455
+BERTurk mean-pooling,3,0.5476,0.6053,0.5750
+Sentence-transformer-emrecan,1,0.8571,0.3158,0.4615
+Sentence-transformer-emrecan,2,0.7500,0.5526,0.6364
+Sentence-transformer-emrecan,3,0.6667,0.7368,0.7000
+Sentence-transformer-trmteb,1,0.9286,0.3421,0.5000
+Sentence-transformer-trmteb,2,0.6786,0.5000,0.5758
+Sentence-transformer-trmteb,3,0.6429,0.7105,0.6750
+Sentence-transformer-mertcobanov,1,0.5714,0.2105,0.3077
+Sentence-transformer-mertcobanov,2,0.6786,0.5,0.5758
+Sentence-transformer-mertcobanov,3,0.7143,0.7895,0.7500

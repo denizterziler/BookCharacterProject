@@ -1,0 +1,691 @@
+{
+  "text_id": "T01",
+  "system": "sentence_transformer_topk_baseline",
+  "model_name": "trmteb/turkish-embedding-model",
+  "description": "Pretrained sentence-transformer embedding baseline. The model receives the predefined character inventory from the gold JSON, builds character profile embeddings, compares them with paragraph embeddings, and selects the top-k most similar character candidates for each paragraph. No model training or fine-tuning is performed.",
+  "selection_method": "top_2",
+  "top_k": 2,
+  "character_profiles": {
+    "C01": {
+      "canonical_name": "Kurt",
+      "profile_text": "Karakter adı: Kurt. Karakter türü: animal. Aliaslar: kurt, canavar, yaratık, kurnaz kurt, ziyankâr yaratık. Açıklama: Ana hayvan karakterdir. Köyün hayvanlarına zarar verir, köylülerle konuşur, pazarlık yapar, onları tehdit eder ve sonunda kaçar."
+    },
+    "C02": {
+      "canonical_name": "Köylüler",
+      "profile_text": "Karakter adı: Köylüler. Karakter türü: group. Aliaslar: köylüler, odadakiler, fakir fukara. Açıklama: Köyde yaşayan insanlardan oluşan kolektif karakter grubudur. Kurdu yakalar, sorgular, besler ve ondan korkar."
+    },
+    "C03": {
+      "canonical_name": "Köy hayvanları",
+      "profile_text": "Karakter adı: Köy hayvanları. Karakter türü: group. Aliaslar: hayvanlar, köyün hayvanları, keçi, at, dana. Açıklama: Köydeki genel hayvan grubudur. Kurtun köye zarar vermesini temsil eden kolektif hayvan karakteridir. 'Eşek' ve 'sıpa' bu gruba alias olarak eklenmemiştir çünkü hikâyede daha sonra bireysel olarak önemli hale gelirler ve ayrı karakterler olarak anotlanırlar."
+    },
+    "C04": {
+      "canonical_name": "Eşek",
+      "profile_text": "Karakter adı: Eşek. Karakter türü: animal. Aliaslar: eşek. Açıklama: Kurt tarafından saldırıya uğrayan bireysel hayvandır. Sıpasıyla birlikte eve geri döner."
+    },
+    "C05": {
+      "canonical_name": "Sıpa",
+      "profile_text": "Karakter adı: Sıpa. Karakter türü: animal. Aliaslar: sıpa, sıpası, sıpasından. Açıklama: Eşeğin yavrusudur. Kurt tarafından saldırıya uğrar."
+    },
+    "C06": {
+      "canonical_name": "Eşeğin sahibi",
+      "profile_text": "Karakter adı: Eşeğin sahibi. Karakter türü: human. Aliaslar: sahibi, eşeğin sahibi, sahibinin. Açıklama: Eşeğin sahibidir. Eşek ve sıpasının zarar gördüğünü anlayınca köy odasına giderek olayı köylülere taşır."
+    }
+  },
+  "paragraph_presence": [
+    {
+      "paragraph_id": "P001",
+      "characters_present": [
+        "C01",
+        "C04"
+      ],
+      "similarities": {
+        "C01": 0.2918,
+        "C04": 0.2825,
+        "C03": 0.2435,
+        "C06": 0.2413,
+        "C02": 0.1899,
+        "C05": 0.1569
+      },
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.2918
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.2825
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "paragraph_id": "P002",
+      "characters_present": [
+        "C01",
+        "C04"
+      ],
+      "similarities": {
+        "C01": 0.565,
+        "C04": 0.4773,
+        "C03": 0.4401,
+        "C02": 0.4134,
+        "C06": 0.336,
+        "C05": 0.3116
+      },
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.565
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.4773
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "paragraph_id": "P003",
+      "characters_present": [
+        "C01",
+        "C04"
+      ],
+      "similarities": {
+        "C01": 0.4276,
+        "C04": 0.3937,
+        "C02": 0.3859,
+        "C03": 0.3583,
+        "C06": 0.3235,
+        "C05": 0.2554
+      },
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.4276
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.3937
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "paragraph_id": "P004",
+      "characters_present": [
+        "C01",
+        "C02"
+      ],
+      "similarities": {
+        "C01": 0.4797,
+        "C02": 0.4315,
+        "C04": 0.4055,
+        "C03": 0.3548,
+        "C06": 0.346,
+        "C05": 0.2444
+      },
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.4797
+        },
+        {
+          "char_id": "C02",
+          "similarity": 0.4315
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "paragraph_id": "P005",
+      "characters_present": [
+        "C01",
+        "C04"
+      ],
+      "similarities": {
+        "C01": 0.3243,
+        "C04": 0.3223,
+        "C03": 0.2809,
+        "C05": 0.2316,
+        "C06": 0.2272,
+        "C02": 0.189
+      },
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.3243
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.3223
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "paragraph_id": "P006",
+      "characters_present": [
+        "C01",
+        "C03"
+      ],
+      "similarities": {
+        "C03": 0.3908,
+        "C01": 0.3827,
+        "C04": 0.3593,
+        "C02": 0.3374,
+        "C06": 0.3141,
+        "C05": 0.2132
+      },
+      "top_characters": [
+        {
+          "char_id": "C03",
+          "similarity": 0.3908
+        },
+        {
+          "char_id": "C01",
+          "similarity": 0.3827
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "paragraph_id": "P007",
+      "characters_present": [
+        "C01",
+        "C04"
+      ],
+      "similarities": {
+        "C01": 0.4091,
+        "C04": 0.3698,
+        "C02": 0.3046,
+        "C03": 0.3015,
+        "C06": 0.2883,
+        "C05": 0.2199
+      },
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.4091
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.3698
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "paragraph_id": "P008",
+      "characters_present": [
+        "C01",
+        "C04"
+      ],
+      "similarities": {
+        "C04": 0.6182,
+        "C01": 0.54,
+        "C05": 0.4698,
+        "C06": 0.4414,
+        "C03": 0.4176,
+        "C02": 0.2851
+      },
+      "top_characters": [
+        {
+          "char_id": "C04",
+          "similarity": 0.6182
+        },
+        {
+          "char_id": "C01",
+          "similarity": 0.54
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "paragraph_id": "P009",
+      "characters_present": [
+        "C04",
+        "C06"
+      ],
+      "similarities": {
+        "C06": 0.5722,
+        "C04": 0.5483,
+        "C01": 0.4164,
+        "C03": 0.413,
+        "C02": 0.3384,
+        "C05": 0.3378
+      },
+      "top_characters": [
+        {
+          "char_id": "C06",
+          "similarity": 0.5722
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.5483
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "paragraph_id": "P010",
+      "characters_present": [
+        "C04",
+        "C06"
+      ],
+      "similarities": {
+        "C04": 0.5133,
+        "C06": 0.4595,
+        "C01": 0.4532,
+        "C03": 0.4229,
+        "C02": 0.3699,
+        "C05": 0.3311
+      },
+      "top_characters": [
+        {
+          "char_id": "C04",
+          "similarity": 0.5133
+        },
+        {
+          "char_id": "C06",
+          "similarity": 0.4595
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "paragraph_id": "P011",
+      "characters_present": [
+        "C03",
+        "C06"
+      ],
+      "similarities": {
+        "C03": 0.3037,
+        "C06": 0.2352,
+        "C01": 0.2262,
+        "C04": 0.2201,
+        "C02": 0.1913,
+        "C05": 0.1512
+      },
+      "top_characters": [
+        {
+          "char_id": "C03",
+          "similarity": 0.3037
+        },
+        {
+          "char_id": "C06",
+          "similarity": 0.2352
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "paragraph_id": "P012",
+      "characters_present": [
+        "C01",
+        "C04"
+      ],
+      "similarities": {
+        "C01": 0.4647,
+        "C04": 0.3849,
+        "C05": 0.2817,
+        "C03": 0.2622,
+        "C02": 0.2144,
+        "C06": 0.2038
+      },
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.4647
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.3849
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "paragraph_id": "P013",
+      "characters_present": [
+        "C01",
+        "C04"
+      ],
+      "similarities": {
+        "C04": 0.4705,
+        "C01": 0.4671,
+        "C03": 0.334,
+        "C02": 0.3242,
+        "C05": 0.2953,
+        "C06": 0.2879
+      },
+      "top_characters": [
+        {
+          "char_id": "C04",
+          "similarity": 0.4705
+        },
+        {
+          "char_id": "C01",
+          "similarity": 0.4671
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "paragraph_id": "P014",
+      "characters_present": [
+        "C01",
+        "C04"
+      ],
+      "similarities": {
+        "C01": 0.4247,
+        "C04": 0.4113,
+        "C06": 0.3397,
+        "C02": 0.3294,
+        "C03": 0.318,
+        "C05": 0.2633
+      },
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.4247
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.4113
+        }
+      ],
+      "selection_method": "top_2"
+    }
+  ],
+  "top_k_inspection": [
+    {
+      "paragraph_id": "P001",
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.2918
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.2825
+        },
+        {
+          "char_id": "C03",
+          "similarity": 0.2435
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P002",
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.565
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.4773
+        },
+        {
+          "char_id": "C03",
+          "similarity": 0.4401
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P003",
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.4276
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.3937
+        },
+        {
+          "char_id": "C02",
+          "similarity": 0.3859
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P004",
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.4797
+        },
+        {
+          "char_id": "C02",
+          "similarity": 0.4315
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.4055
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P005",
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.3243
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.3223
+        },
+        {
+          "char_id": "C03",
+          "similarity": 0.2809
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P006",
+      "top_characters": [
+        {
+          "char_id": "C03",
+          "similarity": 0.3908
+        },
+        {
+          "char_id": "C01",
+          "similarity": 0.3827
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.3593
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P007",
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.4091
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.3698
+        },
+        {
+          "char_id": "C02",
+          "similarity": 0.3046
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P008",
+      "top_characters": [
+        {
+          "char_id": "C04",
+          "similarity": 0.6182
+        },
+        {
+          "char_id": "C01",
+          "similarity": 0.54
+        },
+        {
+          "char_id": "C05",
+          "similarity": 0.4698
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P009",
+      "top_characters": [
+        {
+          "char_id": "C06",
+          "similarity": 0.5722
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.5483
+        },
+        {
+          "char_id": "C01",
+          "similarity": 0.4164
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P010",
+      "top_characters": [
+        {
+          "char_id": "C04",
+          "similarity": 0.5133
+        },
+        {
+          "char_id": "C06",
+          "similarity": 0.4595
+        },
+        {
+          "char_id": "C01",
+          "similarity": 0.4532
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P011",
+      "top_characters": [
+        {
+          "char_id": "C03",
+          "similarity": 0.3037
+        },
+        {
+          "char_id": "C06",
+          "similarity": 0.2352
+        },
+        {
+          "char_id": "C01",
+          "similarity": 0.2262
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P012",
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.4647
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.3849
+        },
+        {
+          "char_id": "C05",
+          "similarity": 0.2817
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P013",
+      "top_characters": [
+        {
+          "char_id": "C04",
+          "similarity": 0.4705
+        },
+        {
+          "char_id": "C01",
+          "similarity": 0.4671
+        },
+        {
+          "char_id": "C03",
+          "similarity": 0.334
+        }
+      ]
+    },
+    {
+      "paragraph_id": "P014",
+      "top_characters": [
+        {
+          "char_id": "C01",
+          "similarity": 0.4247
+        },
+        {
+          "char_id": "C04",
+          "similarity": 0.4113
+        },
+        {
+          "char_id": "C06",
+          "similarity": 0.3397
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "C01",
+      "target": "C02",
+      "weight": 1,
+      "evidence_paragraphs": [
+        "P004"
+      ]
+    },
+    {
+      "source": "C01",
+      "target": "C03",
+      "weight": 1,
+      "evidence_paragraphs": [
+        "P006"
+      ]
+    },
+    {
+      "source": "C01",
+      "target": "C04",
+      "weight": 9,
+      "evidence_paragraphs": [
+        "P001",
+        "P002",
+        "P003",
+        "P005",
+        "P007",
+        "P008",
+        "P012",
+        "P013",
+        "P014"
+      ]
+    },
+    {
+      "source": "C03",
+      "target": "C06",
+      "weight": 1,
+      "evidence_paragraphs": [
+        "P011"
+      ]
+    },
+    {
+      "source": "C04",
+      "target": "C06",
+      "weight": 2,
+      "evidence_paragraphs": [
+        "P009",
+        "P010"
+      ]
+    }
+  ]
+}

@@ -14,12 +14,12 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 STORY_PATH = PROJECT_ROOT / "corpus" / "T01_story.txt"
 GOLD_PATH = PROJECT_ROOT / "gold" / "T01_gold.json"
-OUTPUT_PATH = PROJECT_ROOT / "predictions" / "berturk" / "T01_output.json"
+OUTPUT_PATH = PROJECT_ROOT / "predictions" / "berturk" / "T01_output_top3.json"
 
 MODEL_NAME = "dbmdz/bert-base-turkish-cased"
 
 # Try TOP_K = 1, 2, 3 separately and compare results.
-TOP_K = 2
+TOP_K = 3
 
 
 def load_json(path: Path) -> dict:

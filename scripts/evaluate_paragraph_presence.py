@@ -8,11 +8,25 @@ GOLD_PATH = PROJECT_ROOT / "gold" / "T01_gold.json"
 """
 PRED_PATH = PROJECT_ROOT / "predictions" / "name_only" / "T01_output.json"
 RESULT_PATH = PROJECT_ROOT / "results" / "T01_name_only_eval.json"
-PRED_PATH = PROJECT_ROOT / "predictions" / "berturk" / "T01_output.json"
-RESULT_PATH = PROJECT_ROOT / "results" / "T01_berturk_eval.json"
-"""
+
 PRED_PATH = PROJECT_ROOT / "predictions" / "sentence_transformer" / "T01_emrecan__bert-base-turkish-cased-mean-nli-stsb-tr_top2_output.json"
 RESULT_PATH = PROJECT_ROOT / "results" / "T01_sentence_transformer_top2_eval.json"
+
+PRED_PATH = PROJECT_ROOT / "predictions" / "berturk" / "T01_output_top1.json"
+RESULT_PATH = PROJECT_ROOT / "results" / "T01_berturk_top1_eval.json"
+
+PRED_PATH = PROJECT_ROOT / "predictions" / "berturk" / "T01_output_top3.json"
+RESULT_PATH = PROJECT_ROOT / "results" / "T01_berturk_top3_eval.json"
+
+PRED_PATH = PROJECT_ROOT / "predictions" / "sentence_transformer" / "T01_emrecan__bert-base-turkish-cased-mean-nli-stsb-tr_top3_output.json"
+RESULT_PATH = PROJECT_ROOT / "results" / "T01_sentence_transformer_top3_eval.json"
+
+PRED_PATH = PROJECT_ROOT / "predictions" / "sentence_transformer" / "T01_trmteb__turkish-embedding-model_top3_output.json"
+RESULT_PATH = PROJECT_ROOT / "results" / "T01_sentence_transformer_trmteb_top3_eval.json"
+"""
+
+PRED_PATH = PROJECT_ROOT / "predictions" / "sentence_transformer" / "T01_mertcobanov__mpnet-base-all-nli-triplet-turkish-v2_top3_output.json"
+RESULT_PATH = PROJECT_ROOT / "results" / "T01_sentence_transformer_mertcobanov_top3_eval.json"
 
 def load_json(path: Path) -> dict:
     if not path.exists():
