@@ -1,0 +1,86 @@
+{
+  "book_id": "B01",
+  "title": "Cadı",
+  "characters": [
+    {
+      "char_id": "B01_C001",
+      "canonical_name": "Fikriye Hanım",
+      "aliases": ["Fikriye", "Fikriye Hanım", "yeğen", "dul kadın", "zavallı kadın"],
+      "gender": "female",
+      "role": "main character",
+      "notes": "Young widow pressured to remarry"
+    },
+    {
+      "char_id": "B01_C002",
+      "canonical_name": "Emine Hanım",
+      "aliases": ["Emine", "Emine Hanım", "Yenge", "Yenge Emine Hanım", "hanım yenge"],
+      "gender": "female",
+      "role": "supporting character",
+      "notes": "Fikriye's aunt by marriage; pressures her to remarry"
+    },
+    {
+      "char_id": "B01_C003",
+      "canonical_name": "Naşit Nefi Efendi",
+      "aliases": ["Naşit Nefi", "Naşit Nefi Efendi", "Nefi Efendi", "efendi"],
+      "gender": "male",
+      "role": "important character",
+      "notes": "Proposed husband candidate"
+    },
+    {
+      "char_id": "B01_C004",
+      "canonical_name": "Binnaz Hanım",
+      "aliases": ["Binnaz", "Binnaz Hanım", "cadı", "ilk harem", "vefat eden ilk haremi"],
+      "gender": "female",
+      "role": "important character",
+      "notes": "Dead first wife, rumored to have become a witch"
+    },
+    {
+      "char_id": "B01_C005",
+      "canonical_name": "Şükriye Hanım",
+      "aliases": ["Şükriye", "Şükriye Hanım"],
+      "gender": "female",
+      "role": "important character",
+      "notes": "Former wife of Naşit Nefi Efendi"
+    },
+    {
+      "char_id": "B01_C006",
+      "canonical_name": "Hasan Efendi",
+      "aliases": ["Hasan Efendi", "dayı", "dayım", "Dayı Efendi"],
+      "gender": "male",
+      "role": "supporting character",
+      "notes": "Fikriye's uncle"
+    },
+    {
+      "char_id": "B01_C007",
+      "canonical_name": "Hasibe Hanım",
+      "aliases": ["Hasibe Hanım", "büyük hanım", "kocakarı", "ihtiyar kadın"],
+      "gender": "female",
+      "role": "supporting character",
+      "notes": "Warns Fikriye about Naşit Nefi Efendi"
+    },
+    {
+      "char_id": "B01_C008",
+      "canonical_name": "Nazikter",
+      "aliases": ["Nazikter", "hizmetçi", "kızcağız"],
+      "gender": "female",
+      "role": "minor character",
+      "notes": "Servant girl in Şükriye Hanım's house"
+    },
+    {
+      "char_id": "B01_C009",
+      "canonical_name": "Latife",
+      "aliases": ["Latife", "kızı", "yetim Latife", "çocuğu"],
+      "gender": "female",
+      "role": "minor character",
+      "notes": "Fikriye's daughter"
+    },
+    {
+      "char_id": "B01_C010",
+      "canonical_name": "Bedri Bey",
+      "aliases": ["Bedri Bey", "merhum zevci", "ilk kocası"],
+      "gender": "male",
+      "role": "background character",
+      "notes": "Fikriye's deceased husband"
+    }
+  ]
+}
