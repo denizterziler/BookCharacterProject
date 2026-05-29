@@ -1,0 +1,134 @@
+{
+  "book_id": "B05",
+  "title": "Mahalle Karıları",
+  "characters": [
+    {
+      "char_id": "B05_C001",
+      "canonical_name": "Gülsüm Hanım",
+      "aliases": ["Gülsüm", "Gülsüm Hanım"],
+      "gender": "female",
+      "role": "main character",
+      "notes": "Woman who becomes anxious after seeing a text about 'Pasaklı Gülsüm' and seeks help from Hoca Nefise Hanım."
+    },
+    {
+      "char_id": "B05_C002",
+      "canonical_name": "Hoca Nefise Hanım",
+      "aliases": ["Nefise", "Nefise Hanım", "Hoca Nefise Hanım", "Hoca Hanım"],
+      "gender": "female",
+      "role": "main character",
+      "notes": "Neighborhood woman known as a hoca/püfçü. She manipulates Gülsüm's fears and benefits from her through charms, readings, and superstition."
+    },
+    {
+      "char_id": "B05_C003",
+      "canonical_name": "Rıfkı Efendi",
+      "aliases": ["Rıfkı", "Rıfkı Efendi"],
+      "gender": "male",
+      "role": "important character",
+      "notes": "Gülsüm's husband. He is suspected by Gülsüm and Nefise of writing the 'Pasaklı Gülsüm' text and planning to remarry."
+    },
+    {
+      "char_id": "B05_C004",
+      "canonical_name": "Hacı Baba",
+      "aliases": ["Hacı", "Hacı Baba"],
+      "gender": "male",
+      "role": "supporting character",
+      "notes": "Nefise Hanım's husband. Often appears in comic domestic scenes and is shown as passive in relation to Nefise."
+    },
+    {
+      "char_id": "B05_C005",
+      "canonical_name": "Zübeyde",
+      "aliases": ["Zübeyde"],
+      "gender": "female",
+      "role": "supporting character",
+      "notes": "Rıfkı's mother / Gülsüm's mother-in-law figure, described as disabled or bedridden and dependent in the household."
+    },
+    {
+      "char_id": "B05_C006",
+      "canonical_name": "Vefa",
+      "aliases": ["Vefa", "Vefa Bey"],
+      "gender": "male",
+      "role": "minor character",
+      "notes": "Gülsüm and Rıfkı's son; mentioned in relation to household food, school, and family conflict."
+    },
+    {
+      "char_id": "B05_C007",
+      "canonical_name": "Gülsüm'ün annesi",
+      "aliases": ["Gülsüm'ün annesi", "validesi"],
+      "gender": "female",
+      "role": "supporting character",
+      "notes": "Gülsüm's mother. Appears in the household and later accompanies or supports Gülsüm in some events."
+    },
+    {
+      "char_id": "B05_C008",
+      "canonical_name": "Seher",
+      "aliases": ["Seher"],
+      "gender": "female",
+      "role": "supporting/minor character",
+      "notes": "Neighbor from the İmameciler household. Appears in neighborhood quarrels and later joins Gülsüm's group in confronting Nefise."
+    },
+    {
+      "char_id": "B05_C009",
+      "canonical_name": "İmameciler ailesi",
+      "aliases": ["İmameciler", "İmameciler ailesi"],
+      "gender": "group",
+      "role": "group character",
+      "notes": "Neighboring family involved in quarrels with Nefise and Gülsüm."
+    },
+    {
+      "char_id": "B05_C010",
+      "canonical_name": "Sarman",
+      "aliases": ["Sarman"],
+      "gender": "unknown",
+      "role": "animal/minor",
+      "notes": "Nefise Hanım's cat; important in the comic pastırma episode."
+    },
+    {
+      "char_id": "B05_C011",
+      "canonical_name": "Tekir",
+      "aliases": ["Tekir"],
+      "gender": "unknown",
+      "role": "animal/minor",
+      "notes": "Neighbor's cat, mentioned during the quarrel about cats and stolen food."
+    },
+    {
+      "char_id": "B05_C012",
+      "canonical_name": "Saibe",
+      "aliases": ["Saibe"],
+      "gender": "female",
+      "role": "later/supporting character",
+      "notes": "Later character connected to visits to Nefise's house; include if she appears in your selected segments."
+    },
+    {
+      "char_id": "B05_C013",
+      "canonical_name": "Şöhret",
+      "aliases": ["Şöhret"],
+      "gender": "female",
+      "role": "later/supporting character",
+      "notes": "Later character connected to visits to Nefise's house; include if she appears in your selected segments."
+    },
+    {
+      "char_id": "B05_C014",
+      "canonical_name": "Salim",
+      "aliases": ["Salim"],
+      "gender": "male",
+      "role": "minor/background character",
+      "notes": "A different groom candidate confused with Rıfkı Efendi in the later misunderstanding scene."
+    },
+    {
+      "char_id": "B05_C015",
+      "canonical_name": "Küçük Şaban",
+      "aliases": ["Küçük Şaban", "Şaban"],
+      "gender": "male",
+      "role": "minor/background character",
+      "notes": "Coffeehouse boy mentioned when Nefise asks Gülsüm to call Hacı Baba from the coffeehouse."
+    },
+    {
+      "char_id": "B05_C016",
+      "canonical_name": "Sabbek",
+      "aliases": ["Sabbek", "Sadberk"],
+      "gender": "female",
+      "role": "minor/background character",
+      "notes": "Nefise Hanım's daughter, mentioned as being sent to a mansion as a servant/besleme."
+    }
+  ]
+}

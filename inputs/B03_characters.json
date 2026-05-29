@@ -1,0 +1,86 @@
+{
+  "book_id": "B03",
+  "title": "Ferdâ-yı Garâm",
+  "characters": [
+    {
+      "char_id": "B03_C001",
+      "canonical_name": "Sermet Hanım",
+      "aliases": ["Sermet", "Sermet Hanım", "Miss Çarmin", "Çarmin"],
+      "gender": "female",
+      "role": "main character",
+      "notes": "Young woman with a sensitive, melancholic temperament. She has a complex emotional relationship with Macit and is often associated with reading, fashion, music, and inner sadness."
+    },
+    {
+      "char_id": "B03_C002",
+      "canonical_name": "Macit Bey",
+      "aliases": ["Macit", "Macit Bey"],
+      "gender": "male",
+      "role": "main character",
+      "notes": "Young man and Sermet's relative. He has a long history of teasing and conflict with Sermet, which later turns into emotional intimacy."
+    },
+    {
+      "char_id": "B03_C003",
+      "canonical_name": "Nevber Hanım",
+      "aliases": ["Nevber", "Nevber Hanım"],
+      "gender": "female",
+      "role": "main character",
+      "notes": "Young widow and relative/friend in the household. She often mediates, jokes, and interacts with both Sermet and Macit."
+    },
+    {
+      "char_id": "B03_C004",
+      "canonical_name": "Miss Morgan",
+      "aliases": ["Miss Morgan"],
+      "gender": "female",
+      "role": "background character",
+      "notes": "Sermet's English governess/mürebbiye, associated with Sermet's English tastes and education."
+    },
+    {
+      "char_id": "B03_C005",
+      "canonical_name": "Macit'in annesi",
+      "aliases": ["Macit'in annesi", "validesi", "valide"],
+      "gender": "female",
+      "role": "background character",
+      "notes": "Macit's mother. Her expected return to Istanbul is important for Macit's emotional state."
+    },
+    {
+      "char_id": "B03_C006",
+      "canonical_name": "Macit'in babası",
+      "aliases": ["Macit'in babası", "pederi", "peder"],
+      "gender": "male",
+      "role": "background character",
+      "notes": "Macit's father, mentioned together with his mother as returning to Istanbul."
+    },
+    {
+      "char_id": "B03_C007",
+      "canonical_name": "Hanımefendi",
+      "aliases": ["Hanımefendi"],
+      "gender": "female",
+      "role": "supporting character",
+      "notes": "Older woman/hostess figure in the household. Appears in domestic scenes such as meals and farewells."
+    },
+    {
+      "char_id": "B03_C008",
+      "canonical_name": "Büyük Beyefendi",
+      "aliases": ["Büyük Beyefendi", "büyük beyefendi"],
+      "gender": "male",
+      "role": "background character",
+      "notes": "Older male household figure mentioned in the dining scene."
+    },
+    {
+      "char_id": "B03_C009",
+      "canonical_name": "Hizmetçi kız",
+      "aliases": ["hizmetçi kız", "hizmetçi"],
+      "gender": "female",
+      "role": "minor character",
+      "notes": "Servant girl who appears briefly in the household/garden scene."
+    },
+    {
+      "char_id": "B03_C010",
+      "canonical_name": "Madam",
+      "aliases": ["Madam"],
+      "gender": "female",
+      "role": "minor/background character",
+      "notes": "A woman mentioned in relation to Macit's social/romantic life. Keep only if she appears repeatedly in your segments."
+    }
+  ]
+}

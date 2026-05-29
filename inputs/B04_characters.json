@@ -1,0 +1,102 @@
+{
+  "book_id": "B04",
+  "title": "Böğürtlen",
+  "characters": [
+    {
+      "char_id": "B04_C001",
+      "canonical_name": "Pertev Bey",
+      "aliases": ["Pertev", "Pertev Bey", "Pertev Beyefendi"],
+      "gender": "male",
+      "role": "main character",
+      "notes": "Narrator/protagonist. He visits the sisters' social circle with Nihat and becomes deeply interested in Müjgân."
+    },
+    {
+      "char_id": "B04_C002",
+      "canonical_name": "Müjgân Hanım",
+      "aliases": ["Müjgân", "Müjgân Hanım"],
+      "gender": "female",
+      "role": "main character",
+      "notes": "Young woman living in a dependent/sheltered position within the household. Pertev is strongly drawn to her mysterious, proud, and melancholic character."
+    },
+    {
+      "char_id": "B04_C003",
+      "canonical_name": "Nihat Bey",
+      "aliases": ["Nihat", "Nihat Bey"],
+      "gender": "male",
+      "role": "main character",
+      "notes": "Pertev's friend. He introduces Pertev to the three sisters and explains their social/gambling world."
+    },
+    {
+      "char_id": "B04_C004",
+      "canonical_name": "Şekûre Hanım",
+      "aliases": ["Şekûre", "Şekûre Hanım", "Şekûre Hanımefendi"],
+      "gender": "female",
+      "role": "important character",
+      "notes": "One of the three sisters described as 'le truva gras'. She is socially active, flirtatious, and closely associated with Nihat."
+    },
+    {
+      "char_id": "B04_C005",
+      "canonical_name": "Mahmûre Hanım",
+      "aliases": ["Mahmûre", "Mahmûre Hanım", "Mahmûre Hanımefendi"],
+      "gender": "female",
+      "role": "important character",
+      "notes": "One of the three sisters. She appears calmer and more controlled, especially in gambling scenes."
+    },
+    {
+      "char_id": "B04_C006",
+      "canonical_name": "Nigâr Hanım",
+      "aliases": ["Nigâr", "Nigâr Hanım", "Nigâr Hanımefendi"],
+      "gender": "female",
+      "role": "important character",
+      "notes": "The youngest or liveliest of the three sisters. She is energetic, playful, and often teasing."
+    },
+    {
+      "char_id": "B04_C007",
+      "canonical_name": "Methi Bey",
+      "aliases": ["Methi Bey", "Methi"],
+      "gender": "male",
+      "role": "supporting character",
+      "notes": "Officer/zabit figure associated with Nigâr in the social and dancing scenes."
+    },
+    {
+      "char_id": "B04_C008",
+      "canonical_name": "Süheyla Hanım",
+      "aliases": ["Süheyla", "Süheyla Hanım"],
+      "gender": "female",
+      "role": "supporting character",
+      "notes": "Later female figure observed by Pertev; described as lively and energetic."
+    },
+    {
+      "char_id": "B04_C009",
+      "canonical_name": "Nebile Hanım",
+      "aliases": ["Nebile", "Nebile Hanım"],
+      "gender": "female",
+      "role": "minor character",
+      "notes": "Süheyla Hanım's elder sister, briefly described in a dining/social scene."
+    },
+    {
+      "char_id": "B04_C010",
+      "canonical_name": "Kemal Nedim Bey",
+      "aliases": ["Kemal Nedim", "Kemal Nedim Bey", "Nedim Bey"],
+      "gender": "male",
+      "role": "minor character",
+      "notes": "Husband of Nebile Hanım; appears in a later social/dining scene."
+    },
+    {
+      "char_id": "B04_C011",
+      "canonical_name": "Madam",
+      "aliases": ["Madam"],
+      "gender": "female",
+      "role": "minor/background character",
+      "notes": "A Christian/foreign woman mentioned among the close guests in the gambling/social environment. Keep only if she appears repeatedly in your selected segments."
+    },
+    {
+      "char_id": "B04_C012",
+      "canonical_name": "Müjgân'ın babası",
+      "aliases": ["Müjgân'ın babası", "babası"],
+      "gender": "male",
+      "role": "background character",
+      "notes": "Müjgân's deceased father, described as formerly having served as a mutasarrıf. Mentioned as part of Müjgân's background."
+    }
+  ]
+}
