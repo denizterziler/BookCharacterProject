@@ -1,0 +1,88 @@
+{
+  "book_id": "B02",
+  "title": "Efsuncu Baba",
+  "gold_annotations": [
+    {
+      "segment_id": "B02_S0001",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ]
+    },
+    {
+      "segment_id": "B02_S0002",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ]
+    },
+    {
+      "segment_id": "B02_S0003",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ]
+    },
+    {
+      "segment_id": "B02_S0004",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ]
+    },
+    {
+      "segment_id": "B02_S0005",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ]
+    },
+    {
+      "segment_id": "B02_S0006",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ]
+    },
+    {
+      "segment_id": "B02_S0007",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C003"
+      ]
+    },
+    {
+      "segment_id": "B02_S0008",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C003"
+      ]
+    },
+    {
+      "segment_id": "B02_S0009",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C003",
+        "B02_C009"
+      ]
+    },
+    {
+      "segment_id": "B02_S0010",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C003",
+        "B02_C009"
+      ]
+    }
+  ]
+}
