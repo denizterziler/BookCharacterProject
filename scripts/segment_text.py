@@ -2,11 +2,11 @@ from pathlib import Path
 import json
 import re
 
-INPUT_PATH = Path("book_texts/B01_clean_candidate.txt")
-OUTPUT_PATH = Path("book_texts/B01_segments.json")
+INPUT_PATH = Path("book_texts/B02_clean_candidate.txt")
+OUTPUT_PATH = Path("book_texts/B02_segments.json")
 
-BOOK_ID = "B01"
-TITLE = "Cadı"
+BOOK_ID = "B02"
+TITLE = "Efsuncu Baba"
 
 WINDOW_SIZE = 300
 OVERLAP = 50   # safer for dialogue/context

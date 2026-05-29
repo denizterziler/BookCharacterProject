@@ -3,7 +3,7 @@ from pathlib import Path
 import re
 
 
-PDF_PATH = Path("/Users/denizterziler/Downloads/Gulyabani-WEB-1.pdf")
+PDF_PATH = Path("/Users/denizterziler/PycharmProjects/BookCharacterProject/bookpdfs_phase1/Cadı-WEB-1.pdf")
 OUTPUT_PATH = Path("book_texts/B01_clean_candidate.txt")
 
 

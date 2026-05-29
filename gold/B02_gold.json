@@ -1,0 +1,150 @@
+{
+  "book_id": "B02",
+  "title": "Efsuncu Baba",
+  "characters": [
+    {
+      "char_id": "B02_C001",
+      "canonical_name": "Agop",
+      "aliases": ["Agop"],
+      "gender": "male",
+      "role": "main character",
+      "notes": "One of the two Armenian thread-spinners in Binbirdirek. He frequently talks with Kirkor and observes Ebulfazl Enverî's strange behavior."
+    },
+    {
+      "char_id": "B02_C002",
+      "canonical_name": "Kirkor",
+      "aliases": ["Kirkor"],
+      "gender": "male",
+      "role": "main character",
+      "notes": "Agop's companion and the other Armenian thread-spinner in Binbirdirek."
+    },
+    {
+      "char_id": "B02_C003",
+      "canonical_name": "Ebulfazl Enverî",
+      "aliases": ["Ebulfazl Enverî", "Enverî", "Efsuncu Baba", "Efendibaba"],
+      "gender": "male",
+      "role": "main character",
+      "notes": "Superstitious treasure-seeker and occult enthusiast; son of Nasrullah Efendi."
+    },
+    {
+      "char_id": "B02_C004",
+      "canonical_name": "Zeynep Hanım",
+      "aliases": ["Zeynep Hanım", "Zeynep"],
+      "gender": "female",
+      "role": "important character",
+      "notes": "Second wife of Ebulfazl Enverî. Include if she appears in later parts of the book."
+    },
+    {
+      "char_id": "B02_C005",
+      "canonical_name": "Mevlüde",
+      "aliases": ["Mevlüde"],
+      "gender": "female",
+      "role": "important character",
+      "notes": "Daughter of Ebulfazl Enverî. Include if she appears in later parts of the book."
+    },
+    {
+      "char_id": "B02_C006",
+      "canonical_name": "Nurullah Hasip",
+      "aliases": ["Nurullah Hasip", "Nurullah", "Hasip"],
+      "gender": "male",
+      "role": "important character",
+      "notes": "Young man connected to Mevlüde. Include if he appears in later parts of the book."
+    },
+    {
+      "char_id": "B02_C007",
+      "canonical_name": "Nasrullah Efendi",
+      "aliases": ["Nasrullah Efendi", "Nasrullah"],
+      "gender": "male",
+      "role": "background character",
+      "notes": "Father of Ebulfazl Enverî; interested in alchemy and occult sciences."
+    },
+    {
+      "char_id": "B02_C008",
+      "canonical_name": "Artin Ağa",
+      "aliases": ["Artin Ağa", "Artin"],
+      "gender": "male",
+      "role": "minor character",
+      "notes": "Agop's singer neighbor and musical influence."
+    },
+    {
+      "char_id": "B02_C009",
+      "canonical_name": "Bedros Ağa",
+      "aliases": ["Bedros Ağa", "Bedros"],
+      "gender": "male",
+      "role": "background character",
+      "notes": "Agop's grandfather, mentioned as a learned man who read histories."
+    },
+    {
+      "char_id": "B02_C010",
+      "canonical_name": "Derviş Cebeli",
+      "aliases": ["Derviş Cebeli", "Cebeli"],
+      "gender": "male",
+      "role": "background character",
+      "notes": "Occult/dervish figure mentioned in relation to alchemical and magical beliefs."
+    },
+    {
+      "char_id": "B02_C011",
+      "canonical_name": "Lahur",
+      "aliases": ["Lahur"],
+      "gender": "unknown",
+      "role": "mythic/assigned identity",
+      "notes": "One of the angelic figures in the tılsımname. Do not treat as a normal alias of Agop unless manually verified in context."
+    },
+    {
+      "char_id": "B02_C012",
+      "canonical_name": "Mahur",
+      "aliases": ["Mahur"],
+      "gender": "unknown",
+      "role": "mythic/assigned identity",
+      "notes": "One of the angelic figures in the tılsımname. Do not treat as a normal alias of Kirkor unless manually verified in context."
+    },
+    {
+      "char_id": "B02_C013",
+      "canonical_name": "Kekre",
+      "aliases": ["Kekre"],
+      "gender": "unknown",
+      "role": "mythic character",
+      "notes": "One of the demonic figures mentioned in the tılsımname."
+    },
+    {
+      "char_id": "B02_C014",
+      "canonical_name": "Mekre",
+      "aliases": ["Mekre"],
+      "gender": "unknown",
+      "role": "mythic character",
+      "notes": "One of the demonic figures mentioned in the tılsımname."
+    },
+    {
+      "char_id": "B02_C015",
+      "canonical_name": "Abdullah Karuni",
+      "aliases": ["Abdullah Karuni", "Abdullah"],
+      "gender": "male",
+      "role": "embedded-story character",
+      "notes": "Merchant figure in the treasure/secret-history narrative inside the tılsımname. Include if this section appears in your selected text."
+    },
+    {
+      "char_id": "B02_C016",
+      "canonical_name": "Mehmet Karuni",
+      "aliases": ["Mehmet Karuni", "Mehmet"],
+      "gender": "male",
+      "role": "embedded-story character",
+      "notes": "Son of Abdullah Karuni. Include if this section appears in your selected text."
+    },
+    {
+      "char_id": "B02_C017",
+      "canonical_name": "Ali Hacip",
+      "aliases": ["Ali Hacip"],
+      "gender": "male",
+      "role": "embedded-story character",
+      "notes": "Servant figure connected to the tılsımname/treasure narrative. Include if this section appears in your selected text."
+    },
+    {
+      "char_id": "B02_C018",
+      "canonical_name": "İbn el-Mahşur",
+      "aliases": ["İbn el-Mahşur", "Mahşur"],
+      "gender": "male",
+      "role": "embedded-story character",
+      "notes": "Maghribi occult figure connected to the treasure-related tılsım narrative."
+    }
+  ]
+}
