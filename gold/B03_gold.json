@@ -1,0 +1,48 @@
+{
+  "book_id": "B03",
+  "title": "Ferda-yı Garam",
+  "gold_annotations": [
+    {
+    "segment_id": "B03_S0001",
+    "characters_present": ["B03_C001", "B03_C003"]
+    },
+    {
+    "segment_id": "B03_S0002",
+    "characters_present": ["B03_C001", "B03_C003"]
+    },
+    {
+    "segment_id": "B03_S0003",
+    "characters_present": ["B03_C001", "B03_C003", "B03_C004", "B03_C009"]
+    },
+    {
+    "segment_id": "B03_S0004",
+    "characters_present": ["B03_C001", "B03_C002", "B03_C003", "B03_C009"]
+    },
+    {
+    "segment_id": "B03_S0005",
+    "characters_present": ["B03_C001", "B03_C002", "B03_C003", "B03_C005", "B03_C006"]
+    },
+    {
+    "segment_id": "B03_S0006",
+    "characters_present": ["B03_C001", "B03_C002", "B03_C003", "B03_C010"]
+    },
+    {
+    "segment_id": "B03_S0007",
+    "characters_present": ["B03_C001", "B03_C002", "B03_C003", "B03_C005", "B03_C006"]
+    },
+    {
+    "segment_id": "B03_S0008",
+    "characters_present": ["B03_C001", "B03_C002", "B03_C004"]
+    },
+    {
+    "segment_id": "B03_S0009",
+    "characters_present": ["B03_C001", "B03_C002", "B03_C003"]
+    },
+    {
+    "segment_id": "B03_S0010",
+    "characters_present": ["B03_C001", "B03_C002", "B03_C005", "B03_C006"]
+    }
+  ]
+}
+
+
