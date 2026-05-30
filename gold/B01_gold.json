@@ -1,0 +1,42 @@
+[
+  {
+    "segment_id": "B01_S0001",
+    "characters_present": ["B01_C001", "B01_C002", "B01_C010"]
+  },
+  {
+    "segment_id": "B01_S0002",
+    "characters_present": ["B01_C001", "B01_C002", "B01_C006", "B01_C009"]
+  },
+  {
+    "segment_id": "B01_S0003",
+    "characters_present": ["B01_C001", "B01_C002", "B01_C006"]
+  },
+  {
+    "segment_id": "B01_S0004",
+    "characters_present": ["B01_C001", "B01_C002", "B01_C006", "B01_C010"]
+  },
+  {
+    "segment_id": "B01_S0005",
+    "characters_present": ["B01_C001", "B01_C002", "B01_C006", "B01_C009", "B01_C010"]
+  },
+  {
+    "segment_id": "B01_S0006",
+    "characters_present": ["B01_C001", "B01_C002", "B01_C006", "B01_C009", "B01_C010"]
+  },
+  {
+    "segment_id": "B01_S0007",
+    "characters_present": ["B01_C001", "B01_C002", "B01_C003", "B01_C009"]
+  },
+  {
+    "segment_id": "B01_S0008",
+    "characters_present": ["B01_C001", "B01_C002", "B01_C003", "B01_C004", "B01_C005", "B01_C010"]
+  },
+  {
+    "segment_id": "B01_S0009",
+    "characters_present": ["B01_C001", "B01_C002", "B01_C003", "B01_C004", "B01_C005", "B01_C009"]
+  },
+  {
+    "segment_id": "B01_S0010",
+    "characters_present": ["B01_C001", "B01_C002", "B01_C003", "B01_C009"]
+  }
+]
