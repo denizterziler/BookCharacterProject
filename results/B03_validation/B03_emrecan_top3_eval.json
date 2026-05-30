@@ -1,0 +1,460 @@
+{
+  "book_id": "B03",
+  "title": "Ferda-yı Garam",
+  "system": "sentence_transformer_topk_baseline",
+  "model_name": "emrecan/bert-base-turkish-cased-mean-nli-stsb-tr",
+  "prompt_type": "",
+  "selection_method": "top_3",
+  "top_k": 3,
+  "task": "300_word_window_level_character_presence",
+  "unit": "300-word overlapping segment",
+  "gold_path": "/Users/denizterziler/PycharmProjects/BookCharacterProject/gold/B03_gold.json",
+  "prediction_path": "/Users/denizterziler/PycharmProjects/BookCharacterProject/predictions/sentence_transformer/B03_emrecan__bert-base-turkish-cased-mean-nli-stsb-tr_window_presence_top3.json",
+  "gold_segment_count": 10,
+  "prediction_segment_count_used": 10,
+  "missing_prediction_segments": [],
+  "scores": {
+    "true_positive_count": 19,
+    "false_positive_count": 11,
+    "false_negative_count": 17,
+    "precision": 0.6333,
+    "recall": 0.5278,
+    "f1": 0.5758,
+    "true_positives": [
+      [
+        "B03_S0001",
+        "B03_C001"
+      ],
+      [
+        "B03_S0001",
+        "B03_C003"
+      ],
+      [
+        "B03_S0002",
+        "B03_C003"
+      ],
+      [
+        "B03_S0003",
+        "B03_C001"
+      ],
+      [
+        "B03_S0004",
+        "B03_C001"
+      ],
+      [
+        "B03_S0004",
+        "B03_C003"
+      ],
+      [
+        "B03_S0004",
+        "B03_C009"
+      ],
+      [
+        "B03_S0005",
+        "B03_C001"
+      ],
+      [
+        "B03_S0005",
+        "B03_C002"
+      ],
+      [
+        "B03_S0006",
+        "B03_C001"
+      ],
+      [
+        "B03_S0006",
+        "B03_C002"
+      ],
+      [
+        "B03_S0007",
+        "B03_C001"
+      ],
+      [
+        "B03_S0007",
+        "B03_C003"
+      ],
+      [
+        "B03_S0008",
+        "B03_C001"
+      ],
+      [
+        "B03_S0009",
+        "B03_C002"
+      ],
+      [
+        "B03_S0009",
+        "B03_C003"
+      ],
+      [
+        "B03_S0010",
+        "B03_C001"
+      ],
+      [
+        "B03_S0010",
+        "B03_C002"
+      ],
+      [
+        "B03_S0010",
+        "B03_C006"
+      ]
+    ],
+    "false_positives": [
+      [
+        "B03_S0001",
+        "B03_C007"
+      ],
+      [
+        "B03_S0002",
+        "B03_C002"
+      ],
+      [
+        "B03_S0002",
+        "B03_C007"
+      ],
+      [
+        "B03_S0003",
+        "B03_C005"
+      ],
+      [
+        "B03_S0003",
+        "B03_C010"
+      ],
+      [
+        "B03_S0005",
+        "B03_C010"
+      ],
+      [
+        "B03_S0006",
+        "B03_C006"
+      ],
+      [
+        "B03_S0007",
+        "B03_C010"
+      ],
+      [
+        "B03_S0008",
+        "B03_C003"
+      ],
+      [
+        "B03_S0008",
+        "B03_C007"
+      ],
+      [
+        "B03_S0009",
+        "B03_C008"
+      ]
+    ],
+    "false_negatives": [
+      [
+        "B03_S0002",
+        "B03_C001"
+      ],
+      [
+        "B03_S0003",
+        "B03_C003"
+      ],
+      [
+        "B03_S0003",
+        "B03_C004"
+      ],
+      [
+        "B03_S0003",
+        "B03_C009"
+      ],
+      [
+        "B03_S0004",
+        "B03_C002"
+      ],
+      [
+        "B03_S0005",
+        "B03_C003"
+      ],
+      [
+        "B03_S0005",
+        "B03_C005"
+      ],
+      [
+        "B03_S0005",
+        "B03_C006"
+      ],
+      [
+        "B03_S0006",
+        "B03_C003"
+      ],
+      [
+        "B03_S0006",
+        "B03_C010"
+      ],
+      [
+        "B03_S0007",
+        "B03_C002"
+      ],
+      [
+        "B03_S0007",
+        "B03_C005"
+      ],
+      [
+        "B03_S0007",
+        "B03_C006"
+      ],
+      [
+        "B03_S0008",
+        "B03_C002"
+      ],
+      [
+        "B03_S0008",
+        "B03_C004"
+      ],
+      [
+        "B03_S0009",
+        "B03_C001"
+      ],
+      [
+        "B03_S0010",
+        "B03_C005"
+      ]
+    ]
+  },
+  "segment_details": [
+    {
+      "segment_id": "B03_S0001",
+      "gold": [
+        "B03_C001",
+        "B03_C003"
+      ],
+      "predicted": [
+        "B03_C001",
+        "B03_C003",
+        "B03_C007"
+      ],
+      "true_positives": [
+        "B03_C001",
+        "B03_C003"
+      ],
+      "false_positives": [
+        "B03_C007"
+      ],
+      "false_negatives": []
+    },
+    {
+      "segment_id": "B03_S0002",
+      "gold": [
+        "B03_C001",
+        "B03_C003"
+      ],
+      "predicted": [
+        "B03_C002",
+        "B03_C003",
+        "B03_C007"
+      ],
+      "true_positives": [
+        "B03_C003"
+      ],
+      "false_positives": [
+        "B03_C002",
+        "B03_C007"
+      ],
+      "false_negatives": [
+        "B03_C001"
+      ]
+    },
+    {
+      "segment_id": "B03_S0003",
+      "gold": [
+        "B03_C001",
+        "B03_C003",
+        "B03_C004",
+        "B03_C009"
+      ],
+      "predicted": [
+        "B03_C001",
+        "B03_C005",
+        "B03_C010"
+      ],
+      "true_positives": [
+        "B03_C001"
+      ],
+      "false_positives": [
+        "B03_C005",
+        "B03_C010"
+      ],
+      "false_negatives": [
+        "B03_C003",
+        "B03_C004",
+        "B03_C009"
+      ]
+    },
+    {
+      "segment_id": "B03_S0004",
+      "gold": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C009"
+      ],
+      "predicted": [
+        "B03_C001",
+        "B03_C003",
+        "B03_C009"
+      ],
+      "true_positives": [
+        "B03_C001",
+        "B03_C003",
+        "B03_C009"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B03_C002"
+      ]
+    },
+    {
+      "segment_id": "B03_S0005",
+      "gold": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C005",
+        "B03_C006"
+      ],
+      "predicted": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C010"
+      ],
+      "true_positives": [
+        "B03_C001",
+        "B03_C002"
+      ],
+      "false_positives": [
+        "B03_C010"
+      ],
+      "false_negatives": [
+        "B03_C003",
+        "B03_C005",
+        "B03_C006"
+      ]
+    },
+    {
+      "segment_id": "B03_S0006",
+      "gold": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C010"
+      ],
+      "predicted": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C006"
+      ],
+      "true_positives": [
+        "B03_C001",
+        "B03_C002"
+      ],
+      "false_positives": [
+        "B03_C006"
+      ],
+      "false_negatives": [
+        "B03_C003",
+        "B03_C010"
+      ]
+    },
+    {
+      "segment_id": "B03_S0007",
+      "gold": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C005",
+        "B03_C006"
+      ],
+      "predicted": [
+        "B03_C001",
+        "B03_C003",
+        "B03_C010"
+      ],
+      "true_positives": [
+        "B03_C001",
+        "B03_C003"
+      ],
+      "false_positives": [
+        "B03_C010"
+      ],
+      "false_negatives": [
+        "B03_C002",
+        "B03_C005",
+        "B03_C006"
+      ]
+    },
+    {
+      "segment_id": "B03_S0008",
+      "gold": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C004"
+      ],
+      "predicted": [
+        "B03_C001",
+        "B03_C003",
+        "B03_C007"
+      ],
+      "true_positives": [
+        "B03_C001"
+      ],
+      "false_positives": [
+        "B03_C003",
+        "B03_C007"
+      ],
+      "false_negatives": [
+        "B03_C002",
+        "B03_C004"
+      ]
+    },
+    {
+      "segment_id": "B03_S0009",
+      "gold": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "predicted": [
+        "B03_C002",
+        "B03_C003",
+        "B03_C008"
+      ],
+      "true_positives": [
+        "B03_C002",
+        "B03_C003"
+      ],
+      "false_positives": [
+        "B03_C008"
+      ],
+      "false_negatives": [
+        "B03_C001"
+      ]
+    },
+    {
+      "segment_id": "B03_S0010",
+      "gold": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C005",
+        "B03_C006"
+      ],
+      "predicted": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C006"
+      ],
+      "true_positives": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C006"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B03_C005"
+      ]
+    }
+  ]
+}

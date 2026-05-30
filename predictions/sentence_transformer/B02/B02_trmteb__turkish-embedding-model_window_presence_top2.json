@@ -1,0 +1,4596 @@
+{
+  "book_id": "B02",
+  "title": "Efsuncu Baba",
+  "system": "sentence_transformer_topk_baseline",
+  "model_name": "trmteb/turkish-embedding-model",
+  "description": "Pretrained sentence-transformer embedding baseline. The model receives the predefined character inventory, builds character profile embeddings, compares them with 300-word segment embeddings, and selects the top-k most similar character candidates for each segment. No model training or fine-tuning is performed.",
+  "unit": "300-word overlapping segment",
+  "selection_method": "top_2",
+  "top_k": 2,
+  "character_profiles": {
+    "B02_C001": {
+      "canonical_name": "Agop",
+      "profile_text": "Karakter adı: Agop. Diğer adları: Agop. Cinsiyet: male. Rol: main character. Açıklama: One of the two Armenian thread-spinners in Binbirdirek. He frequently talks with Kirkor and observes Ebulfazl Enverî's strange behavior."
+    },
+    "B02_C002": {
+      "canonical_name": "Kirkor",
+      "profile_text": "Karakter adı: Kirkor. Diğer adları: Kirkor. Cinsiyet: male. Rol: main character. Açıklama: Agop's companion and the other Armenian thread-spinner in Binbirdirek."
+    },
+    "B02_C003": {
+      "canonical_name": "Ebulfazl Enverî",
+      "profile_text": "Karakter adı: Ebulfazl Enverî. Diğer adları: Ebulfazl Enverî, Enverî, Efsuncu Baba, Efendibaba. Cinsiyet: male. Rol: main character. Açıklama: Superstitious treasure-seeker and occult enthusiast; son of Nasrullah Efendi."
+    },
+    "B02_C004": {
+      "canonical_name": "Zeynep Hanım",
+      "profile_text": "Karakter adı: Zeynep Hanım. Diğer adları: Zeynep Hanım, Zeynep. Cinsiyet: female. Rol: important character. Açıklama: Second wife of Ebulfazl Enverî. Include if she appears in later parts of the book."
+    },
+    "B02_C005": {
+      "canonical_name": "Mevlüde",
+      "profile_text": "Karakter adı: Mevlüde. Diğer adları: Mevlüde. Cinsiyet: female. Rol: important character. Açıklama: Daughter of Ebulfazl Enverî. Include if she appears in later parts of the book."
+    },
+    "B02_C006": {
+      "canonical_name": "Nurullah Hasip",
+      "profile_text": "Karakter adı: Nurullah Hasip. Diğer adları: Nurullah Hasip, Nurullah, Hasip. Cinsiyet: male. Rol: important character. Açıklama: Young man connected to Mevlüde. Include if he appears in later parts of the book."
+    },
+    "B02_C007": {
+      "canonical_name": "Nasrullah Efendi",
+      "profile_text": "Karakter adı: Nasrullah Efendi. Diğer adları: Nasrullah Efendi, Nasrullah. Cinsiyet: male. Rol: background character. Açıklama: Father of Ebulfazl Enverî; interested in alchemy and occult sciences."
+    },
+    "B02_C008": {
+      "canonical_name": "Artin Ağa",
+      "profile_text": "Karakter adı: Artin Ağa. Diğer adları: Artin Ağa, Artin. Cinsiyet: male. Rol: minor character. Açıklama: Agop's singer neighbor and musical influence."
+    },
+    "B02_C009": {
+      "canonical_name": "Bedros Ağa",
+      "profile_text": "Karakter adı: Bedros Ağa. Diğer adları: Bedros Ağa, Bedros. Cinsiyet: male. Rol: background character. Açıklama: Agop's grandfather, mentioned as a learned man who read histories."
+    },
+    "B02_C010": {
+      "canonical_name": "Derviş Cebeli",
+      "profile_text": "Karakter adı: Derviş Cebeli. Diğer adları: Derviş Cebeli, Cebeli. Cinsiyet: male. Rol: background character. Açıklama: Occult/dervish figure mentioned in relation to alchemical and magical beliefs."
+    },
+    "B02_C011": {
+      "canonical_name": "Lahur",
+      "profile_text": "Karakter adı: Lahur. Diğer adları: Lahur. Cinsiyet: unknown. Rol: mythic/assigned identity. Açıklama: One of the angelic figures in the tılsımname. Do not treat as a normal alias of Agop unless manually verified in context."
+    },
+    "B02_C012": {
+      "canonical_name": "Mahur",
+      "profile_text": "Karakter adı: Mahur. Diğer adları: Mahur. Cinsiyet: unknown. Rol: mythic/assigned identity. Açıklama: One of the angelic figures in the tılsımname. Do not treat as a normal alias of Kirkor unless manually verified in context."
+    },
+    "B02_C013": {
+      "canonical_name": "Kekre",
+      "profile_text": "Karakter adı: Kekre. Diğer adları: Kekre. Cinsiyet: unknown. Rol: mythic character. Açıklama: One of the demonic figures mentioned in the tılsımname."
+    },
+    "B02_C014": {
+      "canonical_name": "Mekre",
+      "profile_text": "Karakter adı: Mekre. Diğer adları: Mekre. Cinsiyet: unknown. Rol: mythic character. Açıklama: One of the demonic figures mentioned in the tılsımname."
+    },
+    "B02_C015": {
+      "canonical_name": "Abdullah Karuni",
+      "profile_text": "Karakter adı: Abdullah Karuni. Diğer adları: Abdullah Karuni, Abdullah. Cinsiyet: male. Rol: embedded-story character. Açıklama: Merchant figure in the treasure/secret-history narrative inside the tılsımname. Include if this section appears in your selected text."
+    },
+    "B02_C016": {
+      "canonical_name": "Mehmet Karuni",
+      "profile_text": "Karakter adı: Mehmet Karuni. Diğer adları: Mehmet Karuni, Mehmet. Cinsiyet: male. Rol: embedded-story character. Açıklama: Son of Abdullah Karuni. Include if this section appears in your selected text."
+    },
+    "B02_C017": {
+      "canonical_name": "Ali Hacip",
+      "profile_text": "Karakter adı: Ali Hacip. Diğer adları: Ali Hacip. Cinsiyet: male. Rol: embedded-story character. Açıklama: Servant figure connected to the tılsımname/treasure narrative. Include if this section appears in your selected text."
+    },
+    "B02_C018": {
+      "canonical_name": "İbn el-Mahşur",
+      "profile_text": "Karakter adı: İbn el-Mahşur. Diğer adları: İbn el-Mahşur, Mahşur. Cinsiyet: male. Rol: embedded-story character. Açıklama: Maghribi occult figure connected to the treasure-related tılsım narrative."
+    }
+  },
+  "segment_presence": [
+    {
+      "segment_id": "B02_S0001",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ],
+      "similarities": {
+        "B02_C001": 0.4483,
+        "B02_C002": 0.3634,
+        "B02_C009": 0.335,
+        "B02_C008": 0.2743,
+        "B02_C012": 0.2518,
+        "B02_C011": 0.2194,
+        "B02_C018": 0.2008,
+        "B02_C017": 0.1643,
+        "B02_C006": 0.1407,
+        "B02_C015": 0.1322,
+        "B02_C005": 0.1176,
+        "B02_C013": 0.1155,
+        "B02_C003": 0.1083,
+        "B02_C016": 0.1054,
+        "B02_C007": 0.105,
+        "B02_C004": 0.1001,
+        "B02_C014": 0.0865,
+        "B02_C010": 0.0853
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4483
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.3634
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0002",
+      "characters_present": [
+        "B02_C001",
+        "B02_C009"
+      ],
+      "similarities": {
+        "B02_C001": 0.4008,
+        "B02_C009": 0.3176,
+        "B02_C002": 0.2641,
+        "B02_C008": 0.2091,
+        "B02_C011": 0.1506,
+        "B02_C012": 0.1383,
+        "B02_C006": 0.1269,
+        "B02_C018": 0.1048,
+        "B02_C017": 0.1002,
+        "B02_C005": 0.0917,
+        "B02_C007": 0.0881,
+        "B02_C004": 0.081,
+        "B02_C010": 0.0728,
+        "B02_C015": 0.0656,
+        "B02_C003": 0.0652,
+        "B02_C016": 0.0614,
+        "B02_C013": 0.0591,
+        "B02_C014": 0.0148
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4008
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.3176
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0003",
+      "characters_present": [
+        "B02_C001",
+        "B02_C008"
+      ],
+      "similarities": {
+        "B02_C001": 0.3216,
+        "B02_C008": 0.2771,
+        "B02_C009": 0.249,
+        "B02_C002": 0.2022,
+        "B02_C011": 0.1359,
+        "B02_C018": 0.1352,
+        "B02_C012": 0.1268,
+        "B02_C006": 0.1241,
+        "B02_C017": 0.1139,
+        "B02_C016": 0.0867,
+        "B02_C005": 0.0801,
+        "B02_C010": 0.0759,
+        "B02_C013": 0.0723,
+        "B02_C015": 0.0632,
+        "B02_C004": 0.0506,
+        "B02_C007": 0.0466,
+        "B02_C003": 0.0252,
+        "B02_C014": 0.0129
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3216
+        },
+        {
+          "char_id": "B02_C008",
+          "similarity": 0.2771
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0004",
+      "characters_present": [
+        "B02_C001",
+        "B02_C009"
+      ],
+      "similarities": {
+        "B02_C001": 0.2536,
+        "B02_C009": 0.2175,
+        "B02_C002": 0.2115,
+        "B02_C008": 0.2026,
+        "B02_C012": 0.1959,
+        "B02_C017": 0.1893,
+        "B02_C018": 0.1862,
+        "B02_C011": 0.1563,
+        "B02_C015": 0.1457,
+        "B02_C006": 0.1396,
+        "B02_C010": 0.1274,
+        "B02_C013": 0.1225,
+        "B02_C005": 0.1106,
+        "B02_C016": 0.1013,
+        "B02_C014": 0.0911,
+        "B02_C004": 0.0717,
+        "B02_C007": 0.07,
+        "B02_C003": 0.0638
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2536
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.2175
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0005",
+      "characters_present": [
+        "B02_C001",
+        "B02_C008"
+      ],
+      "similarities": {
+        "B02_C001": 0.349,
+        "B02_C008": 0.3236,
+        "B02_C009": 0.2789,
+        "B02_C002": 0.2212,
+        "B02_C011": 0.1806,
+        "B02_C012": 0.1773,
+        "B02_C017": 0.1726,
+        "B02_C018": 0.1646,
+        "B02_C006": 0.1444,
+        "B02_C010": 0.1219,
+        "B02_C016": 0.1196,
+        "B02_C015": 0.1174,
+        "B02_C013": 0.0863,
+        "B02_C005": 0.0729,
+        "B02_C003": 0.0596,
+        "B02_C007": 0.0582,
+        "B02_C004": 0.0542,
+        "B02_C014": 0.0527
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.349
+        },
+        {
+          "char_id": "B02_C008",
+          "similarity": 0.3236
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0006",
+      "characters_present": [
+        "B02_C001",
+        "B02_C008"
+      ],
+      "similarities": {
+        "B02_C008": 0.2127,
+        "B02_C001": 0.2067,
+        "B02_C009": 0.1593,
+        "B02_C012": 0.1442,
+        "B02_C010": 0.142,
+        "B02_C017": 0.1345,
+        "B02_C006": 0.1222,
+        "B02_C018": 0.1189,
+        "B02_C002": 0.1135,
+        "B02_C011": 0.1039,
+        "B02_C013": 0.0821,
+        "B02_C016": 0.0793,
+        "B02_C015": 0.0747,
+        "B02_C005": 0.0568,
+        "B02_C003": 0.0438,
+        "B02_C014": 0.0389,
+        "B02_C007": 0.0269,
+        "B02_C004": 0.0114
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C008",
+          "similarity": 0.2127
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2067
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0007",
+      "characters_present": [
+        "B02_C001",
+        "B02_C010"
+      ],
+      "similarities": {
+        "B02_C001": 0.2233,
+        "B02_C010": 0.2012,
+        "B02_C018": 0.1874,
+        "B02_C002": 0.1679,
+        "B02_C012": 0.1672,
+        "B02_C017": 0.1608,
+        "B02_C009": 0.1577,
+        "B02_C006": 0.1515,
+        "B02_C011": 0.1387,
+        "B02_C008": 0.1213,
+        "B02_C007": 0.118,
+        "B02_C015": 0.1061,
+        "B02_C005": 0.1036,
+        "B02_C013": 0.1022,
+        "B02_C003": 0.0933,
+        "B02_C014": 0.0929,
+        "B02_C004": 0.0577,
+        "B02_C016": 0.0565
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2233
+        },
+        {
+          "char_id": "B02_C010",
+          "similarity": 0.2012
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0008",
+      "characters_present": [
+        "B02_C001",
+        "B02_C009"
+      ],
+      "similarities": {
+        "B02_C001": 0.2123,
+        "B02_C009": 0.166,
+        "B02_C018": 0.1352,
+        "B02_C002": 0.1226,
+        "B02_C007": 0.1193,
+        "B02_C010": 0.1163,
+        "B02_C017": 0.0988,
+        "B02_C012": 0.0889,
+        "B02_C003": 0.0863,
+        "B02_C005": 0.0713,
+        "B02_C006": 0.0598,
+        "B02_C011": 0.0567,
+        "B02_C013": 0.056,
+        "B02_C004": 0.0539,
+        "B02_C008": 0.0358,
+        "B02_C015": 0.0196,
+        "B02_C014": 0.009,
+        "B02_C016": -0.0422
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2123
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.166
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0009",
+      "characters_present": [
+        "B02_C001",
+        "B02_C009"
+      ],
+      "similarities": {
+        "B02_C001": 0.2388,
+        "B02_C009": 0.1822,
+        "B02_C007": 0.173,
+        "B02_C002": 0.1567,
+        "B02_C018": 0.1461,
+        "B02_C012": 0.146,
+        "B02_C017": 0.1442,
+        "B02_C003": 0.1413,
+        "B02_C010": 0.1395,
+        "B02_C005": 0.1203,
+        "B02_C011": 0.1175,
+        "B02_C006": 0.107,
+        "B02_C013": 0.106,
+        "B02_C004": 0.0904,
+        "B02_C015": 0.0868,
+        "B02_C014": 0.0684,
+        "B02_C008": 0.0457,
+        "B02_C016": -0.0114
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2388
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.1822
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0010",
+      "characters_present": [
+        "B02_C001",
+        "B02_C012"
+      ],
+      "similarities": {
+        "B02_C001": 0.2345,
+        "B02_C012": 0.1658,
+        "B02_C017": 0.1496,
+        "B02_C011": 0.1419,
+        "B02_C002": 0.1202,
+        "B02_C009": 0.1194,
+        "B02_C015": 0.115,
+        "B02_C013": 0.1089,
+        "B02_C007": 0.1049,
+        "B02_C014": 0.0864,
+        "B02_C006": 0.081,
+        "B02_C010": 0.0788,
+        "B02_C003": 0.0786,
+        "B02_C018": 0.0752,
+        "B02_C005": 0.0695,
+        "B02_C004": 0.0583,
+        "B02_C008": 0.0273,
+        "B02_C016": -0.0247
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2345
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.1658
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0011",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ],
+      "similarities": {
+        "B02_C001": 0.4337,
+        "B02_C002": 0.344,
+        "B02_C009": 0.3436,
+        "B02_C008": 0.2247,
+        "B02_C012": 0.2216,
+        "B02_C011": 0.1786,
+        "B02_C006": 0.1776,
+        "B02_C018": 0.1487,
+        "B02_C016": 0.1482,
+        "B02_C010": 0.1432,
+        "B02_C017": 0.1406,
+        "B02_C007": 0.1378,
+        "B02_C005": 0.1361,
+        "B02_C013": 0.1239,
+        "B02_C015": 0.1188,
+        "B02_C003": 0.1175,
+        "B02_C004": 0.1042,
+        "B02_C014": 0.0874
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4337
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.344
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0012",
+      "characters_present": [
+        "B02_C001",
+        "B02_C009"
+      ],
+      "similarities": {
+        "B02_C001": 0.4311,
+        "B02_C009": 0.3487,
+        "B02_C002": 0.3081,
+        "B02_C008": 0.2676,
+        "B02_C012": 0.2012,
+        "B02_C006": 0.1798,
+        "B02_C010": 0.1795,
+        "B02_C018": 0.178,
+        "B02_C017": 0.175,
+        "B02_C011": 0.1676,
+        "B02_C016": 0.1481,
+        "B02_C015": 0.1435,
+        "B02_C005": 0.1397,
+        "B02_C004": 0.1249,
+        "B02_C013": 0.1128,
+        "B02_C003": 0.1034,
+        "B02_C007": 0.0962,
+        "B02_C014": 0.0774
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4311
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.3487
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0013",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ],
+      "similarities": {
+        "B02_C001": 0.3482,
+        "B02_C002": 0.2596,
+        "B02_C009": 0.2355,
+        "B02_C010": 0.2053,
+        "B02_C012": 0.189,
+        "B02_C018": 0.1775,
+        "B02_C017": 0.1687,
+        "B02_C008": 0.1596,
+        "B02_C006": 0.1585,
+        "B02_C007": 0.148,
+        "B02_C005": 0.1467,
+        "B02_C011": 0.1457,
+        "B02_C015": 0.1428,
+        "B02_C004": 0.1354,
+        "B02_C013": 0.1079,
+        "B02_C003": 0.107,
+        "B02_C014": 0.0894,
+        "B02_C016": 0.0781
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3482
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.2596
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0014",
+      "characters_present": [
+        "B02_C001",
+        "B02_C010"
+      ],
+      "similarities": {
+        "B02_C001": 0.1792,
+        "B02_C010": 0.1786,
+        "B02_C017": 0.1435,
+        "B02_C018": 0.1343,
+        "B02_C006": 0.1319,
+        "B02_C002": 0.1314,
+        "B02_C012": 0.1137,
+        "B02_C007": 0.1135,
+        "B02_C005": 0.1089,
+        "B02_C009": 0.1075,
+        "B02_C015": 0.0944,
+        "B02_C013": 0.0782,
+        "B02_C003": 0.0759,
+        "B02_C004": 0.0713,
+        "B02_C011": 0.0699,
+        "B02_C014": 0.0599,
+        "B02_C008": 0.0508,
+        "B02_C016": 0.0216
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.1792
+        },
+        {
+          "char_id": "B02_C010",
+          "similarity": 0.1786
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0015",
+      "characters_present": [
+        "B02_C001",
+        "B02_C009"
+      ],
+      "similarities": {
+        "B02_C001": 0.4092,
+        "B02_C009": 0.3261,
+        "B02_C002": 0.3216,
+        "B02_C008": 0.2574,
+        "B02_C018": 0.2354,
+        "B02_C012": 0.2322,
+        "B02_C011": 0.2318,
+        "B02_C010": 0.1995,
+        "B02_C017": 0.1907,
+        "B02_C013": 0.167,
+        "B02_C006": 0.1664,
+        "B02_C007": 0.1603,
+        "B02_C003": 0.151,
+        "B02_C014": 0.142,
+        "B02_C005": 0.1384,
+        "B02_C015": 0.1285,
+        "B02_C016": 0.0939,
+        "B02_C004": 0.0787
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4092
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.3261
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0016",
+      "characters_present": [
+        "B02_C005",
+        "B02_C007"
+      ],
+      "similarities": {
+        "B02_C007": 0.4996,
+        "B02_C005": 0.4748,
+        "B02_C004": 0.465,
+        "B02_C003": 0.4634,
+        "B02_C001": 0.3752,
+        "B02_C010": 0.2672,
+        "B02_C018": 0.2183,
+        "B02_C006": 0.2148,
+        "B02_C017": 0.2124,
+        "B02_C015": 0.1887,
+        "B02_C012": 0.1784,
+        "B02_C016": 0.1529,
+        "B02_C013": 0.14,
+        "B02_C011": 0.1359,
+        "B02_C002": 0.1162,
+        "B02_C009": 0.1058,
+        "B02_C014": 0.1039,
+        "B02_C008": 0.0987
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.4996
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.4748
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0017",
+      "characters_present": [
+        "B02_C003",
+        "B02_C007"
+      ],
+      "similarities": {
+        "B02_C007": 0.4599,
+        "B02_C003": 0.366,
+        "B02_C006": 0.3249,
+        "B02_C005": 0.2318,
+        "B02_C004": 0.2259,
+        "B02_C018": 0.2187,
+        "B02_C017": 0.1991,
+        "B02_C009": 0.1948,
+        "B02_C001": 0.1881,
+        "B02_C015": 0.1813,
+        "B02_C010": 0.1638,
+        "B02_C014": 0.149,
+        "B02_C012": 0.1433,
+        "B02_C011": 0.1396,
+        "B02_C013": 0.1272,
+        "B02_C016": 0.1068,
+        "B02_C002": 0.0915,
+        "B02_C008": 0.0503
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.4599
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.366
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0018",
+      "characters_present": [
+        "B02_C010",
+        "B02_C018"
+      ],
+      "similarities": {
+        "B02_C010": 0.2666,
+        "B02_C018": 0.1546,
+        "B02_C017": 0.1513,
+        "B02_C004": 0.1243,
+        "B02_C007": 0.1239,
+        "B02_C015": 0.1099,
+        "B02_C012": 0.1036,
+        "B02_C003": 0.1033,
+        "B02_C001": 0.0884,
+        "B02_C011": 0.0858,
+        "B02_C013": 0.0777,
+        "B02_C014": 0.0756,
+        "B02_C005": 0.0749,
+        "B02_C006": 0.065,
+        "B02_C008": 0.033,
+        "B02_C002": -0.0012,
+        "B02_C016": -0.0159,
+        "B02_C009": -0.0386
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C010",
+          "similarity": 0.2666
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.1546
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0019",
+      "characters_present": [
+        "B02_C003",
+        "B02_C007"
+      ],
+      "similarities": {
+        "B02_C007": 0.52,
+        "B02_C003": 0.4645,
+        "B02_C005": 0.4593,
+        "B02_C004": 0.4302,
+        "B02_C001": 0.3109,
+        "B02_C006": 0.2665,
+        "B02_C018": 0.2102,
+        "B02_C017": 0.1815,
+        "B02_C010": 0.1336,
+        "B02_C012": 0.1213,
+        "B02_C015": 0.1174,
+        "B02_C011": 0.086,
+        "B02_C013": 0.0615,
+        "B02_C016": 0.049,
+        "B02_C014": 0.0411,
+        "B02_C008": 0.0354,
+        "B02_C009": 0.0277,
+        "B02_C002": 0.0092
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.52
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.4645
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0020",
+      "characters_present": [
+        "B02_C004",
+        "B02_C007"
+      ],
+      "similarities": {
+        "B02_C007": 0.4449,
+        "B02_C004": 0.4171,
+        "B02_C003": 0.4164,
+        "B02_C005": 0.4046,
+        "B02_C017": 0.2832,
+        "B02_C001": 0.2678,
+        "B02_C006": 0.2382,
+        "B02_C018": 0.2325,
+        "B02_C012": 0.1951,
+        "B02_C015": 0.1814,
+        "B02_C010": 0.1441,
+        "B02_C011": 0.1415,
+        "B02_C014": 0.105,
+        "B02_C013": 0.1019,
+        "B02_C016": 0.0612,
+        "B02_C008": 0.0545,
+        "B02_C002": 0.012,
+        "B02_C009": -0.0279
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.4449
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.4171
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0021",
+      "characters_present": [
+        "B02_C004",
+        "B02_C007"
+      ],
+      "similarities": {
+        "B02_C007": 0.3967,
+        "B02_C004": 0.3845,
+        "B02_C003": 0.3648,
+        "B02_C005": 0.3617,
+        "B02_C001": 0.2607,
+        "B02_C017": 0.2009,
+        "B02_C018": 0.1761,
+        "B02_C006": 0.1671,
+        "B02_C015": 0.1434,
+        "B02_C012": 0.1131,
+        "B02_C010": 0.1119,
+        "B02_C011": 0.0669,
+        "B02_C014": 0.0594,
+        "B02_C013": 0.0567,
+        "B02_C016": 0.0432,
+        "B02_C008": 0.0198,
+        "B02_C002": 0.007,
+        "B02_C009": -0.0337
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3967
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3845
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0022",
+      "characters_present": [
+        "B02_C001",
+        "B02_C012"
+      ],
+      "similarities": {
+        "B02_C001": 0.324,
+        "B02_C012": 0.3164,
+        "B02_C017": 0.301,
+        "B02_C011": 0.2837,
+        "B02_C018": 0.2449,
+        "B02_C002": 0.2399,
+        "B02_C014": 0.2182,
+        "B02_C015": 0.2173,
+        "B02_C009": 0.2139,
+        "B02_C006": 0.2039,
+        "B02_C013": 0.1981,
+        "B02_C005": 0.1722,
+        "B02_C008": 0.1654,
+        "B02_C010": 0.1534,
+        "B02_C004": 0.1359,
+        "B02_C007": 0.1352,
+        "B02_C003": 0.1216,
+        "B02_C016": 0.0374
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.324
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.3164
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0023",
+      "characters_present": [
+        "B02_C001",
+        "B02_C007"
+      ],
+      "similarities": {
+        "B02_C007": 0.1843,
+        "B02_C001": 0.164,
+        "B02_C003": 0.1294,
+        "B02_C005": 0.1148,
+        "B02_C012": 0.1037,
+        "B02_C006": 0.0999,
+        "B02_C009": 0.0982,
+        "B02_C017": 0.0982,
+        "B02_C004": 0.0937,
+        "B02_C010": 0.0856,
+        "B02_C002": 0.0793,
+        "B02_C015": 0.0717,
+        "B02_C018": 0.0699,
+        "B02_C011": 0.0619,
+        "B02_C013": 0.0488,
+        "B02_C016": 0.0405,
+        "B02_C014": 0.0204,
+        "B02_C008": -0.0162
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.1843
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.164
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0024",
+      "characters_present": [
+        "B02_C003",
+        "B02_C007"
+      ],
+      "similarities": {
+        "B02_C007": 0.3901,
+        "B02_C003": 0.3517,
+        "B02_C005": 0.3507,
+        "B02_C004": 0.3438,
+        "B02_C001": 0.2858,
+        "B02_C006": 0.2145,
+        "B02_C017": 0.1853,
+        "B02_C012": 0.1724,
+        "B02_C018": 0.1673,
+        "B02_C010": 0.1591,
+        "B02_C009": 0.151,
+        "B02_C016": 0.1333,
+        "B02_C013": 0.1231,
+        "B02_C011": 0.1127,
+        "B02_C015": 0.1079,
+        "B02_C002": 0.0962,
+        "B02_C014": 0.0933,
+        "B02_C008": 0.04
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3901
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3517
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0025",
+      "characters_present": [
+        "B02_C001",
+        "B02_C005"
+      ],
+      "similarities": {
+        "B02_C001": 0.435,
+        "B02_C005": 0.2702,
+        "B02_C004": 0.2689,
+        "B02_C007": 0.2384,
+        "B02_C009": 0.2293,
+        "B02_C003": 0.2187,
+        "B02_C008": 0.2031,
+        "B02_C002": 0.1891,
+        "B02_C006": 0.1635,
+        "B02_C017": 0.1401,
+        "B02_C012": 0.1162,
+        "B02_C011": 0.0885,
+        "B02_C010": 0.0876,
+        "B02_C016": 0.0779,
+        "B02_C018": 0.0751,
+        "B02_C013": 0.0694,
+        "B02_C015": 0.0572,
+        "B02_C014": 0.0153
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.435
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.2702
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0026",
+      "characters_present": [
+        "B02_C001",
+        "B02_C009"
+      ],
+      "similarities": {
+        "B02_C001": 0.2805,
+        "B02_C009": 0.1585,
+        "B02_C007": 0.1389,
+        "B02_C002": 0.1368,
+        "B02_C017": 0.1069,
+        "B02_C005": 0.1003,
+        "B02_C004": 0.0998,
+        "B02_C012": 0.0845,
+        "B02_C003": 0.0827,
+        "B02_C010": 0.0653,
+        "B02_C006": 0.0619,
+        "B02_C008": 0.0566,
+        "B02_C018": 0.0508,
+        "B02_C011": 0.03,
+        "B02_C015": 0.013,
+        "B02_C013": 0.0115,
+        "B02_C014": -0.0167,
+        "B02_C016": -0.0178
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2805
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.1585
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0027",
+      "characters_present": [
+        "B02_C001",
+        "B02_C004"
+      ],
+      "similarities": {
+        "B02_C001": 0.4178,
+        "B02_C004": 0.3669,
+        "B02_C005": 0.3486,
+        "B02_C007": 0.3413,
+        "B02_C003": 0.3285,
+        "B02_C006": 0.1981,
+        "B02_C017": 0.1948,
+        "B02_C010": 0.1942,
+        "B02_C002": 0.1659,
+        "B02_C008": 0.1651,
+        "B02_C018": 0.1596,
+        "B02_C009": 0.1456,
+        "B02_C016": 0.1452,
+        "B02_C012": 0.1445,
+        "B02_C015": 0.1263,
+        "B02_C013": 0.102,
+        "B02_C011": 0.1001,
+        "B02_C014": 0.0519
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4178
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3669
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0028",
+      "characters_present": [
+        "B02_C001",
+        "B02_C005"
+      ],
+      "similarities": {
+        "B02_C001": 0.5052,
+        "B02_C005": 0.3057,
+        "B02_C004": 0.3035,
+        "B02_C002": 0.2992,
+        "B02_C003": 0.2892,
+        "B02_C009": 0.289,
+        "B02_C007": 0.2859,
+        "B02_C012": 0.2774,
+        "B02_C017": 0.2642,
+        "B02_C011": 0.2462,
+        "B02_C008": 0.2457,
+        "B02_C006": 0.2298,
+        "B02_C018": 0.2254,
+        "B02_C013": 0.197,
+        "B02_C015": 0.1959,
+        "B02_C016": 0.1713,
+        "B02_C010": 0.1545,
+        "B02_C014": 0.147
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.5052
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3057
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0029",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ],
+      "similarities": {
+        "B02_C001": 0.644,
+        "B02_C002": 0.4081,
+        "B02_C007": 0.3878,
+        "B02_C003": 0.3806,
+        "B02_C004": 0.3706,
+        "B02_C005": 0.368,
+        "B02_C012": 0.3609,
+        "B02_C011": 0.3538,
+        "B02_C009": 0.3311,
+        "B02_C018": 0.3126,
+        "B02_C008": 0.3009,
+        "B02_C017": 0.252,
+        "B02_C013": 0.2463,
+        "B02_C006": 0.2326,
+        "B02_C010": 0.2172,
+        "B02_C016": 0.2119,
+        "B02_C015": 0.2113,
+        "B02_C014": 0.2098
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.644
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.4081
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0030",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ],
+      "similarities": {
+        "B02_C001": 0.5099,
+        "B02_C002": 0.2944,
+        "B02_C012": 0.284,
+        "B02_C004": 0.2801,
+        "B02_C005": 0.2771,
+        "B02_C007": 0.2758,
+        "B02_C003": 0.2704,
+        "B02_C009": 0.2656,
+        "B02_C011": 0.2644,
+        "B02_C017": 0.242,
+        "B02_C018": 0.2242,
+        "B02_C015": 0.2074,
+        "B02_C008": 0.1939,
+        "B02_C013": 0.1789,
+        "B02_C006": 0.1668,
+        "B02_C014": 0.1621,
+        "B02_C010": 0.1228,
+        "B02_C016": 0.1205
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.5099
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.2944
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0031",
+      "characters_present": [
+        "B02_C001",
+        "B02_C003"
+      ],
+      "similarities": {
+        "B02_C001": 0.4407,
+        "B02_C003": 0.2882,
+        "B02_C002": 0.2787,
+        "B02_C005": 0.2742,
+        "B02_C007": 0.2683,
+        "B02_C012": 0.2526,
+        "B02_C004": 0.2438,
+        "B02_C009": 0.2299,
+        "B02_C011": 0.2191,
+        "B02_C008": 0.2078,
+        "B02_C018": 0.2002,
+        "B02_C017": 0.1975,
+        "B02_C010": 0.1669,
+        "B02_C006": 0.1541,
+        "B02_C013": 0.1375,
+        "B02_C015": 0.1224,
+        "B02_C014": 0.1094,
+        "B02_C016": 0.0997
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4407
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.2882
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0032",
+      "characters_present": [
+        "B02_C001",
+        "B02_C007"
+      ],
+      "similarities": {
+        "B02_C001": 0.445,
+        "B02_C007": 0.3238,
+        "B02_C003": 0.3182,
+        "B02_C012": 0.2979,
+        "B02_C005": 0.2925,
+        "B02_C002": 0.2899,
+        "B02_C009": 0.2591,
+        "B02_C004": 0.2495,
+        "B02_C017": 0.2389,
+        "B02_C006": 0.2144,
+        "B02_C010": 0.21,
+        "B02_C008": 0.2059,
+        "B02_C011": 0.1917,
+        "B02_C013": 0.1824,
+        "B02_C018": 0.1716,
+        "B02_C015": 0.1683,
+        "B02_C016": 0.1351,
+        "B02_C014": 0.1348
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.445
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3238
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0033",
+      "characters_present": [
+        "B02_C001",
+        "B02_C003"
+      ],
+      "similarities": {
+        "B02_C001": 0.444,
+        "B02_C003": 0.3372,
+        "B02_C007": 0.3368,
+        "B02_C005": 0.3031,
+        "B02_C004": 0.2806,
+        "B02_C009": 0.2716,
+        "B02_C002": 0.2638,
+        "B02_C006": 0.2382,
+        "B02_C012": 0.2351,
+        "B02_C008": 0.216,
+        "B02_C017": 0.1965,
+        "B02_C010": 0.1943,
+        "B02_C013": 0.1575,
+        "B02_C018": 0.1565,
+        "B02_C011": 0.1555,
+        "B02_C016": 0.1418,
+        "B02_C015": 0.139,
+        "B02_C014": 0.1145
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.444
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3372
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0034",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ],
+      "similarities": {
+        "B02_C001": 0.466,
+        "B02_C002": 0.3108,
+        "B02_C007": 0.3105,
+        "B02_C009": 0.2733,
+        "B02_C003": 0.2697,
+        "B02_C012": 0.2681,
+        "B02_C005": 0.2573,
+        "B02_C004": 0.2203,
+        "B02_C006": 0.1923,
+        "B02_C011": 0.1857,
+        "B02_C008": 0.1782,
+        "B02_C017": 0.1743,
+        "B02_C013": 0.1692,
+        "B02_C010": 0.1671,
+        "B02_C014": 0.1212,
+        "B02_C015": 0.1172,
+        "B02_C018": 0.0964,
+        "B02_C016": 0.0908
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.466
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.3108
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0035",
+      "characters_present": [
+        "B02_C001",
+        "B02_C007"
+      ],
+      "similarities": {
+        "B02_C001": 0.3247,
+        "B02_C007": 0.3073,
+        "B02_C003": 0.2769,
+        "B02_C005": 0.2687,
+        "B02_C012": 0.2528,
+        "B02_C017": 0.2373,
+        "B02_C006": 0.2187,
+        "B02_C004": 0.2179,
+        "B02_C002": 0.2043,
+        "B02_C009": 0.1946,
+        "B02_C011": 0.1762,
+        "B02_C010": 0.1733,
+        "B02_C008": 0.1447,
+        "B02_C018": 0.1422,
+        "B02_C013": 0.1337,
+        "B02_C015": 0.1311,
+        "B02_C014": 0.0996,
+        "B02_C016": 0.0878
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3247
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3073
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0036",
+      "characters_present": [
+        "B02_C001",
+        "B02_C003"
+      ],
+      "similarities": {
+        "B02_C001": 0.3851,
+        "B02_C003": 0.3181,
+        "B02_C007": 0.3045,
+        "B02_C005": 0.2954,
+        "B02_C004": 0.2711,
+        "B02_C002": 0.2489,
+        "B02_C012": 0.2271,
+        "B02_C006": 0.216,
+        "B02_C009": 0.2113,
+        "B02_C017": 0.2094,
+        "B02_C018": 0.2051,
+        "B02_C010": 0.1724,
+        "B02_C016": 0.1718,
+        "B02_C008": 0.1688,
+        "B02_C015": 0.1544,
+        "B02_C011": 0.1491,
+        "B02_C013": 0.1315,
+        "B02_C014": 0.082
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3851
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3181
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0037",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ],
+      "similarities": {
+        "B02_C001": 0.2817,
+        "B02_C002": 0.249,
+        "B02_C009": 0.2222,
+        "B02_C012": 0.1832,
+        "B02_C006": 0.1781,
+        "B02_C003": 0.1664,
+        "B02_C008": 0.1587,
+        "B02_C007": 0.1575,
+        "B02_C005": 0.1558,
+        "B02_C017": 0.1538,
+        "B02_C015": 0.1367,
+        "B02_C016": 0.131,
+        "B02_C004": 0.1267,
+        "B02_C018": 0.1237,
+        "B02_C011": 0.1172,
+        "B02_C010": 0.1167,
+        "B02_C013": 0.0776,
+        "B02_C014": 0.0714
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2817
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.249
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0038",
+      "characters_present": [
+        "B02_C001",
+        "B02_C012"
+      ],
+      "similarities": {
+        "B02_C001": 0.4182,
+        "B02_C012": 0.3858,
+        "B02_C002": 0.3766,
+        "B02_C009": 0.346,
+        "B02_C011": 0.3439,
+        "B02_C017": 0.2915,
+        "B02_C018": 0.2908,
+        "B02_C015": 0.2776,
+        "B02_C013": 0.27,
+        "B02_C006": 0.2487,
+        "B02_C008": 0.2416,
+        "B02_C014": 0.2329,
+        "B02_C005": 0.2119,
+        "B02_C007": 0.2108,
+        "B02_C004": 0.1977,
+        "B02_C003": 0.1945,
+        "B02_C016": 0.1924,
+        "B02_C010": 0.1871
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4182
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.3858
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0039",
+      "characters_present": [
+        "B02_C006",
+        "B02_C018"
+      ],
+      "similarities": {
+        "B02_C018": 0.3632,
+        "B02_C006": 0.3167,
+        "B02_C017": 0.3163,
+        "B02_C004": 0.3083,
+        "B02_C005": 0.3021,
+        "B02_C003": 0.2971,
+        "B02_C015": 0.2953,
+        "B02_C012": 0.2914,
+        "B02_C001": 0.2805,
+        "B02_C007": 0.2752,
+        "B02_C011": 0.2506,
+        "B02_C009": 0.25,
+        "B02_C010": 0.2497,
+        "B02_C016": 0.2276,
+        "B02_C013": 0.2269,
+        "B02_C014": 0.1969,
+        "B02_C008": 0.1918,
+        "B02_C002": 0.1572
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3632
+        },
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.3167
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0040",
+      "characters_present": [
+        "B02_C012",
+        "B02_C018"
+      ],
+      "similarities": {
+        "B02_C018": 0.3737,
+        "B02_C012": 0.3457,
+        "B02_C001": 0.3256,
+        "B02_C011": 0.3019,
+        "B02_C006": 0.2998,
+        "B02_C007": 0.292,
+        "B02_C003": 0.2711,
+        "B02_C017": 0.2681,
+        "B02_C005": 0.2604,
+        "B02_C015": 0.2553,
+        "B02_C002": 0.2331,
+        "B02_C013": 0.2278,
+        "B02_C009": 0.2156,
+        "B02_C014": 0.2102,
+        "B02_C010": 0.2089,
+        "B02_C004": 0.2076,
+        "B02_C016": 0.171,
+        "B02_C008": 0.1295
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3737
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.3457
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0041",
+      "characters_present": [
+        "B02_C012",
+        "B02_C018"
+      ],
+      "similarities": {
+        "B02_C018": 0.3132,
+        "B02_C012": 0.3131,
+        "B02_C006": 0.3072,
+        "B02_C001": 0.3056,
+        "B02_C017": 0.3007,
+        "B02_C003": 0.2903,
+        "B02_C011": 0.2839,
+        "B02_C007": 0.2687,
+        "B02_C005": 0.2579,
+        "B02_C004": 0.2461,
+        "B02_C013": 0.2132,
+        "B02_C015": 0.2073,
+        "B02_C010": 0.1989,
+        "B02_C014": 0.1929,
+        "B02_C009": 0.184,
+        "B02_C008": 0.14,
+        "B02_C002": 0.1345,
+        "B02_C016": 0.0852
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3132
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.3131
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0042",
+      "characters_present": [
+        "B02_C012",
+        "B02_C018"
+      ],
+      "similarities": {
+        "B02_C018": 0.3329,
+        "B02_C012": 0.3211,
+        "B02_C011": 0.3162,
+        "B02_C001": 0.3144,
+        "B02_C006": 0.3138,
+        "B02_C009": 0.3028,
+        "B02_C017": 0.2907,
+        "B02_C003": 0.284,
+        "B02_C007": 0.2466,
+        "B02_C015": 0.2364,
+        "B02_C005": 0.2263,
+        "B02_C004": 0.2013,
+        "B02_C002": 0.1995,
+        "B02_C008": 0.198,
+        "B02_C010": 0.1942,
+        "B02_C013": 0.1921,
+        "B02_C014": 0.1727,
+        "B02_C016": 0.1687
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3329
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.3211
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0043",
+      "characters_present": [
+        "B02_C001",
+        "B02_C009"
+      ],
+      "similarities": {
+        "B02_C001": 0.4236,
+        "B02_C009": 0.3641,
+        "B02_C002": 0.3243,
+        "B02_C012": 0.2901,
+        "B02_C011": 0.2832,
+        "B02_C018": 0.2596,
+        "B02_C006": 0.2532,
+        "B02_C008": 0.2353,
+        "B02_C017": 0.2139,
+        "B02_C003": 0.2039,
+        "B02_C007": 0.1993,
+        "B02_C005": 0.1785,
+        "B02_C015": 0.172,
+        "B02_C013": 0.1668,
+        "B02_C014": 0.1579,
+        "B02_C010": 0.1497,
+        "B02_C004": 0.1368,
+        "B02_C016": 0.0892
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4236
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.3641
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0044",
+      "characters_present": [
+        "B02_C006",
+        "B02_C018"
+      ],
+      "similarities": {
+        "B02_C006": 0.4221,
+        "B02_C018": 0.3582,
+        "B02_C017": 0.3477,
+        "B02_C003": 0.3477,
+        "B02_C005": 0.318,
+        "B02_C007": 0.31,
+        "B02_C015": 0.2786,
+        "B02_C004": 0.2578,
+        "B02_C012": 0.2542,
+        "B02_C010": 0.2086,
+        "B02_C011": 0.2069,
+        "B02_C009": 0.1975,
+        "B02_C001": 0.1974,
+        "B02_C016": 0.1789,
+        "B02_C013": 0.1689,
+        "B02_C014": 0.1525,
+        "B02_C008": 0.1376,
+        "B02_C002": 0.0731
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.4221
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3582
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0045",
+      "characters_present": [
+        "B02_C007",
+        "B02_C015"
+      ],
+      "similarities": {
+        "B02_C015": 0.403,
+        "B02_C007": 0.3388,
+        "B02_C003": 0.3293,
+        "B02_C017": 0.3259,
+        "B02_C004": 0.3125,
+        "B02_C016": 0.3112,
+        "B02_C005": 0.2953,
+        "B02_C006": 0.2909,
+        "B02_C018": 0.2743,
+        "B02_C012": 0.2475,
+        "B02_C001": 0.2321,
+        "B02_C011": 0.1945,
+        "B02_C014": 0.1066,
+        "B02_C008": 0.0985,
+        "B02_C009": 0.0935,
+        "B02_C013": 0.0908,
+        "B02_C010": 0.0853,
+        "B02_C002": 0.0683
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C015",
+          "similarity": 0.403
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3388
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0046",
+      "characters_present": [
+        "B02_C015",
+        "B02_C016"
+      ],
+      "similarities": {
+        "B02_C015": 0.4735,
+        "B02_C016": 0.4608,
+        "B02_C018": 0.4242,
+        "B02_C006": 0.3059,
+        "B02_C017": 0.297,
+        "B02_C005": 0.291,
+        "B02_C007": 0.2871,
+        "B02_C004": 0.2865,
+        "B02_C003": 0.2564,
+        "B02_C001": 0.2441,
+        "B02_C012": 0.2266,
+        "B02_C011": 0.2099,
+        "B02_C008": 0.1591,
+        "B02_C009": 0.1417,
+        "B02_C002": 0.1279,
+        "B02_C014": 0.0999,
+        "B02_C010": 0.0993,
+        "B02_C013": 0.0961
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C015",
+          "similarity": 0.4735
+        },
+        {
+          "char_id": "B02_C016",
+          "similarity": 0.4608
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0047",
+      "characters_present": [
+        "B02_C017",
+        "B02_C018"
+      ],
+      "similarities": {
+        "B02_C017": 0.4688,
+        "B02_C018": 0.4378,
+        "B02_C007": 0.3855,
+        "B02_C003": 0.3644,
+        "B02_C015": 0.3572,
+        "B02_C005": 0.3565,
+        "B02_C006": 0.34,
+        "B02_C004": 0.3347,
+        "B02_C012": 0.3277,
+        "B02_C011": 0.2891,
+        "B02_C001": 0.2596,
+        "B02_C014": 0.2196,
+        "B02_C013": 0.2149,
+        "B02_C010": 0.1993,
+        "B02_C016": 0.1512,
+        "B02_C009": 0.1062,
+        "B02_C008": 0.0992,
+        "B02_C002": 0.0807
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.4688
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.4378
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0048",
+      "characters_present": [
+        "B02_C006",
+        "B02_C018"
+      ],
+      "similarities": {
+        "B02_C018": 0.2572,
+        "B02_C006": 0.2465,
+        "B02_C017": 0.2089,
+        "B02_C007": 0.2023,
+        "B02_C003": 0.1995,
+        "B02_C005": 0.1988,
+        "B02_C012": 0.1909,
+        "B02_C001": 0.1634,
+        "B02_C004": 0.1621,
+        "B02_C011": 0.1519,
+        "B02_C015": 0.1485,
+        "B02_C009": 0.1425,
+        "B02_C010": 0.1231,
+        "B02_C013": 0.0998,
+        "B02_C014": 0.0958,
+        "B02_C008": 0.0885,
+        "B02_C002": 0.0787,
+        "B02_C016": 0.0597
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.2572
+        },
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.2465
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0049",
+      "characters_present": [
+        "B02_C003",
+        "B02_C018"
+      ],
+      "similarities": {
+        "B02_C018": 0.4453,
+        "B02_C003": 0.4422,
+        "B02_C017": 0.4304,
+        "B02_C012": 0.4191,
+        "B02_C007": 0.4153,
+        "B02_C005": 0.3994,
+        "B02_C004": 0.3663,
+        "B02_C011": 0.3615,
+        "B02_C001": 0.3484,
+        "B02_C006": 0.3458,
+        "B02_C015": 0.3241,
+        "B02_C013": 0.2525,
+        "B02_C014": 0.2476,
+        "B02_C010": 0.2336,
+        "B02_C009": 0.192,
+        "B02_C008": 0.1843,
+        "B02_C016": 0.1656,
+        "B02_C002": 0.1625
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.4453
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.4422
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0050",
+      "characters_present": [
+        "B02_C004",
+        "B02_C007"
+      ],
+      "similarities": {
+        "B02_C004": 0.3639,
+        "B02_C007": 0.3619,
+        "B02_C003": 0.3532,
+        "B02_C005": 0.3484,
+        "B02_C001": 0.3047,
+        "B02_C006": 0.2007,
+        "B02_C017": 0.1928,
+        "B02_C018": 0.1905,
+        "B02_C010": 0.1563,
+        "B02_C015": 0.132,
+        "B02_C012": 0.1168,
+        "B02_C016": 0.0897,
+        "B02_C011": 0.0801,
+        "B02_C013": 0.0704,
+        "B02_C008": 0.0643,
+        "B02_C009": 0.0591,
+        "B02_C014": 0.0504,
+        "B02_C002": 0.0337
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3639
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3619
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0051",
+      "characters_present": [
+        "B02_C003",
+        "B02_C007"
+      ],
+      "similarities": {
+        "B02_C007": 0.3725,
+        "B02_C003": 0.3697,
+        "B02_C005": 0.3649,
+        "B02_C001": 0.3484,
+        "B02_C004": 0.3257,
+        "B02_C006": 0.2775,
+        "B02_C018": 0.2556,
+        "B02_C012": 0.2524,
+        "B02_C017": 0.2304,
+        "B02_C011": 0.1962,
+        "B02_C015": 0.1888,
+        "B02_C013": 0.1885,
+        "B02_C010": 0.1634,
+        "B02_C014": 0.1608,
+        "B02_C016": 0.1514,
+        "B02_C008": 0.1507,
+        "B02_C009": 0.128,
+        "B02_C002": 0.1268
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3725
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3697
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0052",
+      "characters_present": [
+        "B02_C001",
+        "B02_C003"
+      ],
+      "similarities": {
+        "B02_C001": 0.3505,
+        "B02_C003": 0.3263,
+        "B02_C018": 0.321,
+        "B02_C005": 0.3067,
+        "B02_C007": 0.3038,
+        "B02_C004": 0.299,
+        "B02_C017": 0.297,
+        "B02_C012": 0.294,
+        "B02_C015": 0.2726,
+        "B02_C009": 0.2403,
+        "B02_C011": 0.2301,
+        "B02_C006": 0.2277,
+        "B02_C013": 0.2018,
+        "B02_C010": 0.1888,
+        "B02_C014": 0.18,
+        "B02_C002": 0.1633,
+        "B02_C016": 0.163,
+        "B02_C008": 0.1542
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3505
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3263
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0053",
+      "characters_present": [
+        "B02_C001",
+        "B02_C003"
+      ],
+      "similarities": {
+        "B02_C001": 0.3515,
+        "B02_C003": 0.3429,
+        "B02_C007": 0.3387,
+        "B02_C017": 0.3151,
+        "B02_C005": 0.3049,
+        "B02_C004": 0.2984,
+        "B02_C012": 0.2982,
+        "B02_C011": 0.2894,
+        "B02_C018": 0.2791,
+        "B02_C015": 0.274,
+        "B02_C006": 0.2117,
+        "B02_C010": 0.2016,
+        "B02_C009": 0.1919,
+        "B02_C014": 0.1866,
+        "B02_C013": 0.1754,
+        "B02_C002": 0.1501,
+        "B02_C016": 0.1418,
+        "B02_C008": 0.1149
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3515
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3429
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0054",
+      "characters_present": [
+        "B02_C004",
+        "B02_C005"
+      ],
+      "similarities": {
+        "B02_C004": 0.3624,
+        "B02_C005": 0.3533,
+        "B02_C003": 0.3452,
+        "B02_C001": 0.3441,
+        "B02_C007": 0.3392,
+        "B02_C018": 0.2919,
+        "B02_C017": 0.2839,
+        "B02_C006": 0.2292,
+        "B02_C012": 0.2144,
+        "B02_C015": 0.1877,
+        "B02_C011": 0.1772,
+        "B02_C010": 0.1579,
+        "B02_C009": 0.1306,
+        "B02_C016": 0.1232,
+        "B02_C013": 0.1231,
+        "B02_C014": 0.1134,
+        "B02_C002": 0.104,
+        "B02_C008": 0.0926
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3624
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3533
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0055",
+      "characters_present": [
+        "B02_C003",
+        "B02_C018"
+      ],
+      "similarities": {
+        "B02_C018": 0.3616,
+        "B02_C003": 0.3588,
+        "B02_C001": 0.3487,
+        "B02_C007": 0.3483,
+        "B02_C005": 0.3402,
+        "B02_C006": 0.3069,
+        "B02_C012": 0.2958,
+        "B02_C004": 0.2934,
+        "B02_C017": 0.2655,
+        "B02_C009": 0.2578,
+        "B02_C015": 0.2544,
+        "B02_C011": 0.2419,
+        "B02_C014": 0.1883,
+        "B02_C013": 0.1831,
+        "B02_C010": 0.1805,
+        "B02_C016": 0.1796,
+        "B02_C002": 0.1445,
+        "B02_C008": 0.1366
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3616
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3588
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0056",
+      "characters_present": [
+        "B02_C012",
+        "B02_C018"
+      ],
+      "similarities": {
+        "B02_C018": 0.3876,
+        "B02_C012": 0.3602,
+        "B02_C011": 0.3405,
+        "B02_C015": 0.3037,
+        "B02_C017": 0.2835,
+        "B02_C001": 0.2821,
+        "B02_C003": 0.2676,
+        "B02_C006": 0.2569,
+        "B02_C009": 0.2543,
+        "B02_C007": 0.2475,
+        "B02_C014": 0.2464,
+        "B02_C005": 0.2437,
+        "B02_C013": 0.2384,
+        "B02_C004": 0.2052,
+        "B02_C016": 0.2037,
+        "B02_C010": 0.1707,
+        "B02_C002": 0.169,
+        "B02_C008": 0.1434
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3876
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.3602
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0057",
+      "characters_present": [
+        "B02_C012",
+        "B02_C018"
+      ],
+      "similarities": {
+        "B02_C012": 0.417,
+        "B02_C018": 0.3953,
+        "B02_C011": 0.3826,
+        "B02_C001": 0.3532,
+        "B02_C017": 0.3285,
+        "B02_C003": 0.3107,
+        "B02_C007": 0.2817,
+        "B02_C015": 0.2816,
+        "B02_C006": 0.2728,
+        "B02_C005": 0.2565,
+        "B02_C013": 0.2448,
+        "B02_C009": 0.2439,
+        "B02_C002": 0.2382,
+        "B02_C014": 0.2359,
+        "B02_C004": 0.2269,
+        "B02_C016": 0.1597,
+        "B02_C010": 0.1399,
+        "B02_C008": 0.1387
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.417
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3953
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0058",
+      "characters_present": [
+        "B02_C012",
+        "B02_C018"
+      ],
+      "similarities": {
+        "B02_C012": 0.3953,
+        "B02_C018": 0.3383,
+        "B02_C011": 0.3112,
+        "B02_C006": 0.2764,
+        "B02_C017": 0.2723,
+        "B02_C015": 0.2644,
+        "B02_C001": 0.2619,
+        "B02_C002": 0.2477,
+        "B02_C013": 0.2312,
+        "B02_C009": 0.2262,
+        "B02_C007": 0.2173,
+        "B02_C003": 0.2138,
+        "B02_C014": 0.2122,
+        "B02_C010": 0.2037,
+        "B02_C005": 0.1961,
+        "B02_C016": 0.1891,
+        "B02_C004": 0.1624,
+        "B02_C008": 0.1548
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.3953
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3383
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0059",
+      "characters_present": [
+        "B02_C001",
+        "B02_C011"
+      ],
+      "similarities": {
+        "B02_C001": 0.3557,
+        "B02_C011": 0.3383,
+        "B02_C012": 0.333,
+        "B02_C006": 0.2787,
+        "B02_C018": 0.2783,
+        "B02_C009": 0.2765,
+        "B02_C017": 0.2695,
+        "B02_C007": 0.2434,
+        "B02_C002": 0.2357,
+        "B02_C015": 0.231,
+        "B02_C014": 0.2176,
+        "B02_C003": 0.2108,
+        "B02_C005": 0.2105,
+        "B02_C008": 0.2099,
+        "B02_C013": 0.1956,
+        "B02_C004": 0.1631,
+        "B02_C010": 0.1629,
+        "B02_C016": 0.124
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3557
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.3383
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0060",
+      "characters_present": [
+        "B02_C001",
+        "B02_C012"
+      ],
+      "similarities": {
+        "B02_C012": 0.458,
+        "B02_C001": 0.4414,
+        "B02_C011": 0.4209,
+        "B02_C018": 0.4045,
+        "B02_C017": 0.4034,
+        "B02_C009": 0.3371,
+        "B02_C015": 0.3306,
+        "B02_C003": 0.3299,
+        "B02_C013": 0.3211,
+        "B02_C006": 0.3074,
+        "B02_C002": 0.3044,
+        "B02_C014": 0.3009,
+        "B02_C007": 0.2978,
+        "B02_C005": 0.283,
+        "B02_C004": 0.2587,
+        "B02_C008": 0.2202,
+        "B02_C010": 0.1953,
+        "B02_C016": 0.1791
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.458
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4414
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0061",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ],
+      "similarities": {
+        "B02_C001": 0.4222,
+        "B02_C002": 0.3034,
+        "B02_C012": 0.2925,
+        "B02_C003": 0.2582,
+        "B02_C005": 0.2391,
+        "B02_C018": 0.2341,
+        "B02_C009": 0.232,
+        "B02_C007": 0.2252,
+        "B02_C017": 0.2234,
+        "B02_C011": 0.1994,
+        "B02_C004": 0.1955,
+        "B02_C010": 0.1801,
+        "B02_C008": 0.1759,
+        "B02_C006": 0.1745,
+        "B02_C013": 0.1677,
+        "B02_C015": 0.1619,
+        "B02_C014": 0.1588,
+        "B02_C016": 0.1317
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4222
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.3034
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0062",
+      "characters_present": [
+        "B02_C001",
+        "B02_C009"
+      ],
+      "similarities": {
+        "B02_C001": 0.3924,
+        "B02_C009": 0.3026,
+        "B02_C018": 0.2994,
+        "B02_C002": 0.2818,
+        "B02_C012": 0.2714,
+        "B02_C011": 0.2693,
+        "B02_C006": 0.2449,
+        "B02_C005": 0.2437,
+        "B02_C003": 0.2362,
+        "B02_C007": 0.2271,
+        "B02_C015": 0.2209,
+        "B02_C017": 0.2058,
+        "B02_C004": 0.2053,
+        "B02_C008": 0.1922,
+        "B02_C016": 0.1791,
+        "B02_C013": 0.1492,
+        "B02_C014": 0.1399,
+        "B02_C010": 0.1139
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3924
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.3026
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0063",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ],
+      "similarities": {
+        "B02_C002": 0.3856,
+        "B02_C001": 0.3679,
+        "B02_C009": 0.276,
+        "B02_C012": 0.2369,
+        "B02_C018": 0.2011,
+        "B02_C008": 0.1952,
+        "B02_C006": 0.1773,
+        "B02_C016": 0.1708,
+        "B02_C005": 0.17,
+        "B02_C015": 0.156,
+        "B02_C003": 0.1523,
+        "B02_C010": 0.1521,
+        "B02_C004": 0.1407,
+        "B02_C007": 0.1403,
+        "B02_C017": 0.136,
+        "B02_C011": 0.1332,
+        "B02_C013": 0.128,
+        "B02_C014": 0.102
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.3856
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3679
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0064",
+      "characters_present": [
+        "B02_C001",
+        "B02_C012"
+      ],
+      "similarities": {
+        "B02_C012": 0.291,
+        "B02_C001": 0.2763,
+        "B02_C018": 0.261,
+        "B02_C017": 0.2505,
+        "B02_C011": 0.2404,
+        "B02_C006": 0.2309,
+        "B02_C003": 0.2236,
+        "B02_C005": 0.2196,
+        "B02_C013": 0.2099,
+        "B02_C007": 0.2,
+        "B02_C002": 0.199,
+        "B02_C009": 0.1897,
+        "B02_C015": 0.1839,
+        "B02_C004": 0.1804,
+        "B02_C010": 0.1652,
+        "B02_C014": 0.1411,
+        "B02_C016": 0.1287,
+        "B02_C008": 0.0777
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.291
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2763
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0065",
+      "characters_present": [
+        "B02_C003",
+        "B02_C005"
+      ],
+      "similarities": {
+        "B02_C005": 0.4254,
+        "B02_C003": 0.4185,
+        "B02_C007": 0.4075,
+        "B02_C004": 0.3914,
+        "B02_C006": 0.3619,
+        "B02_C017": 0.3609,
+        "B02_C018": 0.3551,
+        "B02_C001": 0.3012,
+        "B02_C015": 0.2807,
+        "B02_C012": 0.2756,
+        "B02_C011": 0.2347,
+        "B02_C010": 0.2066,
+        "B02_C013": 0.1843,
+        "B02_C016": 0.1714,
+        "B02_C014": 0.1492,
+        "B02_C009": 0.1456,
+        "B02_C008": 0.1368,
+        "B02_C002": 0.079
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.4254
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.4185
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0066",
+      "characters_present": [
+        "B02_C005",
+        "B02_C007"
+      ],
+      "similarities": {
+        "B02_C007": 0.236,
+        "B02_C005": 0.2079,
+        "B02_C004": 0.1945,
+        "B02_C003": 0.1905,
+        "B02_C001": 0.1823,
+        "B02_C006": 0.1272,
+        "B02_C018": 0.1127,
+        "B02_C017": 0.0613,
+        "B02_C015": 0.0547,
+        "B02_C009": 0.0478,
+        "B02_C010": 0.0424,
+        "B02_C016": 0.0238,
+        "B02_C008": 0.0065,
+        "B02_C012": -0.0223,
+        "B02_C011": -0.0269,
+        "B02_C002": -0.0306,
+        "B02_C013": -0.0334,
+        "B02_C014": -0.0599
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.236
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.2079
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0067",
+      "characters_present": [
+        "B02_C003",
+        "B02_C007"
+      ],
+      "similarities": {
+        "B02_C007": 0.2299,
+        "B02_C003": 0.202,
+        "B02_C001": 0.1962,
+        "B02_C004": 0.1914,
+        "B02_C005": 0.1898,
+        "B02_C006": 0.1163,
+        "B02_C018": 0.0681,
+        "B02_C009": 0.0657,
+        "B02_C017": 0.043,
+        "B02_C015": 0.0206,
+        "B02_C010": -0.0018,
+        "B02_C016": -0.0092,
+        "B02_C008": -0.0109,
+        "B02_C012": -0.0182,
+        "B02_C013": -0.021,
+        "B02_C011": -0.0222,
+        "B02_C002": -0.0283,
+        "B02_C014": -0.0456
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.2299
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.202
+        }
+      ],
+      "selection_method": "top_2"
+    },
+    {
+      "segment_id": "B02_S0068",
+      "characters_present": [
+        "B02_C004",
+        "B02_C007"
+      ],
+      "similarities": {
+        "B02_C007": 0.408,
+        "B02_C004": 0.3851,
+        "B02_C005": 0.3787,
+        "B02_C003": 0.3735,
+        "B02_C001": 0.3328,
+        "B02_C006": 0.1748,
+        "B02_C010": 0.1086,
+        "B02_C016": 0.0871,
+        "B02_C017": 0.0841,
+        "B02_C009": 0.0641,
+        "B02_C018": 0.0593,
+        "B02_C008": 0.0561,
+        "B02_C002": 0.0414,
+        "B02_C015": 0.0374,
+        "B02_C012": 0.0349,
+        "B02_C013": 0.0099,
+        "B02_C011": -0.0135,
+        "B02_C014": -0.0426
+      },
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.408
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3851
+        }
+      ],
+      "selection_method": "top_2"
+    }
+  ],
+  "top_k_inspection": [
+    {
+      "segment_id": "B02_S0001",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4483
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.3634
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.335
+        },
+        {
+          "char_id": "B02_C008",
+          "similarity": 0.2743
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.2518
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0002",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4008
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.3176
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.2641
+        },
+        {
+          "char_id": "B02_C008",
+          "similarity": 0.2091
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.1506
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0003",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3216
+        },
+        {
+          "char_id": "B02_C008",
+          "similarity": 0.2771
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.249
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.2022
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.1359
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0004",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2536
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.2175
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.2115
+        },
+        {
+          "char_id": "B02_C008",
+          "similarity": 0.2026
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.1959
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0005",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.349
+        },
+        {
+          "char_id": "B02_C008",
+          "similarity": 0.3236
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.2789
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.2212
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.1806
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0006",
+      "top_characters": [
+        {
+          "char_id": "B02_C008",
+          "similarity": 0.2127
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2067
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.1593
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.1442
+        },
+        {
+          "char_id": "B02_C010",
+          "similarity": 0.142
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0007",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2233
+        },
+        {
+          "char_id": "B02_C010",
+          "similarity": 0.2012
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.1874
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.1679
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.1672
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0008",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2123
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.166
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.1352
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.1226
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.1193
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0009",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2388
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.1822
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.173
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.1567
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.1461
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0010",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2345
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.1658
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.1496
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.1419
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.1202
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0011",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4337
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.344
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.3436
+        },
+        {
+          "char_id": "B02_C008",
+          "similarity": 0.2247
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.2216
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0012",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4311
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.3487
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.3081
+        },
+        {
+          "char_id": "B02_C008",
+          "similarity": 0.2676
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.2012
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0013",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3482
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.2596
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.2355
+        },
+        {
+          "char_id": "B02_C010",
+          "similarity": 0.2053
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.189
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0014",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.1792
+        },
+        {
+          "char_id": "B02_C010",
+          "similarity": 0.1786
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.1435
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.1343
+        },
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.1319
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0015",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4092
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.3261
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.3216
+        },
+        {
+          "char_id": "B02_C008",
+          "similarity": 0.2574
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.2354
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0016",
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.4996
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.4748
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.465
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.4634
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3752
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0017",
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.4599
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.366
+        },
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.3249
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.2318
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.2259
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0018",
+      "top_characters": [
+        {
+          "char_id": "B02_C010",
+          "similarity": 0.2666
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.1546
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.1513
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.1243
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.1239
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0019",
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.52
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.4645
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.4593
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.4302
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3109
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0020",
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.4449
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.4171
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.4164
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.4046
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.2832
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0021",
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3967
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3845
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3648
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3617
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2607
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0022",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.324
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.3164
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.301
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.2837
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.2449
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0023",
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.1843
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.164
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.1294
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.1148
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.1037
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0024",
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3901
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3517
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3507
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3438
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2858
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0025",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.435
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.2702
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.2689
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.2384
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.2293
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0026",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2805
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.1585
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.1389
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.1368
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.1069
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0027",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4178
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3669
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3486
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3413
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3285
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0028",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.5052
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3057
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3035
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.2992
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.2892
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0029",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.644
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.4081
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3878
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3806
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3706
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0030",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.5099
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.2944
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.284
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.2801
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.2771
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0031",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4407
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.2882
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.2787
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.2742
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.2683
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0032",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.445
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3238
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3182
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.2979
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.2925
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0033",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.444
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3372
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3368
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3031
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.2806
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0034",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.466
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.3108
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3105
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.2733
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.2697
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0035",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3247
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3073
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.2769
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.2687
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.2528
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0036",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3851
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3181
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3045
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.2954
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.2711
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0037",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2817
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.249
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.2222
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.1832
+        },
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.1781
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0038",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4182
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.3858
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.3766
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.346
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.3439
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0039",
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3632
+        },
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.3167
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.3163
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3083
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3021
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0040",
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3737
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.3457
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3256
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.3019
+        },
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.2998
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0041",
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3132
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.3131
+        },
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.3072
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3056
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.3007
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0042",
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3329
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.3211
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.3162
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3144
+        },
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.3138
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0043",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4236
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.3641
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.3243
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.2901
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.2832
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0044",
+      "top_characters": [
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.4221
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3582
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.3477
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3477
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.318
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0045",
+      "top_characters": [
+        {
+          "char_id": "B02_C015",
+          "similarity": 0.403
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3388
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3293
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.3259
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3125
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0046",
+      "top_characters": [
+        {
+          "char_id": "B02_C015",
+          "similarity": 0.4735
+        },
+        {
+          "char_id": "B02_C016",
+          "similarity": 0.4608
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.4242
+        },
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.3059
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.297
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0047",
+      "top_characters": [
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.4688
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.4378
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3855
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3644
+        },
+        {
+          "char_id": "B02_C015",
+          "similarity": 0.3572
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0048",
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.2572
+        },
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.2465
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.2089
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.2023
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.1995
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0049",
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.4453
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.4422
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.4304
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.4191
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.4153
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0050",
+      "top_characters": [
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3639
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3619
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3532
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3484
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3047
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0051",
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3725
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3697
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3649
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3484
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3257
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0052",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3505
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3263
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.321
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3067
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3038
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0053",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3515
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3429
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3387
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.3151
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3049
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0054",
+      "top_characters": [
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3624
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3533
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3452
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3441
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3392
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0055",
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3616
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3588
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3487
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.3483
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3402
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0056",
+      "top_characters": [
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3876
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.3602
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.3405
+        },
+        {
+          "char_id": "B02_C015",
+          "similarity": 0.3037
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.2835
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0057",
+      "top_characters": [
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.417
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3953
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.3826
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3532
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.3285
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0058",
+      "top_characters": [
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.3953
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.3383
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.3112
+        },
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.2764
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.2723
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0059",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3557
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.3383
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.333
+        },
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.2787
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.2783
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0060",
+      "top_characters": [
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.458
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4414
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.4209
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.4045
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.4034
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0061",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.4222
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.3034
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.2925
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.2582
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.2391
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0062",
+      "top_characters": [
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3924
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.3026
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.2994
+        },
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.2818
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.2714
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0063",
+      "top_characters": [
+        {
+          "char_id": "B02_C002",
+          "similarity": 0.3856
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3679
+        },
+        {
+          "char_id": "B02_C009",
+          "similarity": 0.276
+        },
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.2369
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.2011
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0064",
+      "top_characters": [
+        {
+          "char_id": "B02_C012",
+          "similarity": 0.291
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.2763
+        },
+        {
+          "char_id": "B02_C018",
+          "similarity": 0.261
+        },
+        {
+          "char_id": "B02_C017",
+          "similarity": 0.2505
+        },
+        {
+          "char_id": "B02_C011",
+          "similarity": 0.2404
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0065",
+      "top_characters": [
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.4254
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.4185
+        },
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.4075
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3914
+        },
+        {
+          "char_id": "B02_C006",
+          "similarity": 0.3619
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0066",
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.236
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.2079
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.1945
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.1905
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.1823
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0067",
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.2299
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.202
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.1962
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.1914
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.1898
+        }
+      ]
+    },
+    {
+      "segment_id": "B02_S0068",
+      "top_characters": [
+        {
+          "char_id": "B02_C007",
+          "similarity": 0.408
+        },
+        {
+          "char_id": "B02_C004",
+          "similarity": 0.3851
+        },
+        {
+          "char_id": "B02_C005",
+          "similarity": 0.3787
+        },
+        {
+          "char_id": "B02_C003",
+          "similarity": 0.3735
+        },
+        {
+          "char_id": "B02_C001",
+          "similarity": 0.3328
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "B02_C001",
+      "target": "B02_C002",
+      "weight": 9,
+      "evidence_segments": [
+        "B02_S0001",
+        "B02_S0011",
+        "B02_S0013",
+        "B02_S0029",
+        "B02_S0030",
+        "B02_S0034",
+        "B02_S0037",
+        "B02_S0061",
+        "B02_S0063"
+      ]
+    },
+    {
+      "source": "B02_C001",
+      "target": "B02_C003",
+      "weight": 5,
+      "evidence_segments": [
+        "B02_S0031",
+        "B02_S0033",
+        "B02_S0036",
+        "B02_S0052",
+        "B02_S0053"
+      ]
+    },
+    {
+      "source": "B02_C001",
+      "target": "B02_C004",
+      "weight": 1,
+      "evidence_segments": [
+        "B02_S0027"
+      ]
+    },
+    {
+      "source": "B02_C001",
+      "target": "B02_C005",
+      "weight": 2,
+      "evidence_segments": [
+        "B02_S0025",
+        "B02_S0028"
+      ]
+    },
+    {
+      "source": "B02_C001",
+      "target": "B02_C007",
+      "weight": 3,
+      "evidence_segments": [
+        "B02_S0023",
+        "B02_S0032",
+        "B02_S0035"
+      ]
+    },
+    {
+      "source": "B02_C001",
+      "target": "B02_C008",
+      "weight": 3,
+      "evidence_segments": [
+        "B02_S0003",
+        "B02_S0005",
+        "B02_S0006"
+      ]
+    },
+    {
+      "source": "B02_C001",
+      "target": "B02_C009",
+      "weight": 9,
+      "evidence_segments": [
+        "B02_S0002",
+        "B02_S0004",
+        "B02_S0008",
+        "B02_S0009",
+        "B02_S0012",
+        "B02_S0015",
+        "B02_S0026",
+        "B02_S0043",
+        "B02_S0062"
+      ]
+    },
+    {
+      "source": "B02_C001",
+      "target": "B02_C010",
+      "weight": 2,
+      "evidence_segments": [
+        "B02_S0007",
+        "B02_S0014"
+      ]
+    },
+    {
+      "source": "B02_C001",
+      "target": "B02_C011",
+      "weight": 1,
+      "evidence_segments": [
+        "B02_S0059"
+      ]
+    },
+    {
+      "source": "B02_C001",
+      "target": "B02_C012",
+      "weight": 5,
+      "evidence_segments": [
+        "B02_S0010",
+        "B02_S0022",
+        "B02_S0038",
+        "B02_S0060",
+        "B02_S0064"
+      ]
+    },
+    {
+      "source": "B02_C003",
+      "target": "B02_C005",
+      "weight": 1,
+      "evidence_segments": [
+        "B02_S0065"
+      ]
+    },
+    {
+      "source": "B02_C003",
+      "target": "B02_C007",
+      "weight": 5,
+      "evidence_segments": [
+        "B02_S0017",
+        "B02_S0019",
+        "B02_S0024",
+        "B02_S0051",
+        "B02_S0067"
+      ]
+    },
+    {
+      "source": "B02_C003",
+      "target": "B02_C018",
+      "weight": 2,
+      "evidence_segments": [
+        "B02_S0049",
+        "B02_S0055"
+      ]
+    },
+    {
+      "source": "B02_C004",
+      "target": "B02_C005",
+      "weight": 1,
+      "evidence_segments": [
+        "B02_S0054"
+      ]
+    },
+    {
+      "source": "B02_C004",
+      "target": "B02_C007",
+      "weight": 4,
+      "evidence_segments": [
+        "B02_S0020",
+        "B02_S0021",
+        "B02_S0050",
+        "B02_S0068"
+      ]
+    },
+    {
+      "source": "B02_C005",
+      "target": "B02_C007",
+      "weight": 2,
+      "evidence_segments": [
+        "B02_S0016",
+        "B02_S0066"
+      ]
+    },
+    {
+      "source": "B02_C006",
+      "target": "B02_C018",
+      "weight": 3,
+      "evidence_segments": [
+        "B02_S0039",
+        "B02_S0044",
+        "B02_S0048"
+      ]
+    },
+    {
+      "source": "B02_C007",
+      "target": "B02_C015",
+      "weight": 1,
+      "evidence_segments": [
+        "B02_S0045"
+      ]
+    },
+    {
+      "source": "B02_C010",
+      "target": "B02_C018",
+      "weight": 1,
+      "evidence_segments": [
+        "B02_S0018"
+      ]
+    },
+    {
+      "source": "B02_C012",
+      "target": "B02_C018",
+      "weight": 6,
+      "evidence_segments": [
+        "B02_S0040",
+        "B02_S0041",
+        "B02_S0042",
+        "B02_S0056",
+        "B02_S0057",
+        "B02_S0058"
+      ]
+    },
+    {
+      "source": "B02_C015",
+      "target": "B02_C016",
+      "weight": 1,
+      "evidence_segments": [
+        "B02_S0046"
+      ]
+    },
+    {
+      "source": "B02_C017",
+      "target": "B02_C018",
+      "weight": 1,
+      "evidence_segments": [
+        "B02_S0047"
+      ]
+    }
+  ]
+}

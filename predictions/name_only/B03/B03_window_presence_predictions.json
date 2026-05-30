@@ -1,0 +1,1909 @@
+{
+  "book_id": "B03",
+  "system": "name_only_baseline",
+  "description": "Dictionary/alias-based baseline using exact alias matching over 300-word overlapping windows.",
+  "unit": "300-word overlapping segment",
+  "segment_presence": [
+    {
+      "segment_id": "B03_S0001",
+      "characters_present": [
+        "B03_C001",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet Hanım",
+          "Sermet"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0002",
+      "characters_present": [
+        "B03_C003",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C003": [
+          "Nevber Hanım",
+          "Nevber"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0003",
+      "characters_present": [
+        "B03_C001",
+        "B03_C003",
+        "B03_C004",
+        "B03_C007",
+        "B03_C009"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet Hanım",
+          "Sermet"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C004": [
+          "Miss Morgan"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ],
+        "B03_C009": [
+          "Hizmetçi kız",
+          "hizmetçi kız",
+          "hizmetçi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0004",
+      "characters_present": [
+        "B03_C001",
+        "B03_C003",
+        "B03_C007",
+        "B03_C009"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet",
+          "Miss Çarmin",
+          "Çarmin"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ],
+        "B03_C009": [
+          "Hizmetçi kız",
+          "hizmetçi kız",
+          "hizmetçi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0005",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C005",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet",
+          "Miss Çarmin",
+          "Çarmin"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber Hanım",
+          "Nevber"
+        ],
+        "B03_C005": [
+          "valide"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0006",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C010"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C010": [
+          "Madam"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0007",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C005",
+        "B03_C006"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C005": [
+          "validesi"
+        ],
+        "B03_C006": [
+          "pederi",
+          "peder"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0008",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C004"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet",
+          "Çarmin"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C004": [
+          "Miss Morgan"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0009",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0010",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C005",
+        "B03_C006"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C005": [
+          "valide"
+        ],
+        "B03_C006": [
+          "pederi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0011",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C005",
+        "B03_C006",
+        "B03_C007",
+        "B03_C008"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C005": [
+          "valide"
+        ],
+        "B03_C006": [
+          "pederi"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ],
+        "B03_C008": [
+          "Büyük Beyefendi",
+          "büyük beyefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0012",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C005",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C005": [
+          "validesi",
+          "valide"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0013",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0014",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0015",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0016",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0017",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0018",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet",
+          "Miss Çarmin",
+          "Çarmin"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0019",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet",
+          "Miss Çarmin",
+          "Çarmin"
+        ],
+        "B03_C002": [
+          "Macit Bey",
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0020",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit Bey",
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0021",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0022",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0023",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0024",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0025",
+      "characters_present": [
+        "B03_C002"
+      ],
+      "matched_aliases": {
+        "B03_C002": [
+          "Macit"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0026",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0027",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C006"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit Bey",
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C006": [
+          "peder"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0028",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C006"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C006": [
+          "peder"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0029",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit Bey",
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0030",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit Bey",
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0031",
+      "characters_present": [
+        "B03_C002",
+        "B03_C003",
+        "B03_C005"
+      ],
+      "matched_aliases": {
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C005": [
+          "valide"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0032",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C005",
+        "B03_C006"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C005": [
+          "valide"
+        ],
+        "B03_C006": [
+          "peder"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0033",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0034",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0035",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0036",
+      "characters_present": [
+        "B03_C001"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0037",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0038",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0039",
+      "characters_present": [
+        "B03_C002"
+      ],
+      "matched_aliases": {
+        "B03_C002": [
+          "Macit"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0040",
+      "characters_present": [
+        "B03_C001",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0041",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0042",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0043",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0044",
+      "characters_present": [
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0045",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0046",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0047",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber Hanım",
+          "Nevber"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0048",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber Hanım",
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0049",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0050",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit Bey",
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0051",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0052",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0053",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0054",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C008"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C008": [
+          "Büyük Beyefendi",
+          "büyük beyefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0055",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0056",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0057",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0058",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0059",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0060",
+      "characters_present": [
+        "B03_C002"
+      ],
+      "matched_aliases": {
+        "B03_C002": [
+          "Macit"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0061",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0062",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0063",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C005"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C005": [
+          "valide"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0064",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0065",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0066",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C009"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C009": [
+          "hizmetçi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0067",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0068",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002",
+        "B03_C003",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ],
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0069",
+      "characters_present": [
+        "B03_C003",
+        "B03_C007"
+      ],
+      "matched_aliases": {
+        "B03_C003": [
+          "Nevber"
+        ],
+        "B03_C007": [
+          "Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0070",
+      "characters_present": [
+        "B03_C001"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0071",
+      "characters_present": [
+        "B03_C001"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ]
+      }
+    },
+    {
+      "segment_id": "B03_S0072",
+      "characters_present": [
+        "B03_C001",
+        "B03_C002"
+      ],
+      "matched_aliases": {
+        "B03_C001": [
+          "Sermet"
+        ],
+        "B03_C002": [
+          "Macit"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "B03_C001",
+      "target": "B03_C002",
+      "weight": 58,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0006",
+        "B03_S0007",
+        "B03_S0008",
+        "B03_S0009",
+        "B03_S0010",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0013",
+        "B03_S0014",
+        "B03_S0015",
+        "B03_S0016",
+        "B03_S0017",
+        "B03_S0018",
+        "B03_S0019",
+        "B03_S0020",
+        "B03_S0021",
+        "B03_S0022",
+        "B03_S0023",
+        "B03_S0024",
+        "B03_S0026",
+        "B03_S0027",
+        "B03_S0028",
+        "B03_S0029",
+        "B03_S0030",
+        "B03_S0032",
+        "B03_S0033",
+        "B03_S0034",
+        "B03_S0035",
+        "B03_S0037",
+        "B03_S0038",
+        "B03_S0041",
+        "B03_S0042",
+        "B03_S0043",
+        "B03_S0045",
+        "B03_S0046",
+        "B03_S0047",
+        "B03_S0048",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0051",
+        "B03_S0052",
+        "B03_S0053",
+        "B03_S0054",
+        "B03_S0055",
+        "B03_S0056",
+        "B03_S0057",
+        "B03_S0058",
+        "B03_S0059",
+        "B03_S0061",
+        "B03_S0062",
+        "B03_S0063",
+        "B03_S0064",
+        "B03_S0065",
+        "B03_S0066",
+        "B03_S0067",
+        "B03_S0068",
+        "B03_S0072"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "target": "B03_C003",
+      "weight": 46,
+      "evidence_segments": [
+        "B03_S0003",
+        "B03_S0004",
+        "B03_S0005",
+        "B03_S0006",
+        "B03_S0007",
+        "B03_S0009",
+        "B03_S0012",
+        "B03_S0013",
+        "B03_S0014",
+        "B03_S0015",
+        "B03_S0016",
+        "B03_S0017",
+        "B03_S0018",
+        "B03_S0019",
+        "B03_S0020",
+        "B03_S0026",
+        "B03_S0027",
+        "B03_S0028",
+        "B03_S0029",
+        "B03_S0030",
+        "B03_S0032",
+        "B03_S0033",
+        "B03_S0034",
+        "B03_S0037",
+        "B03_S0038",
+        "B03_S0040",
+        "B03_S0041",
+        "B03_S0042",
+        "B03_S0043",
+        "B03_S0045",
+        "B03_S0046",
+        "B03_S0047",
+        "B03_S0048",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0051",
+        "B03_S0052",
+        "B03_S0053",
+        "B03_S0054",
+        "B03_S0055",
+        "B03_S0056",
+        "B03_S0057",
+        "B03_S0062",
+        "B03_S0063",
+        "B03_S0064",
+        "B03_S0068"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "target": "B03_C004",
+      "weight": 2,
+      "evidence_segments": [
+        "B03_S0003",
+        "B03_S0008"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "target": "B03_C005",
+      "weight": 7,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0007",
+        "B03_S0010",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0032",
+        "B03_S0063"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "target": "B03_C006",
+      "weight": 6,
+      "evidence_segments": [
+        "B03_S0007",
+        "B03_S0010",
+        "B03_S0011",
+        "B03_S0027",
+        "B03_S0028",
+        "B03_S0032"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "target": "B03_C007",
+      "weight": 16,
+      "evidence_segments": [
+        "B03_S0001",
+        "B03_S0003",
+        "B03_S0004",
+        "B03_S0005",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0013",
+        "B03_S0014",
+        "B03_S0021",
+        "B03_S0047",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0053",
+        "B03_S0056",
+        "B03_S0057",
+        "B03_S0068"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "target": "B03_C008",
+      "weight": 2,
+      "evidence_segments": [
+        "B03_S0011",
+        "B03_S0054"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "target": "B03_C009",
+      "weight": 3,
+      "evidence_segments": [
+        "B03_S0003",
+        "B03_S0004",
+        "B03_S0066"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "target": "B03_C010",
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0006"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "target": "B03_C003",
+      "weight": 45,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0006",
+        "B03_S0007",
+        "B03_S0009",
+        "B03_S0012",
+        "B03_S0013",
+        "B03_S0014",
+        "B03_S0015",
+        "B03_S0016",
+        "B03_S0017",
+        "B03_S0018",
+        "B03_S0019",
+        "B03_S0020",
+        "B03_S0026",
+        "B03_S0027",
+        "B03_S0028",
+        "B03_S0029",
+        "B03_S0030",
+        "B03_S0031",
+        "B03_S0032",
+        "B03_S0033",
+        "B03_S0034",
+        "B03_S0037",
+        "B03_S0038",
+        "B03_S0041",
+        "B03_S0042",
+        "B03_S0043",
+        "B03_S0044",
+        "B03_S0045",
+        "B03_S0046",
+        "B03_S0047",
+        "B03_S0048",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0051",
+        "B03_S0052",
+        "B03_S0053",
+        "B03_S0054",
+        "B03_S0055",
+        "B03_S0056",
+        "B03_S0057",
+        "B03_S0062",
+        "B03_S0063",
+        "B03_S0064",
+        "B03_S0068"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "target": "B03_C004",
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0008"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "target": "B03_C005",
+      "weight": 8,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0007",
+        "B03_S0010",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0031",
+        "B03_S0032",
+        "B03_S0063"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "target": "B03_C006",
+      "weight": 6,
+      "evidence_segments": [
+        "B03_S0007",
+        "B03_S0010",
+        "B03_S0011",
+        "B03_S0027",
+        "B03_S0028",
+        "B03_S0032"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "target": "B03_C007",
+      "weight": 13,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0013",
+        "B03_S0014",
+        "B03_S0021",
+        "B03_S0047",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0053",
+        "B03_S0056",
+        "B03_S0057",
+        "B03_S0068"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "target": "B03_C008",
+      "weight": 2,
+      "evidence_segments": [
+        "B03_S0011",
+        "B03_S0054"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "target": "B03_C009",
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0066"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "target": "B03_C010",
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0006"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "target": "B03_C004",
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0003"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "target": "B03_C005",
+      "weight": 6,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0007",
+        "B03_S0012",
+        "B03_S0031",
+        "B03_S0032",
+        "B03_S0063"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "target": "B03_C006",
+      "weight": 4,
+      "evidence_segments": [
+        "B03_S0007",
+        "B03_S0027",
+        "B03_S0028",
+        "B03_S0032"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "target": "B03_C007",
+      "weight": 15,
+      "evidence_segments": [
+        "B03_S0002",
+        "B03_S0003",
+        "B03_S0004",
+        "B03_S0005",
+        "B03_S0012",
+        "B03_S0013",
+        "B03_S0014",
+        "B03_S0047",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0053",
+        "B03_S0056",
+        "B03_S0057",
+        "B03_S0068",
+        "B03_S0069"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "target": "B03_C008",
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0054"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "target": "B03_C009",
+      "weight": 2,
+      "evidence_segments": [
+        "B03_S0003",
+        "B03_S0004"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "target": "B03_C010",
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0006"
+      ]
+    },
+    {
+      "source": "B03_C004",
+      "target": "B03_C007",
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0003"
+      ]
+    },
+    {
+      "source": "B03_C004",
+      "target": "B03_C009",
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0003"
+      ]
+    },
+    {
+      "source": "B03_C005",
+      "target": "B03_C006",
+      "weight": 4,
+      "evidence_segments": [
+        "B03_S0007",
+        "B03_S0010",
+        "B03_S0011",
+        "B03_S0032"
+      ]
+    },
+    {
+      "source": "B03_C005",
+      "target": "B03_C007",
+      "weight": 3,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0011",
+        "B03_S0012"
+      ]
+    },
+    {
+      "source": "B03_C005",
+      "target": "B03_C008",
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0011"
+      ]
+    },
+    {
+      "source": "B03_C006",
+      "target": "B03_C007",
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0011"
+      ]
+    },
+    {
+      "source": "B03_C006",
+      "target": "B03_C008",
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0011"
+      ]
+    },
+    {
+      "source": "B03_C007",
+      "target": "B03_C008",
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0011"
+      ]
+    },
+    {
+      "source": "B03_C007",
+      "target": "B03_C009",
+      "weight": 2,
+      "evidence_segments": [
+        "B03_S0003",
+        "B03_S0004"
+      ]
+    }
+  ]
+}

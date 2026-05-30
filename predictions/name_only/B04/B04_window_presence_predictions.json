@@ -1,0 +1,2076 @@
+{
+  "book_id": "B04",
+  "system": "name_only_baseline",
+  "description": "Dictionary/alias-based baseline using exact alias matching over 300-word overlapping windows.",
+  "unit": "300-word overlapping segment",
+  "segment_presence": [
+    {
+      "segment_id": "B04_S0001",
+      "characters_present": [
+        "B04_C003"
+      ],
+      "matched_aliases": {
+        "B04_C003": [
+          "Nihat Bey",
+          "Nihat"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0002",
+      "characters_present": [
+        "B04_C003"
+      ],
+      "matched_aliases": {
+        "B04_C003": [
+          "Nihat Bey",
+          "Nihat"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0003",
+      "characters_present": [
+        "B04_C003"
+      ],
+      "matched_aliases": {
+        "B04_C003": [
+          "Nihat"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0004",
+      "characters_present": [
+        "B04_C001",
+        "B04_C003",
+        "B04_C004",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev",
+          "Pertev Beyefendi"
+        ],
+        "B04_C003": [
+          "Nihat Bey",
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre Hanım",
+          "Şekûre"
+        ],
+        "B04_C007": [
+          "Zabit"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0005",
+      "characters_present": [
+        "B04_C001",
+        "B04_C003",
+        "B04_C004",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev",
+          "Pertev Beyefendi"
+        ],
+        "B04_C003": [
+          "Nihat Bey",
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre Hanım",
+          "Şekûre",
+          "Şekûre Hanımefendi"
+        ],
+        "B04_C007": [
+          "Zabit"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0006",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003",
+        "B04_C004"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre",
+          "Şekûre Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0007",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev",
+          "Pertev Beyefendi"
+        ],
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre Hanım",
+          "Şekûre"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0008",
+      "characters_present": [
+        "B04_C002",
+        "B04_C004"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ],
+        "B04_C004": [
+          "Şekûre Hanım",
+          "Şekûre"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0009",
+      "characters_present": [],
+      "matched_aliases": {}
+    },
+    {
+      "segment_id": "B04_S0010",
+      "characters_present": [
+        "B04_C003",
+        "B04_C004",
+        "B04_C006"
+      ],
+      "matched_aliases": {
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre Hanım",
+          "Şekûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0011",
+      "characters_present": [
+        "B04_C003",
+        "B04_C004",
+        "B04_C006"
+      ],
+      "matched_aliases": {
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0012",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre Hanım",
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0013",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C006"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre",
+          "Şekûre Hanımefendi"
+        ],
+        "B04_C006": [
+          "Nigâr",
+          "Nigâr Hanımefendi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0014",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre",
+          "Şekûre Hanımefendi"
+        ],
+        "B04_C005": [
+          "Mahmûre",
+          "Mahmûre Hanımefendi"
+        ],
+        "B04_C006": [
+          "Nigâr",
+          "Nigâr Hanımefendi"
+        ],
+        "B04_C007": [
+          "Methi Bey",
+          "Methi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0015",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C007": [
+          "Methi Bey",
+          "Methi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0016",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev Bey",
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0017",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev Bey",
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0018",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0019",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0020",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre Hanım",
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0021",
+      "characters_present": [
+        "B04_C003"
+      ],
+      "matched_aliases": {
+        "B04_C003": [
+          "Nihat"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0022",
+      "characters_present": [
+        "B04_C003",
+        "B04_C005",
+        "B04_C006"
+      ],
+      "matched_aliases": {
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0023",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003",
+        "B04_C005",
+        "B04_C006"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0024",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev Bey",
+          "Pertev",
+          "Pertev Beyefendi"
+        ],
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre Hanım",
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0025",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre Hanım",
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0026",
+      "characters_present": [
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006"
+      ],
+      "matched_aliases": {
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0027",
+      "characters_present": [
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006"
+      ],
+      "matched_aliases": {
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0028",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003",
+        "B04_C006",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ],
+        "B04_C007": [
+          "Methi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0029",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev Bey",
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ],
+        "B04_C007": [
+          "Methi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0030",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev Bey",
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0031",
+      "characters_present": [
+        "B04_C002"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0032",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003",
+        "B04_C006",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C006": [
+          "Nigâr Hanım",
+          "Nigâr"
+        ],
+        "B04_C007": [
+          "Methi Bey",
+          "Methi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0033",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev Bey",
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr Hanım",
+          "Nigâr"
+        ],
+        "B04_C007": [
+          "Methi Bey",
+          "Methi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0034",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0035",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev Bey",
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0036",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev Bey",
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0037",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003",
+        "B04_C005",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C005": [
+          "Mahmûre",
+          "Mahmûre Hanımefendi"
+        ],
+        "B04_C007": [
+          "Methi Bey",
+          "Methi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0038",
+      "characters_present": [
+        "B04_C005",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C005": [
+          "Mahmûre",
+          "Mahmûre Hanımefendi"
+        ],
+        "B04_C007": [
+          "Methi Bey",
+          "Methi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0039",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C004",
+        "B04_C005"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev",
+          "Pertev Beyefendi"
+        ],
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0040",
+      "characters_present": [
+        "B04_C004",
+        "B04_C005",
+        "B04_C006"
+      ],
+      "matched_aliases": {
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0041",
+      "characters_present": [],
+      "matched_aliases": {}
+    },
+    {
+      "segment_id": "B04_S0042",
+      "characters_present": [],
+      "matched_aliases": {}
+    },
+    {
+      "segment_id": "B04_S0043",
+      "characters_present": [],
+      "matched_aliases": {}
+    },
+    {
+      "segment_id": "B04_S0044",
+      "characters_present": [],
+      "matched_aliases": {}
+    },
+    {
+      "segment_id": "B04_S0045",
+      "characters_present": [
+        "B04_C002",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ],
+        "B04_C007": [
+          "Methi Bey",
+          "Methi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0046",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev Bey",
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0047",
+      "characters_present": [
+        "B04_C002"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0048",
+      "characters_present": [
+        "B04_C002"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0049",
+      "characters_present": [],
+      "matched_aliases": {}
+    },
+    {
+      "segment_id": "B04_S0050",
+      "characters_present": [],
+      "matched_aliases": {}
+    },
+    {
+      "segment_id": "B04_S0051",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0052",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ],
+        "B04_C007": [
+          "Methi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0053",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ],
+        "B04_C007": [
+          "Methi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0054",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0055",
+      "characters_present": [],
+      "matched_aliases": {}
+    },
+    {
+      "segment_id": "B04_S0056",
+      "characters_present": [],
+      "matched_aliases": {}
+    },
+    {
+      "segment_id": "B04_S0057",
+      "characters_present": [
+        "B04_C003"
+      ],
+      "matched_aliases": {
+        "B04_C003": [
+          "Nihat"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0058",
+      "characters_present": [
+        "B04_C003",
+        "B04_C009",
+        "B04_C010"
+      ],
+      "matched_aliases": {
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C009": [
+          "Nebile Hanım",
+          "Nebile"
+        ],
+        "B04_C010": [
+          "Kemal Nedim Bey",
+          "Kemal Nedim",
+          "Nedim Bey"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0059",
+      "characters_present": [
+        "B04_C002",
+        "B04_C008",
+        "B04_C009",
+        "B04_C010"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C008": [
+          "Süheyla Hanım",
+          "Süheyla"
+        ],
+        "B04_C009": [
+          "Nebile Hanım",
+          "Nebile"
+        ],
+        "B04_C010": [
+          "Kemal Nedim Bey",
+          "Kemal Nedim",
+          "Nedim Bey"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0060",
+      "characters_present": [
+        "B04_C002",
+        "B04_C010"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C010": [
+          "Kemal Nedim Bey",
+          "Kemal Nedim",
+          "Nedim Bey"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0061",
+      "characters_present": [
+        "B04_C002"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0062",
+      "characters_present": [
+        "B04_C002",
+        "B04_C008"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C008": [
+          "Süheyla Hanım",
+          "Süheyla"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0063",
+      "characters_present": [
+        "B04_C001",
+        "B04_C008"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev"
+        ],
+        "B04_C008": [
+          "Süheyla Hanım",
+          "Süheyla"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0064",
+      "characters_present": [
+        "B04_C008"
+      ],
+      "matched_aliases": {
+        "B04_C008": [
+          "Süheyla Hanım",
+          "Süheyla"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0065",
+      "characters_present": [
+        "B04_C002"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0066",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C008"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C008": [
+          "Süheyla"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0067",
+      "characters_present": [
+        "B04_C002",
+        "B04_C008"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C008": [
+          "Süheyla"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0068",
+      "characters_present": [],
+      "matched_aliases": {}
+    },
+    {
+      "segment_id": "B04_S0069",
+      "characters_present": [
+        "B04_C003"
+      ],
+      "matched_aliases": {
+        "B04_C003": [
+          "Nihat"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0070",
+      "characters_present": [
+        "B04_C001",
+        "B04_C003"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev Bey",
+          "Pertev"
+        ],
+        "B04_C003": [
+          "Nihat Bey",
+          "Nihat"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0071",
+      "characters_present": [
+        "B04_C001"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0072",
+      "characters_present": [
+        "B04_C001",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev",
+          "Pertev Beyefendi"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ],
+        "B04_C007": [
+          "Methi Bey",
+          "Methi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0073",
+      "characters_present": [
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C004": [
+          "Şekûre"
+        ],
+        "B04_C005": [
+          "Mahmûre"
+        ],
+        "B04_C006": [
+          "Nigâr"
+        ],
+        "B04_C007": [
+          "Methi Bey",
+          "Methi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0074",
+      "characters_present": [
+        "B04_C002"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0075",
+      "characters_present": [
+        "B04_C002",
+        "B04_C003"
+      ],
+      "matched_aliases": {
+        "B04_C002": [
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0076",
+      "characters_present": [
+        "B04_C003",
+        "B04_C007"
+      ],
+      "matched_aliases": {
+        "B04_C003": [
+          "Nihat"
+        ],
+        "B04_C007": [
+          "Methi"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0077",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev Bey",
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ],
+        "B04_C003": [
+          "Nihat"
+        ]
+      }
+    },
+    {
+      "segment_id": "B04_S0078",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002"
+      ],
+      "matched_aliases": {
+        "B04_C001": [
+          "Pertev Bey",
+          "Pertev"
+        ],
+        "B04_C002": [
+          "Müjgân Hanım",
+          "Müjgân"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "B04_C001",
+      "target": "B04_C002",
+      "weight": 18,
+      "evidence_segments": [
+        "B04_S0007",
+        "B04_S0016",
+        "B04_S0017",
+        "B04_S0018",
+        "B04_S0019",
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0033",
+        "B04_S0035",
+        "B04_S0036",
+        "B04_S0039",
+        "B04_S0046",
+        "B04_S0052",
+        "B04_S0054",
+        "B04_S0077",
+        "B04_S0078"
+      ]
+    },
+    {
+      "source": "B04_C001",
+      "target": "B04_C003",
+      "weight": 18,
+      "evidence_segments": [
+        "B04_S0004",
+        "B04_S0005",
+        "B04_S0007",
+        "B04_S0016",
+        "B04_S0017",
+        "B04_S0018",
+        "B04_S0019",
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0033",
+        "B04_S0035",
+        "B04_S0052",
+        "B04_S0054",
+        "B04_S0070",
+        "B04_S0072",
+        "B04_S0077"
+      ]
+    },
+    {
+      "source": "B04_C001",
+      "target": "B04_C004",
+      "weight": 16,
+      "evidence_segments": [
+        "B04_S0004",
+        "B04_S0005",
+        "B04_S0007",
+        "B04_S0016",
+        "B04_S0017",
+        "B04_S0018",
+        "B04_S0019",
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0033",
+        "B04_S0035",
+        "B04_S0039",
+        "B04_S0052",
+        "B04_S0072"
+      ]
+    },
+    {
+      "source": "B04_C001",
+      "target": "B04_C005",
+      "weight": 9,
+      "evidence_segments": [
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0033",
+        "B04_S0035",
+        "B04_S0039",
+        "B04_S0052",
+        "B04_S0072"
+      ]
+    },
+    {
+      "source": "B04_C001",
+      "target": "B04_C006",
+      "weight": 7,
+      "evidence_segments": [
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0033",
+        "B04_S0052",
+        "B04_S0072"
+      ]
+    },
+    {
+      "source": "B04_C001",
+      "target": "B04_C007",
+      "weight": 6,
+      "evidence_segments": [
+        "B04_S0004",
+        "B04_S0005",
+        "B04_S0029",
+        "B04_S0033",
+        "B04_S0052",
+        "B04_S0072"
+      ]
+    },
+    {
+      "source": "B04_C001",
+      "target": "B04_C008",
+      "weight": 1,
+      "evidence_segments": [
+        "B04_S0063"
+      ]
+    },
+    {
+      "source": "B04_C002",
+      "target": "B04_C003",
+      "weight": 29,
+      "evidence_segments": [
+        "B04_S0006",
+        "B04_S0007",
+        "B04_S0012",
+        "B04_S0013",
+        "B04_S0014",
+        "B04_S0015",
+        "B04_S0016",
+        "B04_S0017",
+        "B04_S0018",
+        "B04_S0019",
+        "B04_S0020",
+        "B04_S0023",
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0028",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0032",
+        "B04_S0033",
+        "B04_S0034",
+        "B04_S0035",
+        "B04_S0037",
+        "B04_S0051",
+        "B04_S0052",
+        "B04_S0053",
+        "B04_S0054",
+        "B04_S0066",
+        "B04_S0075",
+        "B04_S0077"
+      ]
+    },
+    {
+      "source": "B04_C002",
+      "target": "B04_C004",
+      "weight": 24,
+      "evidence_segments": [
+        "B04_S0006",
+        "B04_S0007",
+        "B04_S0008",
+        "B04_S0012",
+        "B04_S0013",
+        "B04_S0014",
+        "B04_S0015",
+        "B04_S0016",
+        "B04_S0017",
+        "B04_S0018",
+        "B04_S0019",
+        "B04_S0020",
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0033",
+        "B04_S0034",
+        "B04_S0035",
+        "B04_S0039",
+        "B04_S0051",
+        "B04_S0052",
+        "B04_S0053",
+        "B04_S0066"
+      ]
+    },
+    {
+      "source": "B04_C002",
+      "target": "B04_C005",
+      "weight": 16,
+      "evidence_segments": [
+        "B04_S0012",
+        "B04_S0014",
+        "B04_S0020",
+        "B04_S0023",
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0033",
+        "B04_S0034",
+        "B04_S0035",
+        "B04_S0037",
+        "B04_S0039",
+        "B04_S0051",
+        "B04_S0052",
+        "B04_S0053"
+      ]
+    },
+    {
+      "source": "B04_C002",
+      "target": "B04_C006",
+      "weight": 14,
+      "evidence_segments": [
+        "B04_S0012",
+        "B04_S0013",
+        "B04_S0014",
+        "B04_S0023",
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0028",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0032",
+        "B04_S0033",
+        "B04_S0051",
+        "B04_S0052",
+        "B04_S0053"
+      ]
+    },
+    {
+      "source": "B04_C002",
+      "target": "B04_C007",
+      "weight": 10,
+      "evidence_segments": [
+        "B04_S0014",
+        "B04_S0015",
+        "B04_S0028",
+        "B04_S0029",
+        "B04_S0032",
+        "B04_S0033",
+        "B04_S0037",
+        "B04_S0045",
+        "B04_S0052",
+        "B04_S0053"
+      ]
+    },
+    {
+      "source": "B04_C002",
+      "target": "B04_C008",
+      "weight": 4,
+      "evidence_segments": [
+        "B04_S0059",
+        "B04_S0062",
+        "B04_S0066",
+        "B04_S0067"
+      ]
+    },
+    {
+      "source": "B04_C002",
+      "target": "B04_C009",
+      "weight": 1,
+      "evidence_segments": [
+        "B04_S0059"
+      ]
+    },
+    {
+      "source": "B04_C002",
+      "target": "B04_C010",
+      "weight": 2,
+      "evidence_segments": [
+        "B04_S0059",
+        "B04_S0060"
+      ]
+    },
+    {
+      "source": "B04_C003",
+      "target": "B04_C004",
+      "weight": 30,
+      "evidence_segments": [
+        "B04_S0004",
+        "B04_S0005",
+        "B04_S0006",
+        "B04_S0007",
+        "B04_S0010",
+        "B04_S0011",
+        "B04_S0012",
+        "B04_S0013",
+        "B04_S0014",
+        "B04_S0015",
+        "B04_S0016",
+        "B04_S0017",
+        "B04_S0018",
+        "B04_S0019",
+        "B04_S0020",
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0026",
+        "B04_S0027",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0033",
+        "B04_S0034",
+        "B04_S0035",
+        "B04_S0051",
+        "B04_S0052",
+        "B04_S0053",
+        "B04_S0066",
+        "B04_S0072",
+        "B04_S0073"
+      ]
+    },
+    {
+      "source": "B04_C003",
+      "target": "B04_C005",
+      "weight": 20,
+      "evidence_segments": [
+        "B04_S0012",
+        "B04_S0014",
+        "B04_S0020",
+        "B04_S0022",
+        "B04_S0023",
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0026",
+        "B04_S0027",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0033",
+        "B04_S0034",
+        "B04_S0035",
+        "B04_S0037",
+        "B04_S0051",
+        "B04_S0052",
+        "B04_S0053",
+        "B04_S0072",
+        "B04_S0073"
+      ]
+    },
+    {
+      "source": "B04_C003",
+      "target": "B04_C006",
+      "weight": 21,
+      "evidence_segments": [
+        "B04_S0010",
+        "B04_S0011",
+        "B04_S0012",
+        "B04_S0013",
+        "B04_S0014",
+        "B04_S0022",
+        "B04_S0023",
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0026",
+        "B04_S0027",
+        "B04_S0028",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0032",
+        "B04_S0033",
+        "B04_S0051",
+        "B04_S0052",
+        "B04_S0053",
+        "B04_S0072",
+        "B04_S0073"
+      ]
+    },
+    {
+      "source": "B04_C003",
+      "target": "B04_C007",
+      "weight": 14,
+      "evidence_segments": [
+        "B04_S0004",
+        "B04_S0005",
+        "B04_S0014",
+        "B04_S0015",
+        "B04_S0028",
+        "B04_S0029",
+        "B04_S0032",
+        "B04_S0033",
+        "B04_S0037",
+        "B04_S0052",
+        "B04_S0053",
+        "B04_S0072",
+        "B04_S0073",
+        "B04_S0076"
+      ]
+    },
+    {
+      "source": "B04_C003",
+      "target": "B04_C008",
+      "weight": 1,
+      "evidence_segments": [
+        "B04_S0066"
+      ]
+    },
+    {
+      "source": "B04_C003",
+      "target": "B04_C009",
+      "weight": 1,
+      "evidence_segments": [
+        "B04_S0058"
+      ]
+    },
+    {
+      "source": "B04_C003",
+      "target": "B04_C010",
+      "weight": 1,
+      "evidence_segments": [
+        "B04_S0058"
+      ]
+    },
+    {
+      "source": "B04_C004",
+      "target": "B04_C005",
+      "weight": 19,
+      "evidence_segments": [
+        "B04_S0012",
+        "B04_S0014",
+        "B04_S0020",
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0026",
+        "B04_S0027",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0033",
+        "B04_S0034",
+        "B04_S0035",
+        "B04_S0039",
+        "B04_S0040",
+        "B04_S0051",
+        "B04_S0052",
+        "B04_S0053",
+        "B04_S0072",
+        "B04_S0073"
+      ]
+    },
+    {
+      "source": "B04_C004",
+      "target": "B04_C006",
+      "weight": 18,
+      "evidence_segments": [
+        "B04_S0010",
+        "B04_S0011",
+        "B04_S0012",
+        "B04_S0013",
+        "B04_S0014",
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0026",
+        "B04_S0027",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0033",
+        "B04_S0040",
+        "B04_S0051",
+        "B04_S0052",
+        "B04_S0053",
+        "B04_S0072",
+        "B04_S0073"
+      ]
+    },
+    {
+      "source": "B04_C004",
+      "target": "B04_C007",
+      "weight": 10,
+      "evidence_segments": [
+        "B04_S0004",
+        "B04_S0005",
+        "B04_S0014",
+        "B04_S0015",
+        "B04_S0029",
+        "B04_S0033",
+        "B04_S0052",
+        "B04_S0053",
+        "B04_S0072",
+        "B04_S0073"
+      ]
+    },
+    {
+      "source": "B04_C004",
+      "target": "B04_C008",
+      "weight": 1,
+      "evidence_segments": [
+        "B04_S0066"
+      ]
+    },
+    {
+      "source": "B04_C005",
+      "target": "B04_C006",
+      "weight": 17,
+      "evidence_segments": [
+        "B04_S0012",
+        "B04_S0014",
+        "B04_S0022",
+        "B04_S0023",
+        "B04_S0024",
+        "B04_S0025",
+        "B04_S0026",
+        "B04_S0027",
+        "B04_S0029",
+        "B04_S0030",
+        "B04_S0033",
+        "B04_S0040",
+        "B04_S0051",
+        "B04_S0052",
+        "B04_S0053",
+        "B04_S0072",
+        "B04_S0073"
+      ]
+    },
+    {
+      "source": "B04_C005",
+      "target": "B04_C007",
+      "weight": 9,
+      "evidence_segments": [
+        "B04_S0014",
+        "B04_S0029",
+        "B04_S0033",
+        "B04_S0037",
+        "B04_S0038",
+        "B04_S0052",
+        "B04_S0053",
+        "B04_S0072",
+        "B04_S0073"
+      ]
+    },
+    {
+      "source": "B04_C006",
+      "target": "B04_C007",
+      "weight": 9,
+      "evidence_segments": [
+        "B04_S0014",
+        "B04_S0028",
+        "B04_S0029",
+        "B04_S0032",
+        "B04_S0033",
+        "B04_S0052",
+        "B04_S0053",
+        "B04_S0072",
+        "B04_S0073"
+      ]
+    },
+    {
+      "source": "B04_C008",
+      "target": "B04_C009",
+      "weight": 1,
+      "evidence_segments": [
+        "B04_S0059"
+      ]
+    },
+    {
+      "source": "B04_C008",
+      "target": "B04_C010",
+      "weight": 1,
+      "evidence_segments": [
+        "B04_S0059"
+      ]
+    },
+    {
+      "source": "B04_C009",
+      "target": "B04_C010",
+      "weight": 2,
+      "evidence_segments": [
+        "B04_S0058",
+        "B04_S0059"
+      ]
+    }
+  ]
+}

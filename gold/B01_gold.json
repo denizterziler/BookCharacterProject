@@ -1,4 +1,7 @@
-[
+{
+  "book_id": "B01",
+  "title": "Cadı",
+  "gold_annotations": [
   {
     "segment_id": "B01_S0001",
     "characters_present": ["B01_C001", "B01_C002", "B01_C010"]
@@ -40,3 +43,4 @@
     "characters_present": ["B01_C001", "B01_C002", "B01_C003", "B01_C009"]
   }
 ]
+}

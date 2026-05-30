@@ -1,0 +1,12 @@
+{
+  "B02_S0001": "{\n  \"segment_id\": \"B02_S0001\",\n  \"characters_present\": [\n    \"B02_C001\",\n    \"B02_C002\"\n  ]\n}",
+  "B02_S0002": "{\n  \"segment_id\": \"B02_S0014\",\n  \"characters_present\": [\n    \"B02_C001\",\n    \"B02_C002\"\n  ]\n}",
+  "B02_S0003": "{\n  \"segment_id\": \"B02_S0003\",\n  \"characters_present\": [\n    \"B02_C001\",\n    \"B02_C002\"\n  ]\n}",
+  "B02_S0004": "{\n  \"segment_id\": \"B02_S0004\",\n  \"characters_present\": [\n    \"B02_C001\",\n    \"B02_C008\"\n  ]\n}",
+  "B02_S0005": "{\n  \"segment_id\": \"B02_S0005\",\n  \"characters_present\": [\n    \"B02_C001\",\n    \"B02_C008\"\n  ]\n}",
+  "B02_S0006": "{\n  \"segment_id\": \"B02_S0006\",\n  \"characters_present\": [\n    \"B02_C001\",\n    \"B02_C002\"\n  ]\n}",
+  "B02_S0007": "{\n  \"segment_id\": \"B02_S0007\",\n  \"characters_present\": [\n    \"B02_C001\",\n    \"B02_C002\"\n  ]\n}",
+  "B02_S0008": "{\n  \"segment_id\": \"B02_S0008\",\n  \"characters_present\": [\n    \"B02_C001\"\n  ]\n}",
+  "B02_S0009": "{\n  \"segment_id\": \"B02_S0009\",\n  \"characters_present\": [\n    \"B02_C001\",\n    \"B02_C002\"\n  ]\n}",
+  "B02_S0010": "{\n  \"segment_id\": \"B02_S0010\",\n  \"characters_present\": [\n    \"B02_C001\"\n  ]\n}"
+}

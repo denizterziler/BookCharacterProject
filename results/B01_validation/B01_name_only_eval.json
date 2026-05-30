@@ -1,0 +1,447 @@
+{
+  "book_id": "B01",
+  "title": "Cadı",
+  "system": "name_only_baseline",
+  "model_name": "",
+  "prompt_type": "",
+  "selection_method": "",
+  "top_k": null,
+  "task": "300_word_window_level_character_presence",
+  "unit": "300-word overlapping segment",
+  "gold_path": "/Users/denizterziler/PycharmProjects/BookCharacterProject/gold/B01_gold.json",
+  "prediction_path": "/Users/denizterziler/PycharmProjects/BookCharacterProject/predictions/name_only/B01/B01_window_presence_predictions.json",
+  "gold_segment_count": 10,
+  "prediction_segment_count_used": 10,
+  "missing_prediction_segments": [],
+  "scores": {
+    "true_positive_count": 26,
+    "false_positive_count": 1,
+    "false_negative_count": 18,
+    "precision": 0.963,
+    "recall": 0.5909,
+    "f1": 0.7324,
+    "true_positives": [
+      [
+        "B01_S0001",
+        "B01_C001"
+      ],
+      [
+        "B01_S0001",
+        "B01_C002"
+      ],
+      [
+        "B01_S0002",
+        "B01_C001"
+      ],
+      [
+        "B01_S0002",
+        "B01_C002"
+      ],
+      [
+        "B01_S0002",
+        "B01_C006"
+      ],
+      [
+        "B01_S0003",
+        "B01_C001"
+      ],
+      [
+        "B01_S0003",
+        "B01_C002"
+      ],
+      [
+        "B01_S0003",
+        "B01_C006"
+      ],
+      [
+        "B01_S0004",
+        "B01_C001"
+      ],
+      [
+        "B01_S0004",
+        "B01_C002"
+      ],
+      [
+        "B01_S0004",
+        "B01_C006"
+      ],
+      [
+        "B01_S0005",
+        "B01_C006"
+      ],
+      [
+        "B01_S0006",
+        "B01_C001"
+      ],
+      [
+        "B01_S0006",
+        "B01_C002"
+      ],
+      [
+        "B01_S0006",
+        "B01_C006"
+      ],
+      [
+        "B01_S0006",
+        "B01_C009"
+      ],
+      [
+        "B01_S0006",
+        "B01_C010"
+      ],
+      [
+        "B01_S0007",
+        "B01_C001"
+      ],
+      [
+        "B01_S0007",
+        "B01_C002"
+      ],
+      [
+        "B01_S0007",
+        "B01_C003"
+      ],
+      [
+        "B01_S0008",
+        "B01_C001"
+      ],
+      [
+        "B01_S0008",
+        "B01_C002"
+      ],
+      [
+        "B01_S0008",
+        "B01_C003"
+      ],
+      [
+        "B01_S0009",
+        "B01_C001"
+      ],
+      [
+        "B01_S0009",
+        "B01_C002"
+      ],
+      [
+        "B01_S0010",
+        "B01_C002"
+      ]
+    ],
+    "false_positives": [
+      [
+        "B01_S0006",
+        "B01_C003"
+      ]
+    ],
+    "false_negatives": [
+      [
+        "B01_S0001",
+        "B01_C010"
+      ],
+      [
+        "B01_S0002",
+        "B01_C009"
+      ],
+      [
+        "B01_S0004",
+        "B01_C010"
+      ],
+      [
+        "B01_S0005",
+        "B01_C001"
+      ],
+      [
+        "B01_S0005",
+        "B01_C002"
+      ],
+      [
+        "B01_S0005",
+        "B01_C009"
+      ],
+      [
+        "B01_S0005",
+        "B01_C010"
+      ],
+      [
+        "B01_S0007",
+        "B01_C009"
+      ],
+      [
+        "B01_S0008",
+        "B01_C004"
+      ],
+      [
+        "B01_S0008",
+        "B01_C005"
+      ],
+      [
+        "B01_S0008",
+        "B01_C010"
+      ],
+      [
+        "B01_S0009",
+        "B01_C003"
+      ],
+      [
+        "B01_S0009",
+        "B01_C004"
+      ],
+      [
+        "B01_S0009",
+        "B01_C005"
+      ],
+      [
+        "B01_S0009",
+        "B01_C009"
+      ],
+      [
+        "B01_S0010",
+        "B01_C001"
+      ],
+      [
+        "B01_S0010",
+        "B01_C003"
+      ],
+      [
+        "B01_S0010",
+        "B01_C009"
+      ]
+    ]
+  },
+  "segment_details": [
+    {
+      "segment_id": "B01_S0001",
+      "gold": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C010"
+      ],
+      "predicted": [
+        "B01_C001",
+        "B01_C002"
+      ],
+      "true_positives": [
+        "B01_C001",
+        "B01_C002"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B01_C010"
+      ]
+    },
+    {
+      "segment_id": "B01_S0002",
+      "gold": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006",
+        "B01_C009"
+      ],
+      "predicted": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006"
+      ],
+      "true_positives": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B01_C009"
+      ]
+    },
+    {
+      "segment_id": "B01_S0003",
+      "gold": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006"
+      ],
+      "predicted": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006"
+      ],
+      "true_positives": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006"
+      ],
+      "false_positives": [],
+      "false_negatives": []
+    },
+    {
+      "segment_id": "B01_S0004",
+      "gold": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006",
+        "B01_C010"
+      ],
+      "predicted": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006"
+      ],
+      "true_positives": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B01_C010"
+      ]
+    },
+    {
+      "segment_id": "B01_S0005",
+      "gold": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006",
+        "B01_C009",
+        "B01_C010"
+      ],
+      "predicted": [
+        "B01_C006"
+      ],
+      "true_positives": [
+        "B01_C006"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C009",
+        "B01_C010"
+      ]
+    },
+    {
+      "segment_id": "B01_S0006",
+      "gold": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006",
+        "B01_C009",
+        "B01_C010"
+      ],
+      "predicted": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C006",
+        "B01_C009",
+        "B01_C010"
+      ],
+      "true_positives": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006",
+        "B01_C009",
+        "B01_C010"
+      ],
+      "false_positives": [
+        "B01_C003"
+      ],
+      "false_negatives": []
+    },
+    {
+      "segment_id": "B01_S0007",
+      "gold": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C009"
+      ],
+      "predicted": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003"
+      ],
+      "true_positives": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B01_C009"
+      ]
+    },
+    {
+      "segment_id": "B01_S0008",
+      "gold": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C004",
+        "B01_C005",
+        "B01_C010"
+      ],
+      "predicted": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003"
+      ],
+      "true_positives": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B01_C004",
+        "B01_C005",
+        "B01_C010"
+      ]
+    },
+    {
+      "segment_id": "B01_S0009",
+      "gold": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C004",
+        "B01_C005",
+        "B01_C009"
+      ],
+      "predicted": [
+        "B01_C001",
+        "B01_C002"
+      ],
+      "true_positives": [
+        "B01_C001",
+        "B01_C002"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005",
+        "B01_C009"
+      ]
+    },
+    {
+      "segment_id": "B01_S0010",
+      "gold": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C009"
+      ],
+      "predicted": [
+        "B01_C002"
+      ],
+      "true_positives": [
+        "B01_C002"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B01_C001",
+        "B01_C003",
+        "B01_C009"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "book_id": "B04",
+  "title": "Böğürtlen",
+  "gold_annotations": [
+    {
+      "segment_id": "B04_S0001",
+      "characters_present": [
+        "B04_C001",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006"
+      ]
+    },
+    {
+      "segment_id": "B04_S0002",
+      "characters_present": [
+        "B04_C001",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006"
+      ]
+    },
+    {
+      "segment_id": "B04_S0003",
+      "characters_present": [
+        "B04_C001",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006"
+      ]
+    },
+    {
+      "segment_id": "B04_S0004",
+      "characters_present": [
+        "B04_C001",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006",
+        "B04_C007"
+      ]
+    },
+    {
+      "segment_id": "B04_S0005",
+      "characters_present": [
+        "B04_C001",
+        "B04_C003",
+        "B04_C004",
+        "B04_C006",
+        "B04_C007"
+      ]
+    },
+    {
+      "segment_id": "B04_S0006",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004"
+      ]
+    },
+    {
+      "segment_id": "B04_S0007",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004"
+      ]
+    },
+    {
+      "segment_id": "B04_S0008",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C004"
+      ]
+    },
+    {
+      "segment_id": "B04_S0009",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002"
+      ]
+    },
+    {
+      "segment_id": "B04_S0010",
+      "characters_present": [
+        "B04_C001",
+        "B04_C002",
+        "B04_C003",
+        "B04_C004",
+        "B04_C005",
+        "B04_C006",
+        "B04_C007"
+      ]
+    }
+  ]
+}

@@ -8,16 +8,16 @@ from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
-BOOK_ID = "B02"
+BOOK_ID = "B05"
 
-SEGMENTS_PATH = PROJECT_ROOT / "scripts" / "book_texts" / f"{BOOK_ID}" /f"{BOOK_ID}_segments.json"
+SEGMENTS_PATH = PROJECT_ROOT / "scripts" / "book_texts" / f"{BOOK_ID}" / f"{BOOK_ID}_segments.json"
 CHARACTERS_PATH = PROJECT_ROOT / "inputs" / f"{BOOK_ID}_characters.json"
 
 # Change this name for each model you want to test.
-# MODEL_NAME = "emrecan/bert-base-turkish-cased-mean-nli-stsb-tr"
-# MODEL_NAME = "trmteb/turkish-embedding-model"
+#MODEL_NAME = "emrecan/bert-base-turkish-cased-mean-nli-stsb-tr"
+#MODEL_NAME = "trmteb/turkish-embedding-model"
 MODEL_NAME = "mertcobanov/mpnet-base-all-nli-triplet-turkish-v2"
 
 # Try 1, 2, and 3 separately.

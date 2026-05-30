@@ -5,9 +5,9 @@ from pathlib import Path
 from collections import defaultdict
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
-BOOK_ID = "B02"
+BOOK_ID = "B05"
 
 SEGMENTS_PATH = PROJECT_ROOT / "scripts" / "book_texts" / f"{BOOK_ID}" /f"{BOOK_ID}_segments.json"
 CHARACTERS_PATH = PROJECT_ROOT / "inputs" / f"{BOOK_ID}_characters.json"

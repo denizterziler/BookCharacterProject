@@ -8,19 +8,20 @@ import torch
 from transformers import AutoTokenizer, AutoModel
 from sklearn.metrics.pairwise import cosine_similarity
 
+# Try TOP_K = 1, 2, 3 separately and compare results.
+TOP_K = 3
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
-BOOK_ID = "B02"
+BOOK_ID = "B05"
 
 SEGMENTS_PATH = PROJECT_ROOT / "scripts" / "book_texts" / f"{BOOK_ID}" /f"{BOOK_ID}_segments.json"
 CHARACTERS_PATH = PROJECT_ROOT / "inputs" / f"{BOOK_ID}_characters.json"
-OUTPUT_PATH = PROJECT_ROOT / "predictions" / "berturk" / f"{BOOK_ID}_window_presence_top3.json"
+OUTPUT_PATH = PROJECT_ROOT / "predictions" / "berturk" / f"{BOOK_ID}_window_presence_top{TOP_K}.json"
 
 MODEL_NAME = "dbmdz/bert-base-turkish-cased"
 
-# Try TOP_K = 1, 2, 3 separately and compare results.
-TOP_K = 3
+
 
 
 def load_json(path: Path) -> dict:

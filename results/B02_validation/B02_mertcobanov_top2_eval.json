@@ -1,0 +1,463 @@
+{
+  "book_id": "B02",
+  "title": "Efsuncu Baba",
+  "system": "sentence_transformer_topk_baseline",
+  "model_name": "mertcobanov/mpnet-base-all-nli-triplet-turkish-v2",
+  "prompt_type": "",
+  "selection_method": "top_2",
+  "top_k": 2,
+  "task": "300_word_window_level_character_presence",
+  "unit": "300-word overlapping segment",
+  "gold_path": "/Users/denizterziler/PycharmProjects/BookCharacterProject/gold/B02_gold.json",
+  "prediction_path": "/Users/denizterziler/PycharmProjects/BookCharacterProject/predictions/sentence_transformer/B02_mertcobanov__mpnet-base-all-nli-triplet-turkish-v2_window_presence_top2.json",
+  "gold_segment_count": 10,
+  "prediction_segment_count_used": 10,
+  "missing_prediction_segments": [],
+  "scores": {
+    "true_positive_count": 0,
+    "false_positive_count": 20,
+    "false_negative_count": 32,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "true_positives": [],
+    "false_positives": [
+      [
+        "B02_S0001",
+        "B02_C007"
+      ],
+      [
+        "B02_S0001",
+        "B02_C010"
+      ],
+      [
+        "B02_S0002",
+        "B02_C004"
+      ],
+      [
+        "B02_S0002",
+        "B02_C007"
+      ],
+      [
+        "B02_S0003",
+        "B02_C005"
+      ],
+      [
+        "B02_S0003",
+        "B02_C007"
+      ],
+      [
+        "B02_S0004",
+        "B02_C004"
+      ],
+      [
+        "B02_S0004",
+        "B02_C007"
+      ],
+      [
+        "B02_S0005",
+        "B02_C007"
+      ],
+      [
+        "B02_S0005",
+        "B02_C010"
+      ],
+      [
+        "B02_S0006",
+        "B02_C004"
+      ],
+      [
+        "B02_S0006",
+        "B02_C007"
+      ],
+      [
+        "B02_S0007",
+        "B02_C004"
+      ],
+      [
+        "B02_S0007",
+        "B02_C007"
+      ],
+      [
+        "B02_S0008",
+        "B02_C007"
+      ],
+      [
+        "B02_S0008",
+        "B02_C010"
+      ],
+      [
+        "B02_S0009",
+        "B02_C007"
+      ],
+      [
+        "B02_S0009",
+        "B02_C010"
+      ],
+      [
+        "B02_S0010",
+        "B02_C004"
+      ],
+      [
+        "B02_S0010",
+        "B02_C007"
+      ]
+    ],
+    "false_negatives": [
+      [
+        "B02_S0001",
+        "B02_C001"
+      ],
+      [
+        "B02_S0001",
+        "B02_C002"
+      ],
+      [
+        "B02_S0001",
+        "B02_C008"
+      ],
+      [
+        "B02_S0002",
+        "B02_C001"
+      ],
+      [
+        "B02_S0002",
+        "B02_C002"
+      ],
+      [
+        "B02_S0002",
+        "B02_C008"
+      ],
+      [
+        "B02_S0003",
+        "B02_C001"
+      ],
+      [
+        "B02_S0003",
+        "B02_C002"
+      ],
+      [
+        "B02_S0003",
+        "B02_C008"
+      ],
+      [
+        "B02_S0004",
+        "B02_C001"
+      ],
+      [
+        "B02_S0004",
+        "B02_C002"
+      ],
+      [
+        "B02_S0004",
+        "B02_C008"
+      ],
+      [
+        "B02_S0005",
+        "B02_C001"
+      ],
+      [
+        "B02_S0005",
+        "B02_C002"
+      ],
+      [
+        "B02_S0005",
+        "B02_C008"
+      ],
+      [
+        "B02_S0006",
+        "B02_C001"
+      ],
+      [
+        "B02_S0006",
+        "B02_C002"
+      ],
+      [
+        "B02_S0006",
+        "B02_C008"
+      ],
+      [
+        "B02_S0007",
+        "B02_C001"
+      ],
+      [
+        "B02_S0007",
+        "B02_C002"
+      ],
+      [
+        "B02_S0007",
+        "B02_C003"
+      ],
+      [
+        "B02_S0008",
+        "B02_C001"
+      ],
+      [
+        "B02_S0008",
+        "B02_C002"
+      ],
+      [
+        "B02_S0008",
+        "B02_C003"
+      ],
+      [
+        "B02_S0009",
+        "B02_C001"
+      ],
+      [
+        "B02_S0009",
+        "B02_C002"
+      ],
+      [
+        "B02_S0009",
+        "B02_C003"
+      ],
+      [
+        "B02_S0009",
+        "B02_C009"
+      ],
+      [
+        "B02_S0010",
+        "B02_C001"
+      ],
+      [
+        "B02_S0010",
+        "B02_C002"
+      ],
+      [
+        "B02_S0010",
+        "B02_C003"
+      ],
+      [
+        "B02_S0010",
+        "B02_C009"
+      ]
+    ]
+  },
+  "segment_details": [
+    {
+      "segment_id": "B02_S0001",
+      "gold": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ],
+      "predicted": [
+        "B02_C007",
+        "B02_C010"
+      ],
+      "true_positives": [],
+      "false_positives": [
+        "B02_C007",
+        "B02_C010"
+      ],
+      "false_negatives": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ]
+    },
+    {
+      "segment_id": "B02_S0002",
+      "gold": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ],
+      "predicted": [
+        "B02_C004",
+        "B02_C007"
+      ],
+      "true_positives": [],
+      "false_positives": [
+        "B02_C004",
+        "B02_C007"
+      ],
+      "false_negatives": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ]
+    },
+    {
+      "segment_id": "B02_S0003",
+      "gold": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ],
+      "predicted": [
+        "B02_C005",
+        "B02_C007"
+      ],
+      "true_positives": [],
+      "false_positives": [
+        "B02_C005",
+        "B02_C007"
+      ],
+      "false_negatives": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ]
+    },
+    {
+      "segment_id": "B02_S0004",
+      "gold": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ],
+      "predicted": [
+        "B02_C004",
+        "B02_C007"
+      ],
+      "true_positives": [],
+      "false_positives": [
+        "B02_C004",
+        "B02_C007"
+      ],
+      "false_negatives": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ]
+    },
+    {
+      "segment_id": "B02_S0005",
+      "gold": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ],
+      "predicted": [
+        "B02_C007",
+        "B02_C010"
+      ],
+      "true_positives": [],
+      "false_positives": [
+        "B02_C007",
+        "B02_C010"
+      ],
+      "false_negatives": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ]
+    },
+    {
+      "segment_id": "B02_S0006",
+      "gold": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ],
+      "predicted": [
+        "B02_C004",
+        "B02_C007"
+      ],
+      "true_positives": [],
+      "false_positives": [
+        "B02_C004",
+        "B02_C007"
+      ],
+      "false_negatives": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C008"
+      ]
+    },
+    {
+      "segment_id": "B02_S0007",
+      "gold": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C003"
+      ],
+      "predicted": [
+        "B02_C004",
+        "B02_C007"
+      ],
+      "true_positives": [],
+      "false_positives": [
+        "B02_C004",
+        "B02_C007"
+      ],
+      "false_negatives": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C003"
+      ]
+    },
+    {
+      "segment_id": "B02_S0008",
+      "gold": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C003"
+      ],
+      "predicted": [
+        "B02_C007",
+        "B02_C010"
+      ],
+      "true_positives": [],
+      "false_positives": [
+        "B02_C007",
+        "B02_C010"
+      ],
+      "false_negatives": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C003"
+      ]
+    },
+    {
+      "segment_id": "B02_S0009",
+      "gold": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C003",
+        "B02_C009"
+      ],
+      "predicted": [
+        "B02_C007",
+        "B02_C010"
+      ],
+      "true_positives": [],
+      "false_positives": [
+        "B02_C007",
+        "B02_C010"
+      ],
+      "false_negatives": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C003",
+        "B02_C009"
+      ]
+    },
+    {
+      "segment_id": "B02_S0010",
+      "gold": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C003",
+        "B02_C009"
+      ],
+      "predicted": [
+        "B02_C004",
+        "B02_C007"
+      ],
+      "true_positives": [],
+      "false_positives": [
+        "B02_C004",
+        "B02_C007"
+      ],
+      "false_negatives": [
+        "B02_C001",
+        "B02_C002",
+        "B02_C003",
+        "B02_C009"
+      ]
+    }
+  ]
+}

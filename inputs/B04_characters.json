@@ -53,7 +53,7 @@
     {
       "char_id": "B04_C007",
       "canonical_name": "Methi Bey",
-      "aliases": ["Methi Bey", "Methi"],
+      "aliases": ["Methi Bey", "Methi", "Zabit"],
       "gender": "male",
       "role": "supporting character",
       "notes": "Officer/zabit figure associated with Nigâr in the social and dancing scenes."
@@ -81,22 +81,6 @@
       "gender": "male",
       "role": "minor character",
       "notes": "Husband of Nebile Hanım; appears in a later social/dining scene."
-    },
-    {
-      "char_id": "B04_C011",
-      "canonical_name": "Madam",
-      "aliases": ["Madam"],
-      "gender": "female",
-      "role": "minor/background character",
-      "notes": "A Christian/foreign woman mentioned among the close guests in the gambling/social environment. Keep only if she appears repeatedly in your selected segments."
-    },
-    {
-      "char_id": "B04_C012",
-      "canonical_name": "Müjgân'ın babası",
-      "aliases": ["Müjgân'ın babası", "babası"],
-      "gender": "male",
-      "role": "background character",
-      "notes": "Müjgân's deceased father, described as formerly having served as a mutasarrıf. Mentioned as part of Müjgân's background."
     }
   ]
 }

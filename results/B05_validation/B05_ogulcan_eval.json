@@ -1,0 +1,474 @@
+{
+  "book_id": "B05",
+  "title": "Tesadüf",
+  "system": "local_llm_candidate_based",
+  "model_name": "hf.co/ogulcanaydogan/Turkish-LLM-14B-Instruct-GGUF:Q4_K_M",
+  "prompt_type": "candidate_based_window_presence_validation",
+  "selection_method": "",
+  "top_k": null,
+  "task": "300_word_window_level_character_presence",
+  "unit": "300-word overlapping segment",
+  "gold_path": "/Users/denizterziler/PycharmProjects/BookCharacterProject/gold/B05_gold.json",
+  "prediction_path": "/Users/denizterziler/PycharmProjects/BookCharacterProject/predictions/local_llm/B05_hf_co_ogulcanaydogan_Turkish-LLM-14B-Instruct-GGUF_Q4_K_M_candidate_based_window_presence_validation_output.json",
+  "gold_segment_count": 10,
+  "prediction_segment_count_used": 10,
+  "missing_prediction_segments": [],
+  "scores": {
+    "true_positive_count": 14,
+    "false_positive_count": 2,
+    "false_negative_count": 35,
+    "precision": 0.875,
+    "recall": 0.2857,
+    "f1": 0.4308,
+    "true_positives": [
+      [
+        "B05_S0001",
+        "B05_C001"
+      ],
+      [
+        "B05_S0001",
+        "B05_C002"
+      ],
+      [
+        "B05_S0002",
+        "B05_C001"
+      ],
+      [
+        "B05_S0002",
+        "B05_C004"
+      ],
+      [
+        "B05_S0003",
+        "B05_C002"
+      ],
+      [
+        "B05_S0004",
+        "B05_C001"
+      ],
+      [
+        "B05_S0004",
+        "B05_C002"
+      ],
+      [
+        "B05_S0005",
+        "B05_C001"
+      ],
+      [
+        "B05_S0005",
+        "B05_C002"
+      ],
+      [
+        "B05_S0006",
+        "B05_C002"
+      ],
+      [
+        "B05_S0007",
+        "B05_C002"
+      ],
+      [
+        "B05_S0008",
+        "B05_C002"
+      ],
+      [
+        "B05_S0009",
+        "B05_C002"
+      ],
+      [
+        "B05_S0010",
+        "B05_C002"
+      ]
+    ],
+    "false_positives": [
+      [
+        "B05_S0006",
+        "B05_C001"
+      ],
+      [
+        "B05_S0009",
+        "B05_C016"
+      ]
+    ],
+    "false_negatives": [
+      [
+        "B05_S0001",
+        "B05_C004"
+      ],
+      [
+        "B05_S0001",
+        "B05_C005"
+      ],
+      [
+        "B05_S0001",
+        "B05_C007"
+      ],
+      [
+        "B05_S0002",
+        "B05_C002"
+      ],
+      [
+        "B05_S0002",
+        "B05_C005"
+      ],
+      [
+        "B05_S0002",
+        "B05_C010"
+      ],
+      [
+        "B05_S0003",
+        "B05_C001"
+      ],
+      [
+        "B05_S0003",
+        "B05_C004"
+      ],
+      [
+        "B05_S0003",
+        "B05_C010"
+      ],
+      [
+        "B05_S0004",
+        "B05_C004"
+      ],
+      [
+        "B05_S0004",
+        "B05_C008"
+      ],
+      [
+        "B05_S0004",
+        "B05_C009"
+      ],
+      [
+        "B05_S0004",
+        "B05_C015"
+      ],
+      [
+        "B05_S0005",
+        "B05_C003"
+      ],
+      [
+        "B05_S0005",
+        "B05_C005"
+      ],
+      [
+        "B05_S0005",
+        "B05_C007"
+      ],
+      [
+        "B05_S0006",
+        "B05_C003"
+      ],
+      [
+        "B05_S0006",
+        "B05_C005"
+      ],
+      [
+        "B05_S0006",
+        "B05_C006"
+      ],
+      [
+        "B05_S0006",
+        "B05_C007"
+      ],
+      [
+        "B05_S0007",
+        "B05_C001"
+      ],
+      [
+        "B05_S0007",
+        "B05_C004"
+      ],
+      [
+        "B05_S0007",
+        "B05_C008"
+      ],
+      [
+        "B05_S0008",
+        "B05_C004"
+      ],
+      [
+        "B05_S0008",
+        "B05_C008"
+      ],
+      [
+        "B05_S0008",
+        "B05_C009"
+      ],
+      [
+        "B05_S0008",
+        "B05_C010"
+      ],
+      [
+        "B05_S0009",
+        "B05_C004"
+      ],
+      [
+        "B05_S0009",
+        "B05_C008"
+      ],
+      [
+        "B05_S0009",
+        "B05_C010"
+      ],
+      [
+        "B05_S0010",
+        "B05_C001"
+      ],
+      [
+        "B05_S0010",
+        "B05_C004"
+      ],
+      [
+        "B05_S0010",
+        "B05_C008"
+      ],
+      [
+        "B05_S0010",
+        "B05_C010"
+      ],
+      [
+        "B05_S0010",
+        "B05_C011"
+      ]
+    ]
+  },
+  "segment_details": [
+    {
+      "segment_id": "B05_S0001",
+      "gold": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004",
+        "B05_C005",
+        "B05_C007"
+      ],
+      "predicted": [
+        "B05_C001",
+        "B05_C002"
+      ],
+      "true_positives": [
+        "B05_C001",
+        "B05_C002"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B05_C004",
+        "B05_C005",
+        "B05_C007"
+      ]
+    },
+    {
+      "segment_id": "B05_S0002",
+      "gold": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004",
+        "B05_C005",
+        "B05_C010"
+      ],
+      "predicted": [
+        "B05_C001",
+        "B05_C004"
+      ],
+      "true_positives": [
+        "B05_C001",
+        "B05_C004"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B05_C002",
+        "B05_C005",
+        "B05_C010"
+      ]
+    },
+    {
+      "segment_id": "B05_S0003",
+      "gold": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004",
+        "B05_C010"
+      ],
+      "predicted": [
+        "B05_C002"
+      ],
+      "true_positives": [
+        "B05_C002"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B05_C001",
+        "B05_C004",
+        "B05_C010"
+      ]
+    },
+    {
+      "segment_id": "B05_S0004",
+      "gold": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004",
+        "B05_C008",
+        "B05_C009",
+        "B05_C015"
+      ],
+      "predicted": [
+        "B05_C001",
+        "B05_C002"
+      ],
+      "true_positives": [
+        "B05_C001",
+        "B05_C002"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B05_C004",
+        "B05_C008",
+        "B05_C009",
+        "B05_C015"
+      ]
+    },
+    {
+      "segment_id": "B05_S0005",
+      "gold": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C003",
+        "B05_C005",
+        "B05_C007"
+      ],
+      "predicted": [
+        "B05_C001",
+        "B05_C002"
+      ],
+      "true_positives": [
+        "B05_C001",
+        "B05_C002"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B05_C003",
+        "B05_C005",
+        "B05_C007"
+      ]
+    },
+    {
+      "segment_id": "B05_S0006",
+      "gold": [
+        "B05_C002",
+        "B05_C003",
+        "B05_C005",
+        "B05_C006",
+        "B05_C007"
+      ],
+      "predicted": [
+        "B05_C001",
+        "B05_C002"
+      ],
+      "true_positives": [
+        "B05_C002"
+      ],
+      "false_positives": [
+        "B05_C001"
+      ],
+      "false_negatives": [
+        "B05_C003",
+        "B05_C005",
+        "B05_C006",
+        "B05_C007"
+      ]
+    },
+    {
+      "segment_id": "B05_S0007",
+      "gold": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004",
+        "B05_C008"
+      ],
+      "predicted": [
+        "B05_C002"
+      ],
+      "true_positives": [
+        "B05_C002"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B05_C001",
+        "B05_C004",
+        "B05_C008"
+      ]
+    },
+    {
+      "segment_id": "B05_S0008",
+      "gold": [
+        "B05_C002",
+        "B05_C004",
+        "B05_C008",
+        "B05_C009",
+        "B05_C010"
+      ],
+      "predicted": [
+        "B05_C002"
+      ],
+      "true_positives": [
+        "B05_C002"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B05_C004",
+        "B05_C008",
+        "B05_C009",
+        "B05_C010"
+      ]
+    },
+    {
+      "segment_id": "B05_S0009",
+      "gold": [
+        "B05_C002",
+        "B05_C004",
+        "B05_C008",
+        "B05_C010"
+      ],
+      "predicted": [
+        "B05_C002",
+        "B05_C016"
+      ],
+      "true_positives": [
+        "B05_C002"
+      ],
+      "false_positives": [
+        "B05_C016"
+      ],
+      "false_negatives": [
+        "B05_C004",
+        "B05_C008",
+        "B05_C010"
+      ]
+    },
+    {
+      "segment_id": "B05_S0010",
+      "gold": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004",
+        "B05_C008",
+        "B05_C010",
+        "B05_C011"
+      ],
+      "predicted": [
+        "B05_C002"
+      ],
+      "true_positives": [
+        "B05_C002"
+      ],
+      "false_positives": [],
+      "false_negatives": [
+        "B05_C001",
+        "B05_C004",
+        "B05_C008",
+        "B05_C010",
+        "B05_C011"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "book_id": "B02",
+  "title": "Efsuncu Baba",
+  "system": "local_llm_candidate_based",
+  "model_name": "hf.co/ogulcanaydogan/Turkish-LLM-14B-Instruct-GGUF:Q4_K_M",
+  "prompt_type": "candidate_based_window_presence_validation",
+  "unit": "300-word overlapping segment",
+  "mode": "validation_only",
+  "gold_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/gold/B02_gold.json",
+  "description": "Local LLM candidate-based character presence extraction. This validation run processes only the manually selected gold validation segments. The model receives one 300-word segment and the predefined character inventory, then returns only the character IDs present in that segment. Post-processing corrects wrong book-prefix character IDs when the corresponding character ID exists in the current book inventory.",
+  "segment_presence": [
+    {
+      "segment_id": "B02_S0001",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ]
+    },
+    {
+      "segment_id": "B02_S0002",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ]
+    },
+    {
+      "segment_id": "B02_S0003",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ]
+    },
+    {
+      "segment_id": "B02_S0004",
+      "characters_present": [
+        "B02_C001",
+        "B02_C008"
+      ]
+    },
+    {
+      "segment_id": "B02_S0005",
+      "characters_present": [
+        "B02_C001",
+        "B02_C008"
+      ]
+    },
+    {
+      "segment_id": "B02_S0006",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ]
+    },
+    {
+      "segment_id": "B02_S0007",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ]
+    },
+    {
+      "segment_id": "B02_S0008",
+      "characters_present": [
+        "B02_C001"
+      ]
+    },
+    {
+      "segment_id": "B02_S0009",
+      "characters_present": [
+        "B02_C001",
+        "B02_C002"
+      ]
+    },
+    {
+      "segment_id": "B02_S0010",
+      "characters_present": [
+        "B02_C001"
+      ]
+    }
+  ]
+}
