@@ -1,0 +1,46 @@
+{
+  "book_id": "B05",
+  "title": "Tesadüf",
+  "gold_annotations": [
+    {
+      "segment_id": "B05_S0001",
+      "characters_present": ["B05_C001", "B05_C002", "B05_C004", "B05_C005", "B05_C007"]
+    },
+    {
+      "segment_id": "B05_S0002",
+      "characters_present": ["B05_C001", "B05_C002", "B05_C004", "B05_C005", "B05_C010"]
+    },
+    {
+      "segment_id": "B05_S0003",
+      "characters_present": ["B05_C001", "B05_C002", "B05_C004", "B05_C010"]
+    },
+    {
+      "segment_id": "B05_S0004",
+      "characters_present": ["B05_C001", "B05_C002", "B05_C004", "B05_C008", "B05_C009", "B05_C015"]
+    },
+    {
+      "segment_id": "B05_S0005",
+      "characters_present": ["B05_C001", "B05_C002", "B05_C003", "B05_C005", "B05_C007"]
+    },
+    {
+      "segment_id": "B05_S0006",
+      "characters_present": ["B05_C002", "B05_C003", "B05_C005", "B05_C006", "B05_C007"]
+    },
+    {
+      "segment_id": "B05_S0007",
+      "characters_present": ["B05_C001", "B05_C002", "B05_C004", "B05_C008"]
+    },
+    {
+      "segment_id": "B05_S0008",
+      "characters_present": ["B05_C002", "B05_C004", "B05_C008", "B05_C009", "B05_C010"]
+    },
+    {
+      "segment_id": "B05_S0009",
+      "characters_present": ["B05_C002", "B05_C004", "B05_C008", "B05_C010"]
+    },
+    {
+      "segment_id": "B05_S0010",
+      "characters_present": ["B05_C001", "B05_C002", "B05_C004", "B05_C008", "B05_C010", "B05_C011"]
+    }
+  ]
+}
