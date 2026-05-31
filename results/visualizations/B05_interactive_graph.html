@@ -1,0 +1,307 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 100vh;
+                 background-color: #1a1a2e;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": {"background": "#4E9AF1", "border": "#4E9AF1"}, "font": {"color": "#ffffff"}, "hidden": false, "id": "ANCHOR_B05_COM01", "label": "ANCHOR_B05_COM01", "physics": true, "shape": "dot", "size": 2, "title": "Community anchor: aile ve hizmet/otorite ili\u015fkileri \u00e7evresi"}, {"color": {"background": "#F4845F", "border": "#F4845F"}, "font": {"color": "#ffffff"}, "hidden": false, "id": "ANCHOR_B05_COM02", "label": "ANCHOR_B05_COM02", "physics": true, "shape": "dot", "size": 2, "title": "Community anchor: hizmet/otorite ili\u015fkileri \u00e7evresi"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eG\u00fcls\u00fcm Han\u0131m\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C001\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e aile ve hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e female\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e main character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e ev han\u0131m\u0131 (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e poor (95%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e adult (90%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 151\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C001", "label": "G\u00fcls\u00fcm Han\u0131m", "shape": "dot", "size": 21.422222222222224, "title": "G\u00fcls\u00fcm Han\u0131m"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eHoca Nefise Han\u0131m\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C002\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e aile ve hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e female\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e main character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e hoca / p\u00fcf\u00e7\u00fc / falc\u0131 (95%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e middle (80%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e old (90%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 225\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C002", "label": "Hoca Nefise Han\u0131m", "shape": "dot", "size": 28.0, "title": "Hoca Nefise Han\u0131m"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eR\u0131fk\u0131 Efendi\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C003\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e aile ve hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e important character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e memur (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e lower_middle (85%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e adult (90%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 68\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C003", "label": "R\u0131fk\u0131 Efendi", "shape": "dot", "size": 14.044444444444444, "title": "R\u0131fk\u0131 Efendi"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eHac\u0131 Baba\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C004\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e aile ve hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e supporting character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e lower_middle (90%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e adult (95%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 59\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C004", "label": "Hac\u0131 Baba", "shape": "dot", "size": 13.244444444444445, "title": "Hac\u0131 Baba"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eZ\u00fcbeyde\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C005\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e aile ve hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e female\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e supporting character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e ev han\u0131m\u0131 (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e poor (85%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e old (95%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 23\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C005", "label": "Z\u00fcbeyde", "shape": "dot", "size": 10.044444444444444, "title": "Z\u00fcbeyde"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#F4845F", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#F4845F"}, "hover": {"background": "#ffffff", "border": "#F4845F"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eVefa\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C006\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e class_or_service_relation\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e minor character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e \u00f6\u011frenci (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e lower_middle (70%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e child_youth (95%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 48\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C006", "label": "Vefa", "shape": "dot", "size": 12.266666666666666, "title": "Vefa"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eG\u00fcls\u00fcm\u0027\u00fcn annesi\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C007\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e aile ve hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e female\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e supporting character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e ev han\u0131m\u0131 (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e poor (95%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e adult (90%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 74\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C007", "label": "G\u00fcls\u00fcm\u0027\u00fcn annesi", "shape": "dot", "size": 14.577777777777778, "title": "G\u00fcls\u00fcm\u0027\u00fcn annesi"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eSeher\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C008\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e aile ve hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e female\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e supporting/minor character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e lower_middle (80%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e teen (90%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 32\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C008", "label": "Seher", "shape": "dot", "size": 10.844444444444445, "title": "Seher"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003e\u0130mameciler ailesi\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C009\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e aile ve hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e group\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e group character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e poor (90%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 26\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C009", "label": "\u0130mameciler ailesi", "shape": "dot", "size": 10.31111111111111, "title": "\u0130mameciler ailesi"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eSarman\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C010\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e aile ve hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e unknown\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e animal/minor\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e animal (cat) (100%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e wealthy (90%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 26\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C010", "label": "Sarman", "shape": "dot", "size": 10.31111111111111, "title": "Sarman"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eTekir\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C011\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e aile ve hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e unknown\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e animal/minor\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e animal (100%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 5\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C011", "label": "Tekir", "shape": "dot", "size": 8.444444444444445, "title": "Tekir"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#F4845F", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#F4845F"}, "hover": {"background": "#ffffff", "border": "#F4845F"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eSaibe\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C012\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e class_or_service_relation\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e female\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e later/supporting character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e i\u00e7 g\u00fcveyisi (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e middle (80%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e adult (95%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 149\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C012", "label": "Saibe", "shape": "dot", "size": 21.244444444444447, "title": "Saibe"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#F4845F", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#F4845F"}, "hover": {"background": "#ffffff", "border": "#F4845F"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003e\u015e\u00f6hret\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C013\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e class_or_service_relation\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e female\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e later/supporting character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e \u00fcf\u00fcr\u00fck\u00e7\u00fc / bak\u0131c\u0131 (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e middle (80%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e adult (85%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 171\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C013", "label": "\u015e\u00f6hret", "shape": "dot", "size": 23.2, "title": "\u015e\u00f6hret"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eSalim\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C014\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e aile ve hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e minor/background character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e memur (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e teen (90%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 10\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C014", "label": "Salim", "shape": "dot", "size": 8.88888888888889, "title": "Salim"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eK\u00fc\u00e7\u00fck \u015eaban\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C015\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e aile ve hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e minor/background character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e kahveci \u00e7\u0131ra\u011f\u0131 (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e lower_middle (70%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e child_youth (80%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 5\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C015", "label": "K\u00fc\u00e7\u00fck \u015eaban", "shape": "dot", "size": 8.444444444444445, "title": "K\u00fc\u00e7\u00fck \u015eaban"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#F4845F", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#F4845F"}, "hover": {"background": "#ffffff", "border": "#F4845F"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eSabbek\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B05_C016\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e hizmet/otorite ili\u015fkileri \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e class_or_service_relation\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e female\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e minor/background character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e beslemelikten bak\u0131c\u0131 kad\u0131n (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e lower_middle (80%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e adult (85%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 20\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B05_C016", "label": "Sabbek", "shape": "dot", "size": 9.777777777777779, "title": "Sabbek"}]);
+                  edges = new vis.DataSet([{"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM01", "label": "", "physics": true, "title": "", "to": "B05_C001", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM01", "label": "", "physics": true, "title": "", "to": "B05_C002", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM01", "label": "", "physics": true, "title": "", "to": "B05_C003", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM01", "label": "", "physics": true, "title": "", "to": "B05_C004", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM01", "label": "", "physics": true, "title": "", "to": "B05_C005", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM02", "label": "", "physics": true, "title": "", "to": "B05_C006", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM01", "label": "", "physics": true, "title": "", "to": "B05_C007", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM01", "label": "", "physics": true, "title": "", "to": "B05_C008", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM01", "label": "", "physics": true, "title": "", "to": "B05_C009", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM01", "label": "", "physics": true, "title": "", "to": "B05_C010", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM01", "label": "", "physics": true, "title": "", "to": "B05_C011", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM02", "label": "", "physics": true, "title": "", "to": "B05_C012", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM02", "label": "", "physics": true, "title": "", "to": "B05_C013", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM01", "label": "", "physics": true, "title": "", "to": "B05_C014", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM01", "label": "", "physics": true, "title": "", "to": "B05_C015", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B05_COM02", "label": "", "physics": true, "title": "", "to": "B05_C016", "value": 1, "width": 0.1}, {"color": "rgba(255,220,120,0.9000000000000001)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C012", "label": "acquaintance", "physics": true, "title": "Saibe \u2014 \u015e\u00f6hret | weight=76 | relation=acquaintance | confidence=85%", "to": "B05_C013", "value": 3.8000000000000003, "width": 3.8000000000000003}, {"color": "rgba(255,220,120,0.7263157894736842)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "servant_employer", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 Hoca Nefise Han\u0131m | weight=52 | relation=servant_employer | confidence=90%", "to": "B05_C002", "value": 2.7894736842105265, "width": 2.7894736842105265}, {"color": "rgba(255,220,120,0.6467105263157895)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C002", "label": "servant_employer", "physics": true, "title": "Hoca Nefise Han\u0131m \u2014 \u015e\u00f6hret | weight=41 | relation=servant_employer | confidence=95%", "to": "B05_C013", "value": 2.3263157894736843, "width": 2.3263157894736843}, {"color": "rgba(255,220,120,0.6105263157894738)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C002", "label": "servant_employer", "physics": true, "title": "Hoca Nefise Han\u0131m \u2014 Saibe | weight=36 | relation=servant_employer | confidence=90%", "to": "B05_C012", "value": 2.1157894736842104, "width": 2.1157894736842104}, {"color": "rgba(255,255,255,0.2875)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C002", "label": "", "physics": true, "title": "Hoca Nefise Han\u0131m \u2014 Hac\u0131 Baba | weight=19 | relation=not_extracted | confidence=0%", "to": "B05_C004", "value": 1.4, "width": 1.4}, {"color": "rgba(255,255,255,0.2802631578947369)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 R\u0131fk\u0131 Efendi | weight=18 | relation=not_extracted | confidence=0%", "to": "B05_C003", "value": 1.3578947368421053, "width": 1.3578947368421053}, {"color": "rgba(255,255,255,0.2802631578947369)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C002", "label": "", "physics": true, "title": "Hoca Nefise Han\u0131m \u2014 R\u0131fk\u0131 Efendi | weight=18 | relation=not_extracted | confidence=0%", "to": "B05_C003", "value": 1.3578947368421053, "width": 1.3578947368421053}, {"color": "rgba(255,255,255,0.2802631578947369)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C006", "label": "", "physics": true, "title": "Vefa \u2014 \u015e\u00f6hret | weight=18 | relation=not_extracted | confidence=0%", "to": "B05_C013", "value": 1.3578947368421053, "width": 1.3578947368421053}, {"color": "rgba(255,255,255,0.2657894736842105)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C002", "label": "", "physics": true, "title": "Hoca Nefise Han\u0131m \u2014 G\u00fcls\u00fcm\u0027\u00fcn annesi | weight=16 | relation=not_extracted | confidence=0%", "to": "B05_C007", "value": 1.2736842105263158, "width": 1.2736842105263158}, {"color": "rgba(255,255,255,0.25855263157894737)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 Hac\u0131 Baba | weight=15 | relation=not_extracted | confidence=0%", "to": "B05_C004", "value": 1.231578947368421, "width": 1.231578947368421}, {"color": "rgba(255,255,255,0.25855263157894737)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 G\u00fcls\u00fcm\u0027\u00fcn annesi | weight=15 | relation=not_extracted | confidence=0%", "to": "B05_C007", "value": 1.231578947368421, "width": 1.231578947368421}, {"color": "rgba(255,255,255,0.24407894736842106)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C007", "label": "", "physics": true, "title": "G\u00fcls\u00fcm\u0027\u00fcn annesi \u2014 Saibe | weight=13 | relation=not_extracted | confidence=0%", "to": "B05_C012", "value": 1.1473684210526316, "width": 1.1473684210526316}, {"color": "rgba(255,255,255,0.2368421052631579)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 \u015e\u00f6hret | weight=12 | relation=not_extracted | confidence=0%", "to": "B05_C013", "value": 1.1052631578947367, "width": 1.1052631578947367}, {"color": "rgba(255,255,255,0.22236842105263158)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C007", "label": "", "physics": true, "title": "G\u00fcls\u00fcm\u0027\u00fcn annesi \u2014 \u015e\u00f6hret | weight=10 | relation=not_extracted | confidence=0%", "to": "B05_C013", "value": 1.0210526315789474, "width": 1.0210526315789474}, {"color": "rgba(255,255,255,0.20789473684210524)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 Saibe | weight=8 | relation=not_extracted | confidence=0%", "to": "B05_C012", "value": 0.9368421052631579, "width": 0.9368421052631579}, {"color": "rgba(255,255,255,0.20789473684210524)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C002", "label": "", "physics": true, "title": "Hoca Nefise Han\u0131m \u2014 Seher | weight=8 | relation=not_extracted | confidence=0%", "to": "B05_C008", "value": 0.9368421052631579, "width": 0.9368421052631579}, {"color": "rgba(255,255,255,0.20789473684210524)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C002", "label": "", "physics": true, "title": "Hoca Nefise Han\u0131m \u2014 Sarman | weight=8 | relation=not_extracted | confidence=0%", "to": "B05_C010", "value": 0.9368421052631579, "width": 0.9368421052631579}, {"color": "rgba(255,255,255,0.20789473684210524)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C002", "label": "", "physics": true, "title": "Hoca Nefise Han\u0131m \u2014 Sabbek | weight=8 | relation=not_extracted | confidence=0%", "to": "B05_C016", "value": 0.9368421052631579, "width": 0.9368421052631579}, {"color": "rgba(255,255,255,0.20789473684210524)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C006", "label": "", "physics": true, "title": "Vefa \u2014 Saibe | weight=8 | relation=not_extracted | confidence=0%", "to": "B05_C012", "value": 0.9368421052631579, "width": 0.9368421052631579}, {"color": "rgba(255,255,255,0.2006578947368421)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C003", "label": "", "physics": true, "title": "R\u0131fk\u0131 Efendi \u2014 G\u00fcls\u00fcm\u0027\u00fcn annesi | weight=7 | relation=not_extracted | confidence=0%", "to": "B05_C007", "value": 0.894736842105263, "width": 0.894736842105263}, {"color": "rgba(255,255,255,0.2006578947368421)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C003", "label": "", "physics": true, "title": "R\u0131fk\u0131 Efendi \u2014 \u015e\u00f6hret | weight=7 | relation=not_extracted | confidence=0%", "to": "B05_C013", "value": 0.894736842105263, "width": 0.894736842105263}, {"color": "rgba(255,255,255,0.2006578947368421)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C004", "label": "", "physics": true, "title": "Hac\u0131 Baba \u2014 Sarman | weight=7 | relation=not_extracted | confidence=0%", "to": "B05_C010", "value": 0.894736842105263, "width": 0.894736842105263}, {"color": "rgba(255,255,255,0.19342105263157894)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 Z\u00fcbeyde | weight=6 | relation=not_extracted | confidence=0%", "to": "B05_C005", "value": 0.8526315789473684, "width": 0.8526315789473684}, {"color": "rgba(255,255,255,0.19342105263157894)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 \u0130mameciler ailesi | weight=6 | relation=not_extracted | confidence=0%", "to": "B05_C009", "value": 0.8526315789473684, "width": 0.8526315789473684}, {"color": "rgba(255,255,255,0.19342105263157894)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C002", "label": "", "physics": true, "title": "Hoca Nefise Han\u0131m \u2014 Vefa | weight=6 | relation=not_extracted | confidence=0%", "to": "B05_C006", "value": 0.8526315789473684, "width": 0.8526315789473684}, {"color": "rgba(255,255,255,0.19342105263157894)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C002", "label": "", "physics": true, "title": "Hoca Nefise Han\u0131m \u2014 \u0130mameciler ailesi | weight=6 | relation=not_extracted | confidence=0%", "to": "B05_C009", "value": 0.8526315789473684, "width": 0.8526315789473684}, {"color": "rgba(255,255,255,0.19342105263157894)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C003", "label": "", "physics": true, "title": "R\u0131fk\u0131 Efendi \u2014 Z\u00fcbeyde | weight=6 | relation=not_extracted | confidence=0%", "to": "B05_C005", "value": 0.8526315789473684, "width": 0.8526315789473684}, {"color": "rgba(255,255,255,0.19342105263157894)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C004", "label": "", "physics": true, "title": "Hac\u0131 Baba \u2014 Seher | weight=6 | relation=not_extracted | confidence=0%", "to": "B05_C008", "value": 0.8526315789473684, "width": 0.8526315789473684}, {"color": "rgba(255,255,255,0.18618421052631579)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 Vefa | weight=5 | relation=not_extracted | confidence=0%", "to": "B05_C006", "value": 0.8105263157894737, "width": 0.8105263157894737}, {"color": "rgba(255,255,255,0.18618421052631579)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 Seher | weight=5 | relation=not_extracted | confidence=0%", "to": "B05_C008", "value": 0.8105263157894737, "width": 0.8105263157894737}, {"color": "rgba(255,255,255,0.17894736842105263)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 Sarman | weight=4 | relation=not_extracted | confidence=0%", "to": "B05_C010", "value": 0.7684210526315789, "width": 0.7684210526315789}, {"color": "rgba(255,255,255,0.17894736842105263)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C004", "label": "", "physics": true, "title": "Hac\u0131 Baba \u2014 \u0130mameciler ailesi | weight=4 | relation=not_extracted | confidence=0%", "to": "B05_C009", "value": 0.7684210526315789, "width": 0.7684210526315789}, {"color": "rgba(255,255,255,0.17894736842105263)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C006", "label": "", "physics": true, "title": "Vefa \u2014 G\u00fcls\u00fcm\u0027\u00fcn annesi | weight=4 | relation=not_extracted | confidence=0%", "to": "B05_C007", "value": 0.7684210526315789, "width": 0.7684210526315789}, {"color": "rgba(255,255,255,0.17894736842105263)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C013", "label": "", "physics": true, "title": "\u015e\u00f6hret \u2014 Sabbek | weight=4 | relation=not_extracted | confidence=0%", "to": "B05_C016", "value": 0.7684210526315789, "width": 0.7684210526315789}, {"color": "rgba(255,255,255,0.17171052631578948)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C002", "label": "", "physics": true, "title": "Hoca Nefise Han\u0131m \u2014 Z\u00fcbeyde | weight=3 | relation=not_extracted | confidence=0%", "to": "B05_C005", "value": 0.7263157894736842, "width": 0.7263157894736842}, {"color": "rgba(255,255,255,0.17171052631578948)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C003", "label": "", "physics": true, "title": "R\u0131fk\u0131 Efendi \u2014 Vefa | weight=3 | relation=not_extracted | confidence=0%", "to": "B05_C006", "value": 0.7263157894736842, "width": 0.7263157894736842}, {"color": "rgba(255,255,255,0.17171052631578948)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C003", "label": "", "physics": true, "title": "R\u0131fk\u0131 Efendi \u2014 Salim | weight=3 | relation=not_extracted | confidence=0%", "to": "B05_C014", "value": 0.7263157894736842, "width": 0.7263157894736842}, {"color": "rgba(255,255,255,0.17171052631578948)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C005", "label": "", "physics": true, "title": "Z\u00fcbeyde \u2014 Vefa | weight=3 | relation=not_extracted | confidence=0%", "to": "B05_C006", "value": 0.7263157894736842, "width": 0.7263157894736842}, {"color": "rgba(255,255,255,0.17171052631578948)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C005", "label": "", "physics": true, "title": "Z\u00fcbeyde \u2014 G\u00fcls\u00fcm\u0027\u00fcn annesi | weight=3 | relation=not_extracted | confidence=0%", "to": "B05_C007", "value": 0.7263157894736842, "width": 0.7263157894736842}, {"color": "rgba(255,255,255,0.17171052631578948)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C008", "label": "", "physics": true, "title": "Seher \u2014 \u0130mameciler ailesi | weight=3 | relation=not_extracted | confidence=0%", "to": "B05_C009", "value": 0.7263157894736842, "width": 0.7263157894736842}, {"color": "rgba(255,255,255,0.17171052631578948)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C008", "label": "", "physics": true, "title": "Seher \u2014 Sarman | weight=3 | relation=not_extracted | confidence=0%", "to": "B05_C010", "value": 0.7263157894736842, "width": 0.7263157894736842}, {"color": "rgba(255,255,255,0.17171052631578948)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C012", "label": "", "physics": true, "title": "Saibe \u2014 Sabbek | weight=3 | relation=not_extracted | confidence=0%", "to": "B05_C016", "value": 0.7263157894736842, "width": 0.7263157894736842}, {"color": "rgba(255,255,255,0.1644736842105263)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 Salim | weight=2 | relation=not_extracted | confidence=0%", "to": "B05_C014", "value": 0.6842105263157895, "width": 0.6842105263157895}, {"color": "rgba(255,255,255,0.1644736842105263)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C002", "label": "", "physics": true, "title": "Hoca Nefise Han\u0131m \u2014 Salim | weight=2 | relation=not_extracted | confidence=0%", "to": "B05_C014", "value": 0.6842105263157895, "width": 0.6842105263157895}, {"color": "rgba(255,255,255,0.1644736842105263)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C003", "label": "", "physics": true, "title": "R\u0131fk\u0131 Efendi \u2014 Hac\u0131 Baba | weight=2 | relation=not_extracted | confidence=0%", "to": "B05_C004", "value": 0.6842105263157895, "width": 0.6842105263157895}, {"color": "rgba(255,255,255,0.1644736842105263)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C003", "label": "", "physics": true, "title": "R\u0131fk\u0131 Efendi \u2014 Saibe | weight=2 | relation=not_extracted | confidence=0%", "to": "B05_C012", "value": 0.6842105263157895, "width": 0.6842105263157895}, {"color": "rgba(255,255,255,0.1644736842105263)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C004", "label": "", "physics": true, "title": "Hac\u0131 Baba \u2014 Sabbek | weight=2 | relation=not_extracted | confidence=0%", "to": "B05_C016", "value": 0.6842105263157895, "width": 0.6842105263157895}, {"color": "rgba(255,255,255,0.1644736842105263)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C005", "label": "", "physics": true, "title": "Z\u00fcbeyde \u2014 Salim | weight=2 | relation=not_extracted | confidence=0%", "to": "B05_C014", "value": 0.6842105263157895, "width": 0.6842105263157895}, {"color": "rgba(255,255,255,0.1644736842105263)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C007", "label": "", "physics": true, "title": "G\u00fcls\u00fcm\u0027\u00fcn annesi \u2014 \u0130mameciler ailesi | weight=2 | relation=not_extracted | confidence=0%", "to": "B05_C009", "value": 0.6842105263157895, "width": 0.6842105263157895}, {"color": "rgba(255,255,255,0.1644736842105263)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C008", "label": "", "physics": true, "title": "Seher \u2014 Saibe | weight=2 | relation=not_extracted | confidence=0%", "to": "B05_C012", "value": 0.6842105263157895, "width": 0.6842105263157895}, {"color": "rgba(255,255,255,0.1644736842105263)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C008", "label": "", "physics": true, "title": "Seher \u2014 \u015e\u00f6hret | weight=2 | relation=not_extracted | confidence=0%", "to": "B05_C013", "value": 0.6842105263157895, "width": 0.6842105263157895}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 Tekir | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C011", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 K\u00fc\u00e7\u00fck \u015eaban | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C015", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C001", "label": "", "physics": true, "title": "G\u00fcls\u00fcm Han\u0131m \u2014 Sabbek | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C016", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C002", "label": "", "physics": true, "title": "Hoca Nefise Han\u0131m \u2014 Tekir | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C011", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C002", "label": "", "physics": true, "title": "Hoca Nefise Han\u0131m \u2014 K\u00fc\u00e7\u00fck \u015eaban | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C015", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C003", "label": "", "physics": true, "title": "R\u0131fk\u0131 Efendi \u2014 \u0130mameciler ailesi | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C009", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C003", "label": "", "physics": true, "title": "R\u0131fk\u0131 Efendi \u2014 Sabbek | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C016", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C004", "label": "", "physics": true, "title": "Hac\u0131 Baba \u2014 Vefa | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C006", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C004", "label": "", "physics": true, "title": "Hac\u0131 Baba \u2014 G\u00fcls\u00fcm\u0027\u00fcn annesi | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C007", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C004", "label": "", "physics": true, "title": "Hac\u0131 Baba \u2014 Tekir | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C011", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C004", "label": "", "physics": true, "title": "Hac\u0131 Baba \u2014 K\u00fc\u00e7\u00fck \u015eaban | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C015", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C007", "label": "", "physics": true, "title": "G\u00fcls\u00fcm\u0027\u00fcn annesi \u2014 Seher | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C008", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C007", "label": "", "physics": true, "title": "G\u00fcls\u00fcm\u0027\u00fcn annesi \u2014 Sarman | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C010", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C007", "label": "", "physics": true, "title": "G\u00fcls\u00fcm\u0027\u00fcn annesi \u2014 Salim | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C014", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C008", "label": "", "physics": true, "title": "Seher \u2014 Tekir | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C011", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C008", "label": "", "physics": true, "title": "Seher \u2014 K\u00fc\u00e7\u00fck \u015eaban | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C015", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C009", "label": "", "physics": true, "title": "\u0130mameciler ailesi \u2014 Sarman | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C010", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C009", "label": "", "physics": true, "title": "\u0130mameciler ailesi \u2014 Saibe | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C012", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C009", "label": "", "physics": true, "title": "\u0130mameciler ailesi \u2014 \u015e\u00f6hret | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C013", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C009", "label": "", "physics": true, "title": "\u0130mameciler ailesi \u2014 K\u00fc\u00e7\u00fck \u015eaban | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C015", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C010", "label": "", "physics": true, "title": "Sarman \u2014 Tekir | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C011", "value": 0.6421052631578947, "width": 0.6421052631578947}, {"color": "rgba(255,255,255,0.15723684210526315)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B05_C010", "label": "", "physics": true, "title": "Sarman \u2014 Sabbek | weight=1 | relation=not_extracted | confidence=0%", "to": "B05_C016", "value": 0.6421052631578947, "width": 0.6421052631578947}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"enabled": true, "stabilization": {"enabled": true, "iterations": 1200, "updateInterval": 25, "fit": true}, "solver": "forceAtlas2Based", "forceAtlas2Based": {"gravitationalConstant": -80, "centralGravity": 0.006, "springLength": 220, "springConstant": 0.04, "damping": 0.55, "avoidOverlap": 1}}, "nodes": {"shape": "dot"}, "edges": {"smooth": {"enabled": true, "type": "dynamic", "roundness": 0.35}, "color": {"inherit": false}, "scaling": {"min": 1, "max": 7}, "selectionWidth": 2, "hoverWidth": 2}, "interaction": {"hover": true, "tooltipDelay": 100, "hideEdgesOnDrag": false, "navigationButtons": true}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    background: #1a1a2e;
+  }
+
+  #legend {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    z-index: 999;
+    backdrop-filter: blur(6px);
+    max-width: 260px;
+  }
+
+  #legend h3 {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #aaaaaa;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    cursor: default;
+  }
+
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 1.5px solid rgba(255,255,255,0.3);
+  }
+
+  .legend-label {
+    line-height: 1.3;
+    font-size: 12px;
+  }
+
+  #info-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 16px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 10px;
+    padding: 16px 18px;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    z-index: 999;
+    backdrop-filter: blur(6px);
+    width: 280px;
+    display: none;
+    line-height: 1.7;
+  }
+
+  #info-panel b {
+    color: #aaaaaa;
+    font-weight: normal;
+  }
+
+  #info-panel .name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  #info-panel .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
+    color: #aaaaaa;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  #hint {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #bbbbbb;
+    pointer-events: none;
+    z-index: 998;
+  }
+</style>
+
+<div id="legend">
+  <h3>Communities</h3>
+  
+        <div class="legend-item" title="mixed_or_unclear">
+          <span class="legend-dot" style="background:#4E9AF1"></span>
+          <span class="legend-label">aile ve hizmet/otorite ilişkileri çevresi</span>
+        </div>
+        
+        <div class="legend-item" title="class_or_service_relation">
+          <span class="legend-dot" style="background:#F4845F"></span>
+          <span class="legend-label">hizmet/otorite ilişkileri çevresi</span>
+        </div>
+        
+</div>
+
+<div id="info-panel">
+  <span class="close-btn" onclick="document.getElementById('info-panel').style.display='none'">✕</span>
+  <div class="name" id="ip-name"></div>
+  <div id="ip-body"></div>
+</div>
+
+<div id="hint">Click a node for details · Scroll to zoom · Drag to pan</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var checkNetwork = setInterval(function () {
+      if (typeof network !== "undefined") {
+        clearInterval(checkNetwork);
+
+        network.once("stabilizationIterationsDone", function () {
+          network.setOptions({ physics: { enabled: false } });
+        });
+
+        network.on("click", function (params) {
+          if (params.nodes.length > 0) {
+            var nodeId = params.nodes[0];
+
+            if (String(nodeId).startsWith("ANCHOR_")) {
+              return;
+            }
+
+            var nodeData = network.body.data.nodes.get(nodeId);
+            var panel = document.getElementById("info-panel");
+
+            var rawDetails = nodeData.details || "";
+            var tmp = document.createElement("div");
+            tmp.innerHTML = rawDetails;
+
+            var inner = tmp.querySelector("div")
+              ? tmp.querySelector("div").innerHTML
+              : rawDetails;
+
+            var nameMatch = inner.match(/<b[^>]*>(.*?)<\/b>/);
+            var name = nameMatch ? nameMatch[1] : (nodeData.title || nodeId);
+
+            var body = inner.replace(/<b[^>]*>.*?<\/b><br><br>/, "");
+
+            document.getElementById("ip-name").textContent = name;
+            document.getElementById("ip-body").innerHTML = body;
+
+            panel.style.display = "block";
+          } else {
+            document.getElementById("info-panel").style.display = "none";
+          }
+        });
+      }
+    }, 100);
+  });
+</script>
+
+</body>
+</html>

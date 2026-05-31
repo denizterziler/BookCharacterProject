@@ -1,0 +1,317 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 100vh;
+                 background-color: #1a1a2e;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": {"background": "#4E9AF1", "border": "#4E9AF1"}, "font": {"color": "#ffffff"}, "hidden": false, "id": "ANCHOR_B02_COM01", "label": "ANCHOR_B02_COM01", "physics": true, "shape": "dot", "size": 2, "title": "Community anchor: arkada\u015fl\u0131k ve mistik etkile\u015fim \u00e7evresi"}, {"color": {"background": "#F4845F", "border": "#F4845F"}, "font": {"color": "#ffffff"}, "hidden": false, "id": "ANCHOR_B02_COM02", "label": "ANCHOR_B02_COM02", "physics": true, "shape": "dot", "size": 2, "title": "Community anchor: t\u00fcccar ve dervi\u015f \u00e7evresi"}, {"color": {"background": "#56C596", "border": "#56C596"}, "font": {"color": "#ffffff"}, "hidden": false, "id": "ANCHOR_B02_COM03", "label": "ANCHOR_B02_COM03", "physics": true, "shape": "dot", "size": 2, "title": "Community anchor: gen\u00e7 ve gen\u00e7 yeti\u015fkin karakter ili\u015fkisi"}, {"color": {"background": "#F7C948", "border": "#F7C948"}, "font": {"color": "#ffffff"}, "hidden": false, "id": "ANCHOR_B02_COM04", "label": "ANCHOR_B02_COM04", "physics": true, "shape": "dot", "size": 2, "title": "Community anchor: mitolojik ikili"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eAgop\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C001\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e arkada\u015fl\u0131k ve mistik etkile\u015fim \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e friendship_or_social_circle\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e main character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e thread-spinner (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e lower_middle (80%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e adult (85%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 110\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C001", "label": "Agop", "shape": "dot", "size": 25.05426356589147, "title": "Agop"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eKirkor\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C002\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e arkada\u015fl\u0131k ve mistik etkile\u015fim \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e friendship_or_social_circle\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e main character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e iplik e\u011firici (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e poor (85%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e adult (90%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 110\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C002", "label": "Kirkor", "shape": "dot", "size": 25.05426356589147, "title": "Kirkor"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eEbulfazl Enver\u00ee\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C003\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e arkada\u015fl\u0131k ve mistik etkile\u015fim \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e friendship_or_social_circle\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e main character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e superstitious treasure-seeker and occult enthusiast (95%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e wealthy (90%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e adult (90%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 129\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C003", "label": "Ebulfazl Enver\u00ee", "shape": "dot", "size": 28.0, "title": "Ebulfazl Enver\u00ee"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eZeynep Han\u0131m\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C004\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e arkada\u015fl\u0131k ve mistik etkile\u015fim \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e friendship_or_social_circle\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e female\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e important character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e ev han\u0131m\u0131 (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e middle (80%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e adult (85%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 4\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C004", "label": "Zeynep Han\u0131m", "shape": "dot", "size": 8.62015503875969, "title": "Zeynep Han\u0131m"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#56C596", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#56C596"}, "hover": {"background": "#ffffff", "border": "#56C596"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eMevl\u00fcde\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C005\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e gen\u00e7 ve gen\u00e7 yeti\u015fkin karakter ili\u015fkisi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e female\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e important character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e upper_middle (90%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e teen (95%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 18\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C005", "label": "Mevl\u00fcde", "shape": "dot", "size": 10.790697674418604, "title": "Mevl\u00fcde"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#56C596", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#56C596"}, "hover": {"background": "#ffffff", "border": "#56C596"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eNurullah Hasip\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C006\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e gen\u00e7 ve gen\u00e7 yeti\u015fkin karakter ili\u015fkisi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e important character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e middle (90%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e child_youth (85%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 19\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C006", "label": "Nurullah Hasip", "shape": "dot", "size": 10.945736434108527, "title": "Nurullah Hasip"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eNasrullah Efendi\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C007\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e arkada\u015fl\u0131k ve mistik etkile\u015fim \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e friendship_or_social_circle\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e background character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e alchemy researcher and occult scientist (95%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e wealthy (90%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e old (85%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 9\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C007", "label": "Nasrullah Efendi", "shape": "dot", "size": 9.395348837209303, "title": "Nasrullah Efendi"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eArtin A\u011fa\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C008\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e arkada\u015fl\u0131k ve mistik etkile\u015fim \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e friendship_or_social_circle\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e minor character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e hanende (singer) (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 10\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C008", "label": "Artin A\u011fa", "shape": "dot", "size": 9.550387596899224, "title": "Artin A\u011fa"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eBedros A\u011fa\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C009\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e arkada\u015fl\u0131k ve mistik etkile\u015fim \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e friendship_or_social_circle\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e background character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e ulema (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e old (85%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 2\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C009", "label": "Bedros A\u011fa", "shape": "dot", "size": 8.310077519379846, "title": "Bedros A\u011fa"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#F4845F", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#F4845F"}, "hover": {"background": "#ffffff", "border": "#F4845F"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eDervi\u015f Cebeli\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C010\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e t\u00fcccar ve dervi\u015f \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e class_or_service_relation\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e background character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e dervi\u015f, simya ve esrar ile ilgili (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 13\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C010", "label": "Dervi\u015f Cebeli", "shape": "dot", "size": 10.015503875968992, "title": "Dervi\u015f Cebeli"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eLahur\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C011\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e arkada\u015fl\u0131k ve mistik etkile\u015fim \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e friendship_or_social_circle\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e unknown\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e mythic/assigned identity\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e angelic figure (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 99\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C011", "label": "Lahur", "shape": "dot", "size": 23.348837209302324, "title": "Lahur"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#4E9AF1", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#4E9AF1"}, "hover": {"background": "#ffffff", "border": "#4E9AF1"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eMahur\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C012\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e arkada\u015fl\u0131k ve mistik etkile\u015fim \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e friendship_or_social_circle\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e unknown\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e mythic/assigned identity\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e angelic figure (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 110\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C012", "label": "Mahur", "shape": "dot", "size": 25.05426356589147, "title": "Mahur"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#F7C948", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#F7C948"}, "hover": {"background": "#ffffff", "border": "#F7C948"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eKekre\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C013\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e mitolojik ikili\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e unknown\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e mythic character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 9\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C013", "label": "Kekre", "shape": "dot", "size": 9.395348837209303, "title": "Kekre"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#F7C948", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#F7C948"}, "hover": {"background": "#ffffff", "border": "#F7C948"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eMekre\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C014\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e mitolojik ikili\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e mixed_or_unclear\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e unknown\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e mythic character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 9\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C014", "label": "Mekre", "shape": "dot", "size": 9.395348837209303, "title": "Mekre"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#F4845F", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#F4845F"}, "hover": {"background": "#ffffff", "border": "#F4845F"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eAbdullah Karuni\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C015\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e t\u00fcccar ve dervi\u015f \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e class_or_service_relation\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e embedded-story character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e t\u00fcccar (100%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e wealthy (100%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e adult (100%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 16\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C015", "label": "Abdullah Karuni", "shape": "dot", "size": 10.48062015503876, "title": "Abdullah Karuni"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#F4845F", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#F4845F"}, "hover": {"background": "#ffffff", "border": "#F4845F"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eMehmet Karuni\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C016\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e t\u00fcccar ve dervi\u015f \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e class_or_service_relation\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e embedded-story character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e wealthy (90%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e adult (90%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 16\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C016", "label": "Mehmet Karuni", "shape": "dot", "size": 10.48062015503876, "title": "Mehmet Karuni"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#F4845F", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#F4845F"}, "hover": {"background": "#ffffff", "border": "#F4845F"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003eAli Hacip\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C017\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e t\u00fcccar ve dervi\u015f \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e class_or_service_relation\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e embedded-story character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e hizmet\u00e7i (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 11\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C017", "label": "Ali Hacip", "shape": "dot", "size": 9.705426356589147, "title": "Ali Hacip"}, {"borderWidth": 1, "borderWidthSelected": 2, "color": {"background": "#F4845F", "border": "#ffffff", "highlight": {"background": "#ffffff", "border": "#F4845F"}, "hover": {"background": "#ffffff", "border": "#F4845F"}}, "details": "\u003cdiv style=\u0027font-family:sans-serif;font-size:13px;min-width:180px;padding:4px\u0027\u003e\u003cb style=\u0027font-size:15px\u0027\u003e\u0130bn el-Mah\u015fur\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003cb\u003eCharacter ID:\u003c/b\u003e B02_C018\u003cbr\u003e\u003cb\u003eCommunity:\u003c/b\u003e t\u00fcccar ve dervi\u015f \u00e7evresi\u003cbr\u003e\u003cb\u003eSocial logic:\u003c/b\u003e class_or_service_relation\u003cbr\u003e\u003cb\u003eGender:\u003c/b\u003e male\u003cbr\u003e\u003cb\u003eRole:\u003c/b\u003e embedded-story character\u003cbr\u003e\u003cb\u003eOccupation:\u003c/b\u003e dervi\u015f (90%)\u003cbr\u003e\u003cb\u003eWealth:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eAge group:\u003c/b\u003e unknown (0%)\u003cbr\u003e\u003cb\u003eWeighted degree:\u003c/b\u003e 16\u003c/div\u003e", "font": {"color": "#ffffff"}, "id": "B02_C018", "label": "\u0130bn el-Mah\u015fur", "shape": "dot", "size": 10.48062015503876, "title": "\u0130bn el-Mah\u015fur"}]);
+                  edges = new vis.DataSet([{"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM01", "label": "", "physics": true, "title": "", "to": "B02_C001", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM01", "label": "", "physics": true, "title": "", "to": "B02_C002", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM01", "label": "", "physics": true, "title": "", "to": "B02_C003", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM01", "label": "", "physics": true, "title": "", "to": "B02_C004", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM03", "label": "", "physics": true, "title": "", "to": "B02_C005", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM03", "label": "", "physics": true, "title": "", "to": "B02_C006", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM01", "label": "", "physics": true, "title": "", "to": "B02_C007", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM01", "label": "", "physics": true, "title": "", "to": "B02_C008", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM01", "label": "", "physics": true, "title": "", "to": "B02_C009", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM02", "label": "", "physics": true, "title": "", "to": "B02_C010", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM01", "label": "", "physics": true, "title": "", "to": "B02_C011", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM01", "label": "", "physics": true, "title": "", "to": "B02_C012", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM04", "label": "", "physics": true, "title": "", "to": "B02_C013", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM04", "label": "", "physics": true, "title": "", "to": "B02_C014", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM02", "label": "", "physics": true, "title": "", "to": "B02_C015", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM02", "label": "", "physics": true, "title": "", "to": "B02_C016", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM02", "label": "", "physics": true, "title": "", "to": "B02_C017", "value": 1, "width": 0.1}, {"color": "rgba(255,255,255,0.01)", "from": "ANCHOR_B02_COM02", "label": "", "physics": true, "title": "", "to": "B02_C018", "value": 1, "width": 0.1}, {"color": "rgba(255,220,120,0.9000000000000001)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C001", "label": "friend", "physics": true, "title": "Agop \u2014 Kirkor | weight=35 | relation=friend | confidence=95%", "to": "B02_C002", "value": 3.8000000000000003, "width": 3.8000000000000003}, {"color": "rgba(255,220,120,0.7742857142857142)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C003", "label": "acquaintance", "physics": true, "title": "Ebulfazl Enver\u00ee \u2014 Mahur | weight=27 | relation=acquaintance | confidence=85%", "to": "B02_C012", "value": 3.068571428571429, "width": 3.068571428571429}, {"color": "rgba(255,220,120,0.7585714285714287)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C002", "label": "friend", "physics": true, "title": "Kirkor \u2014 Ebulfazl Enver\u00ee | weight=26 | relation=friend | confidence=90%", "to": "B02_C003", "value": 2.9771428571428573, "width": 2.9771428571428573}, {"color": "rgba(255,220,120,0.7585714285714287)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C011", "label": "friend", "physics": true, "title": "Lahur \u2014 Mahur | weight=26 | relation=friend | confidence=90%", "to": "B02_C012", "value": 2.9771428571428573, "width": 2.9771428571428573}, {"color": "rgba(255,220,120,0.7428571428571429)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C001", "label": "acquaintance", "physics": true, "title": "Agop \u2014 Ebulfazl Enver\u00ee | weight=25 | relation=acquaintance | confidence=85%", "to": "B02_C003", "value": 2.885714285714286, "width": 2.885714285714286}, {"color": "rgba(255,220,120,0.7114285714285715)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C003", "label": "friend", "physics": true, "title": "Ebulfazl Enver\u00ee \u2014 Lahur | weight=23 | relation=friend | confidence=85%", "to": "B02_C011", "value": 2.702857142857143, "width": 2.702857142857143}, {"color": "rgba(255,220,120,0.6642857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C002", "label": "acquaintance", "physics": true, "title": "Kirkor \u2014 Mahur | weight=20 | relation=acquaintance | confidence=85%", "to": "B02_C012", "value": 2.4285714285714284, "width": 2.4285714285714284}, {"color": "rgba(255,220,120,0.6485714285714286)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C001", "label": "acquaintance", "physics": true, "title": "Agop \u2014 Mahur | weight=19 | relation=acquaintance | confidence=85%", "to": "B02_C012", "value": 2.337142857142857, "width": 2.337142857142857}, {"color": "rgba(255,220,120,0.6171428571428572)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C002", "label": "friend", "physics": true, "title": "Kirkor \u2014 Lahur | weight=17 | relation=friend | confidence=85%", "to": "B02_C011", "value": 2.1542857142857144, "width": 2.1542857142857144}, {"color": "rgba(255,220,120,0.6014285714285714)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C001", "label": "acquaintance", "physics": true, "title": "Agop \u2014 Lahur | weight=16 | relation=acquaintance | confidence=85%", "to": "B02_C011", "value": 2.0628571428571427, "width": 2.0628571428571427}, {"color": "rgba(255,255,255,0.24428571428571427)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C001", "label": "", "physics": true, "title": "Agop \u2014 Artin A\u011fa | weight=6 | relation=not_extracted | confidence=0%", "to": "B02_C008", "value": 1.1485714285714286, "width": 1.1485714285714286}, {"color": "rgba(255,255,255,0.22857142857142856)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C003", "label": "", "physics": true, "title": "Ebulfazl Enver\u00ee \u2014 Mevl\u00fcde | weight=5 | relation=not_extracted | confidence=0%", "to": "B02_C005", "value": 1.0571428571428572, "width": 1.0571428571428572}, {"color": "rgba(255,255,255,0.22857142857142856)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C003", "label": "", "physics": true, "title": "Ebulfazl Enver\u00ee \u2014 Nurullah Hasip | weight=5 | relation=not_extracted | confidence=0%", "to": "B02_C006", "value": 1.0571428571428572, "width": 1.0571428571428572}, {"color": "rgba(255,255,255,0.22857142857142856)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C003", "label": "", "physics": true, "title": "Ebulfazl Enver\u00ee \u2014 Nasrullah Efendi | weight=5 | relation=not_extracted | confidence=0%", "to": "B02_C007", "value": 1.0571428571428572, "width": 1.0571428571428572}, {"color": "rgba(255,255,255,0.21285714285714286)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C005", "label": "", "physics": true, "title": "Mevl\u00fcde \u2014 Nurullah Hasip | weight=4 | relation=not_extracted | confidence=0%", "to": "B02_C006", "value": 0.9657142857142857, "width": 0.9657142857142857}, {"color": "rgba(255,255,255,0.19714285714285715)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C002", "label": "", "physics": true, "title": "Kirkor \u2014 Artin A\u011fa | weight=3 | relation=not_extracted | confidence=0%", "to": "B02_C008", "value": 0.8742857142857143, "width": 0.8742857142857143}, {"color": "rgba(255,255,255,0.19714285714285715)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C005", "label": "", "physics": true, "title": "Mevl\u00fcde \u2014 Lahur | weight=3 | relation=not_extracted | confidence=0%", "to": "B02_C011", "value": 0.8742857142857143, "width": 0.8742857142857143}, {"color": "rgba(255,255,255,0.19714285714285715)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C005", "label": "", "physics": true, "title": "Mevl\u00fcde \u2014 Mahur | weight=3 | relation=not_extracted | confidence=0%", "to": "B02_C012", "value": 0.8742857142857143, "width": 0.8742857142857143}, {"color": "rgba(255,255,255,0.19714285714285715)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C006", "label": "", "physics": true, "title": "Nurullah Hasip \u2014 Lahur | weight=3 | relation=not_extracted | confidence=0%", "to": "B02_C011", "value": 0.8742857142857143, "width": 0.8742857142857143}, {"color": "rgba(255,255,255,0.19714285714285715)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C006", "label": "", "physics": true, "title": "Nurullah Hasip \u2014 Mahur | weight=3 | relation=not_extracted | confidence=0%", "to": "B02_C012", "value": 0.8742857142857143, "width": 0.8742857142857143}, {"color": "rgba(255,255,255,0.19714285714285715)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C015", "label": "", "physics": true, "title": "Abdullah Karuni \u2014 Mehmet Karuni | weight=3 | relation=not_extracted | confidence=0%", "to": "B02_C016", "value": 0.8742857142857143, "width": 0.8742857142857143}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C001", "label": "", "physics": true, "title": "Agop \u2014 Kekre | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C013", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C001", "label": "", "physics": true, "title": "Agop \u2014 Mekre | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C014", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C002", "label": "", "physics": true, "title": "Kirkor \u2014 Kekre | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C013", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C002", "label": "", "physics": true, "title": "Kirkor \u2014 Mekre | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C014", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C003", "label": "", "physics": true, "title": "Ebulfazl Enver\u00ee \u2014 Dervi\u015f Cebeli | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C010", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C003", "label": "", "physics": true, "title": "Ebulfazl Enver\u00ee \u2014 Abdullah Karuni | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C015", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C003", "label": "", "physics": true, "title": "Ebulfazl Enver\u00ee \u2014 Mehmet Karuni | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C016", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C003", "label": "", "physics": true, "title": "Ebulfazl Enver\u00ee \u2014 \u0130bn el-Mah\u015fur | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C018", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C010", "label": "", "physics": true, "title": "Dervi\u015f Cebeli \u2014 Abdullah Karuni | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C015", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C010", "label": "", "physics": true, "title": "Dervi\u015f Cebeli \u2014 Mehmet Karuni | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C016", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C010", "label": "", "physics": true, "title": "Dervi\u015f Cebeli \u2014 Ali Hacip | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C017", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C010", "label": "", "physics": true, "title": "Dervi\u015f Cebeli \u2014 \u0130bn el-Mah\u015fur | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C018", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C011", "label": "", "physics": true, "title": "Lahur \u2014 Abdullah Karuni | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C015", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C011", "label": "", "physics": true, "title": "Lahur \u2014 Mehmet Karuni | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C016", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C011", "label": "", "physics": true, "title": "Lahur \u2014 \u0130bn el-Mah\u015fur | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C018", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C012", "label": "", "physics": true, "title": "Mahur \u2014 Abdullah Karuni | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C015", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C012", "label": "", "physics": true, "title": "Mahur \u2014 Mehmet Karuni | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C016", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C012", "label": "", "physics": true, "title": "Mahur \u2014 \u0130bn el-Mah\u015fur | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C018", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C013", "label": "", "physics": true, "title": "Kekre \u2014 Mekre | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C014", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C015", "label": "", "physics": true, "title": "Abdullah Karuni \u2014 Ali Hacip | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C017", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C015", "label": "", "physics": true, "title": "Abdullah Karuni \u2014 \u0130bn el-Mah\u015fur | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C018", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C016", "label": "", "physics": true, "title": "Mehmet Karuni \u2014 Ali Hacip | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C017", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C016", "label": "", "physics": true, "title": "Mehmet Karuni \u2014 \u0130bn el-Mah\u015fur | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C018", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.18142857142857144)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C017", "label": "", "physics": true, "title": "Ali Hacip \u2014 \u0130bn el-Mah\u015fur | weight=2 | relation=not_extracted | confidence=0%", "to": "B02_C018", "value": 0.7828571428571428, "width": 0.7828571428571428}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C001", "label": "", "physics": true, "title": "Agop \u2014 Mevl\u00fcde | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C005", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C001", "label": "", "physics": true, "title": "Agop \u2014 Nurullah Hasip | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C006", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C001", "label": "", "physics": true, "title": "Agop \u2014 Nasrullah Efendi | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C007", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C001", "label": "", "physics": true, "title": "Agop \u2014 Bedros A\u011fa | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C009", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C001", "label": "", "physics": true, "title": "Agop \u2014 \u0130bn el-Mah\u015fur | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C018", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C002", "label": "", "physics": true, "title": "Kirkor \u2014 Mevl\u00fcde | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C005", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C002", "label": "", "physics": true, "title": "Kirkor \u2014 Nurullah Hasip | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C006", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C002", "label": "", "physics": true, "title": "Kirkor \u2014 Nasrullah Efendi | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C007", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C002", "label": "", "physics": true, "title": "Kirkor \u2014 Bedros A\u011fa | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C009", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C002", "label": "", "physics": true, "title": "Kirkor \u2014 \u0130bn el-Mah\u015fur | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C018", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C003", "label": "", "physics": true, "title": "Ebulfazl Enver\u00ee \u2014 Zeynep Han\u0131m | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C004", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C003", "label": "", "physics": true, "title": "Ebulfazl Enver\u00ee \u2014 Artin A\u011fa | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C008", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C003", "label": "", "physics": true, "title": "Ebulfazl Enver\u00ee \u2014 Kekre | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C013", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C003", "label": "", "physics": true, "title": "Ebulfazl Enver\u00ee \u2014 Mekre | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C014", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C003", "label": "", "physics": true, "title": "Ebulfazl Enver\u00ee \u2014 Ali Hacip | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C017", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C004", "label": "", "physics": true, "title": "Zeynep Han\u0131m \u2014 Mevl\u00fcde | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C005", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C004", "label": "", "physics": true, "title": "Zeynep Han\u0131m \u2014 Lahur | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C011", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C004", "label": "", "physics": true, "title": "Zeynep Han\u0131m \u2014 Mahur | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C012", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C006", "label": "", "physics": true, "title": "Nurullah Hasip \u2014 Abdullah Karuni | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C015", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C006", "label": "", "physics": true, "title": "Nurullah Hasip \u2014 Mehmet Karuni | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C016", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C007", "label": "", "physics": true, "title": "Nasrullah Efendi \u2014 Dervi\u015f Cebeli | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C010", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C007", "label": "", "physics": true, "title": "Nasrullah Efendi \u2014 Mahur | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C012", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C010", "label": "", "physics": true, "title": "Dervi\u015f Cebeli \u2014 Lahur | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C011", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C010", "label": "", "physics": true, "title": "Dervi\u015f Cebeli \u2014 Mahur | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C012", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C011", "label": "", "physics": true, "title": "Lahur \u2014 Kekre | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C013", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C011", "label": "", "physics": true, "title": "Lahur \u2014 Mekre | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C014", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C011", "label": "", "physics": true, "title": "Lahur \u2014 Ali Hacip | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C017", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C012", "label": "", "physics": true, "title": "Mahur \u2014 Kekre | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C013", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C012", "label": "", "physics": true, "title": "Mahur \u2014 Mekre | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C014", "value": 0.6914285714285714, "width": 0.6914285714285714}, {"color": "rgba(255,255,255,0.1657142857142857)", "font": {"color": "#dddddd", "size": 8, "strokeColor": "#1a1a2e", "strokeWidth": 2}, "from": "B02_C012", "label": "", "physics": true, "title": "Mahur \u2014 Ali Hacip | weight=1 | relation=not_extracted | confidence=0%", "to": "B02_C017", "value": 0.6914285714285714, "width": 0.6914285714285714}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"physics": {"enabled": true, "stabilization": {"enabled": true, "iterations": 1200, "updateInterval": 25, "fit": true}, "solver": "forceAtlas2Based", "forceAtlas2Based": {"gravitationalConstant": -80, "centralGravity": 0.006, "springLength": 220, "springConstant": 0.04, "damping": 0.55, "avoidOverlap": 1}}, "nodes": {"shape": "dot"}, "edges": {"smooth": {"enabled": true, "type": "dynamic", "roundness": 0.35}, "color": {"inherit": false}, "scaling": {"min": 1, "max": 7}, "selectionWidth": 2, "hoverWidth": 2}, "interaction": {"hover": true, "tooltipDelay": 100, "hideEdgesOnDrag": false, "navigationButtons": true}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    background: #1a1a2e;
+  }
+
+  #legend {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    z-index: 999;
+    backdrop-filter: blur(6px);
+    max-width: 260px;
+  }
+
+  #legend h3 {
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #aaaaaa;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    cursor: default;
+  }
+
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 1.5px solid rgba(255,255,255,0.3);
+  }
+
+  .legend-label {
+    line-height: 1.3;
+    font-size: 12px;
+  }
+
+  #info-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 16px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 10px;
+    padding: 16px 18px;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 13px;
+    z-index: 999;
+    backdrop-filter: blur(6px);
+    width: 280px;
+    display: none;
+    line-height: 1.7;
+  }
+
+  #info-panel b {
+    color: #aaaaaa;
+    font-weight: normal;
+  }
+
+  #info-panel .name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  #info-panel .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
+    color: #aaaaaa;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  #hint {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #bbbbbb;
+    pointer-events: none;
+    z-index: 998;
+  }
+</style>
+
+<div id="legend">
+  <h3>Communities</h3>
+  
+        <div class="legend-item" title="friendship_or_social_circle">
+          <span class="legend-dot" style="background:#4E9AF1"></span>
+          <span class="legend-label">arkadaşlık ve mistik etkileşim çevresi</span>
+        </div>
+        
+        <div class="legend-item" title="class_or_service_relation">
+          <span class="legend-dot" style="background:#F4845F"></span>
+          <span class="legend-label">tüccar ve derviş çevresi</span>
+        </div>
+        
+        <div class="legend-item" title="mixed_or_unclear">
+          <span class="legend-dot" style="background:#56C596"></span>
+          <span class="legend-label">genç ve genç yetişkin karakter ilişkisi</span>
+        </div>
+        
+        <div class="legend-item" title="mixed_or_unclear">
+          <span class="legend-dot" style="background:#F7C948"></span>
+          <span class="legend-label">mitolojik ikili</span>
+        </div>
+        
+</div>
+
+<div id="info-panel">
+  <span class="close-btn" onclick="document.getElementById('info-panel').style.display='none'">✕</span>
+  <div class="name" id="ip-name"></div>
+  <div id="ip-body"></div>
+</div>
+
+<div id="hint">Click a node for details · Scroll to zoom · Drag to pan</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var checkNetwork = setInterval(function () {
+      if (typeof network !== "undefined") {
+        clearInterval(checkNetwork);
+
+        network.once("stabilizationIterationsDone", function () {
+          network.setOptions({ physics: { enabled: false } });
+        });
+
+        network.on("click", function (params) {
+          if (params.nodes.length > 0) {
+            var nodeId = params.nodes[0];
+
+            if (String(nodeId).startsWith("ANCHOR_")) {
+              return;
+            }
+
+            var nodeData = network.body.data.nodes.get(nodeId);
+            var panel = document.getElementById("info-panel");
+
+            var rawDetails = nodeData.details || "";
+            var tmp = document.createElement("div");
+            tmp.innerHTML = rawDetails;
+
+            var inner = tmp.querySelector("div")
+              ? tmp.querySelector("div").innerHTML
+              : rawDetails;
+
+            var nameMatch = inner.match(/<b[^>]*>(.*?)<\/b>/);
+            var name = nameMatch ? nameMatch[1] : (nodeData.title || nodeId);
+
+            var body = inner.replace(/<b[^>]*>.*?<\/b><br><br>/, "");
+
+            document.getElementById("ip-name").textContent = name;
+            document.getElementById("ip-body").innerHTML = body;
+
+            panel.style.display = "block";
+          } else {
+            document.getElementById("info-panel").style.display = "none";
+          }
+        });
+      }
+    }, 100);
+  });
+</script>
+
+</body>
+</html>
