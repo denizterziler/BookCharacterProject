@@ -1,0 +1,286 @@
+{
+  "book_id": "B01",
+  "model": "gpt-4.1-mini",
+  "source_presence_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/predictions/B01/ensemble/B01_gpt_alias_ensemble_window_presence.json",
+  "input_character_fields": [
+    "canonical_name",
+    "aliases",
+    "gender",
+    "role",
+    "notes"
+  ],
+  "extracted_character_features": [
+    "occupation",
+    "wealth_status",
+    "age_group"
+  ],
+  "wealth_status_labels": [
+    "poor",
+    "lower_middle",
+    "middle",
+    "upper_middle",
+    "wealthy",
+    "unknown"
+  ],
+  "age_group_labels": [
+    "child_youth",
+    "teen",
+    "adult",
+    "old",
+    "unknown"
+  ],
+  "features": [
+    {
+      "char_id": "B01_C001",
+      "canonical_name": "Fikriye Hanım",
+      "occupation": {
+        "value": "ev hanımı",
+        "confidence": 90,
+        "evidence_segments": [
+          "B01_S0001",
+          "B01_S0002"
+        ]
+      },
+      "wealth_status": {
+        "value": "lower_middle",
+        "confidence": 80,
+        "evidence_segments": [
+          "B01_S0002",
+          "B01_S0003"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 95,
+        "evidence_segments": [
+          "B01_S0003",
+          "B01_S0004"
+        ]
+      }
+    },
+    {
+      "char_id": "B01_C002",
+      "canonical_name": "Emine Hanım",
+      "occupation": {
+        "value": "ev hanımı",
+        "confidence": 90,
+        "evidence_segments": [
+          "B01_S0001",
+          "B01_S0017"
+        ]
+      },
+      "wealth_status": {
+        "value": "middle",
+        "confidence": 80,
+        "evidence_segments": [
+          "B01_S0017",
+          "B01_S0174"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 90,
+        "evidence_segments": [
+          "B01_S0001",
+          "B01_S0017"
+        ]
+      }
+    },
+    {
+      "char_id": "B01_C003",
+      "canonical_name": "Naşit Nefi Efendi",
+      "occupation": {
+        "value": "kalem müdürü",
+        "confidence": 100,
+        "evidence_segments": [
+          "B01_S0007",
+          "B01_S0008"
+        ]
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 100,
+        "evidence_segments": [
+          "B01_S0008"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 90,
+        "evidence_segments": [
+          "B01_S0008"
+        ]
+      }
+    },
+    {
+      "char_id": "B01_C004",
+      "canonical_name": "Binnaz Hanım",
+      "occupation": {
+        "value": "ilk harem",
+        "confidence": 90,
+        "evidence_segments": [
+          "B01_S0008",
+          "B01_S0016"
+        ]
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      }
+    },
+    {
+      "char_id": "B01_C005",
+      "canonical_name": "Şükriye Hanım",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "middle",
+        "confidence": 90,
+        "evidence_segments": [
+          "B01_S0018",
+          "B01_S0029"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 95,
+        "evidence_segments": [
+          "B01_S0029",
+          "B01_S0018"
+        ]
+      }
+    },
+    {
+      "char_id": "B01_C006",
+      "canonical_name": "Hasan Efendi",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "middle",
+        "confidence": 85,
+        "evidence_segments": [
+          "B01_S0006"
+        ]
+      },
+      "age_group": {
+        "value": "old",
+        "confidence": 90,
+        "evidence_segments": [
+          "B01_S0006",
+          "B01_S0015"
+        ]
+      }
+    },
+    {
+      "char_id": "B01_C007",
+      "canonical_name": "Hasibe Hanım",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "old",
+        "confidence": 90,
+        "evidence_segments": [
+          "B01_S0014",
+          "B01_S0015",
+          "B01_S0017"
+        ]
+      }
+    },
+    {
+      "char_id": "B01_C008",
+      "canonical_name": "Nazikter",
+      "occupation": {
+        "value": "hizmetçi",
+        "confidence": 100,
+        "evidence_segments": [
+          "B01_S0024",
+          "B01_S0025"
+        ]
+      },
+      "wealth_status": {
+        "value": "poor",
+        "confidence": 90,
+        "evidence_segments": [
+          "B01_S0024",
+          "B01_S0025"
+        ]
+      },
+      "age_group": {
+        "value": "child_youth",
+        "confidence": 95,
+        "evidence_segments": [
+          "B01_S0024",
+          "B01_S0025"
+        ]
+      }
+    },
+    {
+      "char_id": "B01_C009",
+      "canonical_name": "Latife",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 90,
+        "evidence_segments": [
+          "B01_S0006",
+          "B01_S0030"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 85,
+        "evidence_segments": [
+          "B01_S0006"
+        ]
+      }
+    },
+    {
+      "char_id": "B01_C010",
+      "canonical_name": "Bedri Bey",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "middle",
+        "confidence": 80,
+        "evidence_segments": [
+          "B01_S0006"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 90,
+        "evidence_segments": [
+          "B01_S0006",
+          "B01_S0066"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2984 @@
+{
+  "book_id": "B01",
+  "title": "Cadı",
+  "system": "gpt4_1_mini_plus_exact_alias",
+  "unit": "300-word overlapping segment",
+  "mode": "full_book",
+  "presence_rule": "final_chars = gpt4_1_mini_chars ∪ exact_alias_chars",
+  "source_files": {
+    "segments": "/Users/denizterziler/PycharmProjects/BookCharacterProject/scripts/book_texts/B01/B01_segments.json",
+    "character_inventory": "/Users/denizterziler/PycharmProjects/BookCharacterProject/inputs/B01_characters.json",
+    "gpt_presence": "/Users/denizterziler/PycharmProjects/BookCharacterProject/predictions/B01/llm/B01_gpt-4_1-mini_candidate_based_window_presence_full_output.json",
+    "exact_alias_presence": "/Users/denizterziler/PycharmProjects/BookCharacterProject/predictions/B01/exact_alias/B01_exact_alias_window_presence_full_output.json"
+  },
+  "segment_presence": [
+    {
+      "segment_id": "B01_S0001",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C010"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C010"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0002",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C006"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C006"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0003",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C006"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C006"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0004",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006",
+        "B01_C010"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C006",
+          "B01_C010"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C006"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0005",
+      "characters_present": [
+        "B01_C001",
+        "B01_C006"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C006"
+        ],
+        "exact_alias": [
+          "B01_C006"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0006",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C006",
+        "B01_C009",
+        "B01_C010"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C006",
+          "B01_C009",
+          "B01_C010"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C006",
+          "B01_C009",
+          "B01_C010"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0007",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0008",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0009",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0010",
+      "characters_present": [
+        "B01_C002"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C002"
+        ],
+        "exact_alias": [
+          "B01_C002"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0011",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C006"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C006"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0012",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C006",
+        "B01_C007"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C006",
+          "B01_C007"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C007"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0013",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C006",
+        "B01_C007"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C006",
+          "B01_C007"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C006",
+          "B01_C007"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0014",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C007"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C007"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C007"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0015",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C006",
+        "B01_C007"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C006",
+          "B01_C007"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C007"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0016",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C004",
+        "B01_C006",
+        "B01_C007"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C004",
+          "B01_C006",
+          "B01_C007"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C004",
+          "B01_C006",
+          "B01_C007"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0017",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C004",
+        "B01_C005",
+        "B01_C007"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C005",
+          "B01_C007"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C004",
+          "B01_C007"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0018",
+      "characters_present": [
+        "B01_C001",
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C003",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0019",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C004",
+        "B01_C005",
+        "B01_C007"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C005",
+          "B01_C007"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C004",
+          "B01_C005",
+          "B01_C007"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0020",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0021",
+      "characters_present": [
+        "B01_C001",
+        "B01_C003",
+        "B01_C004",
+        "B01_C005",
+        "B01_C006"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C003",
+          "B01_C004",
+          "B01_C005",
+          "B01_C006"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0022",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C004",
+        "B01_C005",
+        "B01_C006",
+        "B01_C007"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C005",
+          "B01_C006",
+          "B01_C007"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C004",
+          "B01_C005",
+          "B01_C007"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0023",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C004",
+        "B01_C005",
+        "B01_C007",
+        "B01_C008"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C005",
+          "B01_C007"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C004",
+          "B01_C005",
+          "B01_C008"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0024",
+      "characters_present": [
+        "B01_C001",
+        "B01_C005",
+        "B01_C008"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C005",
+          "B01_C008"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C005",
+          "B01_C008"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0025",
+      "characters_present": [
+        "B01_C004",
+        "B01_C005",
+        "B01_C008"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C005",
+          "B01_C008"
+        ],
+        "exact_alias": [
+          "B01_C004",
+          "B01_C005",
+          "B01_C008"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0026",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0027",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0028",
+      "characters_present": [
+        "B01_C002",
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C002",
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C002",
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0029",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005",
+        "B01_C008"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005",
+          "B01_C008"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0030",
+      "characters_present": [
+        "B01_C004",
+        "B01_C008",
+        "B01_C009"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004",
+          "B01_C008",
+          "B01_C009"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0031",
+      "characters_present": [
+        "B01_C004",
+        "B01_C009"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004",
+          "B01_C009"
+        ],
+        "exact_alias": [
+          "B01_C004",
+          "B01_C009"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0032",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0033",
+      "characters_present": [
+        "B01_C001",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0034",
+      "characters_present": [
+        "B01_C001"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001"
+        ],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0035",
+      "characters_present": [
+        "B01_C001",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C004"
+        ],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0036",
+      "characters_present": [
+        "B01_C001",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0037",
+      "characters_present": [
+        "B01_C004",
+        "B01_C010"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004",
+          "B01_C010"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0038",
+      "characters_present": [
+        "B01_C001",
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0039",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0040",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0041",
+      "characters_present": [
+        "B01_C001",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0042",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0043",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0044",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0045",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C007"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C007"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0046",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C007",
+        "B01_C010"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C007",
+          "B01_C010"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0047",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0048",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0049",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0050",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0051",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C010"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C010"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0052",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0053",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0054",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0055",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0056",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0057",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0058",
+      "characters_present": [
+        "B01_C002",
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C002",
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0059",
+      "characters_present": [
+        "B01_C002",
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C002",
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C002",
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0060",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0061",
+      "characters_present": [
+        "B01_C001",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0062",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0063",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0064",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0065",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0066",
+      "characters_present": [
+        "B01_C004",
+        "B01_C007",
+        "B01_C010"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004",
+          "B01_C010"
+        ],
+        "exact_alias": [
+          "B01_C004",
+          "B01_C007"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0067",
+      "characters_present": [
+        "B01_C004",
+        "B01_C010"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004",
+          "B01_C010"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0068",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0069",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0070",
+      "characters_present": [
+        "B01_C003",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0071",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0072",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0073",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C007"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C007"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0074",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0075",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0076",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0077",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0078",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0079",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0080",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0081",
+      "characters_present": [
+        "B01_C002",
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C002",
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C002",
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0082",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0083",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0084",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0085",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0086",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0087",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0088",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0089",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0090",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0091",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0092",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0093",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0094",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0095",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0096",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0097",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0098",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0099",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0100",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0101",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0102",
+      "characters_present": [
+        "B01_C003",
+        "B01_C010"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C010"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0103",
+      "characters_present": [
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C005"
+        ],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0104",
+      "characters_present": [
+        "B01_C002",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C002",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C002",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0105",
+      "characters_present": [
+        "B01_C002",
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C002",
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C002",
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0106",
+      "characters_present": [
+        "B01_C010"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C010"
+        ],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0107",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0108",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0109",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0110",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0111",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0112",
+      "characters_present": [
+        "B01_C003",
+        "B01_C005",
+        "B01_C009"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C005",
+          "B01_C009"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0113",
+      "characters_present": [
+        "B01_C002",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C002",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C002",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0114",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C010"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004",
+          "B01_C010"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0115",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0116",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0117",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0118",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0119",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0120",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0121",
+      "characters_present": [
+        "B01_C002",
+        "B01_C003",
+        "B01_C004",
+        "B01_C008"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C002",
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C002",
+          "B01_C003",
+          "B01_C004",
+          "B01_C008"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0122",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0123",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0124",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0125",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0126",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0127",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0128",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0129",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0130",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0131",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0132",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0133",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0134",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0135",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0136",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0137",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0138",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0139",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0140",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0141",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0142",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0143",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0144",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0145",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0146",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0147",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0148",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0149",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0150",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0151",
+      "characters_present": [
+        "B01_C001",
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0152",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0153",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C010"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004",
+          "B01_C010"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0154",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0155",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0156",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C007"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C007"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0157",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0158",
+      "characters_present": [
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0159",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0160",
+      "characters_present": [
+        "B01_C004",
+        "B01_C010"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004",
+          "B01_C010"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0161",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0162",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C004",
+        "B01_C005",
+        "B01_C007"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C004",
+          "B01_C005",
+          "B01_C007"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C004",
+          "B01_C005",
+          "B01_C007"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0163",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0164",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0165",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0166",
+      "characters_present": [
+        "B01_C002",
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C002",
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0167",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0168",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0169",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0170",
+      "characters_present": [
+        "B01_C003"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003"
+        ],
+        "exact_alias": [
+          "B01_C003"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0171",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    },
+    {
+      "segment_id": "B01_S0172",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0173",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0174",
+      "characters_present": [
+        "B01_C001",
+        "B01_C002",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C002",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0175",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0176",
+      "characters_present": [
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0177",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0178",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0179",
+      "characters_present": [
+        "B01_C003",
+        "B01_C004",
+        "B01_C005"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C004",
+          "B01_C005"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004",
+          "B01_C005"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0180",
+      "characters_present": [
+        "B01_C001",
+        "B01_C003",
+        "B01_C004"
+      ],
+      "sources": {
+        "gpt4_1_mini": [
+          "B01_C001",
+          "B01_C003",
+          "B01_C004"
+        ],
+        "exact_alias": [
+          "B01_C003",
+          "B01_C004"
+        ]
+      }
+    },
+    {
+      "segment_id": "B01_S0181",
+      "characters_present": [],
+      "sources": {
+        "gpt4_1_mini": [],
+        "exact_alias": []
+      }
+    }
+  ]
+}

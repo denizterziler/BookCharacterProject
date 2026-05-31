@@ -1,0 +1,1808 @@
+{
+  "book_id": "B05",
+  "title": "Tesadüf",
+  "system": "exact_alias_baseline",
+  "unit": "300-word overlapping segment",
+  "mode": "full_book",
+  "description": "Exact alias matching baseline. A character is marked as present if one of the predefined aliases is found in the segment text.",
+  "segment_presence": [
+    {
+      "segment_id": "B05_S0001",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004"
+      ]
+    },
+    {
+      "segment_id": "B05_S0002",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004",
+        "B05_C010"
+      ]
+    },
+    {
+      "segment_id": "B05_S0003",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004",
+        "B05_C010"
+      ]
+    },
+    {
+      "segment_id": "B05_S0004",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004",
+        "B05_C008",
+        "B05_C015"
+      ]
+    },
+    {
+      "segment_id": "B05_S0005",
+      "characters_present": [
+        "B05_C001",
+        "B05_C003",
+        "B05_C005"
+      ]
+    },
+    {
+      "segment_id": "B05_S0006",
+      "characters_present": [
+        "B05_C003",
+        "B05_C005",
+        "B05_C006"
+      ]
+    },
+    {
+      "segment_id": "B05_S0007",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004",
+        "B05_C008"
+      ]
+    },
+    {
+      "segment_id": "B05_S0008",
+      "characters_present": [
+        "B05_C002",
+        "B05_C004",
+        "B05_C008",
+        "B05_C010"
+      ]
+    },
+    {
+      "segment_id": "B05_S0009",
+      "characters_present": [
+        "B05_C002",
+        "B05_C004",
+        "B05_C008"
+      ]
+    },
+    {
+      "segment_id": "B05_S0010",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004",
+        "B05_C008",
+        "B05_C010",
+        "B05_C011"
+      ]
+    },
+    {
+      "segment_id": "B05_S0011",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004"
+      ]
+    },
+    {
+      "segment_id": "B05_S0012",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004"
+      ]
+    },
+    {
+      "segment_id": "B05_S0013",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002"
+      ]
+    },
+    {
+      "segment_id": "B05_S0014",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004"
+      ]
+    },
+    {
+      "segment_id": "B05_S0015",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004",
+        "B05_C009"
+      ]
+    },
+    {
+      "segment_id": "B05_S0016",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004"
+      ]
+    },
+    {
+      "segment_id": "B05_S0017",
+      "characters_present": [
+        "B05_C001"
+      ]
+    },
+    {
+      "segment_id": "B05_S0018",
+      "characters_present": [
+        "B05_C001"
+      ]
+    },
+    {
+      "segment_id": "B05_S0019",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004"
+      ]
+    },
+    {
+      "segment_id": "B05_S0020",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C003",
+        "B05_C004"
+      ]
+    },
+    {
+      "segment_id": "B05_S0021",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C003"
+      ]
+    },
+    {
+      "segment_id": "B05_S0022",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C004",
+        "B05_C010"
+      ]
+    },
+    {
+      "segment_id": "B05_S0023",
+      "characters_present": [
+        "B05_C002"
+      ]
+    },
+    {
+      "segment_id": "B05_S0024",
+      "characters_present": [
+        "B05_C002",
+        "B05_C004"
+      ]
+    },
+    {
+      "segment_id": "B05_S0025",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C003",
+        "B05_C004",
+        "B05_C016"
+      ]
+    },
+    {
+      "segment_id": "B05_S0026",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C003"
+      ]
+    },
+    {
+      "segment_id": "B05_S0027",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002"
+      ]
+    },
+    {
+      "segment_id": "B05_S0028",
+      "characters_present": [
+        "B05_C002"
+      ]
+    },
+    {
+      "segment_id": "B05_S0029",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002"
+      ]
+    },
+    {
+      "segment_id": "B05_S0030",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002"
+      ]
+    },
+    {
+      "segment_id": "B05_S0031",
+      "characters_present": [
+        "B05_C001",
+        "B05_C003"
+      ]
+    },
+    {
+      "segment_id": "B05_S0032",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C003"
+      ]
+    },
+    {
+      "segment_id": "B05_S0033",
+      "characters_present": [
+        "B05_C002",
+        "B05_C003"
+      ]
+    },
+    {
+      "segment_id": "B05_S0034",
+      "characters_present": [
+        "B05_C001"
+      ]
+    },
+    {
+      "segment_id": "B05_S0035",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C003"
+      ]
+    },
+    {
+      "segment_id": "B05_S0036",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C003"
+      ]
+    },
+    {
+      "segment_id": "B05_S0037",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C006"
+      ]
+    },
+    {
+      "segment_id": "B05_S0038",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C006"
+      ]
+    },
+    {
+      "segment_id": "B05_S0039",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002"
+      ]
+    },
+    {
+      "segment_id": "B05_S0040",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002"
+      ]
+    },
+    {
+      "segment_id": "B05_S0041",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C007"
+      ]
+    },
+    {
+      "segment_id": "B05_S0042",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C007"
+      ]
+    },
+    {
+      "segment_id": "B05_S0043",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C007"
+      ]
+    },
+    {
+      "segment_id": "B05_S0044",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002"
+      ]
+    },
+    {
+      "segment_id": "B05_S0045",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0046",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C003"
+      ]
+    },
+    {
+      "segment_id": "B05_S0047",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C003",
+        "B05_C007"
+      ]
+    },
+    {
+      "segment_id": "B05_S0048",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C003",
+        "B05_C014"
+      ]
+    },
+    {
+      "segment_id": "B05_S0049",
+      "characters_present": [
+        "B05_C002",
+        "B05_C003",
+        "B05_C014"
+      ]
+    },
+    {
+      "segment_id": "B05_S0050",
+      "characters_present": [
+        "B05_C001",
+        "B05_C003",
+        "B05_C005",
+        "B05_C014"
+      ]
+    },
+    {
+      "segment_id": "B05_S0051",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C003",
+        "B05_C005",
+        "B05_C006"
+      ]
+    },
+    {
+      "segment_id": "B05_S0052",
+      "characters_present": [
+        "B05_C001",
+        "B05_C003",
+        "B05_C007"
+      ]
+    },
+    {
+      "segment_id": "B05_S0053",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C003",
+        "B05_C007"
+      ]
+    },
+    {
+      "segment_id": "B05_S0054",
+      "characters_present": [
+        "B05_C002",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0055",
+      "characters_present": [
+        "B05_C002",
+        "B05_C013",
+        "B05_C016"
+      ]
+    },
+    {
+      "segment_id": "B05_S0056",
+      "characters_present": [
+        "B05_C002",
+        "B05_C010"
+      ]
+    },
+    {
+      "segment_id": "B05_S0057",
+      "characters_present": [
+        "B05_C002",
+        "B05_C004",
+        "B05_C010",
+        "B05_C016"
+      ]
+    },
+    {
+      "segment_id": "B05_S0058",
+      "characters_present": [
+        "B05_C002",
+        "B05_C016"
+      ]
+    },
+    {
+      "segment_id": "B05_S0059",
+      "characters_present": [
+        "B05_C002"
+      ]
+    },
+    {
+      "segment_id": "B05_S0060",
+      "characters_present": [
+        "B05_C002"
+      ]
+    },
+    {
+      "segment_id": "B05_S0061",
+      "characters_present": [
+        "B05_C002"
+      ]
+    },
+    {
+      "segment_id": "B05_S0062",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0063",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C016"
+      ]
+    },
+    {
+      "segment_id": "B05_S0064",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0065",
+      "characters_present": [
+        "B05_C002"
+      ]
+    },
+    {
+      "segment_id": "B05_S0066",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013",
+        "B05_C016"
+      ]
+    },
+    {
+      "segment_id": "B05_S0067",
+      "characters_present": [
+        "B05_C002",
+        "B05_C013",
+        "B05_C016"
+      ]
+    },
+    {
+      "segment_id": "B05_S0068",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013",
+        "B05_C016"
+      ]
+    },
+    {
+      "segment_id": "B05_S0069",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0070",
+      "characters_present": [
+        "B05_C007",
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0071",
+      "characters_present": [
+        "B05_C007",
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0072",
+      "characters_present": [
+        "B05_C007",
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0073",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0074",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0075",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0076",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0077",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0078",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0079",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0080",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0081",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0082",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0083",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0084",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0085",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0086",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0087",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0088",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0089",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0090",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0091",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0092",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0093",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0094",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0095",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0096",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0097",
+      "characters_present": [
+        "B05_C007"
+      ]
+    },
+    {
+      "segment_id": "B05_S0098",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0099",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0100",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0101",
+      "characters_present": [
+        "B05_C004"
+      ]
+    },
+    {
+      "segment_id": "B05_S0102",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0103",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0104",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0105",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0106",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0107",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0108",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0109",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0110",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0111",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0112",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0113",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0114",
+      "characters_present": [
+        "B05_C007",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0115",
+      "characters_present": [
+        "B05_C007",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0116",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0117",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0118",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0119",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0120",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0121",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0122",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0123",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0124",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0125",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0126",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0127",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0128",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0129",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0130",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0131",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0132",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0133",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0134",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0135",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0136",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0137",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0138",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0139",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0140",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0141",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0142",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0143",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0144",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0145",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0146",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0147",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0148",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0149",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0150",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0151",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0152",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0153",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0154",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0155",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0156",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0157",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0158",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0159",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0160",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0161",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0162",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0163",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0164",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0165",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0166",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0167",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0168",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0169",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0170",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0171",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0172",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0173",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0174",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0175",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0176",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0177",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0178",
+      "characters_present": [
+        "B05_C007",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0179",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0180",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0181",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0182",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0183",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0184",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0185",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0186",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0187",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0188",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0189",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0190",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0191",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0192",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0193",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0194",
+      "characters_present": [
+        "B05_C007",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0195",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0196",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0197",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0198",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0199",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0200",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0201",
+      "characters_present": [
+        "B05_C002",
+        "B05_C007",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0202",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0203",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0204",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0205",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0206",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0207",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0208",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0209",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0210",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0211",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0212",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0213",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0214",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0215",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0216",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0217",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0218",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0219",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0220",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0221",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0222",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0223",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0224",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0225",
+      "characters_present": [
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0226",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0227",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0228",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0229",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0230",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0231",
+      "characters_present": [
+        "B05_C007",
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0232",
+      "characters_present": [
+        "B05_C007",
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0233",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0234",
+      "characters_present": [
+        "B05_C007",
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0235",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0236",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0237",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0238",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0239",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0240",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0241",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0242",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0243",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0244",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0245",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0246",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0247",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0248",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0249",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0250",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0251",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0252",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0253",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0254",
+      "characters_present": [
+        "B05_C002"
+      ]
+    },
+    {
+      "segment_id": "B05_S0255",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C003",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0256",
+      "characters_present": [
+        "B05_C001",
+        "B05_C002",
+        "B05_C007",
+        "B05_C008",
+        "B05_C009",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0257",
+      "characters_present": [
+        "B05_C002",
+        "B05_C008",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0258",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0259",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0260",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0261",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0262",
+      "characters_present": [
+        "B05_C002",
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0263",
+      "characters_present": []
+    },
+    {
+      "segment_id": "B05_S0264",
+      "characters_present": [
+        "B05_C012"
+      ]
+    },
+    {
+      "segment_id": "B05_S0265",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0266",
+      "characters_present": [
+        "B05_C012",
+        "B05_C013"
+      ]
+    },
+    {
+      "segment_id": "B05_S0267",
+      "characters_present": [
+        "B05_C012"
+      ]
+    }
+  ]
+}

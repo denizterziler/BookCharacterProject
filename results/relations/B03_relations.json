@@ -1,0 +1,282 @@
+{
+  "book_id": "B03",
+  "model": "gpt-4.1-mini",
+  "source_cooccurrence_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/cooccurrences/B03_cooccurrences.json",
+  "source_character_features_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/character_features/B03_character_features.json",
+  "unit": "300-word overlapping segment",
+  "relation_selection_rule": "Pairs are selected if cooccurrence_weight >= max(MIN_WEIGHT_FLOOR, round(total_segments * MIN_RELATIVE_WEIGHT)).",
+  "total_segments": 72,
+  "min_weight_floor": 10,
+  "min_relative_weight": 0.1,
+  "relation_threshold": 10,
+  "total_cooccurrence_pairs": 33,
+  "selected_pair_count": 12,
+  "relation_labels": [
+    "family",
+    "romantic",
+    "friend",
+    "enemy",
+    "servant_employer",
+    "authority_subordinate",
+    "acquaintance",
+    "same_household",
+    "social_circle",
+    "unknown"
+  ],
+  "relations": [
+    {
+      "source": "B03_C001",
+      "source_name": "Sermet Hanım",
+      "target": "B03_C002",
+      "target_name": "Macit Bey",
+      "cooccurrence_weight": 62,
+      "relation_type": "romantic",
+      "direction": "undirected",
+      "confidence": 95,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0006",
+        "B03_S0007",
+        "B03_S0035",
+        "B03_S0036",
+        "B03_S0037",
+        "B03_S0038",
+        "B03_S0067",
+        "B03_S0068",
+        "B03_S0072"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "source_name": "Sermet Hanım",
+      "target": "B03_C003",
+      "target_name": "Nevber Hanım",
+      "cooccurrence_weight": 47,
+      "relation_type": "same_household",
+      "direction": "undirected",
+      "confidence": 90,
+      "evidence_segments": [
+        "B03_S0003",
+        "B03_S0004",
+        "B03_S0005",
+        "B03_S0033",
+        "B03_S0034",
+        "B03_S0037",
+        "B03_S0038",
+        "B03_S0063",
+        "B03_S0064",
+        "B03_S0068"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "source_name": "Macit Bey",
+      "target": "B03_C003",
+      "target_name": "Nevber Hanım",
+      "cooccurrence_weight": 46,
+      "relation_type": "same_household",
+      "direction": "undirected",
+      "confidence": 90,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0006",
+        "B03_S0007",
+        "B03_S0034",
+        "B03_S0037",
+        "B03_S0038",
+        "B03_S0040",
+        "B03_S0063",
+        "B03_S0064",
+        "B03_S0068"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "source_name": "Sermet Hanım",
+      "target": "B03_C007",
+      "target_name": "Hanımefendi",
+      "cooccurrence_weight": 21,
+      "relation_type": "same_household",
+      "direction": "undirected",
+      "confidence": 90,
+      "evidence_segments": [
+        "B03_S0001",
+        "B03_S0003",
+        "B03_S0004",
+        "B03_S0021",
+        "B03_S0047",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0062",
+        "B03_S0066",
+        "B03_S0068"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "source_name": "Macit Bey",
+      "target": "B03_C007",
+      "target_name": "Hanımefendi",
+      "cooccurrence_weight": 18,
+      "relation_type": "same_household",
+      "direction": "undirected",
+      "confidence": 85,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0053",
+        "B03_S0054",
+        "B03_S0062",
+        "B03_S0066",
+        "B03_S0068"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "source_name": "Nevber Hanım",
+      "target": "B03_C007",
+      "target_name": "Hanımefendi",
+      "cooccurrence_weight": 18,
+      "relation_type": "same_household",
+      "direction": "undirected",
+      "confidence": 90,
+      "evidence_segments": [
+        "B03_S0002",
+        "B03_S0003",
+        "B03_S0004",
+        "B03_S0047",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0053",
+        "B03_S0062",
+        "B03_S0068",
+        "B03_S0069"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "source_name": "Macit Bey",
+      "target": "B03_C005",
+      "target_name": "Macit'in annesi",
+      "cooccurrence_weight": 16,
+      "relation_type": "family",
+      "direction": "undirected",
+      "confidence": 95,
+      "evidence_segments": [
+        "B03_S0007",
+        "B03_S0010",
+        "B03_S0031",
+        "B03_S0032",
+        "B03_S0033",
+        "B03_S0034",
+        "B03_S0040",
+        "B03_S0041",
+        "B03_S0063"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "source_name": "Sermet Hanım",
+      "target": "B03_C005",
+      "target_name": "Macit'in annesi",
+      "cooccurrence_weight": 14,
+      "relation_type": "same_household",
+      "direction": "undirected",
+      "confidence": 85,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0010",
+        "B03_S0032",
+        "B03_S0040",
+        "B03_S0041",
+        "B03_S0063"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "source_name": "Macit Bey",
+      "target": "B03_C006",
+      "target_name": "Macit'in babası",
+      "cooccurrence_weight": 12,
+      "relation_type": "family",
+      "direction": "undirected",
+      "confidence": 95,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0007",
+        "B03_S0010",
+        "B03_S0012",
+        "B03_S0031",
+        "B03_S0034",
+        "B03_S0035",
+        "B03_S0039"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "source_name": "Nevber Hanım",
+      "target": "B03_C005",
+      "target_name": "Macit'in annesi",
+      "cooccurrence_weight": 12,
+      "relation_type": "same_household",
+      "direction": "undirected",
+      "confidence": 85,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0012",
+        "B03_S0031",
+        "B03_S0032",
+        "B03_S0033",
+        "B03_S0034",
+        "B03_S0040",
+        "B03_S0041",
+        "B03_S0063"
+      ]
+    },
+    {
+      "source": "B03_C005",
+      "source_name": "Macit'in annesi",
+      "target": "B03_C006",
+      "target_name": "Macit'in babası",
+      "cooccurrence_weight": 11,
+      "relation_type": "family",
+      "direction": "undirected",
+      "confidence": 95,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0007",
+        "B03_S0010",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0028",
+        "B03_S0031",
+        "B03_S0034",
+        "B03_S0035",
+        "B03_S0039"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "source_name": "Sermet Hanım",
+      "target": "B03_C006",
+      "target_name": "Macit'in babası",
+      "cooccurrence_weight": 10,
+      "relation_type": "same_household",
+      "direction": "undirected",
+      "confidence": 85,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0007",
+        "B03_S0010",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0032",
+        "B03_S0034",
+        "B03_S0035"
+      ]
+    }
+  ]
+}

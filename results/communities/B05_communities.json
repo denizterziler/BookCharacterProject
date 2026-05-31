@@ -1,0 +1,189 @@
+{
+  "book_id": "B05",
+  "title": "Tesadüf",
+  "source_graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B05_graph.json",
+  "algorithm": "networkx_greedy_modularity_communities",
+  "edge_weight": "cooccurrence weight",
+  "node_count": 16,
+  "edge_count": 73,
+  "community_count": 2,
+  "modularity": 0.1467750808410149,
+  "communities": [
+    {
+      "community_id": "B05_COM01",
+      "size": 12,
+      "internal_edge_count": 45,
+      "internal_edge_weight": 267,
+      "members": [
+        {
+          "char_id": "B05_C002",
+          "name": "Hoca Nefise Hanım",
+          "weighted_degree": 225,
+          "gender": "female",
+          "role": "main character",
+          "occupation": "hoca / püfçü / falcı",
+          "wealth_status": "middle",
+          "age_group": "old"
+        },
+        {
+          "char_id": "B05_C001",
+          "name": "Gülsüm Hanım",
+          "weighted_degree": 151,
+          "gender": "female",
+          "role": "main character",
+          "occupation": "ev hanımı",
+          "wealth_status": "poor",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B05_C007",
+          "name": "Gülsüm'ün annesi",
+          "weighted_degree": 74,
+          "gender": "female",
+          "role": "supporting character",
+          "occupation": "ev hanımı",
+          "wealth_status": "poor",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B05_C003",
+          "name": "Rıfkı Efendi",
+          "weighted_degree": 68,
+          "gender": "male",
+          "role": "important character",
+          "occupation": "memur",
+          "wealth_status": "lower_middle",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B05_C004",
+          "name": "Hacı Baba",
+          "weighted_degree": 59,
+          "gender": "male",
+          "role": "supporting character",
+          "occupation": "unknown",
+          "wealth_status": "lower_middle",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B05_C008",
+          "name": "Seher",
+          "weighted_degree": 32,
+          "gender": "female",
+          "role": "supporting/minor character",
+          "occupation": "unknown",
+          "wealth_status": "lower_middle",
+          "age_group": "teen"
+        },
+        {
+          "char_id": "B05_C010",
+          "name": "Sarman",
+          "weighted_degree": 26,
+          "gender": "unknown",
+          "role": "animal/minor",
+          "occupation": "animal (cat)",
+          "wealth_status": "wealthy",
+          "age_group": "unknown"
+        },
+        {
+          "char_id": "B05_C009",
+          "name": "İmameciler ailesi",
+          "weighted_degree": 26,
+          "gender": "group",
+          "role": "group character",
+          "occupation": "unknown",
+          "wealth_status": "poor",
+          "age_group": "unknown"
+        },
+        {
+          "char_id": "B05_C005",
+          "name": "Zübeyde",
+          "weighted_degree": 23,
+          "gender": "female",
+          "role": "supporting character",
+          "occupation": "ev hanımı",
+          "wealth_status": "poor",
+          "age_group": "old"
+        },
+        {
+          "char_id": "B05_C014",
+          "name": "Salim",
+          "weighted_degree": 10,
+          "gender": "male",
+          "role": "minor/background character",
+          "occupation": "memur",
+          "wealth_status": "unknown",
+          "age_group": "teen"
+        },
+        {
+          "char_id": "B05_C015",
+          "name": "Küçük Şaban",
+          "weighted_degree": 5,
+          "gender": "male",
+          "role": "minor/background character",
+          "occupation": "kahveci çırağı",
+          "wealth_status": "lower_middle",
+          "age_group": "child_youth"
+        },
+        {
+          "char_id": "B05_C011",
+          "name": "Tekir",
+          "weighted_degree": 5,
+          "gender": "unknown",
+          "role": "animal/minor",
+          "occupation": "animal",
+          "wealth_status": "unknown",
+          "age_group": "unknown"
+        }
+      ]
+    },
+    {
+      "community_id": "B05_COM02",
+      "size": 4,
+      "internal_edge_count": 5,
+      "internal_edge_weight": 109,
+      "members": [
+        {
+          "char_id": "B05_C013",
+          "name": "Şöhret",
+          "weighted_degree": 171,
+          "gender": "female",
+          "role": "later/supporting character",
+          "occupation": "üfürükçü / bakıcı",
+          "wealth_status": "middle",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B05_C012",
+          "name": "Saibe",
+          "weighted_degree": 149,
+          "gender": "female",
+          "role": "later/supporting character",
+          "occupation": "iç güveyisi",
+          "wealth_status": "middle",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B05_C006",
+          "name": "Vefa",
+          "weighted_degree": 48,
+          "gender": "male",
+          "role": "minor character",
+          "occupation": "öğrenci",
+          "wealth_status": "lower_middle",
+          "age_group": "child_youth"
+        },
+        {
+          "char_id": "B05_C016",
+          "name": "Sabbek",
+          "weighted_degree": 20,
+          "gender": "female",
+          "role": "minor/background character",
+          "occupation": "beslemelikten bakıcı kadın",
+          "wealth_status": "lower_middle",
+          "age_group": "adult"
+        }
+      ]
+    }
+  ]
+}

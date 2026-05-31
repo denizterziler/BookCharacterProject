@@ -1,0 +1,1170 @@
+{
+  "book_id": "B03",
+  "title": "Ferdâ-yı Garâm",
+  "source_presence_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/predictions/B03/ensemble/B03_gpt_alias_ensemble_window_presence.json",
+  "source_character_features_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/character_features/B03_character_features.json",
+  "unit": "300-word overlapping segment",
+  "definition": "Two characters are considered co-occurring if they are both present in the same 300-word overlapping segment. The weight equals the number of segments in which the pair co-occurs.",
+  "cooccurrence_count": 33,
+  "cooccurrences": [
+    {
+      "source": "B03_C001",
+      "source_name": "Sermet Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "teen",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C002",
+      "target_name": "Macit Bey",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "weight": 62,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0006",
+        "B03_S0007",
+        "B03_S0008",
+        "B03_S0009",
+        "B03_S0010",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0013",
+        "B03_S0014",
+        "B03_S0015",
+        "B03_S0016",
+        "B03_S0017",
+        "B03_S0018",
+        "B03_S0019",
+        "B03_S0020",
+        "B03_S0021",
+        "B03_S0022",
+        "B03_S0023",
+        "B03_S0024",
+        "B03_S0025",
+        "B03_S0026",
+        "B03_S0027",
+        "B03_S0028",
+        "B03_S0029",
+        "B03_S0030",
+        "B03_S0032",
+        "B03_S0033",
+        "B03_S0034",
+        "B03_S0035",
+        "B03_S0036",
+        "B03_S0037",
+        "B03_S0038",
+        "B03_S0040",
+        "B03_S0041",
+        "B03_S0042",
+        "B03_S0043",
+        "B03_S0044",
+        "B03_S0045",
+        "B03_S0046",
+        "B03_S0047",
+        "B03_S0048",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0051",
+        "B03_S0052",
+        "B03_S0053",
+        "B03_S0054",
+        "B03_S0055",
+        "B03_S0056",
+        "B03_S0057",
+        "B03_S0058",
+        "B03_S0059",
+        "B03_S0061",
+        "B03_S0062",
+        "B03_S0063",
+        "B03_S0064",
+        "B03_S0065",
+        "B03_S0066",
+        "B03_S0067",
+        "B03_S0068",
+        "B03_S0072"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "source_name": "Sermet Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "teen",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C003",
+      "target_name": "Nevber Hanım",
+      "target_features": {
+        "occupation": "household relative/friend, mediator",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "teen",
+        "age_group_confidence": 90
+      },
+      "weight": 47,
+      "evidence_segments": [
+        "B03_S0003",
+        "B03_S0004",
+        "B03_S0005",
+        "B03_S0006",
+        "B03_S0007",
+        "B03_S0009",
+        "B03_S0012",
+        "B03_S0013",
+        "B03_S0014",
+        "B03_S0015",
+        "B03_S0016",
+        "B03_S0017",
+        "B03_S0018",
+        "B03_S0019",
+        "B03_S0020",
+        "B03_S0026",
+        "B03_S0027",
+        "B03_S0028",
+        "B03_S0029",
+        "B03_S0030",
+        "B03_S0032",
+        "B03_S0033",
+        "B03_S0034",
+        "B03_S0037",
+        "B03_S0038",
+        "B03_S0040",
+        "B03_S0041",
+        "B03_S0042",
+        "B03_S0043",
+        "B03_S0044",
+        "B03_S0045",
+        "B03_S0046",
+        "B03_S0047",
+        "B03_S0048",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0051",
+        "B03_S0052",
+        "B03_S0053",
+        "B03_S0054",
+        "B03_S0055",
+        "B03_S0056",
+        "B03_S0057",
+        "B03_S0062",
+        "B03_S0063",
+        "B03_S0064",
+        "B03_S0068"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "source_name": "Macit Bey",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C003",
+      "target_name": "Nevber Hanım",
+      "target_features": {
+        "occupation": "household relative/friend, mediator",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "teen",
+        "age_group_confidence": 90
+      },
+      "weight": 46,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0006",
+        "B03_S0007",
+        "B03_S0009",
+        "B03_S0012",
+        "B03_S0013",
+        "B03_S0014",
+        "B03_S0015",
+        "B03_S0016",
+        "B03_S0017",
+        "B03_S0018",
+        "B03_S0019",
+        "B03_S0020",
+        "B03_S0026",
+        "B03_S0027",
+        "B03_S0028",
+        "B03_S0029",
+        "B03_S0030",
+        "B03_S0031",
+        "B03_S0032",
+        "B03_S0033",
+        "B03_S0034",
+        "B03_S0037",
+        "B03_S0038",
+        "B03_S0040",
+        "B03_S0041",
+        "B03_S0042",
+        "B03_S0043",
+        "B03_S0044",
+        "B03_S0045",
+        "B03_S0046",
+        "B03_S0047",
+        "B03_S0048",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0051",
+        "B03_S0052",
+        "B03_S0053",
+        "B03_S0054",
+        "B03_S0055",
+        "B03_S0056",
+        "B03_S0057",
+        "B03_S0062",
+        "B03_S0063",
+        "B03_S0064",
+        "B03_S0068"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "source_name": "Sermet Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "teen",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C007",
+      "target_name": "Hanımefendi",
+      "target_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 95
+      },
+      "weight": 21,
+      "evidence_segments": [
+        "B03_S0001",
+        "B03_S0003",
+        "B03_S0004",
+        "B03_S0005",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0013",
+        "B03_S0014",
+        "B03_S0021",
+        "B03_S0047",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0053",
+        "B03_S0054",
+        "B03_S0055",
+        "B03_S0056",
+        "B03_S0057",
+        "B03_S0061",
+        "B03_S0062",
+        "B03_S0066",
+        "B03_S0068"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "source_name": "Macit Bey",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C007",
+      "target_name": "Hanımefendi",
+      "target_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 95
+      },
+      "weight": 18,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0013",
+        "B03_S0014",
+        "B03_S0021",
+        "B03_S0047",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0053",
+        "B03_S0054",
+        "B03_S0055",
+        "B03_S0056",
+        "B03_S0057",
+        "B03_S0061",
+        "B03_S0062",
+        "B03_S0066",
+        "B03_S0068"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "source_name": "Nevber Hanım",
+      "source_features": {
+        "occupation": "household relative/friend, mediator",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "teen",
+        "age_group_confidence": 90
+      },
+      "target": "B03_C007",
+      "target_name": "Hanımefendi",
+      "target_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 95
+      },
+      "weight": 18,
+      "evidence_segments": [
+        "B03_S0002",
+        "B03_S0003",
+        "B03_S0004",
+        "B03_S0005",
+        "B03_S0012",
+        "B03_S0013",
+        "B03_S0014",
+        "B03_S0047",
+        "B03_S0049",
+        "B03_S0050",
+        "B03_S0053",
+        "B03_S0054",
+        "B03_S0055",
+        "B03_S0056",
+        "B03_S0057",
+        "B03_S0062",
+        "B03_S0068",
+        "B03_S0069"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "source_name": "Macit Bey",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C005",
+      "target_name": "Macit'in annesi",
+      "target_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 85,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "weight": 16,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0007",
+        "B03_S0010",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0028",
+        "B03_S0031",
+        "B03_S0032",
+        "B03_S0033",
+        "B03_S0034",
+        "B03_S0035",
+        "B03_S0038",
+        "B03_S0039",
+        "B03_S0040",
+        "B03_S0041",
+        "B03_S0063"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "source_name": "Sermet Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "teen",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C005",
+      "target_name": "Macit'in annesi",
+      "target_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 85,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "weight": 14,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0007",
+        "B03_S0010",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0028",
+        "B03_S0032",
+        "B03_S0033",
+        "B03_S0034",
+        "B03_S0035",
+        "B03_S0038",
+        "B03_S0040",
+        "B03_S0041",
+        "B03_S0063"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "source_name": "Macit Bey",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C006",
+      "target_name": "Macit'in babası",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "weight": 12,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0007",
+        "B03_S0010",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0027",
+        "B03_S0028",
+        "B03_S0031",
+        "B03_S0032",
+        "B03_S0034",
+        "B03_S0035",
+        "B03_S0039"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "source_name": "Nevber Hanım",
+      "source_features": {
+        "occupation": "household relative/friend, mediator",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "teen",
+        "age_group_confidence": 90
+      },
+      "target": "B03_C005",
+      "target_name": "Macit'in annesi",
+      "target_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 85,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "weight": 12,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0007",
+        "B03_S0012",
+        "B03_S0028",
+        "B03_S0031",
+        "B03_S0032",
+        "B03_S0033",
+        "B03_S0034",
+        "B03_S0038",
+        "B03_S0040",
+        "B03_S0041",
+        "B03_S0063"
+      ]
+    },
+    {
+      "source": "B03_C005",
+      "source_name": "Macit'in annesi",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 85,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B03_C006",
+      "target_name": "Macit'in babası",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "weight": 11,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0007",
+        "B03_S0010",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0028",
+        "B03_S0031",
+        "B03_S0032",
+        "B03_S0034",
+        "B03_S0035",
+        "B03_S0039"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "source_name": "Sermet Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "teen",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C006",
+      "target_name": "Macit'in babası",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "weight": 10,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0007",
+        "B03_S0010",
+        "B03_S0011",
+        "B03_S0012",
+        "B03_S0027",
+        "B03_S0028",
+        "B03_S0032",
+        "B03_S0034",
+        "B03_S0035"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "source_name": "Nevber Hanım",
+      "source_features": {
+        "occupation": "household relative/friend, mediator",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "teen",
+        "age_group_confidence": 90
+      },
+      "target": "B03_C006",
+      "target_name": "Macit'in babası",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "weight": 8,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0007",
+        "B03_S0012",
+        "B03_S0027",
+        "B03_S0028",
+        "B03_S0031",
+        "B03_S0032",
+        "B03_S0034"
+      ]
+    },
+    {
+      "source": "B03_C007",
+      "source_name": "Hanımefendi",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C009",
+      "target_name": "Hizmetçi kız",
+      "target_features": {
+        "occupation": "hizmetçi",
+        "occupation_confidence": 100,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "weight": 4,
+      "evidence_segments": [
+        "B03_S0002",
+        "B03_S0003",
+        "B03_S0004",
+        "B03_S0066"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "source_name": "Sermet Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "teen",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C008",
+      "target_name": "Büyük Beyefendi",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "old",
+        "age_group_confidence": 85
+      },
+      "weight": 3,
+      "evidence_segments": [
+        "B03_S0011",
+        "B03_S0054",
+        "B03_S0055"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "source_name": "Sermet Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "teen",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C009",
+      "target_name": "Hizmetçi kız",
+      "target_features": {
+        "occupation": "hizmetçi",
+        "occupation_confidence": 100,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "weight": 3,
+      "evidence_segments": [
+        "B03_S0003",
+        "B03_S0004",
+        "B03_S0066"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "source_name": "Macit Bey",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C008",
+      "target_name": "Büyük Beyefendi",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "old",
+        "age_group_confidence": 85
+      },
+      "weight": 3,
+      "evidence_segments": [
+        "B03_S0011",
+        "B03_S0054",
+        "B03_S0055"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "source_name": "Nevber Hanım",
+      "source_features": {
+        "occupation": "household relative/friend, mediator",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "teen",
+        "age_group_confidence": 90
+      },
+      "target": "B03_C009",
+      "target_name": "Hizmetçi kız",
+      "target_features": {
+        "occupation": "hizmetçi",
+        "occupation_confidence": 100,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "weight": 3,
+      "evidence_segments": [
+        "B03_S0002",
+        "B03_S0003",
+        "B03_S0004"
+      ]
+    },
+    {
+      "source": "B03_C005",
+      "source_name": "Macit'in annesi",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 85,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B03_C007",
+      "target_name": "Hanımefendi",
+      "target_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 95
+      },
+      "weight": 3,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0011",
+        "B03_S0012"
+      ]
+    },
+    {
+      "source": "B03_C006",
+      "source_name": "Macit'in babası",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C007",
+      "target_name": "Hanımefendi",
+      "target_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 95
+      },
+      "weight": 3,
+      "evidence_segments": [
+        "B03_S0005",
+        "B03_S0011",
+        "B03_S0012"
+      ]
+    },
+    {
+      "source": "B03_C007",
+      "source_name": "Hanımefendi",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C008",
+      "target_name": "Büyük Beyefendi",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "old",
+        "age_group_confidence": 85
+      },
+      "weight": 3,
+      "evidence_segments": [
+        "B03_S0011",
+        "B03_S0054",
+        "B03_S0055"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "source_name": "Sermet Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "teen",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C004",
+      "target_name": "Miss Morgan",
+      "target_features": {
+        "occupation": "mürebbiye",
+        "occupation_confidence": 100,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "adult",
+        "age_group_confidence": 100
+      },
+      "weight": 2,
+      "evidence_segments": [
+        "B03_S0003",
+        "B03_S0008"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "source_name": "Nevber Hanım",
+      "source_features": {
+        "occupation": "household relative/friend, mediator",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "teen",
+        "age_group_confidence": 90
+      },
+      "target": "B03_C008",
+      "target_name": "Büyük Beyefendi",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "old",
+        "age_group_confidence": 85
+      },
+      "weight": 2,
+      "evidence_segments": [
+        "B03_S0054",
+        "B03_S0055"
+      ]
+    },
+    {
+      "source": "B03_C001",
+      "source_name": "Sermet Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "teen",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C010",
+      "target_name": "Madam",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0006"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "source_name": "Macit Bey",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C004",
+      "target_name": "Miss Morgan",
+      "target_features": {
+        "occupation": "mürebbiye",
+        "occupation_confidence": 100,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "adult",
+        "age_group_confidence": 100
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0008"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "source_name": "Macit Bey",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C009",
+      "target_name": "Hizmetçi kız",
+      "target_features": {
+        "occupation": "hizmetçi",
+        "occupation_confidence": 100,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0066"
+      ]
+    },
+    {
+      "source": "B03_C002",
+      "source_name": "Macit Bey",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C010",
+      "target_name": "Madam",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0006"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "source_name": "Nevber Hanım",
+      "source_features": {
+        "occupation": "household relative/friend, mediator",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "teen",
+        "age_group_confidence": 90
+      },
+      "target": "B03_C004",
+      "target_name": "Miss Morgan",
+      "target_features": {
+        "occupation": "mürebbiye",
+        "occupation_confidence": 100,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "adult",
+        "age_group_confidence": 100
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0003"
+      ]
+    },
+    {
+      "source": "B03_C003",
+      "source_name": "Nevber Hanım",
+      "source_features": {
+        "occupation": "household relative/friend, mediator",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "teen",
+        "age_group_confidence": 90
+      },
+      "target": "B03_C010",
+      "target_name": "Madam",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0006"
+      ]
+    },
+    {
+      "source": "B03_C004",
+      "source_name": "Miss Morgan",
+      "source_features": {
+        "occupation": "mürebbiye",
+        "occupation_confidence": 100,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "adult",
+        "age_group_confidence": 100
+      },
+      "target": "B03_C007",
+      "target_name": "Hanımefendi",
+      "target_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 95
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0003"
+      ]
+    },
+    {
+      "source": "B03_C004",
+      "source_name": "Miss Morgan",
+      "source_features": {
+        "occupation": "mürebbiye",
+        "occupation_confidence": 100,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "adult",
+        "age_group_confidence": 100
+      },
+      "target": "B03_C009",
+      "target_name": "Hizmetçi kız",
+      "target_features": {
+        "occupation": "hizmetçi",
+        "occupation_confidence": 100,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0003"
+      ]
+    },
+    {
+      "source": "B03_C005",
+      "source_name": "Macit'in annesi",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "upper_middle",
+        "wealth_status_confidence": 85,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B03_C008",
+      "target_name": "Büyük Beyefendi",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "old",
+        "age_group_confidence": 85
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0011"
+      ]
+    },
+    {
+      "source": "B03_C006",
+      "source_name": "Macit'in babası",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B03_C008",
+      "target_name": "Büyük Beyefendi",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "old",
+        "age_group_confidence": 85
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B03_S0011"
+      ]
+    }
+  ]
+}

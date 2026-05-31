@@ -1,0 +1,472 @@
+{
+  "book_id": "B02",
+  "model": "gpt-4.1-mini",
+  "source_presence_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/predictions/B02/ensemble/B02_gpt_alias_ensemble_window_presence.json",
+  "input_character_fields": [
+    "canonical_name",
+    "aliases",
+    "gender",
+    "role",
+    "notes"
+  ],
+  "extracted_character_features": [
+    "occupation",
+    "wealth_status",
+    "age_group"
+  ],
+  "wealth_status_labels": [
+    "poor",
+    "lower_middle",
+    "middle",
+    "upper_middle",
+    "wealthy",
+    "unknown"
+  ],
+  "age_group_labels": [
+    "child_youth",
+    "teen",
+    "adult",
+    "old",
+    "unknown"
+  ],
+  "features": [
+    {
+      "char_id": "B02_C001",
+      "canonical_name": "Agop",
+      "occupation": {
+        "value": "thread-spinner",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0001",
+          "B02_S0028"
+        ]
+      },
+      "wealth_status": {
+        "value": "lower_middle",
+        "confidence": 80,
+        "evidence_segments": [
+          "B02_S0001",
+          "B02_S0062",
+          "B02_S0065"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 85,
+        "evidence_segments": [
+          "B02_S0001",
+          "B02_S0028",
+          "B02_S0063"
+        ]
+      }
+    },
+    {
+      "char_id": "B02_C002",
+      "canonical_name": "Kirkor",
+      "occupation": {
+        "value": "iplik eğirici",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0001"
+        ]
+      },
+      "wealth_status": {
+        "value": "poor",
+        "confidence": 85,
+        "evidence_segments": [
+          "B02_S0033",
+          "B02_S0034"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0001",
+          "B02_S0031"
+        ]
+      }
+    },
+    {
+      "char_id": "B02_C003",
+      "canonical_name": "Ebulfazl Enverî",
+      "occupation": {
+        "value": "superstitious treasure-seeker and occult enthusiast",
+        "confidence": 95,
+        "evidence_segments": [
+          "B02_S0016",
+          "B02_S0018",
+          "B02_S0039",
+          "B02_S0040",
+          "B02_S0041",
+          "B02_S0065"
+        ]
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0016",
+          "B02_S0018",
+          "B02_S0039",
+          "B02_S0065"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0016",
+          "B02_S0037",
+          "B02_S0039"
+        ]
+      }
+    },
+    {
+      "char_id": "B02_C004",
+      "canonical_name": "Zeynep Hanım",
+      "occupation": {
+        "value": "ev hanımı",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0039"
+        ]
+      },
+      "wealth_status": {
+        "value": "middle",
+        "confidence": 80,
+        "evidence_segments": [
+          "B02_S0039"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 85,
+        "evidence_segments": [
+          "B02_S0039"
+        ]
+      }
+    },
+    {
+      "char_id": "B02_C005",
+      "canonical_name": "Mevlüde",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "upper_middle",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0039",
+          "B02_S0065"
+        ]
+      },
+      "age_group": {
+        "value": "teen",
+        "confidence": 95,
+        "evidence_segments": [
+          "B02_S0039",
+          "B02_S0044"
+        ]
+      }
+    },
+    {
+      "char_id": "B02_C006",
+      "canonical_name": "Nurullah Hasip",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "middle",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0044",
+          "B02_S0045",
+          "B02_S0065"
+        ]
+      },
+      "age_group": {
+        "value": "child_youth",
+        "confidence": 85,
+        "evidence_segments": [
+          "B02_S0044",
+          "B02_S0066"
+        ]
+      }
+    },
+    {
+      "char_id": "B02_C007",
+      "canonical_name": "Nasrullah Efendi",
+      "occupation": {
+        "value": "alchemy researcher and occult scientist",
+        "confidence": 95,
+        "evidence_segments": [
+          "B02_S0017",
+          "B02_S0018",
+          "B02_S0019"
+        ]
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0019"
+        ]
+      },
+      "age_group": {
+        "value": "old",
+        "confidence": 85,
+        "evidence_segments": [
+          "B02_S0017",
+          "B02_S0019"
+        ]
+      }
+    },
+    {
+      "char_id": "B02_C008",
+      "canonical_name": "Artin Ağa",
+      "occupation": {
+        "value": "hanende (singer)",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0001"
+        ]
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      }
+    },
+    {
+      "char_id": "B02_C009",
+      "canonical_name": "Bedros Ağa",
+      "occupation": {
+        "value": "ulema",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0009"
+        ]
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "old",
+        "confidence": 85,
+        "evidence_segments": [
+          "B02_S0009"
+        ]
+      }
+    },
+    {
+      "char_id": "B02_C010",
+      "canonical_name": "Derviş Cebeli",
+      "occupation": {
+        "value": "derviş, simya ve esrar ile ilgili",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0018"
+        ]
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      }
+    },
+    {
+      "char_id": "B02_C011",
+      "canonical_name": "Lahur",
+      "occupation": {
+        "value": "angelic figure",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0022",
+          "B02_S0029"
+        ]
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      }
+    },
+    {
+      "char_id": "B02_C012",
+      "canonical_name": "Mahur",
+      "occupation": {
+        "value": "angelic figure",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0022",
+          "B02_S0029",
+          "B02_S0032"
+        ]
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      }
+    },
+    {
+      "char_id": "B02_C013",
+      "canonical_name": "Kekre",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      }
+    },
+    {
+      "char_id": "B02_C014",
+      "canonical_name": "Mekre",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      }
+    },
+    {
+      "char_id": "B02_C015",
+      "canonical_name": "Abdullah Karuni",
+      "occupation": {
+        "value": "tüccar",
+        "confidence": 100,
+        "evidence_segments": [
+          "B02_S0045"
+        ]
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 100,
+        "evidence_segments": [
+          "B02_S0045"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 100,
+        "evidence_segments": [
+          "B02_S0045",
+          "B02_S0046"
+        ]
+      }
+    },
+    {
+      "char_id": "B02_C016",
+      "canonical_name": "Mehmet Karuni",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0045"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0045",
+          "B02_S0046"
+        ]
+      }
+    },
+    {
+      "char_id": "B02_C017",
+      "canonical_name": "Ali Hacip",
+      "occupation": {
+        "value": "hizmetçi",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0046",
+          "B02_S0047"
+        ]
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      }
+    },
+    {
+      "char_id": "B02_C018",
+      "canonical_name": "İbn el-Mahşur",
+      "occupation": {
+        "value": "derviş",
+        "confidence": 90,
+        "evidence_segments": [
+          "B02_S0046",
+          "B02_S0047"
+        ]
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      }
+    }
+  ]
+}

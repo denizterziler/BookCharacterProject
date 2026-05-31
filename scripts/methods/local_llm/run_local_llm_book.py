@@ -1,11 +1,12 @@
 import json
 import subprocess
 from pathlib import Path
+from openai import OpenAI
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
-BOOK_ID = "B05"
+BOOK_ID = "B01"
 
 SEGMENTS_PATH = (
     PROJECT_ROOT
@@ -30,9 +31,10 @@ GOLD_PATH = (
 OUTPUT_DIR = PROJECT_ROOT / "predictions" / "local_llm"
 
 MODELS = [
-    #"qwen2.5:14b",
-    #"hf.co/ogulcanaydogan/Turkish-LLM-14B-Instruct-GGUF:Q4_K_M",
-    "hf.co/ytu-ce-cosmos/Turkish-Gemma-9b-T1-GGUF:Q4_K_M",
+    # "qwen2.5:14b",
+    # "hf.co/ogulcanaydogan/Turkish-LLM-14B-Instruct-GGUF:Q4_K_M",
+    # "hf.co/ytu-ce-cosmos/Turkish-Gemma-9b-T1-GGUF:Q4_K_M",
+    "gpt-4.1-mini",
 ]
 
 PROMPT_TYPE = "candidate_based_window_presence_validation"
@@ -155,6 +157,40 @@ def run_ollama_model(model_name: str, prompt: str) -> str:
         raise RuntimeError(f"Ollama model failed: {model_name}")
 
     return result.stdout.strip()
+
+
+def run_openai_model(model_name: str, prompt: str) -> str:
+    """
+    Runs an OpenAI model.
+
+    Important:
+    - Raw output is returned exactly as model text.
+    - No JSON mode is forced here, so raw_outputs keeps whatever the model returns.
+    - The prompt already asks the model to return only valid JSON.
+    """
+    print(f"Running OpenAI model: {model_name}")
+
+    client = OpenAI()
+
+    response = client.responses.create(
+        model=model_name,
+        input=prompt,
+        temperature=0
+    )
+
+    return response.output_text.strip()
+
+
+def run_model(model_name: str, prompt: str) -> str:
+    """
+    Selects OpenAI or Ollama based on model name.
+
+    This keeps the rest of the pipeline unchanged.
+    """
+    if model_name.startswith("gpt-"):
+        return run_openai_model(model_name, prompt)
+
+    return run_ollama_model(model_name, prompt)
 
 
 def extract_json(raw_output: str) -> str:
@@ -325,7 +361,7 @@ def main():
                 character_inventory=character_inventory
             )
 
-            raw_output = run_ollama_model(model_name, prompt)
+            raw_output = run_model(model_name, prompt)
             raw_outputs[segment_id] = raw_output
 
             try:

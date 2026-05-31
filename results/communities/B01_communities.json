@@ -1,0 +1,137 @@
+{
+  "book_id": "B01",
+  "title": "Cadı",
+  "source_graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B01_graph.json",
+  "algorithm": "networkx_greedy_modularity_communities",
+  "edge_weight": "cooccurrence weight",
+  "node_count": 10,
+  "edge_count": 41,
+  "community_count": 3,
+  "modularity": 0.07597854975972504,
+  "communities": [
+    {
+      "community_id": "B01_COM02",
+      "size": 4,
+      "internal_edge_count": 6,
+      "internal_edge_weight": 144,
+      "members": [
+        {
+          "char_id": "B01_C004",
+          "name": "Binnaz Hanım",
+          "weighted_degree": 175,
+          "gender": "female",
+          "role": "important character",
+          "occupation": "ilk harem",
+          "wealth_status": "unknown",
+          "age_group": "unknown"
+        },
+        {
+          "char_id": "B01_C003",
+          "name": "Naşit Nefi Efendi",
+          "weighted_degree": 173,
+          "gender": "male",
+          "role": "important character",
+          "occupation": "kalem müdürü",
+          "wealth_status": "wealthy",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B01_C005",
+          "name": "Şükriye Hanım",
+          "weighted_degree": 81,
+          "gender": "female",
+          "role": "important character",
+          "occupation": "unknown",
+          "wealth_status": "middle",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B01_C008",
+          "name": "Nazikter",
+          "weighted_degree": 18,
+          "gender": "female",
+          "role": "minor character",
+          "occupation": "hizmetçi",
+          "wealth_status": "poor",
+          "age_group": "child_youth"
+        }
+      ]
+    },
+    {
+      "community_id": "B01_COM01",
+      "size": 4,
+      "internal_edge_count": 6,
+      "internal_edge_weight": 69,
+      "members": [
+        {
+          "char_id": "B01_C001",
+          "name": "Fikriye Hanım",
+          "weighted_degree": 98,
+          "gender": "female",
+          "role": "main character",
+          "occupation": "ev hanımı",
+          "wealth_status": "lower_middle",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B01_C002",
+          "name": "Emine Hanım",
+          "weighted_degree": 95,
+          "gender": "female",
+          "role": "supporting character",
+          "occupation": "ev hanımı",
+          "wealth_status": "middle",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B01_C007",
+          "name": "Hasibe Hanım",
+          "weighted_degree": 56,
+          "gender": "female",
+          "role": "supporting character",
+          "occupation": "unknown",
+          "wealth_status": "unknown",
+          "age_group": "old"
+        },
+        {
+          "char_id": "B01_C006",
+          "name": "Hasan Efendi",
+          "weighted_degree": 41,
+          "gender": "male",
+          "role": "supporting character",
+          "occupation": "unknown",
+          "wealth_status": "middle",
+          "age_group": "old"
+        }
+      ]
+    },
+    {
+      "community_id": "B01_COM03",
+      "size": 2,
+      "internal_edge_count": 1,
+      "internal_edge_weight": 1,
+      "members": [
+        {
+          "char_id": "B01_C010",
+          "name": "Bedri Bey",
+          "weighted_degree": 25,
+          "gender": "male",
+          "role": "background character",
+          "occupation": "unknown",
+          "wealth_status": "middle",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B01_C009",
+          "name": "Latife",
+          "weighted_degree": 10,
+          "gender": "female",
+          "role": "minor character",
+          "occupation": "unknown",
+          "wealth_status": "wealthy",
+          "age_group": "adult"
+        }
+      ]
+    }
+  ]
+}

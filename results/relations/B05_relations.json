@@ -1,0 +1,109 @@
+{
+  "book_id": "B05",
+  "model": "gpt-4.1-mini",
+  "source_cooccurrence_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/cooccurrences/B05_cooccurrences.json",
+  "source_character_features_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/character_features/B05_character_features.json",
+  "unit": "300-word overlapping segment",
+  "relation_selection_rule": "Pairs are selected if cooccurrence_weight >= max(MIN_WEIGHT_FLOOR, round(total_segments * MIN_RELATIVE_WEIGHT)).",
+  "total_segments": 267,
+  "min_weight_floor": 10,
+  "min_relative_weight": 0.1,
+  "relation_threshold": 27,
+  "total_cooccurrence_pairs": 73,
+  "selected_pair_count": 4,
+  "relation_labels": [
+    "family",
+    "romantic",
+    "friend",
+    "enemy",
+    "servant_employer",
+    "authority_subordinate",
+    "acquaintance",
+    "same_household",
+    "social_circle",
+    "unknown"
+  ],
+  "relations": [
+    {
+      "source": "B05_C012",
+      "source_name": "Saibe",
+      "target": "B05_C013",
+      "target_name": "Şöhret",
+      "cooccurrence_weight": 76,
+      "relation_type": "acquaintance",
+      "direction": "undirected",
+      "confidence": 85,
+      "evidence_segments": [
+        "B05_S0066",
+        "B05_S0068",
+        "B05_S0069",
+        "B05_S0204",
+        "B05_S0205",
+        "B05_S0206"
+      ]
+    },
+    {
+      "source": "B05_C001",
+      "source_name": "Gülsüm Hanım",
+      "target": "B05_C002",
+      "target_name": "Hoca Nefise Hanım",
+      "cooccurrence_weight": 52,
+      "relation_type": "servant_employer",
+      "direction": "source_to_target",
+      "confidence": 90,
+      "evidence_segments": [
+        "B05_S0001",
+        "B05_S0002",
+        "B05_S0003",
+        "B05_S0035",
+        "B05_S0036",
+        "B05_S0037",
+        "B05_S0038"
+      ]
+    },
+    {
+      "source": "B05_C002",
+      "source_name": "Hoca Nefise Hanım",
+      "target": "B05_C013",
+      "target_name": "Şöhret",
+      "cooccurrence_weight": 41,
+      "relation_type": "servant_employer",
+      "direction": "source_to_target",
+      "confidence": 95,
+      "evidence_segments": [
+        "B05_S0054",
+        "B05_S0055",
+        "B05_S0066",
+        "B05_S0185",
+        "B05_S0186",
+        "B05_S0187",
+        "B05_S0189",
+        "B05_S0260",
+        "B05_S0261",
+        "B05_S0262"
+      ]
+    },
+    {
+      "source": "B05_C002",
+      "source_name": "Hoca Nefise Hanım",
+      "target": "B05_C012",
+      "target_name": "Saibe",
+      "cooccurrence_weight": 36,
+      "relation_type": "servant_employer",
+      "direction": "source_to_target",
+      "confidence": 90,
+      "evidence_segments": [
+        "B05_S0062",
+        "B05_S0063",
+        "B05_S0064",
+        "B05_S0190",
+        "B05_S0201",
+        "B05_S0202",
+        "B05_S0239",
+        "B05_S0260",
+        "B05_S0261",
+        "B05_S0262"
+      ]
+    }
+  ]
+}

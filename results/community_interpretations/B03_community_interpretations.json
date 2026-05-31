@@ -1,0 +1,84 @@
+{
+  "book_id": "B03",
+  "title": "Ferdâ-yı Garâm",
+  "model": "gpt-4.1-mini",
+  "source_graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B03_graph.json",
+  "source_communities_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/communities/B03_louvain_communities.json",
+  "description": "GPT-based interpretation of Louvain-detected character communities. GPT is used only to interpret communities, not to detect them.",
+  "interpretations": [
+    {
+      "community_id": "B03_COM01",
+      "community_label": "aile ve hane çevresi",
+      "dominant_social_logic": "family_household",
+      "interpretation": "Bu topluluk, romandaki bir aile veya hane halkı çevresini temsil etmektedir. Sermet Hanım, Macit Bey ve Nevber Hanım gibi ana karakterler, aynı hane içinde güçlü bağlarla birbirine bağlıdır. Sermet Hanım ile Macit Bey arasında romantik bir ilişki olduğu yüksek güvenle tespit edilmiştir. Hanımefendi, Büyük Beyefendi, Hizmetçi kız ve mürebbiye gibi destekleyici ve arka plandaki karakterler de bu hane içindeki sosyal ve hizmet ilişkilerini yansıtmaktadır. Toplulukta kadın karakterlerin sayıca fazla olması ve zengin/üst-orta sınıf statüsünde olmaları dikkat çekicidir. İlişkilerin çoğu aynı hane içi bağlara dayanmaktadır, ancak bazı ilişkilerin türü çıkarılamamıştır. Bu nedenle topluluğun anlatısal işlevi büyük ölçüde aile ve hane içi dinamikler olarak değerlendirilebilir.",
+      "dominant_character_features": [
+        "çoğunlukla kadın karakterler",
+        "zengin ve üst-orta sınıf üyeler",
+        "farklı yaş gruplarından (genç, yetişkin, yaşlı)",
+        "ana karakterlerin hane içi ilişkileri"
+      ],
+      "important_characters": [
+        "Sermet Hanım",
+        "Macit Bey",
+        "Nevber Hanım",
+        "Hanımefendi"
+      ],
+      "important_relations": [
+        {
+          "source": "Sermet Hanım",
+          "target": "Macit Bey",
+          "relation_type": "romantic",
+          "weight": 62
+        },
+        {
+          "source": "Sermet Hanım",
+          "target": "Nevber Hanım",
+          "relation_type": "same_household",
+          "weight": 47
+        },
+        {
+          "source": "Macit Bey",
+          "target": "Nevber Hanım",
+          "relation_type": "same_household",
+          "weight": 46
+        },
+        {
+          "source": "Sermet Hanım",
+          "target": "Hanımefendi",
+          "relation_type": "same_household",
+          "weight": 21
+        }
+      ],
+      "uncertainties": [
+        "Bazı karakterlerin meslek ve yaş grupları bilinmemektedir.",
+        "Birçok ilişkinin türü çıkarılamamıştır (not_extracted)."
+      ],
+      "confidence": 80
+    },
+    {
+      "community_id": "B03_COM02",
+      "community_label": "aile ve hane çevresi",
+      "dominant_social_logic": "family_household",
+      "interpretation": "Topluluk, Macit'in annesi ve babasından oluşmakta olup, aralarındaki güçlü ailevi bağ dikkat çekmektedir. Her iki karakter de yetişkin olup, ekonomik olarak üst-orta ve zengin sınıfa mensuptur. Meslek bilgisi sadece annede ev hanımı olarak belirlenmiş, babanın mesleği bilinmemektedir. Bu durum, topluluğun romanın aile ve ev yaşamına dair arka planını oluşturduğunu düşündürmektedir.",
+      "dominant_character_features": [
+        "adult",
+        "upper_middle",
+        "wealthy",
+        "family relation",
+        "female",
+        "male"
+      ],
+      "important_characters": [
+        "Macit'in annesi",
+        "Macit'in babası"
+      ],
+      "important_relations": [
+        "aile bağı (anne-baba)"
+      ],
+      "uncertainties": [
+        "Macit'in babasının mesleği bilinmemektedir"
+      ],
+      "confidence": 85
+    }
+  ]
+}

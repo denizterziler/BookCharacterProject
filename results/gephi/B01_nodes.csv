@@ -1,0 +1,11 @@
+Id,Label,CanonicalName,Gender,Role,Occupation,OccupationConfidence,WealthStatus,WealthStatusConfidence,AgeGroup,AgeGroupConfidence,Community,CommunityLabel,DominantSocialLogic,CommunityInterpretationConfidence
+B01_C001,Fikriye Hanım,Fikriye Hanım,female,main character,ev hanımı,90,lower_middle,80,adult,95,B01_COM02,aile ve yakın sosyal çevre,family_household,70
+B01_C002,Emine Hanım,Emine Hanım,female,supporting character,ev hanımı,90,middle,80,adult,90,B01_COM02,aile ve yakın sosyal çevre,family_household,70
+B01_C003,Naşit Nefi Efendi,Naşit Nefi Efendi,male,important character,kalem müdürü,100,wealthy,100,adult,90,B01_COM01,aile ve hane çevresi,family_household,75
+B01_C004,Binnaz Hanım,Binnaz Hanım,female,important character,ilk harem,90,unknown,0,unknown,0,B01_COM01,aile ve hane çevresi,family_household,75
+B01_C005,Şükriye Hanım,Şükriye Hanım,female,important character,unknown,0,middle,90,adult,95,B01_COM01,aile ve hane çevresi,family_household,75
+B01_C006,Hasan Efendi,Hasan Efendi,male,supporting character,unknown,0,middle,85,old,90,B01_COM02,aile ve yakın sosyal çevre,family_household,70
+B01_C007,Hasibe Hanım,Hasibe Hanım,female,supporting character,unknown,0,unknown,0,old,90,B01_COM02,aile ve yakın sosyal çevre,family_household,70
+B01_C008,Nazikter,Nazikter,female,minor character,hizmetçi,100,poor,90,child_youth,95,B01_COM01,aile ve hane çevresi,family_household,75
+B01_C009,Latife,Latife,female,minor character,unknown,0,wealthy,90,adult,85,B01_COM01,aile ve hane çevresi,family_household,75
+B01_C010,Bedri Bey,Bedri Bey,male,background character,unknown,0,middle,80,adult,90,B01_COM02,aile ve yakın sosyal çevre,family_household,70

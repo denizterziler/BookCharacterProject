@@ -1,0 +1,1422 @@
+{
+  "book_id": "B01",
+  "title": "Cadı",
+  "source_presence_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/predictions/B01/ensemble/B01_gpt_alias_ensemble_window_presence.json",
+  "source_character_features_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/character_features/B01_character_features.json",
+  "unit": "300-word overlapping segment",
+  "definition": "Two characters are considered co-occurring if they are both present in the same 300-word overlapping segment. The weight equals the number of segments in which the pair co-occurs.",
+  "cooccurrence_count": 41,
+  "cooccurrences": [
+    {
+      "source": "B01_C003",
+      "source_name": "Naşit Nefi Efendi",
+      "source_features": {
+        "occupation": "kalem müdürü",
+        "occupation_confidence": 100,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 100,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C004",
+      "target_name": "Binnaz Hanım",
+      "target_features": {
+        "occupation": "ilk harem",
+        "occupation_confidence": 90,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "weight": 81,
+      "evidence_segments": [
+        "B01_S0008",
+        "B01_S0016",
+        "B01_S0017",
+        "B01_S0018",
+        "B01_S0020",
+        "B01_S0021",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0026",
+        "B01_S0027",
+        "B01_S0028",
+        "B01_S0029",
+        "B01_S0038",
+        "B01_S0039",
+        "B01_S0040",
+        "B01_S0042",
+        "B01_S0043",
+        "B01_S0044",
+        "B01_S0045",
+        "B01_S0046",
+        "B01_S0047",
+        "B01_S0048",
+        "B01_S0049",
+        "B01_S0050",
+        "B01_S0051",
+        "B01_S0052",
+        "B01_S0053",
+        "B01_S0054",
+        "B01_S0055",
+        "B01_S0057",
+        "B01_S0058",
+        "B01_S0059",
+        "B01_S0060",
+        "B01_S0062",
+        "B01_S0063",
+        "B01_S0064",
+        "B01_S0065",
+        "B01_S0068",
+        "B01_S0071",
+        "B01_S0072",
+        "B01_S0073",
+        "B01_S0077",
+        "B01_S0081",
+        "B01_S0082",
+        "B01_S0083",
+        "B01_S0085",
+        "B01_S0087",
+        "B01_S0096",
+        "B01_S0097",
+        "B01_S0101",
+        "B01_S0105",
+        "B01_S0114",
+        "B01_S0115",
+        "B01_S0116",
+        "B01_S0117",
+        "B01_S0118",
+        "B01_S0121",
+        "B01_S0122",
+        "B01_S0123",
+        "B01_S0125",
+        "B01_S0134",
+        "B01_S0135",
+        "B01_S0146",
+        "B01_S0149",
+        "B01_S0151",
+        "B01_S0152",
+        "B01_S0153",
+        "B01_S0155",
+        "B01_S0156",
+        "B01_S0157",
+        "B01_S0162",
+        "B01_S0163",
+        "B01_S0164",
+        "B01_S0165",
+        "B01_S0166",
+        "B01_S0169",
+        "B01_S0175",
+        "B01_S0177",
+        "B01_S0178",
+        "B01_S0179",
+        "B01_S0180"
+      ]
+    },
+    {
+      "source": "B01_C004",
+      "source_name": "Binnaz Hanım",
+      "source_features": {
+        "occupation": "ilk harem",
+        "occupation_confidence": 90,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "target": "B01_C005",
+      "target_name": "Şükriye Hanım",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "weight": 26,
+      "evidence_segments": [
+        "B01_S0008",
+        "B01_S0017",
+        "B01_S0018",
+        "B01_S0019",
+        "B01_S0020",
+        "B01_S0021",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0025",
+        "B01_S0026",
+        "B01_S0027",
+        "B01_S0028",
+        "B01_S0029",
+        "B01_S0048",
+        "B01_S0071",
+        "B01_S0072",
+        "B01_S0116",
+        "B01_S0117",
+        "B01_S0118",
+        "B01_S0122",
+        "B01_S0149",
+        "B01_S0155",
+        "B01_S0158",
+        "B01_S0162",
+        "B01_S0178",
+        "B01_S0179"
+      ]
+    },
+    {
+      "source": "B01_C003",
+      "source_name": "Naşit Nefi Efendi",
+      "source_features": {
+        "occupation": "kalem müdürü",
+        "occupation_confidence": 100,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 100,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C005",
+      "target_name": "Şükriye Hanım",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "weight": 25,
+      "evidence_segments": [
+        "B01_S0008",
+        "B01_S0017",
+        "B01_S0018",
+        "B01_S0020",
+        "B01_S0021",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0026",
+        "B01_S0027",
+        "B01_S0028",
+        "B01_S0029",
+        "B01_S0048",
+        "B01_S0070",
+        "B01_S0071",
+        "B01_S0072",
+        "B01_S0112",
+        "B01_S0116",
+        "B01_S0117",
+        "B01_S0118",
+        "B01_S0122",
+        "B01_S0149",
+        "B01_S0155",
+        "B01_S0162",
+        "B01_S0178",
+        "B01_S0179"
+      ]
+    },
+    {
+      "source": "B01_C001",
+      "source_name": "Fikriye Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "lower_middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B01_C002",
+      "target_name": "Emine Hanım",
+      "target_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "weight": 22,
+      "evidence_segments": [
+        "B01_S0001",
+        "B01_S0002",
+        "B01_S0003",
+        "B01_S0004",
+        "B01_S0006",
+        "B01_S0007",
+        "B01_S0008",
+        "B01_S0009",
+        "B01_S0011",
+        "B01_S0012",
+        "B01_S0013",
+        "B01_S0014",
+        "B01_S0015",
+        "B01_S0016",
+        "B01_S0017",
+        "B01_S0019",
+        "B01_S0020",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0162",
+        "B01_S0163",
+        "B01_S0174"
+      ]
+    },
+    {
+      "source": "B01_C001",
+      "source_name": "Fikriye Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "lower_middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B01_C004",
+      "target_name": "Binnaz Hanım",
+      "target_features": {
+        "occupation": "ilk harem",
+        "occupation_confidence": 90,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "weight": 20,
+      "evidence_segments": [
+        "B01_S0008",
+        "B01_S0016",
+        "B01_S0017",
+        "B01_S0018",
+        "B01_S0019",
+        "B01_S0020",
+        "B01_S0021",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0033",
+        "B01_S0035",
+        "B01_S0036",
+        "B01_S0038",
+        "B01_S0041",
+        "B01_S0061",
+        "B01_S0151",
+        "B01_S0162",
+        "B01_S0163",
+        "B01_S0174",
+        "B01_S0180"
+      ]
+    },
+    {
+      "source": "B01_C002",
+      "source_name": "Emine Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C003",
+      "target_name": "Naşit Nefi Efendi",
+      "target_features": {
+        "occupation": "kalem müdürü",
+        "occupation_confidence": 100,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 100,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "weight": 20,
+      "evidence_segments": [
+        "B01_S0006",
+        "B01_S0007",
+        "B01_S0008",
+        "B01_S0013",
+        "B01_S0014",
+        "B01_S0015",
+        "B01_S0016",
+        "B01_S0017",
+        "B01_S0020",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0028",
+        "B01_S0058",
+        "B01_S0059",
+        "B01_S0081",
+        "B01_S0105",
+        "B01_S0121",
+        "B01_S0162",
+        "B01_S0163",
+        "B01_S0166"
+      ]
+    },
+    {
+      "source": "B01_C002",
+      "source_name": "Emine Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C004",
+      "target_name": "Binnaz Hanım",
+      "target_features": {
+        "occupation": "ilk harem",
+        "occupation_confidence": 90,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "weight": 19,
+      "evidence_segments": [
+        "B01_S0008",
+        "B01_S0016",
+        "B01_S0017",
+        "B01_S0019",
+        "B01_S0020",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0028",
+        "B01_S0058",
+        "B01_S0059",
+        "B01_S0081",
+        "B01_S0104",
+        "B01_S0105",
+        "B01_S0113",
+        "B01_S0121",
+        "B01_S0162",
+        "B01_S0163",
+        "B01_S0166",
+        "B01_S0174"
+      ]
+    },
+    {
+      "source": "B01_C001",
+      "source_name": "Fikriye Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "lower_middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B01_C003",
+      "target_name": "Naşit Nefi Efendi",
+      "target_features": {
+        "occupation": "kalem müdürü",
+        "occupation_confidence": 100,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 100,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "weight": 18,
+      "evidence_segments": [
+        "B01_S0006",
+        "B01_S0007",
+        "B01_S0008",
+        "B01_S0013",
+        "B01_S0014",
+        "B01_S0015",
+        "B01_S0016",
+        "B01_S0017",
+        "B01_S0018",
+        "B01_S0020",
+        "B01_S0021",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0038",
+        "B01_S0151",
+        "B01_S0162",
+        "B01_S0163",
+        "B01_S0180"
+      ]
+    },
+    {
+      "source": "B01_C001",
+      "source_name": "Fikriye Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "lower_middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B01_C006",
+      "target_name": "Hasan Efendi",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "weight": 12,
+      "evidence_segments": [
+        "B01_S0002",
+        "B01_S0003",
+        "B01_S0004",
+        "B01_S0005",
+        "B01_S0006",
+        "B01_S0011",
+        "B01_S0012",
+        "B01_S0013",
+        "B01_S0015",
+        "B01_S0016",
+        "B01_S0021",
+        "B01_S0022"
+      ]
+    },
+    {
+      "source": "B01_C003",
+      "source_name": "Naşit Nefi Efendi",
+      "source_features": {
+        "occupation": "kalem müdürü",
+        "occupation_confidence": 100,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 100,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C007",
+      "target_name": "Hasibe Hanım",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "weight": 12,
+      "evidence_segments": [
+        "B01_S0013",
+        "B01_S0014",
+        "B01_S0015",
+        "B01_S0016",
+        "B01_S0017",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0045",
+        "B01_S0046",
+        "B01_S0073",
+        "B01_S0156",
+        "B01_S0162"
+      ]
+    },
+    {
+      "source": "B01_C004",
+      "source_name": "Binnaz Hanım",
+      "source_features": {
+        "occupation": "ilk harem",
+        "occupation_confidence": 90,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "target": "B01_C007",
+      "target_name": "Hasibe Hanım",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "weight": 11,
+      "evidence_segments": [
+        "B01_S0016",
+        "B01_S0017",
+        "B01_S0019",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0045",
+        "B01_S0046",
+        "B01_S0066",
+        "B01_S0073",
+        "B01_S0156",
+        "B01_S0162"
+      ]
+    },
+    {
+      "source": "B01_C001",
+      "source_name": "Fikriye Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "lower_middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B01_C005",
+      "target_name": "Şükriye Hanım",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "weight": 10,
+      "evidence_segments": [
+        "B01_S0008",
+        "B01_S0017",
+        "B01_S0018",
+        "B01_S0019",
+        "B01_S0020",
+        "B01_S0021",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0024",
+        "B01_S0162"
+      ]
+    },
+    {
+      "source": "B01_C001",
+      "source_name": "Fikriye Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "lower_middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B01_C007",
+      "target_name": "Hasibe Hanım",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "weight": 10,
+      "evidence_segments": [
+        "B01_S0012",
+        "B01_S0013",
+        "B01_S0014",
+        "B01_S0015",
+        "B01_S0016",
+        "B01_S0017",
+        "B01_S0019",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0162"
+      ]
+    },
+    {
+      "source": "B01_C002",
+      "source_name": "Emine Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C006",
+      "target_name": "Hasan Efendi",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "weight": 10,
+      "evidence_segments": [
+        "B01_S0002",
+        "B01_S0003",
+        "B01_S0004",
+        "B01_S0006",
+        "B01_S0011",
+        "B01_S0012",
+        "B01_S0013",
+        "B01_S0015",
+        "B01_S0016",
+        "B01_S0022"
+      ]
+    },
+    {
+      "source": "B01_C002",
+      "source_name": "Emine Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C007",
+      "target_name": "Hasibe Hanım",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "weight": 10,
+      "evidence_segments": [
+        "B01_S0012",
+        "B01_S0013",
+        "B01_S0014",
+        "B01_S0015",
+        "B01_S0016",
+        "B01_S0017",
+        "B01_S0019",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0162"
+      ]
+    },
+    {
+      "source": "B01_C002",
+      "source_name": "Emine Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C005",
+      "target_name": "Şükriye Hanım",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "weight": 8,
+      "evidence_segments": [
+        "B01_S0008",
+        "B01_S0017",
+        "B01_S0019",
+        "B01_S0020",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0028",
+        "B01_S0162"
+      ]
+    },
+    {
+      "source": "B01_C004",
+      "source_name": "Binnaz Hanım",
+      "source_features": {
+        "occupation": "ilk harem",
+        "occupation_confidence": 90,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "target": "B01_C010",
+      "target_name": "Bedri Bey",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "weight": 8,
+      "evidence_segments": [
+        "B01_S0037",
+        "B01_S0046",
+        "B01_S0051",
+        "B01_S0066",
+        "B01_S0067",
+        "B01_S0114",
+        "B01_S0153",
+        "B01_S0160"
+      ]
+    },
+    {
+      "source": "B01_C003",
+      "source_name": "Naşit Nefi Efendi",
+      "source_features": {
+        "occupation": "kalem müdürü",
+        "occupation_confidence": 100,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 100,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C006",
+      "target_name": "Hasan Efendi",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "weight": 6,
+      "evidence_segments": [
+        "B01_S0006",
+        "B01_S0013",
+        "B01_S0015",
+        "B01_S0016",
+        "B01_S0021",
+        "B01_S0022"
+      ]
+    },
+    {
+      "source": "B01_C003",
+      "source_name": "Naşit Nefi Efendi",
+      "source_features": {
+        "occupation": "kalem müdürü",
+        "occupation_confidence": 100,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 100,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C010",
+      "target_name": "Bedri Bey",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "weight": 6,
+      "evidence_segments": [
+        "B01_S0006",
+        "B01_S0046",
+        "B01_S0051",
+        "B01_S0102",
+        "B01_S0114",
+        "B01_S0153"
+      ]
+    },
+    {
+      "source": "B01_C004",
+      "source_name": "Binnaz Hanım",
+      "source_features": {
+        "occupation": "ilk harem",
+        "occupation_confidence": 90,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "target": "B01_C008",
+      "target_name": "Nazikter",
+      "target_features": {
+        "occupation": "hizmetçi",
+        "occupation_confidence": 100,
+        "wealth_status": "poor",
+        "wealth_status_confidence": 90,
+        "age_group": "child_youth",
+        "age_group_confidence": 95
+      },
+      "weight": 5,
+      "evidence_segments": [
+        "B01_S0023",
+        "B01_S0025",
+        "B01_S0029",
+        "B01_S0030",
+        "B01_S0121"
+      ]
+    },
+    {
+      "source": "B01_C005",
+      "source_name": "Şükriye Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B01_C007",
+      "target_name": "Hasibe Hanım",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "weight": 5,
+      "evidence_segments": [
+        "B01_S0017",
+        "B01_S0019",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0162"
+      ]
+    },
+    {
+      "source": "B01_C006",
+      "source_name": "Hasan Efendi",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C007",
+      "target_name": "Hasibe Hanım",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "weight": 5,
+      "evidence_segments": [
+        "B01_S0012",
+        "B01_S0013",
+        "B01_S0015",
+        "B01_S0016",
+        "B01_S0022"
+      ]
+    },
+    {
+      "source": "B01_C005",
+      "source_name": "Şükriye Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B01_C008",
+      "target_name": "Nazikter",
+      "target_features": {
+        "occupation": "hizmetçi",
+        "occupation_confidence": 100,
+        "wealth_status": "poor",
+        "wealth_status_confidence": 90,
+        "age_group": "child_youth",
+        "age_group_confidence": 95
+      },
+      "weight": 4,
+      "evidence_segments": [
+        "B01_S0023",
+        "B01_S0024",
+        "B01_S0025",
+        "B01_S0029"
+      ]
+    },
+    {
+      "source": "B01_C001",
+      "source_name": "Fikriye Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "lower_middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B01_C010",
+      "target_name": "Bedri Bey",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "weight": 3,
+      "evidence_segments": [
+        "B01_S0001",
+        "B01_S0004",
+        "B01_S0006"
+      ]
+    },
+    {
+      "source": "B01_C002",
+      "source_name": "Emine Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C010",
+      "target_name": "Bedri Bey",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "weight": 3,
+      "evidence_segments": [
+        "B01_S0001",
+        "B01_S0004",
+        "B01_S0006"
+      ]
+    },
+    {
+      "source": "B01_C003",
+      "source_name": "Naşit Nefi Efendi",
+      "source_features": {
+        "occupation": "kalem müdürü",
+        "occupation_confidence": 100,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 100,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C008",
+      "target_name": "Nazikter",
+      "target_features": {
+        "occupation": "hizmetçi",
+        "occupation_confidence": 100,
+        "wealth_status": "poor",
+        "wealth_status_confidence": 90,
+        "age_group": "child_youth",
+        "age_group_confidence": 95
+      },
+      "weight": 3,
+      "evidence_segments": [
+        "B01_S0023",
+        "B01_S0029",
+        "B01_S0121"
+      ]
+    },
+    {
+      "source": "B01_C004",
+      "source_name": "Binnaz Hanım",
+      "source_features": {
+        "occupation": "ilk harem",
+        "occupation_confidence": 90,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "target": "B01_C006",
+      "target_name": "Hasan Efendi",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "weight": 3,
+      "evidence_segments": [
+        "B01_S0016",
+        "B01_S0021",
+        "B01_S0022"
+      ]
+    },
+    {
+      "source": "B01_C001",
+      "source_name": "Fikriye Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "lower_middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B01_C008",
+      "target_name": "Nazikter",
+      "target_features": {
+        "occupation": "hizmetçi",
+        "occupation_confidence": 100,
+        "wealth_status": "poor",
+        "wealth_status_confidence": 90,
+        "age_group": "child_youth",
+        "age_group_confidence": 95
+      },
+      "weight": 2,
+      "evidence_segments": [
+        "B01_S0023",
+        "B01_S0024"
+      ]
+    },
+    {
+      "source": "B01_C002",
+      "source_name": "Emine Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C008",
+      "target_name": "Nazikter",
+      "target_features": {
+        "occupation": "hizmetçi",
+        "occupation_confidence": 100,
+        "wealth_status": "poor",
+        "wealth_status_confidence": 90,
+        "age_group": "child_youth",
+        "age_group_confidence": 95
+      },
+      "weight": 2,
+      "evidence_segments": [
+        "B01_S0023",
+        "B01_S0121"
+      ]
+    },
+    {
+      "source": "B01_C003",
+      "source_name": "Naşit Nefi Efendi",
+      "source_features": {
+        "occupation": "kalem müdürü",
+        "occupation_confidence": 100,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 100,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C009",
+      "target_name": "Latife",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 85
+      },
+      "weight": 2,
+      "evidence_segments": [
+        "B01_S0006",
+        "B01_S0112"
+      ]
+    },
+    {
+      "source": "B01_C004",
+      "source_name": "Binnaz Hanım",
+      "source_features": {
+        "occupation": "ilk harem",
+        "occupation_confidence": 90,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "unknown",
+        "age_group_confidence": 0
+      },
+      "target": "B01_C009",
+      "target_name": "Latife",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 85
+      },
+      "weight": 2,
+      "evidence_segments": [
+        "B01_S0030",
+        "B01_S0031"
+      ]
+    },
+    {
+      "source": "B01_C005",
+      "source_name": "Şükriye Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B01_C006",
+      "target_name": "Hasan Efendi",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "weight": 2,
+      "evidence_segments": [
+        "B01_S0021",
+        "B01_S0022"
+      ]
+    },
+    {
+      "source": "B01_C006",
+      "source_name": "Hasan Efendi",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C010",
+      "target_name": "Bedri Bey",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "weight": 2,
+      "evidence_segments": [
+        "B01_S0004",
+        "B01_S0006"
+      ]
+    },
+    {
+      "source": "B01_C007",
+      "source_name": "Hasibe Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C010",
+      "target_name": "Bedri Bey",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "weight": 2,
+      "evidence_segments": [
+        "B01_S0046",
+        "B01_S0066"
+      ]
+    },
+    {
+      "source": "B01_C001",
+      "source_name": "Fikriye Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "lower_middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B01_C009",
+      "target_name": "Latife",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 85
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B01_S0006"
+      ]
+    },
+    {
+      "source": "B01_C002",
+      "source_name": "Emine Hanım",
+      "source_features": {
+        "occupation": "ev hanımı",
+        "occupation_confidence": 90,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C009",
+      "target_name": "Latife",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 85
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B01_S0006"
+      ]
+    },
+    {
+      "source": "B01_C005",
+      "source_name": "Şükriye Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 95
+      },
+      "target": "B01_C009",
+      "target_name": "Latife",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 85
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B01_S0112"
+      ]
+    },
+    {
+      "source": "B01_C006",
+      "source_name": "Hasan Efendi",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 85,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C009",
+      "target_name": "Latife",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 85
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B01_S0006"
+      ]
+    },
+    {
+      "source": "B01_C007",
+      "source_name": "Hasibe Hanım",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "unknown",
+        "wealth_status_confidence": 0,
+        "age_group": "old",
+        "age_group_confidence": 90
+      },
+      "target": "B01_C008",
+      "target_name": "Nazikter",
+      "target_features": {
+        "occupation": "hizmetçi",
+        "occupation_confidence": 100,
+        "wealth_status": "poor",
+        "wealth_status_confidence": 90,
+        "age_group": "child_youth",
+        "age_group_confidence": 95
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B01_S0023"
+      ]
+    },
+    {
+      "source": "B01_C008",
+      "source_name": "Nazikter",
+      "source_features": {
+        "occupation": "hizmetçi",
+        "occupation_confidence": 100,
+        "wealth_status": "poor",
+        "wealth_status_confidence": 90,
+        "age_group": "child_youth",
+        "age_group_confidence": 95
+      },
+      "target": "B01_C009",
+      "target_name": "Latife",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 85
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B01_S0030"
+      ]
+    },
+    {
+      "source": "B01_C009",
+      "source_name": "Latife",
+      "source_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "wealthy",
+        "wealth_status_confidence": 90,
+        "age_group": "adult",
+        "age_group_confidence": 85
+      },
+      "target": "B01_C010",
+      "target_name": "Bedri Bey",
+      "target_features": {
+        "occupation": "unknown",
+        "occupation_confidence": 0,
+        "wealth_status": "middle",
+        "wealth_status_confidence": 80,
+        "age_group": "adult",
+        "age_group_confidence": 90
+      },
+      "weight": 1,
+      "evidence_segments": [
+        "B01_S0006"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "book_id": "B03",
+  "title": "Ferdâ-yı Garâm",
+  "source_graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B03_graph.json",
+  "algorithm": "networkx_louvain_communities",
+  "random_seed": 42,
+  "edge_weight": "cooccurrence weight",
+  "node_count": 10,
+  "edge_count": 33,
+  "community_count": 2,
+  "modularity": 0.019236975151493505,
+  "communities": [
+    {
+      "community_id": "B03_COM01",
+      "size": 8,
+      "internal_edge_count": 22,
+      "internal_edge_weight": 243,
+      "external_edge_weight": 80,
+      "gender_distribution": {
+        "female": 6,
+        "male": 2
+      },
+      "occupation_distribution": {
+        "unknown": 4,
+        "ev hanımı": 1,
+        "hizmetçi": 1,
+        "household relative/friend, mediator": 1,
+        "mürebbiye": 1
+      },
+      "wealth_status_distribution": {
+        "unknown": 3,
+        "wealthy": 3,
+        "upper_middle": 2
+      },
+      "age_group_distribution": {
+        "adult": 2,
+        "old": 2,
+        "teen": 2,
+        "unknown": 2
+      },
+      "internal_relation_distribution": {
+        "not_extracted": 16,
+        "same_household": 5,
+        "romantic": 1
+      },
+      "members": [
+        {
+          "char_id": "B03_C001",
+          "name": "Sermet Hanım",
+          "weighted_degree": 163,
+          "gender": "female",
+          "role": "main character",
+          "occupation": "unknown",
+          "occupation_confidence": 0,
+          "wealth_status": "upper_middle",
+          "wealth_status_confidence": 90,
+          "age_group": "teen",
+          "age_group_confidence": 95
+        },
+        {
+          "char_id": "B03_C002",
+          "name": "Macit Bey",
+          "weighted_degree": 160,
+          "gender": "male",
+          "role": "main character",
+          "occupation": "unknown",
+          "occupation_confidence": 0,
+          "wealth_status": "upper_middle",
+          "wealth_status_confidence": 90,
+          "age_group": "adult",
+          "age_group_confidence": 95
+        },
+        {
+          "char_id": "B03_C003",
+          "name": "Nevber Hanım",
+          "weighted_degree": 138,
+          "gender": "female",
+          "role": "main character",
+          "occupation": "household relative/friend, mediator",
+          "occupation_confidence": 90,
+          "wealth_status": "wealthy",
+          "wealth_status_confidence": 85,
+          "age_group": "teen",
+          "age_group_confidence": 90
+        },
+        {
+          "char_id": "B03_C007",
+          "name": "Hanımefendi",
+          "weighted_degree": 71,
+          "gender": "female",
+          "role": "supporting character",
+          "occupation": "ev hanımı",
+          "occupation_confidence": 90,
+          "wealth_status": "wealthy",
+          "wealth_status_confidence": 85,
+          "age_group": "old",
+          "age_group_confidence": 95
+        },
+        {
+          "char_id": "B03_C008",
+          "name": "Büyük Beyefendi",
+          "weighted_degree": 13,
+          "gender": "male",
+          "role": "background character",
+          "occupation": "unknown",
+          "occupation_confidence": 0,
+          "wealth_status": "wealthy",
+          "wealth_status_confidence": 90,
+          "age_group": "old",
+          "age_group_confidence": 85
+        },
+        {
+          "char_id": "B03_C009",
+          "name": "Hizmetçi kız",
+          "weighted_degree": 12,
+          "gender": "female",
+          "role": "minor character",
+          "occupation": "hizmetçi",
+          "occupation_confidence": 100,
+          "wealth_status": "unknown",
+          "wealth_status_confidence": 0,
+          "age_group": "unknown",
+          "age_group_confidence": 0
+        },
+        {
+          "char_id": "B03_C004",
+          "name": "Miss Morgan",
+          "weighted_degree": 6,
+          "gender": "female",
+          "role": "background character",
+          "occupation": "mürebbiye",
+          "occupation_confidence": 100,
+          "wealth_status": "unknown",
+          "wealth_status_confidence": 0,
+          "age_group": "adult",
+          "age_group_confidence": 100
+        },
+        {
+          "char_id": "B03_C010",
+          "name": "Madam",
+          "weighted_degree": 3,
+          "gender": "female",
+          "role": "minor/background character",
+          "occupation": "unknown",
+          "occupation_confidence": 0,
+          "wealth_status": "unknown",
+          "wealth_status_confidence": 0,
+          "age_group": "unknown",
+          "age_group_confidence": 0
+        }
+      ]
+    },
+    {
+      "community_id": "B03_COM02",
+      "size": 2,
+      "internal_edge_count": 1,
+      "internal_edge_weight": 11,
+      "external_edge_weight": 80,
+      "gender_distribution": {
+        "female": 1,
+        "male": 1
+      },
+      "occupation_distribution": {
+        "ev hanımı": 1,
+        "unknown": 1
+      },
+      "wealth_status_distribution": {
+        "upper_middle": 1,
+        "wealthy": 1
+      },
+      "age_group_distribution": {
+        "adult": 2
+      },
+      "internal_relation_distribution": {
+        "family": 1
+      },
+      "members": [
+        {
+          "char_id": "B03_C005",
+          "name": "Macit'in annesi",
+          "weighted_degree": 57,
+          "gender": "female",
+          "role": "background character",
+          "occupation": "ev hanımı",
+          "occupation_confidence": 90,
+          "wealth_status": "upper_middle",
+          "wealth_status_confidence": 85,
+          "age_group": "adult",
+          "age_group_confidence": 90
+        },
+        {
+          "char_id": "B03_C006",
+          "name": "Macit'in babası",
+          "weighted_degree": 45,
+          "gender": "male",
+          "role": "background character",
+          "occupation": "unknown",
+          "occupation_confidence": 0,
+          "wealth_status": "wealthy",
+          "wealth_status_confidence": 90,
+          "age_group": "adult",
+          "age_group_confidence": 95
+        }
+      ]
+    }
+  ]
+}

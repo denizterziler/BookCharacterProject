@@ -1,0 +1,141 @@
+{
+  "book_id": "B02",
+  "title": "Efsuncu Baba",
+  "model": "gpt-4.1-mini",
+  "source_graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B02_graph.json",
+  "source_communities_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/communities/B02_louvain_communities.json",
+  "description": "GPT-based interpretation of Louvain-detected character communities. GPT is used only to interpret communities, not to detect them.",
+  "interpretations": [
+    {
+      "community_id": "B02_COM01",
+      "community_label": "arkadaşlık ve mistik etkileşim çevresi",
+      "dominant_social_logic": "friendship_or_social_circle",
+      "interpretation": "Bu topluluk, romandaki ana karakterler Ebulfazl Enverî, Agop ve Kirkor'un etrafında şekillenen bir sosyal ağdır. Karakterler arasında güçlü dostluk ve tanışıklık ilişkileri mevcuttur. Ayrıca, Mahur ve Lahur gibi meçhul cinsiyetli ve meçhul yaş grubundaki melekî figürlerin varlığı, topluluğa mistik ve efsunlu bir boyut katmaktadır. Zenginlik durumları ve meslekler çeşitlilik gösterse de, özellikle Ebulfazl Enverî'nin zengin ve batıl inançlara sahip bir defineci olması, topluluğun mistik ve sosyal etkileşimler ekseninde şekillendiğini düşündürür. Diğer karakterler ise daha çok arka planda kalmakta, ancak ana karakterlerle çeşitli derecelerde ilişki içindedir. Topluluk, dostluk ve sosyal bağlar üzerine kurulmuş olup, mistik ve efsunlu unsurların da etkisi altındadır.",
+      "dominant_character_features": [
+        "ana karakterler",
+        "erkek ağırlıklı",
+        "farklı sosyal sınıflar",
+        "mistik/efsuncu figürler",
+        "arkadaşlık ve tanışıklık ilişkileri"
+      ],
+      "important_characters": [
+        "Ebulfazl Enverî",
+        "Agop",
+        "Kirkor",
+        "Mahur",
+        "Lahur"
+      ],
+      "important_relations": [
+        {
+          "source": "Agop",
+          "target": "Kirkor",
+          "relation_type": "friend",
+          "weight": 35
+        },
+        {
+          "source": "Kirkor",
+          "target": "Ebulfazl Enverî",
+          "relation_type": "friend",
+          "weight": 26
+        },
+        {
+          "source": "Ebulfazl Enverî",
+          "target": "Lahur",
+          "relation_type": "friend",
+          "weight": 23
+        },
+        {
+          "source": "Lahur",
+          "target": "Mahur",
+          "relation_type": "friend",
+          "weight": 26
+        }
+      ],
+      "uncertainties": [
+        "Mahur ve Lahur'un cinsiyet ve yaş grupları bilinmemektedir",
+        "Bazı ilişkilerin türü ve derinliği tam olarak çıkarılamamıştır (not_extracted ilişkiler)",
+        "Topluluğun ekonomik ve sosyal sınıf dinamikleri tam net değildir"
+      ],
+      "confidence": 75
+    },
+    {
+      "community_id": "B02_COM02",
+      "community_label": "tüccar ve derviş çevresi",
+      "dominant_social_logic": "class_or_service_relation",
+      "interpretation": "Bu topluluk, zengin tüccar karakterler ile derviş ve hizmetçi gibi farklı meslek gruplarından erkek karakterlerin bir arada bulunduğu bir sosyal çevreyi temsil etmektedir. Abdullah Karuni ve Mehmet Karuni'nin yüksek ağırlıklı bağlantıları ve zenginlik durumları, grubun ekonomik açıdan güçlü üyelerini göstermektedir. Derviş Cebeli ve İbn el-Mahşur gibi dervişlerin varlığı, topluluğa mistik ve simya/esrar temalarının dahil olduğunu düşündürmektedir. Ali Hacip'in hizmetçi olarak yer alması, toplulukta farklı sosyal statülerin bir arada bulunduğunu işaret eder. İç ilişkilerin türü çıkarılamamış olsa da, ağırlıkların yüksek olması bu karakterlerin birbirleriyle sıkı ilişkiler içinde olduğunu gösterir. Ancak ilişkilerin doğası ve yaş gruplarının çoğunun bilinmemesi nedeniyle topluluğun anlatısal işlevi tam olarak netleşmemektedir.",
+      "dominant_character_features": [
+        "erkek",
+        "meslek çeşitliliği (tüccar, derviş, hizmetçi)",
+        "zenginlik durumu (zengin ve bilinmeyen)",
+        "ağırlıklı olarak yetişkin"
+      ],
+      "important_characters": [
+        "Abdullah Karuni",
+        "Mehmet Karuni",
+        "İbn el-Mahşur",
+        "Derviş Cebeli",
+        "Ali Hacip"
+      ],
+      "important_relations": [
+        "Abdullah Karuni - Mehmet Karuni (ağır bağlantı)",
+        "Abdullah Karuni - Ali Hacip",
+        "Abdullah Karuni - İbn el-Mahşur",
+        "Derviş Cebeli'nin diğer dört karakterle bağlantıları"
+      ],
+      "uncertainties": [
+        "İlişkilerin türü çıkarılamamış",
+        "Çoğu karakterin yaş grubu ve zenginlik durumu bilinmiyor",
+        "Meslek bilgisi eksik olan karakterler var"
+      ],
+      "confidence": 70
+    },
+    {
+      "community_id": "B02_COM03",
+      "community_label": "genç ve genç yetişkin karakter ilişkisi",
+      "dominant_social_logic": "mixed_or_unclear",
+      "interpretation": "Topluluk, yaş grupları çocuk/genç ve genç yetişkin olan iki önemli karakterden oluşmaktadır. Aralarındaki ilişki türü çıkarılamamış olup, meslekleri de bilinmemektedir. Ekonomik durumları orta ve orta-üst sınıf olarak farklılık göstermektedir. Bu nedenle, topluluğun romandaki anlatısal veya sosyal işlevi net olarak belirlenememektedir.",
+      "dominant_character_features": [
+        "çocuk/genç yaş grubu",
+        "genç yaş grubu",
+        "orta ve orta-üst ekonomik durum",
+        "meslek bilgisi yok"
+      ],
+      "important_characters": [
+        "Nurullah Hasip",
+        "Mevlüde"
+      ],
+      "important_relations": [
+        "Nurullah Hasip - Mevlüde (ilişki türü çıkarılamadı, ağırlık 4)"
+      ],
+      "uncertainties": [
+        "ilişki türü belirlenememiş",
+        "meslek bilgisi yok"
+      ],
+      "confidence": 50
+    },
+    {
+      "community_id": "B02_COM04",
+      "community_label": "mitolojik ikili",
+      "dominant_social_logic": "mixed_or_unclear",
+      "interpretation": "Topluluk, romanda mitik karakterler olarak tanımlanan Kekre ve Mekre'den oluşmaktadır. Bu iki karakter arasında güçlü bir bağ olduğu görülmekle birlikte, ilişki türü ve diğer sosyal özellikler hakkında bilgi bulunmamaktadır. Bu nedenle, anlatısal işlevleri ve sosyal rolleri net olarak belirlenememektedir.",
+      "dominant_character_features": [
+        "mythic character"
+      ],
+      "important_characters": [
+        "Kekre",
+        "Mekre"
+      ],
+      "important_relations": [
+        "Kekre-Mekre (ağırlık: 2, ilişki türü belirsiz)"
+      ],
+      "uncertainties": [
+        "cinsiyet bilinmiyor",
+        "meslek bilinmiyor",
+        "yaş grubu bilinmiyor",
+        "zenginlik durumu bilinmiyor",
+        "ilişki türü çıkarılamadı"
+      ],
+      "confidence": 0
+    }
+  ]
+}

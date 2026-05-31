@@ -1,0 +1,298 @@
+{
+  "book_id": "B04",
+  "model": "gpt-4.1-mini",
+  "source_presence_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/predictions/B04/ensemble/B04_gpt_alias_ensemble_window_presence.json",
+  "input_character_fields": [
+    "canonical_name",
+    "aliases",
+    "gender",
+    "role",
+    "notes"
+  ],
+  "extracted_character_features": [
+    "occupation",
+    "wealth_status",
+    "age_group"
+  ],
+  "wealth_status_labels": [
+    "poor",
+    "lower_middle",
+    "middle",
+    "upper_middle",
+    "wealthy",
+    "unknown"
+  ],
+  "age_group_labels": [
+    "child_youth",
+    "teen",
+    "adult",
+    "old",
+    "unknown"
+  ],
+  "features": [
+    {
+      "char_id": "B04_C001",
+      "canonical_name": "Pertev Bey",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 90,
+        "evidence_segments": [
+          "B04_S0001",
+          "B04_S0004",
+          "B04_S0005"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 95,
+        "evidence_segments": [
+          "B04_S0001",
+          "B04_S0035",
+          "B04_S0077"
+        ]
+      }
+    },
+    {
+      "char_id": "B04_C002",
+      "canonical_name": "Müjgân Hanım",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "upper_middle",
+        "confidence": 90,
+        "evidence_segments": [
+          "B04_S0006",
+          "B04_S0007",
+          "B04_S0008",
+          "B04_S0009"
+        ]
+      },
+      "age_group": {
+        "value": "teen",
+        "confidence": 95,
+        "evidence_segments": [
+          "B04_S0006",
+          "B04_S0007",
+          "B04_S0008",
+          "B04_S0009"
+        ]
+      }
+    },
+    {
+      "char_id": "B04_C003",
+      "canonical_name": "Nihat Bey",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 90,
+        "evidence_segments": [
+          "B04_S0001",
+          "B04_S0002",
+          "B04_S0003",
+          "B04_S0004"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 85,
+        "evidence_segments": [
+          "B04_S0001",
+          "B04_S0002",
+          "B04_S0003"
+        ]
+      }
+    },
+    {
+      "char_id": "B04_C004",
+      "canonical_name": "Şekûre Hanım",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 90,
+        "evidence_segments": [
+          "B04_S0001",
+          "B04_S0073"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 85,
+        "evidence_segments": [
+          "B04_S0005",
+          "B04_S0073"
+        ]
+      }
+    },
+    {
+      "char_id": "B04_C005",
+      "canonical_name": "Mahmûre Hanım",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 90,
+        "evidence_segments": [
+          "B04_S0014",
+          "B04_S0072",
+          "B04_S0073"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 85,
+        "evidence_segments": [
+          "B04_S0001",
+          "B04_S0014",
+          "B04_S0072"
+        ]
+      }
+    },
+    {
+      "char_id": "B04_C006",
+      "canonical_name": "Nigâr Hanım",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "middle",
+        "confidence": 90,
+        "evidence_segments": [
+          "B04_S0011",
+          "B04_S0012"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 85,
+        "evidence_segments": [
+          "B04_S0001",
+          "B04_S0027"
+        ]
+      }
+    },
+    {
+      "char_id": "B04_C007",
+      "canonical_name": "Methi Bey",
+      "occupation": {
+        "value": "officer",
+        "confidence": 90,
+        "evidence_segments": [
+          "B04_S0004",
+          "B04_S0010",
+          "B04_S0029",
+          "B04_S0072"
+        ]
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 85,
+        "evidence_segments": [
+          "B04_S0004",
+          "B04_S0029",
+          "B04_S0072"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 80,
+        "evidence_segments": [
+          "B04_S0004",
+          "B04_S0029",
+          "B04_S0072"
+        ]
+      }
+    },
+    {
+      "char_id": "B04_C008",
+      "canonical_name": "Süheyla Hanım",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 90,
+        "evidence_segments": [
+          "B04_S0058",
+          "B04_S0059",
+          "B04_S0063"
+        ]
+      }
+    },
+    {
+      "char_id": "B04_C009",
+      "canonical_name": "Nebile Hanım",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 90,
+        "evidence_segments": [
+          "B04_S0058"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 95,
+        "evidence_segments": [
+          "B04_S0058"
+        ]
+      }
+    },
+    {
+      "char_id": "B04_C010",
+      "canonical_name": "Kemal Nedim Bey",
+      "occupation": {
+        "value": "konsoloslukta görevli",
+        "confidence": 90,
+        "evidence_segments": [
+          "B04_S0060"
+        ]
+      },
+      "wealth_status": {
+        "value": "upper_middle",
+        "confidence": 80,
+        "evidence_segments": [
+          "B04_S0060"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 90,
+        "evidence_segments": [
+          "B04_S0058"
+        ]
+      }
+    }
+  ]
+}

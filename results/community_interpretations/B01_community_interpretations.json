@@ -1,0 +1,81 @@
+{
+  "book_id": "B01",
+  "title": "Cadı",
+  "model": "gpt-4.1-mini",
+  "source_graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B01_graph.json",
+  "source_communities_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/communities/B01_louvain_communities.json",
+  "description": "GPT-based interpretation of Louvain-detected character communities. GPT is used only to interpret communities, not to detect them.",
+  "interpretations": [
+    {
+      "community_id": "B01_COM01",
+      "community_label": "aile ve hane çevresi",
+      "dominant_social_logic": "family_household",
+      "interpretation": "Bu topluluk, ağırlıklı olarak aile bağları ve hane içi ilişkiler etrafında şekillenmiştir. Naşit Nefi Efendi, Binnaz Hanım ve Şükriye Hanım arasında güçlü aile ilişkileri tespit edilmiştir. Diğer üyeler, özellikle Nazikter ve Latife, daha zayıf ve belirsiz ilişkilere sahip olup, hane içindeki farklı sosyal rolleri (hizmetçi, ilk harem) temsil ediyor olabilirler. Toplulukta kadın karakterlerin çoğunlukta olması ve farklı sosyal statülerin bir arada bulunması, aile içi sosyal çeşitliliği göstermektedir. Ancak bazı ilişkilerin türü çıkarılamamış ve bazı karakterlerin yaş ve servet durumu kesin değildir, bu nedenle topluluğun tam sosyal dinamikleri hakkında kesin yargıya varmak zordur.",
+      "dominant_character_features": [
+        "çoğunlukla kadın",
+        "farklı sosyal statüler (ilk harem, kalem müdürü, hizmetçi)",
+        "aile ilişkileri ön planda",
+        "yaş ve servet durumu karışık"
+      ],
+      "important_characters": [
+        "Naşit Nefi Efendi",
+        "Binnaz Hanım",
+        "Şükriye Hanım"
+      ],
+      "important_relations": [
+        {
+          "source": "Naşit Nefi Efendi",
+          "target": "Binnaz Hanım",
+          "relation_type": "family",
+          "weight": 81
+        },
+        {
+          "source": "Binnaz Hanım",
+          "target": "Şükriye Hanım",
+          "relation_type": "family",
+          "weight": 26
+        },
+        {
+          "source": "Naşit Nefi Efendi",
+          "target": "Şükriye Hanım",
+          "relation_type": "family",
+          "weight": 25
+        }
+      ],
+      "uncertainties": [
+        "Bazı karakterlerin yaş ve servet durumu bilinmiyor",
+        "Bazı ilişkilerin türü çıkarılamamış (not_extracted)",
+        "Nazikter ve Latife'nin topluluk içindeki sosyal konumu tam net değil"
+      ],
+      "confidence": 75
+    },
+    {
+      "community_id": "B01_COM02",
+      "community_label": "aile ve yakın sosyal çevre",
+      "dominant_social_logic": "family_household",
+      "interpretation": "Bu topluluk, ağırlıklı olarak kadın karakterlerden oluşan ve ev hanımı mesleğine sahip yetişkin bireylerin bulunduğu, aile bağlarının ön planda olduğu bir sosyal çevreyi temsil etmektedir. Fikriye Hanım ve Emine Hanım arasındaki güçlü aile ilişkisi (aile bağı, 22 ağırlık) topluluğun merkezinde yer almakta, diğer karakterlerle olan ilişkiler ise daha az belirgin ve ilişki türleri net olarak çıkarılamamıştır. Yaş grubu olarak yetişkin ve yaşlı bireylerin karışımı, ekonomik olarak orta ve alt-orta sınıf arasında bir dağılım göstermektedir. Bu durum, romanın aile ve ev yaşamı temalarına odaklanan bir anlatı parçası olduğunu düşündürmektedir. Ancak, diğer ilişkilerin türleri çıkarılamadığı için topluluğun sosyal dinamikleri hakkında kesin yorum yapmak sınırlıdır.",
+      "dominant_character_features": [
+        "kadın ağırlıklı (3 kadın, 2 erkek)",
+        "ev hanımı mesleği (2 karakter)",
+        "orta ve alt-orta sınıf ekonomik durum",
+        "yetişkin ve yaşlı yaş grubu"
+      ],
+      "important_characters": [
+        "Fikriye Hanım (ana karakter, yüksek etkileşim)",
+        "Emine Hanım (destekleyici karakter, aile bağı)",
+        "Hasibe Hanım (yaşlı kadın karakter)"
+      ],
+      "important_relations": [
+        "Fikriye Hanım - Emine Hanım (aile, 22 ağırlık, yüksek güven)",
+        "Fikriye Hanım - Hasan Efendi (12 ağırlık, ilişki türü belirsiz)",
+        "Emine Hanım - Hasan Efendi (10 ağırlık, ilişki türü belirsiz)"
+      ],
+      "uncertainties": [
+        "Birçok ilişkinin türü çıkarılamamış (9 ilişki not_extracted)",
+        "Bazı karakterlerin meslek ve ekonomik durumu bilinmiyor",
+        "Topluluğun sosyal işlevi ve dinamikleri hakkında kesin çıkarım yapmak zor"
+      ],
+      "confidence": 70
+    }
+  ]
+}

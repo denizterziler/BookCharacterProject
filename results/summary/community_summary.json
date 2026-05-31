@@ -1,0 +1,186 @@
+{
+  "description": "Cross-book summary of feature-enriched character co-occurrence graphs and Louvain community detection results.",
+  "algorithm": "Louvain",
+  "edge_weight": "co-occurrence weight",
+  "book_count": 5,
+  "books": [
+    {
+      "book_id": "B01",
+      "title": "Cadı",
+      "node_count": 10,
+      "edge_count": 41,
+      "total_edge_weight": 386,
+      "density": 0.9111,
+      "average_weighted_degree": 77.2,
+      "community_count": 2,
+      "modularity": 0.0763,
+      "largest_community_id": "B01_COM01",
+      "largest_community_size": 5,
+      "largest_community_internal_edge_count": 10,
+      "largest_community_internal_edge_weight": 150,
+      "largest_community_members": [
+        "Binnaz Hanım",
+        "Naşit Nefi Efendi",
+        "Şükriye Hanım",
+        "Nazikter",
+        "Latife"
+      ],
+      "community_sizes": [
+        5,
+        5
+      ],
+      "community_internal_weights": [
+        150,
+        79
+      ],
+      "graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B01_graph.json",
+      "community_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/communities/B01_louvain_communities.json"
+    },
+    {
+      "book_id": "B02",
+      "title": "Efsuncu Baba",
+      "node_count": 18,
+      "edge_count": 75,
+      "total_edge_weight": 355,
+      "density": 0.4902,
+      "average_weighted_degree": 39.4444,
+      "community_count": 4,
+      "modularity": 0.1121,
+      "largest_community_id": "B02_COM01",
+      "largest_community_size": 9,
+      "largest_community_internal_edge_count": 22,
+      "largest_community_internal_edge_weight": 257,
+      "largest_community_members": [
+        "Ebulfazl Enverî",
+        "Agop",
+        "Kirkor",
+        "Mahur",
+        "Lahur",
+        "Artin Ağa",
+        "Nasrullah Efendi",
+        "Zeynep Hanım",
+        "Bedros Ağa"
+      ],
+      "community_sizes": [
+        9,
+        5,
+        2,
+        2
+      ],
+      "community_internal_weights": [
+        257,
+        21,
+        4,
+        2
+      ],
+      "graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B02_graph.json",
+      "community_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/communities/B02_louvain_communities.json"
+    },
+    {
+      "book_id": "B03",
+      "title": "Ferdâ-yı Garâm",
+      "node_count": 10,
+      "edge_count": 33,
+      "total_edge_weight": 334,
+      "density": 0.7333,
+      "average_weighted_degree": 66.8,
+      "community_count": 2,
+      "modularity": 0.0192,
+      "largest_community_id": "B03_COM01",
+      "largest_community_size": 8,
+      "largest_community_internal_edge_count": 22,
+      "largest_community_internal_edge_weight": 243,
+      "largest_community_members": [
+        "Sermet Hanım",
+        "Macit Bey",
+        "Nevber Hanım",
+        "Hanımefendi",
+        "Büyük Beyefendi",
+        "Hizmetçi kız",
+        "Miss Morgan",
+        "Madam"
+      ],
+      "community_sizes": [
+        8,
+        2
+      ],
+      "community_internal_weights": [
+        243,
+        11
+      ],
+      "graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B03_graph.json",
+      "community_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/communities/B03_louvain_communities.json"
+    },
+    {
+      "book_id": "B04",
+      "title": "Böğürtlen",
+      "node_count": 10,
+      "edge_count": 32,
+      "total_edge_weight": 409,
+      "density": 0.7111,
+      "average_weighted_degree": 81.8,
+      "community_count": 2,
+      "modularity": 0.0005,
+      "largest_community_id": "B04_COM01",
+      "largest_community_size": 5,
+      "largest_community_internal_edge_count": 10,
+      "largest_community_internal_edge_weight": 183,
+      "largest_community_members": [
+        "Nihat Bey",
+        "Şekûre Hanım",
+        "Mahmûre Hanım",
+        "Nigâr Hanım",
+        "Methi Bey"
+      ],
+      "community_sizes": [
+        5,
+        5
+      ],
+      "community_internal_weights": [
+        183,
+        45
+      ],
+      "graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B04_graph.json",
+      "community_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/communities/B04_louvain_communities.json"
+    },
+    {
+      "book_id": "B05",
+      "title": "Tesadüf",
+      "node_count": 16,
+      "edge_count": 73,
+      "total_edge_weight": 546,
+      "density": 0.6083,
+      "average_weighted_degree": 68.25,
+      "community_count": 2,
+      "modularity": 0.1468,
+      "largest_community_id": "B05_COM01",
+      "largest_community_size": 12,
+      "largest_community_internal_edge_count": 45,
+      "largest_community_internal_edge_weight": 267,
+      "largest_community_members": [
+        "Hoca Nefise Hanım",
+        "Gülsüm Hanım",
+        "Gülsüm'ün annesi",
+        "Rıfkı Efendi",
+        "Hacı Baba",
+        "Seher",
+        "Sarman",
+        "İmameciler ailesi",
+        "Zübeyde",
+        "Salim",
+        "Küçük Şaban",
+        "Tekir"
+      ],
+      "community_sizes": [
+        12,
+        4
+      ],
+      "community_internal_weights": [
+        267,
+        109
+      ],
+      "graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B05_graph.json",
+      "community_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/communities/B05_louvain_communities.json"
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "book_id": "B01",
+  "model": "gpt-4.1-mini",
+  "source_cooccurrence_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/cooccurrences/B01_cooccurrences.json",
+  "source_character_features_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/character_features/B01_character_features.json",
+  "unit": "300-word overlapping segment",
+  "relation_selection_rule": "Pairs are selected if cooccurrence_weight >= max(MIN_WEIGHT_FLOOR, round(total_segments * MIN_RELATIVE_WEIGHT)).",
+  "total_segments": 181,
+  "min_weight_floor": 10,
+  "min_relative_weight": 0.1,
+  "relation_threshold": 18,
+  "total_cooccurrence_pairs": 41,
+  "selected_pair_count": 8,
+  "relation_labels": [
+    "family",
+    "romantic",
+    "friend",
+    "enemy",
+    "servant_employer",
+    "authority_subordinate",
+    "acquaintance",
+    "same_household",
+    "social_circle",
+    "unknown"
+  ],
+  "relations": [
+    {
+      "source": "B01_C003",
+      "source_name": "Naşit Nefi Efendi",
+      "target": "B01_C004",
+      "target_name": "Binnaz Hanım",
+      "cooccurrence_weight": 81,
+      "relation_type": "family",
+      "direction": "source_to_target",
+      "confidence": 95,
+      "evidence_segments": [
+        "B01_S0008",
+        "B01_S0016",
+        "B01_S0017",
+        "B01_S0071",
+        "B01_S0072",
+        "B01_S0073",
+        "B01_S0077",
+        "B01_S0178",
+        "B01_S0179",
+        "B01_S0180"
+      ]
+    },
+    {
+      "source": "B01_C004",
+      "source_name": "Binnaz Hanım",
+      "target": "B01_C005",
+      "target_name": "Şükriye Hanım",
+      "cooccurrence_weight": 26,
+      "relation_type": "family",
+      "direction": "undirected",
+      "confidence": 95,
+      "evidence_segments": [
+        "B01_S0017",
+        "B01_S0018",
+        "B01_S0029",
+        "B01_S0048",
+        "B01_S0162",
+        "B01_S0178",
+        "B01_S0179"
+      ]
+    },
+    {
+      "source": "B01_C003",
+      "source_name": "Naşit Nefi Efendi",
+      "target": "B01_C005",
+      "target_name": "Şükriye Hanım",
+      "cooccurrence_weight": 25,
+      "relation_type": "family",
+      "direction": "undirected",
+      "confidence": 95,
+      "evidence_segments": [
+        "B01_S0008",
+        "B01_S0017",
+        "B01_S0018",
+        "B01_S0029",
+        "B01_S0048",
+        "B01_S0070",
+        "B01_S0071",
+        "B01_S0162",
+        "B01_S0178",
+        "B01_S0179"
+      ]
+    },
+    {
+      "source": "B01_C001",
+      "source_name": "Fikriye Hanım",
+      "target": "B01_C002",
+      "target_name": "Emine Hanım",
+      "cooccurrence_weight": 22,
+      "relation_type": "family",
+      "direction": "undirected",
+      "confidence": 95,
+      "evidence_segments": [
+        "B01_S0001",
+        "B01_S0002",
+        "B01_S0003",
+        "B01_S0012",
+        "B01_S0013",
+        "B01_S0014",
+        "B01_S0015"
+      ]
+    },
+    {
+      "source": "B01_C001",
+      "source_name": "Fikriye Hanım",
+      "target": "B01_C004",
+      "target_name": "Binnaz Hanım",
+      "cooccurrence_weight": 20,
+      "relation_type": "social_circle",
+      "direction": "undirected",
+      "confidence": 85,
+      "evidence_segments": [
+        "B01_S0008",
+        "B01_S0016",
+        "B01_S0017",
+        "B01_S0023",
+        "B01_S0033",
+        "B01_S0035",
+        "B01_S0036",
+        "B01_S0163",
+        "B01_S0174",
+        "B01_S0180"
+      ]
+    },
+    {
+      "source": "B01_C002",
+      "source_name": "Emine Hanım",
+      "target": "B01_C003",
+      "target_name": "Naşit Nefi Efendi",
+      "cooccurrence_weight": 20,
+      "relation_type": "acquaintance",
+      "direction": "unknown",
+      "confidence": 70,
+      "evidence_segments": [
+        "B01_S0007",
+        "B01_S0008",
+        "B01_S0022",
+        "B01_S0023",
+        "B01_S0028",
+        "B01_S0162",
+        "B01_S0163",
+        "B01_S0166"
+      ]
+    },
+    {
+      "source": "B01_C002",
+      "source_name": "Emine Hanım",
+      "target": "B01_C004",
+      "target_name": "Binnaz Hanım",
+      "cooccurrence_weight": 19,
+      "relation_type": "family",
+      "direction": "undirected",
+      "confidence": 90,
+      "evidence_segments": [
+        "B01_S0008",
+        "B01_S0016",
+        "B01_S0017",
+        "B01_S0028",
+        "B01_S0058",
+        "B01_S0059",
+        "B01_S0081",
+        "B01_S0163",
+        "B01_S0166",
+        "B01_S0174"
+      ]
+    },
+    {
+      "source": "B01_C001",
+      "source_name": "Fikriye Hanım",
+      "target": "B01_C003",
+      "target_name": "Naşit Nefi Efendi",
+      "cooccurrence_weight": 18,
+      "relation_type": "romantic",
+      "direction": "source_to_target",
+      "confidence": 95,
+      "evidence_segments": [
+        "B01_S0007",
+        "B01_S0008",
+        "B01_S0017",
+        "B01_S0018",
+        "B01_S0020",
+        "B01_S0021",
+        "B01_S0162",
+        "B01_S0163",
+        "B01_S0180"
+      ]
+    }
+  ]
+}

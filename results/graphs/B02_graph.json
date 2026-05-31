@@ -1,0 +1,1853 @@
+{
+  "book_id": "B02",
+  "title": "Efsuncu Baba",
+  "graph_type": "feature_enriched_character_cooccurrence_graph",
+  "unit": "300-word overlapping segment",
+  "is_directed": false,
+  "description": "This graph represents characters as nodes and segment-level co-occurrences as undirected weighted edges. Node attributes include manually provided character metadata and GPT-extracted character features. Edge weights indicate the number of 300-word overlapping segments in which the two characters co-occur. Relation labels are included only for high-frequency co-occurring pairs selected during relation extraction.",
+  "source_files": {
+    "character_inventory": "/Users/denizterziler/PycharmProjects/BookCharacterProject/inputs/B02_characters.json",
+    "character_features": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/character_features/B02_character_features.json",
+    "cooccurrences": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/cooccurrences/B02_cooccurrences.json",
+    "relations": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/relations/B02_relations.json"
+  },
+  "node_count": 18,
+  "edge_count": 75,
+  "nodes": [
+    {
+      "id": "B02_C001",
+      "label": "Agop",
+      "canonical_name": "Agop",
+      "aliases": [
+        "Agop"
+      ],
+      "gender": "male",
+      "role": "main character",
+      "notes": "One of the two Armenian thread-spinners in Binbirdirek. He frequently talks with Kirkor and observes Ebulfazl Enverî's strange behavior.",
+      "occupation": "thread-spinner",
+      "occupation_confidence": 90,
+      "wealth_status": "lower_middle",
+      "wealth_status_confidence": 80,
+      "age_group": "adult",
+      "age_group_confidence": 85
+    },
+    {
+      "id": "B02_C002",
+      "label": "Kirkor",
+      "canonical_name": "Kirkor",
+      "aliases": [
+        "Kirkor"
+      ],
+      "gender": "male",
+      "role": "main character",
+      "notes": "Agop's companion and the other Armenian thread-spinner in Binbirdirek.",
+      "occupation": "iplik eğirici",
+      "occupation_confidence": 90,
+      "wealth_status": "poor",
+      "wealth_status_confidence": 85,
+      "age_group": "adult",
+      "age_group_confidence": 90
+    },
+    {
+      "id": "B02_C003",
+      "label": "Ebulfazl Enverî",
+      "canonical_name": "Ebulfazl Enverî",
+      "aliases": [
+        "Ebulfazl Enverî",
+        "Enverî",
+        "Efsuncu Baba",
+        "Efendibaba"
+      ],
+      "gender": "male",
+      "role": "main character",
+      "notes": "Superstitious treasure-seeker and occult enthusiast; son of Nasrullah Efendi.",
+      "occupation": "superstitious treasure-seeker and occult enthusiast",
+      "occupation_confidence": 95,
+      "wealth_status": "wealthy",
+      "wealth_status_confidence": 90,
+      "age_group": "adult",
+      "age_group_confidence": 90
+    },
+    {
+      "id": "B02_C004",
+      "label": "Zeynep Hanım",
+      "canonical_name": "Zeynep Hanım",
+      "aliases": [
+        "Zeynep Hanım",
+        "Zeynep"
+      ],
+      "gender": "female",
+      "role": "important character",
+      "notes": "Second wife of Ebulfazl Enverî. Include if she appears in later parts of the book.",
+      "occupation": "ev hanımı",
+      "occupation_confidence": 90,
+      "wealth_status": "middle",
+      "wealth_status_confidence": 80,
+      "age_group": "adult",
+      "age_group_confidence": 85
+    },
+    {
+      "id": "B02_C005",
+      "label": "Mevlüde",
+      "canonical_name": "Mevlüde",
+      "aliases": [
+        "Mevlüde"
+      ],
+      "gender": "female",
+      "role": "important character",
+      "notes": "Daughter of Ebulfazl Enverî. Include if she appears in later parts of the book.",
+      "occupation": "unknown",
+      "occupation_confidence": 0,
+      "wealth_status": "upper_middle",
+      "wealth_status_confidence": 90,
+      "age_group": "teen",
+      "age_group_confidence": 95
+    },
+    {
+      "id": "B02_C006",
+      "label": "Nurullah Hasip",
+      "canonical_name": "Nurullah Hasip",
+      "aliases": [
+        "Nurullah Hasip",
+        "Nurullah",
+        "Hasip"
+      ],
+      "gender": "male",
+      "role": "important character",
+      "notes": "Young man connected to Mevlüde. Include if he appears in later parts of the book.",
+      "occupation": "unknown",
+      "occupation_confidence": 0,
+      "wealth_status": "middle",
+      "wealth_status_confidence": 90,
+      "age_group": "child_youth",
+      "age_group_confidence": 85
+    },
+    {
+      "id": "B02_C007",
+      "label": "Nasrullah Efendi",
+      "canonical_name": "Nasrullah Efendi",
+      "aliases": [
+        "Nasrullah Efendi",
+        "Nasrullah"
+      ],
+      "gender": "male",
+      "role": "background character",
+      "notes": "Father of Ebulfazl Enverî; interested in alchemy and occult sciences.",
+      "occupation": "alchemy researcher and occult scientist",
+      "occupation_confidence": 95,
+      "wealth_status": "wealthy",
+      "wealth_status_confidence": 90,
+      "age_group": "old",
+      "age_group_confidence": 85
+    },
+    {
+      "id": "B02_C008",
+      "label": "Artin Ağa",
+      "canonical_name": "Artin Ağa",
+      "aliases": [
+        "Artin Ağa",
+        "Artin"
+      ],
+      "gender": "male",
+      "role": "minor character",
+      "notes": "Agop's singer neighbor and musical influence.",
+      "occupation": "hanende (singer)",
+      "occupation_confidence": 90,
+      "wealth_status": "unknown",
+      "wealth_status_confidence": 0,
+      "age_group": "unknown",
+      "age_group_confidence": 0
+    },
+    {
+      "id": "B02_C009",
+      "label": "Bedros Ağa",
+      "canonical_name": "Bedros Ağa",
+      "aliases": [
+        "Bedros Ağa",
+        "Bedros"
+      ],
+      "gender": "male",
+      "role": "background character",
+      "notes": "Agop's grandfather, mentioned as a learned man who read histories.",
+      "occupation": "ulema",
+      "occupation_confidence": 90,
+      "wealth_status": "unknown",
+      "wealth_status_confidence": 0,
+      "age_group": "old",
+      "age_group_confidence": 85
+    },
+    {
+      "id": "B02_C010",
+      "label": "Derviş Cebeli",
+      "canonical_name": "Derviş Cebeli",
+      "aliases": [
+        "Derviş Cebeli",
+        "Cebeli"
+      ],
+      "gender": "male",
+      "role": "background character",
+      "notes": "Occult/dervish figure mentioned in relation to alchemical and magical beliefs.",
+      "occupation": "derviş, simya ve esrar ile ilgili",
+      "occupation_confidence": 90,
+      "wealth_status": "unknown",
+      "wealth_status_confidence": 0,
+      "age_group": "unknown",
+      "age_group_confidence": 0
+    },
+    {
+      "id": "B02_C011",
+      "label": "Lahur",
+      "canonical_name": "Lahur",
+      "aliases": [
+        "Lahur"
+      ],
+      "gender": "unknown",
+      "role": "mythic/assigned identity",
+      "notes": "One of the angelic figures in the tılsımname. Do not treat as a normal alias of Agop unless manually verified in context.",
+      "occupation": "angelic figure",
+      "occupation_confidence": 90,
+      "wealth_status": "unknown",
+      "wealth_status_confidence": 0,
+      "age_group": "unknown",
+      "age_group_confidence": 0
+    },
+    {
+      "id": "B02_C012",
+      "label": "Mahur",
+      "canonical_name": "Mahur",
+      "aliases": [
+        "Mahur"
+      ],
+      "gender": "unknown",
+      "role": "mythic/assigned identity",
+      "notes": "One of the angelic figures in the tılsımname. Do not treat as a normal alias of Kirkor unless manually verified in context.",
+      "occupation": "angelic figure",
+      "occupation_confidence": 90,
+      "wealth_status": "unknown",
+      "wealth_status_confidence": 0,
+      "age_group": "unknown",
+      "age_group_confidence": 0
+    },
+    {
+      "id": "B02_C013",
+      "label": "Kekre",
+      "canonical_name": "Kekre",
+      "aliases": [
+        "Kekre"
+      ],
+      "gender": "unknown",
+      "role": "mythic character",
+      "notes": "One of the demonic figures mentioned in the tılsımname.",
+      "occupation": "unknown",
+      "occupation_confidence": 0,
+      "wealth_status": "unknown",
+      "wealth_status_confidence": 0,
+      "age_group": "unknown",
+      "age_group_confidence": 0
+    },
+    {
+      "id": "B02_C014",
+      "label": "Mekre",
+      "canonical_name": "Mekre",
+      "aliases": [
+        "Mekre"
+      ],
+      "gender": "unknown",
+      "role": "mythic character",
+      "notes": "One of the demonic figures mentioned in the tılsımname.",
+      "occupation": "unknown",
+      "occupation_confidence": 0,
+      "wealth_status": "unknown",
+      "wealth_status_confidence": 0,
+      "age_group": "unknown",
+      "age_group_confidence": 0
+    },
+    {
+      "id": "B02_C015",
+      "label": "Abdullah Karuni",
+      "canonical_name": "Abdullah Karuni",
+      "aliases": [
+        "Abdullah Karuni",
+        "Abdullah"
+      ],
+      "gender": "male",
+      "role": "embedded-story character",
+      "notes": "Merchant figure in the treasure/secret-history narrative inside the tılsımname. Include if this section appears in your selected text.",
+      "occupation": "tüccar",
+      "occupation_confidence": 100,
+      "wealth_status": "wealthy",
+      "wealth_status_confidence": 100,
+      "age_group": "adult",
+      "age_group_confidence": 100
+    },
+    {
+      "id": "B02_C016",
+      "label": "Mehmet Karuni",
+      "canonical_name": "Mehmet Karuni",
+      "aliases": [
+        "Mehmet Karuni",
+        "Mehmet"
+      ],
+      "gender": "male",
+      "role": "embedded-story character",
+      "notes": "Son of Abdullah Karuni. Include if this section appears in your selected text.",
+      "occupation": "unknown",
+      "occupation_confidence": 0,
+      "wealth_status": "wealthy",
+      "wealth_status_confidence": 90,
+      "age_group": "adult",
+      "age_group_confidence": 90
+    },
+    {
+      "id": "B02_C017",
+      "label": "Ali Hacip",
+      "canonical_name": "Ali Hacip",
+      "aliases": [
+        "Ali Hacip"
+      ],
+      "gender": "male",
+      "role": "embedded-story character",
+      "notes": "Servant figure connected to the tılsımname/treasure narrative. Include if this section appears in your selected text.",
+      "occupation": "hizmetçi",
+      "occupation_confidence": 90,
+      "wealth_status": "unknown",
+      "wealth_status_confidence": 0,
+      "age_group": "unknown",
+      "age_group_confidence": 0
+    },
+    {
+      "id": "B02_C018",
+      "label": "İbn el-Mahşur",
+      "canonical_name": "İbn el-Mahşur",
+      "aliases": [
+        "İbn el-Mahşur",
+        "Mahşur"
+      ],
+      "gender": "male",
+      "role": "embedded-story character",
+      "notes": "Maghribi occult figure connected to the treasure-related tılsım narrative.",
+      "occupation": "derviş",
+      "occupation_confidence": 90,
+      "wealth_status": "unknown",
+      "wealth_status_confidence": 0,
+      "age_group": "unknown",
+      "age_group_confidence": 0
+    }
+  ],
+  "edges": [
+    {
+      "source": "B02_C001",
+      "source_name": "Agop",
+      "target": "B02_C002",
+      "target_name": "Kirkor",
+      "edge_type": "undirected",
+      "weight": 35,
+      "cooccurrence_evidence_segments": [
+        "B02_S0001",
+        "B02_S0002",
+        "B02_S0005",
+        "B02_S0009",
+        "B02_S0011",
+        "B02_S0012",
+        "B02_S0013",
+        "B02_S0022",
+        "B02_S0023",
+        "B02_S0024",
+        "B02_S0025",
+        "B02_S0026",
+        "B02_S0027",
+        "B02_S0028",
+        "B02_S0029",
+        "B02_S0030",
+        "B02_S0031",
+        "B02_S0032",
+        "B02_S0033",
+        "B02_S0034",
+        "B02_S0035",
+        "B02_S0036",
+        "B02_S0037",
+        "B02_S0038",
+        "B02_S0043",
+        "B02_S0054",
+        "B02_S0056",
+        "B02_S0057",
+        "B02_S0059",
+        "B02_S0060",
+        "B02_S0061",
+        "B02_S0062",
+        "B02_S0063",
+        "B02_S0064",
+        "B02_S0065"
+      ],
+      "relation_type": "friend",
+      "relation_direction": "undirected",
+      "relation_confidence": 95,
+      "relation_evidence_segments": [
+        "B02_S0001",
+        "B02_S0002",
+        "B02_S0005",
+        "B02_S0030",
+        "B02_S0031",
+        "B02_S0032",
+        "B02_S0033",
+        "B02_S0063",
+        "B02_S0064",
+        "B02_S0065"
+      ]
+    },
+    {
+      "source": "B02_C003",
+      "source_name": "Ebulfazl Enverî",
+      "target": "B02_C012",
+      "target_name": "Mahur",
+      "edge_type": "undirected",
+      "weight": 27,
+      "cooccurrence_evidence_segments": [
+        "B02_S0029",
+        "B02_S0032",
+        "B02_S0033",
+        "B02_S0034",
+        "B02_S0035",
+        "B02_S0036",
+        "B02_S0037",
+        "B02_S0039",
+        "B02_S0040",
+        "B02_S0041",
+        "B02_S0042",
+        "B02_S0044",
+        "B02_S0045",
+        "B02_S0047",
+        "B02_S0049",
+        "B02_S0051",
+        "B02_S0052",
+        "B02_S0053",
+        "B02_S0054",
+        "B02_S0055",
+        "B02_S0056",
+        "B02_S0057",
+        "B02_S0058",
+        "B02_S0060",
+        "B02_S0061",
+        "B02_S0062",
+        "B02_S0065"
+      ],
+      "relation_type": "acquaintance",
+      "relation_direction": "source_to_target",
+      "relation_confidence": 85,
+      "relation_evidence_segments": [
+        "B02_S0029",
+        "B02_S0032",
+        "B02_S0033",
+        "B02_S0044",
+        "B02_S0045",
+        "B02_S0047",
+        "B02_S0049",
+        "B02_S0061",
+        "B02_S0062",
+        "B02_S0065"
+      ]
+    },
+    {
+      "source": "B02_C002",
+      "source_name": "Kirkor",
+      "target": "B02_C003",
+      "target_name": "Ebulfazl Enverî",
+      "edge_type": "undirected",
+      "weight": 26,
+      "cooccurrence_evidence_segments": [
+        "B02_S0001",
+        "B02_S0013",
+        "B02_S0023",
+        "B02_S0024",
+        "B02_S0025",
+        "B02_S0026",
+        "B02_S0027",
+        "B02_S0028",
+        "B02_S0029",
+        "B02_S0030",
+        "B02_S0031",
+        "B02_S0032",
+        "B02_S0033",
+        "B02_S0034",
+        "B02_S0035",
+        "B02_S0036",
+        "B02_S0037",
+        "B02_S0040",
+        "B02_S0054",
+        "B02_S0056",
+        "B02_S0057",
+        "B02_S0058",
+        "B02_S0060",
+        "B02_S0061",
+        "B02_S0062",
+        "B02_S0065"
+      ],
+      "relation_type": "friend",
+      "relation_direction": "undirected",
+      "relation_confidence": 90,
+      "relation_evidence_segments": [
+        "B02_S0001",
+        "B02_S0023",
+        "B02_S0032",
+        "B02_S0033",
+        "B02_S0034",
+        "B02_S0035",
+        "B02_S0061",
+        "B02_S0062",
+        "B02_S0065"
+      ]
+    },
+    {
+      "source": "B02_C011",
+      "source_name": "Lahur",
+      "target": "B02_C012",
+      "target_name": "Mahur",
+      "edge_type": "undirected",
+      "weight": 26,
+      "cooccurrence_evidence_segments": [
+        "B02_S0022",
+        "B02_S0029",
+        "B02_S0036",
+        "B02_S0037",
+        "B02_S0038",
+        "B02_S0039",
+        "B02_S0040",
+        "B02_S0041",
+        "B02_S0042",
+        "B02_S0044",
+        "B02_S0045",
+        "B02_S0047",
+        "B02_S0049",
+        "B02_S0051",
+        "B02_S0052",
+        "B02_S0053",
+        "B02_S0054",
+        "B02_S0056",
+        "B02_S0057",
+        "B02_S0058",
+        "B02_S0059",
+        "B02_S0060",
+        "B02_S0061",
+        "B02_S0062",
+        "B02_S0064",
+        "B02_S0065"
+      ],
+      "relation_type": "friend",
+      "relation_direction": "undirected",
+      "relation_confidence": 90,
+      "relation_evidence_segments": [
+        "B02_S0022",
+        "B02_S0029",
+        "B02_S0036",
+        "B02_S0047",
+        "B02_S0049",
+        "B02_S0051",
+        "B02_S0052",
+        "B02_S0062",
+        "B02_S0064",
+        "B02_S0065"
+      ]
+    },
+    {
+      "source": "B02_C001",
+      "source_name": "Agop",
+      "target": "B02_C003",
+      "target_name": "Ebulfazl Enverî",
+      "edge_type": "undirected",
+      "weight": 25,
+      "cooccurrence_evidence_segments": [
+        "B02_S0001",
+        "B02_S0013",
+        "B02_S0023",
+        "B02_S0024",
+        "B02_S0025",
+        "B02_S0026",
+        "B02_S0027",
+        "B02_S0028",
+        "B02_S0029",
+        "B02_S0030",
+        "B02_S0031",
+        "B02_S0032",
+        "B02_S0033",
+        "B02_S0034",
+        "B02_S0035",
+        "B02_S0036",
+        "B02_S0037",
+        "B02_S0042",
+        "B02_S0054",
+        "B02_S0056",
+        "B02_S0057",
+        "B02_S0060",
+        "B02_S0061",
+        "B02_S0062",
+        "B02_S0065"
+      ],
+      "relation_type": "acquaintance",
+      "relation_direction": "undirected",
+      "relation_confidence": 85,
+      "relation_evidence_segments": [
+        "B02_S0001",
+        "B02_S0013",
+        "B02_S0023",
+        "B02_S0031",
+        "B02_S0032",
+        "B02_S0033",
+        "B02_S0034",
+        "B02_S0061",
+        "B02_S0062",
+        "B02_S0065"
+      ]
+    },
+    {
+      "source": "B02_C003",
+      "source_name": "Ebulfazl Enverî",
+      "target": "B02_C011",
+      "target_name": "Lahur",
+      "edge_type": "undirected",
+      "weight": 23,
+      "cooccurrence_evidence_segments": [
+        "B02_S0029",
+        "B02_S0031",
+        "B02_S0036",
+        "B02_S0037",
+        "B02_S0039",
+        "B02_S0040",
+        "B02_S0041",
+        "B02_S0042",
+        "B02_S0044",
+        "B02_S0045",
+        "B02_S0047",
+        "B02_S0049",
+        "B02_S0051",
+        "B02_S0052",
+        "B02_S0053",
+        "B02_S0054",
+        "B02_S0056",
+        "B02_S0057",
+        "B02_S0058",
+        "B02_S0060",
+        "B02_S0061",
+        "B02_S0062",
+        "B02_S0065"
+      ],
+      "relation_type": "friend",
+      "relation_direction": "undirected",
+      "relation_confidence": 85,
+      "relation_evidence_segments": [
+        "B02_S0029",
+        "B02_S0031",
+        "B02_S0036",
+        "B02_S0045",
+        "B02_S0047",
+        "B02_S0049",
+        "B02_S0051",
+        "B02_S0061",
+        "B02_S0062",
+        "B02_S0065"
+      ]
+    },
+    {
+      "source": "B02_C002",
+      "source_name": "Kirkor",
+      "target": "B02_C012",
+      "target_name": "Mahur",
+      "edge_type": "undirected",
+      "weight": 20,
+      "cooccurrence_evidence_segments": [
+        "B02_S0022",
+        "B02_S0029",
+        "B02_S0032",
+        "B02_S0033",
+        "B02_S0034",
+        "B02_S0035",
+        "B02_S0036",
+        "B02_S0037",
+        "B02_S0038",
+        "B02_S0040",
+        "B02_S0054",
+        "B02_S0056",
+        "B02_S0057",
+        "B02_S0058",
+        "B02_S0059",
+        "B02_S0060",
+        "B02_S0061",
+        "B02_S0062",
+        "B02_S0064",
+        "B02_S0065"
+      ],
+      "relation_type": "acquaintance",
+      "relation_direction": "undirected",
+      "relation_confidence": 85,
+      "relation_evidence_segments": [
+        "B02_S0022",
+        "B02_S0029",
+        "B02_S0032",
+        "B02_S0038",
+        "B02_S0040",
+        "B02_S0054",
+        "B02_S0056",
+        "B02_S0062",
+        "B02_S0064",
+        "B02_S0065"
+      ]
+    },
+    {
+      "source": "B02_C001",
+      "source_name": "Agop",
+      "target": "B02_C012",
+      "target_name": "Mahur",
+      "edge_type": "undirected",
+      "weight": 19,
+      "cooccurrence_evidence_segments": [
+        "B02_S0022",
+        "B02_S0029",
+        "B02_S0032",
+        "B02_S0033",
+        "B02_S0034",
+        "B02_S0035",
+        "B02_S0036",
+        "B02_S0037",
+        "B02_S0038",
+        "B02_S0042",
+        "B02_S0054",
+        "B02_S0056",
+        "B02_S0057",
+        "B02_S0059",
+        "B02_S0060",
+        "B02_S0061",
+        "B02_S0062",
+        "B02_S0064",
+        "B02_S0065"
+      ],
+      "relation_type": "acquaintance",
+      "relation_direction": "undirected",
+      "relation_confidence": 85,
+      "relation_evidence_segments": [
+        "B02_S0022",
+        "B02_S0029",
+        "B02_S0032",
+        "B02_S0037",
+        "B02_S0038",
+        "B02_S0042",
+        "B02_S0054",
+        "B02_S0062",
+        "B02_S0064",
+        "B02_S0065"
+      ]
+    },
+    {
+      "source": "B02_C002",
+      "source_name": "Kirkor",
+      "target": "B02_C011",
+      "target_name": "Lahur",
+      "edge_type": "undirected",
+      "weight": 17,
+      "cooccurrence_evidence_segments": [
+        "B02_S0022",
+        "B02_S0029",
+        "B02_S0031",
+        "B02_S0036",
+        "B02_S0037",
+        "B02_S0038",
+        "B02_S0040",
+        "B02_S0054",
+        "B02_S0056",
+        "B02_S0057",
+        "B02_S0058",
+        "B02_S0059",
+        "B02_S0060",
+        "B02_S0061",
+        "B02_S0062",
+        "B02_S0064",
+        "B02_S0065"
+      ],
+      "relation_type": "friend",
+      "relation_direction": "undirected",
+      "relation_confidence": 85,
+      "relation_evidence_segments": [
+        "B02_S0022",
+        "B02_S0029",
+        "B02_S0031",
+        "B02_S0040",
+        "B02_S0054",
+        "B02_S0056",
+        "B02_S0057",
+        "B02_S0062",
+        "B02_S0064",
+        "B02_S0065"
+      ]
+    },
+    {
+      "source": "B02_C001",
+      "source_name": "Agop",
+      "target": "B02_C011",
+      "target_name": "Lahur",
+      "edge_type": "undirected",
+      "weight": 16,
+      "cooccurrence_evidence_segments": [
+        "B02_S0022",
+        "B02_S0029",
+        "B02_S0031",
+        "B02_S0036",
+        "B02_S0037",
+        "B02_S0038",
+        "B02_S0042",
+        "B02_S0054",
+        "B02_S0056",
+        "B02_S0057",
+        "B02_S0059",
+        "B02_S0060",
+        "B02_S0061",
+        "B02_S0062",
+        "B02_S0064",
+        "B02_S0065"
+      ],
+      "relation_type": "acquaintance",
+      "relation_direction": "undirected",
+      "relation_confidence": 85,
+      "relation_evidence_segments": [
+        "B02_S0022",
+        "B02_S0029",
+        "B02_S0031",
+        "B02_S0042",
+        "B02_S0054",
+        "B02_S0056",
+        "B02_S0057",
+        "B02_S0062",
+        "B02_S0064",
+        "B02_S0065"
+      ]
+    },
+    {
+      "source": "B02_C001",
+      "source_name": "Agop",
+      "target": "B02_C008",
+      "target_name": "Artin Ağa",
+      "edge_type": "undirected",
+      "weight": 6,
+      "cooccurrence_evidence_segments": [
+        "B02_S0001",
+        "B02_S0002",
+        "B02_S0003",
+        "B02_S0004",
+        "B02_S0005",
+        "B02_S0006"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C003",
+      "source_name": "Ebulfazl Enverî",
+      "target": "B02_C005",
+      "target_name": "Mevlüde",
+      "edge_type": "undirected",
+      "weight": 5,
+      "cooccurrence_evidence_segments": [
+        "B02_S0039",
+        "B02_S0044",
+        "B02_S0065",
+        "B02_S0066",
+        "B02_S0067"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C003",
+      "source_name": "Ebulfazl Enverî",
+      "target": "B02_C006",
+      "target_name": "Nurullah Hasip",
+      "edge_type": "undirected",
+      "weight": 5,
+      "cooccurrence_evidence_segments": [
+        "B02_S0044",
+        "B02_S0045",
+        "B02_S0065",
+        "B02_S0066",
+        "B02_S0067"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C003",
+      "source_name": "Ebulfazl Enverî",
+      "target": "B02_C007",
+      "target_name": "Nasrullah Efendi",
+      "edge_type": "undirected",
+      "weight": 5,
+      "cooccurrence_evidence_segments": [
+        "B02_S0016",
+        "B02_S0018",
+        "B02_S0019",
+        "B02_S0020",
+        "B02_S0035"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C005",
+      "source_name": "Mevlüde",
+      "target": "B02_C006",
+      "target_name": "Nurullah Hasip",
+      "edge_type": "undirected",
+      "weight": 4,
+      "cooccurrence_evidence_segments": [
+        "B02_S0044",
+        "B02_S0065",
+        "B02_S0066",
+        "B02_S0067"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C002",
+      "source_name": "Kirkor",
+      "target": "B02_C008",
+      "target_name": "Artin Ağa",
+      "edge_type": "undirected",
+      "weight": 3,
+      "cooccurrence_evidence_segments": [
+        "B02_S0001",
+        "B02_S0002",
+        "B02_S0005"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C005",
+      "source_name": "Mevlüde",
+      "target": "B02_C011",
+      "target_name": "Lahur",
+      "edge_type": "undirected",
+      "weight": 3,
+      "cooccurrence_evidence_segments": [
+        "B02_S0039",
+        "B02_S0044",
+        "B02_S0065"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C005",
+      "source_name": "Mevlüde",
+      "target": "B02_C012",
+      "target_name": "Mahur",
+      "edge_type": "undirected",
+      "weight": 3,
+      "cooccurrence_evidence_segments": [
+        "B02_S0039",
+        "B02_S0044",
+        "B02_S0065"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C006",
+      "source_name": "Nurullah Hasip",
+      "target": "B02_C011",
+      "target_name": "Lahur",
+      "edge_type": "undirected",
+      "weight": 3,
+      "cooccurrence_evidence_segments": [
+        "B02_S0044",
+        "B02_S0045",
+        "B02_S0065"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C006",
+      "source_name": "Nurullah Hasip",
+      "target": "B02_C012",
+      "target_name": "Mahur",
+      "edge_type": "undirected",
+      "weight": 3,
+      "cooccurrence_evidence_segments": [
+        "B02_S0044",
+        "B02_S0045",
+        "B02_S0065"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C015",
+      "source_name": "Abdullah Karuni",
+      "target": "B02_C016",
+      "target_name": "Mehmet Karuni",
+      "edge_type": "undirected",
+      "weight": 3,
+      "cooccurrence_evidence_segments": [
+        "B02_S0045",
+        "B02_S0046",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C001",
+      "source_name": "Agop",
+      "target": "B02_C013",
+      "target_name": "Kekre",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0022",
+        "B02_S0028"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C001",
+      "source_name": "Agop",
+      "target": "B02_C014",
+      "target_name": "Mekre",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0022",
+        "B02_S0028"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C002",
+      "source_name": "Kirkor",
+      "target": "B02_C013",
+      "target_name": "Kekre",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0022",
+        "B02_S0028"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C002",
+      "source_name": "Kirkor",
+      "target": "B02_C014",
+      "target_name": "Mekre",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0022",
+        "B02_S0028"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C003",
+      "source_name": "Ebulfazl Enverî",
+      "target": "B02_C010",
+      "target_name": "Derviş Cebeli",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0018",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C003",
+      "source_name": "Ebulfazl Enverî",
+      "target": "B02_C015",
+      "target_name": "Abdullah Karuni",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0045",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C003",
+      "source_name": "Ebulfazl Enverî",
+      "target": "B02_C016",
+      "target_name": "Mehmet Karuni",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0045",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C003",
+      "source_name": "Ebulfazl Enverî",
+      "target": "B02_C018",
+      "target_name": "İbn el-Mahşur",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0047",
+        "B02_S0054"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C010",
+      "source_name": "Derviş Cebeli",
+      "target": "B02_C015",
+      "target_name": "Abdullah Karuni",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0046",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C010",
+      "source_name": "Derviş Cebeli",
+      "target": "B02_C016",
+      "target_name": "Mehmet Karuni",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0046",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C010",
+      "source_name": "Derviş Cebeli",
+      "target": "B02_C017",
+      "target_name": "Ali Hacip",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0046",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C010",
+      "source_name": "Derviş Cebeli",
+      "target": "B02_C018",
+      "target_name": "İbn el-Mahşur",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0046",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C011",
+      "source_name": "Lahur",
+      "target": "B02_C015",
+      "target_name": "Abdullah Karuni",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0045",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C011",
+      "source_name": "Lahur",
+      "target": "B02_C016",
+      "target_name": "Mehmet Karuni",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0045",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C011",
+      "source_name": "Lahur",
+      "target": "B02_C018",
+      "target_name": "İbn el-Mahşur",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0047",
+        "B02_S0054"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C012",
+      "source_name": "Mahur",
+      "target": "B02_C015",
+      "target_name": "Abdullah Karuni",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0045",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C012",
+      "source_name": "Mahur",
+      "target": "B02_C016",
+      "target_name": "Mehmet Karuni",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0045",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C012",
+      "source_name": "Mahur",
+      "target": "B02_C018",
+      "target_name": "İbn el-Mahşur",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0047",
+        "B02_S0054"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C013",
+      "source_name": "Kekre",
+      "target": "B02_C014",
+      "target_name": "Mekre",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0022",
+        "B02_S0028"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C015",
+      "source_name": "Abdullah Karuni",
+      "target": "B02_C017",
+      "target_name": "Ali Hacip",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0046",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C015",
+      "source_name": "Abdullah Karuni",
+      "target": "B02_C018",
+      "target_name": "İbn el-Mahşur",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0046",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C016",
+      "source_name": "Mehmet Karuni",
+      "target": "B02_C017",
+      "target_name": "Ali Hacip",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0046",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C016",
+      "source_name": "Mehmet Karuni",
+      "target": "B02_C018",
+      "target_name": "İbn el-Mahşur",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0046",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C017",
+      "source_name": "Ali Hacip",
+      "target": "B02_C018",
+      "target_name": "İbn el-Mahşur",
+      "edge_type": "undirected",
+      "weight": 2,
+      "cooccurrence_evidence_segments": [
+        "B02_S0046",
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C001",
+      "source_name": "Agop",
+      "target": "B02_C005",
+      "target_name": "Mevlüde",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0065"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C001",
+      "source_name": "Agop",
+      "target": "B02_C006",
+      "target_name": "Nurullah Hasip",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0065"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C001",
+      "source_name": "Agop",
+      "target": "B02_C007",
+      "target_name": "Nasrullah Efendi",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0035"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C001",
+      "source_name": "Agop",
+      "target": "B02_C009",
+      "target_name": "Bedros Ağa",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0009"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C001",
+      "source_name": "Agop",
+      "target": "B02_C018",
+      "target_name": "İbn el-Mahşur",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0054"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C002",
+      "source_name": "Kirkor",
+      "target": "B02_C005",
+      "target_name": "Mevlüde",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0065"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C002",
+      "source_name": "Kirkor",
+      "target": "B02_C006",
+      "target_name": "Nurullah Hasip",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0065"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C002",
+      "source_name": "Kirkor",
+      "target": "B02_C007",
+      "target_name": "Nasrullah Efendi",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0035"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C002",
+      "source_name": "Kirkor",
+      "target": "B02_C009",
+      "target_name": "Bedros Ağa",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0009"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C002",
+      "source_name": "Kirkor",
+      "target": "B02_C018",
+      "target_name": "İbn el-Mahşur",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0054"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C003",
+      "source_name": "Ebulfazl Enverî",
+      "target": "B02_C004",
+      "target_name": "Zeynep Hanım",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0039"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C003",
+      "source_name": "Ebulfazl Enverî",
+      "target": "B02_C008",
+      "target_name": "Artin Ağa",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0001"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C003",
+      "source_name": "Ebulfazl Enverî",
+      "target": "B02_C013",
+      "target_name": "Kekre",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0028"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C003",
+      "source_name": "Ebulfazl Enverî",
+      "target": "B02_C014",
+      "target_name": "Mekre",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0028"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C003",
+      "source_name": "Ebulfazl Enverî",
+      "target": "B02_C017",
+      "target_name": "Ali Hacip",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C004",
+      "source_name": "Zeynep Hanım",
+      "target": "B02_C005",
+      "target_name": "Mevlüde",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0039"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C004",
+      "source_name": "Zeynep Hanım",
+      "target": "B02_C011",
+      "target_name": "Lahur",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0039"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C004",
+      "source_name": "Zeynep Hanım",
+      "target": "B02_C012",
+      "target_name": "Mahur",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0039"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C006",
+      "source_name": "Nurullah Hasip",
+      "target": "B02_C015",
+      "target_name": "Abdullah Karuni",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0045"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C006",
+      "source_name": "Nurullah Hasip",
+      "target": "B02_C016",
+      "target_name": "Mehmet Karuni",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0045"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C007",
+      "source_name": "Nasrullah Efendi",
+      "target": "B02_C010",
+      "target_name": "Derviş Cebeli",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0018"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C007",
+      "source_name": "Nasrullah Efendi",
+      "target": "B02_C012",
+      "target_name": "Mahur",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0035"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C010",
+      "source_name": "Derviş Cebeli",
+      "target": "B02_C011",
+      "target_name": "Lahur",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C010",
+      "source_name": "Derviş Cebeli",
+      "target": "B02_C012",
+      "target_name": "Mahur",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C011",
+      "source_name": "Lahur",
+      "target": "B02_C013",
+      "target_name": "Kekre",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0022"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C011",
+      "source_name": "Lahur",
+      "target": "B02_C014",
+      "target_name": "Mekre",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0022"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C011",
+      "source_name": "Lahur",
+      "target": "B02_C017",
+      "target_name": "Ali Hacip",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C012",
+      "source_name": "Mahur",
+      "target": "B02_C013",
+      "target_name": "Kekre",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0022"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C012",
+      "source_name": "Mahur",
+      "target": "B02_C014",
+      "target_name": "Mekre",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0022"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    },
+    {
+      "source": "B02_C012",
+      "source_name": "Mahur",
+      "target": "B02_C017",
+      "target_name": "Ali Hacip",
+      "edge_type": "undirected",
+      "weight": 1,
+      "cooccurrence_evidence_segments": [
+        "B02_S0047"
+      ],
+      "relation_type": "not_extracted",
+      "relation_direction": "unknown",
+      "relation_confidence": 0,
+      "relation_evidence_segments": []
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+book_id,title,node_count,edge_count,total_edge_weight,density,average_weighted_degree,community_count,modularity,largest_community_id,largest_community_size,largest_community_internal_edge_count,largest_community_internal_edge_weight,largest_community_members,community_sizes,community_internal_weights
+B01,Cadı,10,41,386,0.9111,77.2,2,0.0763,B01_COM01,5,10,150,Binnaz Hanım; Naşit Nefi Efendi; Şükriye Hanım; Nazikter; Latife,5; 5,150; 79
+B02,Efsuncu Baba,18,75,355,0.4902,39.4444,4,0.1121,B02_COM01,9,22,257,Ebulfazl Enverî; Agop; Kirkor; Mahur; Lahur; Artin Ağa; Nasrullah Efendi; Zeynep Hanım; Bedros Ağa,9; 5; 2; 2,257; 21; 4; 2
+B03,Ferdâ-yı Garâm,10,33,334,0.7333,66.8,2,0.0192,B03_COM01,8,22,243,Sermet Hanım; Macit Bey; Nevber Hanım; Hanımefendi; Büyük Beyefendi; Hizmetçi kız; Miss Morgan; Madam,8; 2,243; 11
+B04,Böğürtlen,10,32,409,0.7111,81.8,2,0.0005,B04_COM01,5,10,183,Nihat Bey; Şekûre Hanım; Mahmûre Hanım; Nigâr Hanım; Methi Bey,5; 5,183; 45
+B05,Tesadüf,16,73,546,0.6083,68.25,2,0.1468,B05_COM01,12,45,267,Hoca Nefise Hanım; Gülsüm Hanım; Gülsüm'ün annesi; Rıfkı Efendi; Hacı Baba; Seher; Sarman; İmameciler ailesi; Zübeyde; Salim; Küçük Şaban; Tekir,12; 4,267; 109

@@ -1,0 +1,296 @@
+{
+  "book_id": "B03",
+  "model": "gpt-4.1-mini",
+  "source_presence_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/predictions/B03/ensemble/B03_gpt_alias_ensemble_window_presence.json",
+  "input_character_fields": [
+    "canonical_name",
+    "aliases",
+    "gender",
+    "role",
+    "notes"
+  ],
+  "extracted_character_features": [
+    "occupation",
+    "wealth_status",
+    "age_group"
+  ],
+  "wealth_status_labels": [
+    "poor",
+    "lower_middle",
+    "middle",
+    "upper_middle",
+    "wealthy",
+    "unknown"
+  ],
+  "age_group_labels": [
+    "child_youth",
+    "teen",
+    "adult",
+    "old",
+    "unknown"
+  ],
+  "features": [
+    {
+      "char_id": "B03_C001",
+      "canonical_name": "Sermet Hanım",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "upper_middle",
+        "confidence": 90,
+        "evidence_segments": [
+          "B03_S0001",
+          "B03_S0003",
+          "B03_S0004",
+          "B03_S0068"
+        ]
+      },
+      "age_group": {
+        "value": "teen",
+        "confidence": 95,
+        "evidence_segments": [
+          "B03_S0001",
+          "B03_S0003",
+          "B03_S0004",
+          "B03_S0068"
+        ]
+      }
+    },
+    {
+      "char_id": "B03_C002",
+      "canonical_name": "Macit Bey",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "upper_middle",
+        "confidence": 90,
+        "evidence_segments": [
+          "B03_S0005",
+          "B03_S0007",
+          "B03_S0066"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 95,
+        "evidence_segments": [
+          "B03_S0007",
+          "B03_S0035",
+          "B03_S0066"
+        ]
+      }
+    },
+    {
+      "char_id": "B03_C003",
+      "canonical_name": "Nevber Hanım",
+      "occupation": {
+        "value": "household relative/friend, mediator",
+        "confidence": 90,
+        "evidence_segments": [
+          "B03_S0002",
+          "B03_S0005"
+        ]
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 85,
+        "evidence_segments": [
+          "B03_S0002",
+          "B03_S0005",
+          "B03_S0064"
+        ]
+      },
+      "age_group": {
+        "value": "teen",
+        "confidence": 90,
+        "evidence_segments": [
+          "B03_S0002",
+          "B03_S0003",
+          "B03_S0005"
+        ]
+      }
+    },
+    {
+      "char_id": "B03_C004",
+      "canonical_name": "Miss Morgan",
+      "occupation": {
+        "value": "mürebbiye",
+        "confidence": 100,
+        "evidence_segments": [
+          "B03_S0008"
+        ]
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 100,
+        "evidence_segments": [
+          "B03_S0008"
+        ]
+      }
+    },
+    {
+      "char_id": "B03_C005",
+      "canonical_name": "Macit'in annesi",
+      "occupation": {
+        "value": "ev hanımı",
+        "confidence": 90,
+        "evidence_segments": [
+          "B03_S0005",
+          "B03_S0040",
+          "B03_S0041"
+        ]
+      },
+      "wealth_status": {
+        "value": "upper_middle",
+        "confidence": 85,
+        "evidence_segments": [
+          "B03_S0005",
+          "B03_S0032",
+          "B03_S0063"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 90,
+        "evidence_segments": [
+          "B03_S0007",
+          "B03_S0040",
+          "B03_S0041"
+        ]
+      }
+    },
+    {
+      "char_id": "B03_C006",
+      "canonical_name": "Macit'in babası",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 90,
+        "evidence_segments": [
+          "B03_S0012",
+          "B03_S0032",
+          "B03_S0034"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 95,
+        "evidence_segments": [
+          "B03_S0005",
+          "B03_S0012",
+          "B03_S0032"
+        ]
+      }
+    },
+    {
+      "char_id": "B03_C007",
+      "canonical_name": "Hanımefendi",
+      "occupation": {
+        "value": "ev hanımı",
+        "confidence": 90,
+        "evidence_segments": [
+          "B03_S0001",
+          "B03_S0004",
+          "B03_S0062"
+        ]
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 85,
+        "evidence_segments": [
+          "B03_S0001",
+          "B03_S0004",
+          "B03_S0062"
+        ]
+      },
+      "age_group": {
+        "value": "old",
+        "confidence": 95,
+        "evidence_segments": [
+          "B03_S0001",
+          "B03_S0004",
+          "B03_S0062"
+        ]
+      }
+    },
+    {
+      "char_id": "B03_C008",
+      "canonical_name": "Büyük Beyefendi",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 90,
+        "evidence_segments": [
+          "B03_S0011",
+          "B03_S0054"
+        ]
+      },
+      "age_group": {
+        "value": "old",
+        "confidence": 85,
+        "evidence_segments": [
+          "B03_S0011"
+        ]
+      }
+    },
+    {
+      "char_id": "B03_C009",
+      "canonical_name": "Hizmetçi kız",
+      "occupation": {
+        "value": "hizmetçi",
+        "confidence": 100,
+        "evidence_segments": [
+          "B03_S0004"
+        ]
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      }
+    },
+    {
+      "char_id": "B03_C010",
+      "canonical_name": "Madam",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "book_id": "B02",
+  "title": "Efsuncu Baba",
+  "source_graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B02_graph.json",
+  "algorithm": "networkx_greedy_modularity_communities",
+  "edge_weight": "cooccurrence weight",
+  "node_count": 18,
+  "edge_count": 75,
+  "community_count": 4,
+  "modularity": 0.11507637373537,
+  "communities": [
+    {
+      "community_id": "B02_COM01",
+      "size": 8,
+      "internal_edge_count": 19,
+      "internal_edge_weight": 254,
+      "members": [
+        {
+          "char_id": "B02_C003",
+          "name": "Ebulfazl Enverî",
+          "weighted_degree": 129,
+          "gender": "male",
+          "role": "main character",
+          "occupation": "superstitious treasure-seeker and occult enthusiast",
+          "wealth_status": "wealthy",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B02_C001",
+          "name": "Agop",
+          "weighted_degree": 110,
+          "gender": "male",
+          "role": "main character",
+          "occupation": "thread-spinner",
+          "wealth_status": "lower_middle",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B02_C002",
+          "name": "Kirkor",
+          "weighted_degree": 110,
+          "gender": "male",
+          "role": "main character",
+          "occupation": "iplik eğirici",
+          "wealth_status": "poor",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B02_C012",
+          "name": "Mahur",
+          "weighted_degree": 110,
+          "gender": "unknown",
+          "role": "mythic/assigned identity",
+          "occupation": "angelic figure",
+          "wealth_status": "unknown",
+          "age_group": "unknown"
+        },
+        {
+          "char_id": "B02_C011",
+          "name": "Lahur",
+          "weighted_degree": 99,
+          "gender": "unknown",
+          "role": "mythic/assigned identity",
+          "occupation": "angelic figure",
+          "wealth_status": "unknown",
+          "age_group": "unknown"
+        },
+        {
+          "char_id": "B02_C008",
+          "name": "Artin Ağa",
+          "weighted_degree": 10,
+          "gender": "male",
+          "role": "minor character",
+          "occupation": "hanende (singer)",
+          "wealth_status": "unknown",
+          "age_group": "unknown"
+        },
+        {
+          "char_id": "B02_C007",
+          "name": "Nasrullah Efendi",
+          "weighted_degree": 9,
+          "gender": "male",
+          "role": "background character",
+          "occupation": "alchemy researcher and occult scientist",
+          "wealth_status": "wealthy",
+          "age_group": "old"
+        },
+        {
+          "char_id": "B02_C009",
+          "name": "Bedros Ağa",
+          "weighted_degree": 2,
+          "gender": "male",
+          "role": "background character",
+          "occupation": "ulema",
+          "wealth_status": "unknown",
+          "age_group": "old"
+        }
+      ]
+    },
+    {
+      "community_id": "B02_COM02",
+      "size": 5,
+      "internal_edge_count": 10,
+      "internal_edge_weight": 21,
+      "members": [
+        {
+          "char_id": "B02_C015",
+          "name": "Abdullah Karuni",
+          "weighted_degree": 16,
+          "gender": "male",
+          "role": "embedded-story character",
+          "occupation": "tüccar",
+          "wealth_status": "wealthy",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B02_C016",
+          "name": "Mehmet Karuni",
+          "weighted_degree": 16,
+          "gender": "male",
+          "role": "embedded-story character",
+          "occupation": "unknown",
+          "wealth_status": "wealthy",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B02_C018",
+          "name": "İbn el-Mahşur",
+          "weighted_degree": 16,
+          "gender": "male",
+          "role": "embedded-story character",
+          "occupation": "derviş",
+          "wealth_status": "unknown",
+          "age_group": "unknown"
+        },
+        {
+          "char_id": "B02_C010",
+          "name": "Derviş Cebeli",
+          "weighted_degree": 13,
+          "gender": "male",
+          "role": "background character",
+          "occupation": "derviş, simya ve esrar ile ilgili",
+          "wealth_status": "unknown",
+          "age_group": "unknown"
+        },
+        {
+          "char_id": "B02_C017",
+          "name": "Ali Hacip",
+          "weighted_degree": 11,
+          "gender": "male",
+          "role": "embedded-story character",
+          "occupation": "hizmetçi",
+          "wealth_status": "unknown",
+          "age_group": "unknown"
+        }
+      ]
+    },
+    {
+      "community_id": "B02_COM03",
+      "size": 3,
+      "internal_edge_count": 2,
+      "internal_edge_weight": 5,
+      "members": [
+        {
+          "char_id": "B02_C006",
+          "name": "Nurullah Hasip",
+          "weighted_degree": 19,
+          "gender": "male",
+          "role": "important character",
+          "occupation": "unknown",
+          "wealth_status": "middle",
+          "age_group": "child_youth"
+        },
+        {
+          "char_id": "B02_C005",
+          "name": "Mevlüde",
+          "weighted_degree": 18,
+          "gender": "female",
+          "role": "important character",
+          "occupation": "unknown",
+          "wealth_status": "upper_middle",
+          "age_group": "teen"
+        },
+        {
+          "char_id": "B02_C004",
+          "name": "Zeynep Hanım",
+          "weighted_degree": 4,
+          "gender": "female",
+          "role": "important character",
+          "occupation": "ev hanımı",
+          "wealth_status": "middle",
+          "age_group": "adult"
+        }
+      ]
+    },
+    {
+      "community_id": "B02_COM04",
+      "size": 2,
+      "internal_edge_count": 1,
+      "internal_edge_weight": 2,
+      "members": [
+        {
+          "char_id": "B02_C013",
+          "name": "Kekre",
+          "weighted_degree": 9,
+          "gender": "unknown",
+          "role": "mythic character",
+          "occupation": "unknown",
+          "wealth_status": "unknown",
+          "age_group": "unknown"
+        },
+        {
+          "char_id": "B02_C014",
+          "name": "Mekre",
+          "weighted_degree": 9,
+          "gender": "unknown",
+          "role": "mythic character",
+          "occupation": "unknown",
+          "wealth_status": "unknown",
+          "age_group": "unknown"
+        }
+      ]
+    }
+  ]
+}

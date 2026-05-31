@@ -18,7 +18,7 @@ def find_project_root() -> Path:
 
 PROJECT_ROOT = find_project_root()
 
-BOOK_ID = "B05"
+BOOK_ID = "B01"
 
 GOLD_PATH = (
     PROJECT_ROOT
@@ -31,14 +31,14 @@ PRED_PATH = (
     PROJECT_ROOT
     / "predictions"
     / "local_llm"
-    / f"B05_hf_co_ytu-ce-cosmos_Turkish-Gemma-9b-T1-GGUF_Q4_K_M_candidate_based_window_presence_validation_output.json"
+    / f"B01_gpt-4_1-mini_candidate_based_window_presence_validation_output.json"
 )
 
 RESULT_PATH = (
     PROJECT_ROOT
     / "results"
     / f"{BOOK_ID}_validation"
-    / f"B05_ytu-cosmos_eval.json"
+    / f"B01_gpt_eval.json"
 )
 
 

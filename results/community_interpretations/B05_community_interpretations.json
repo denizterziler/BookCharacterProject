@@ -1,0 +1,75 @@
+{
+  "book_id": "B05",
+  "title": "Tesadüf",
+  "model": "gpt-4.1-mini",
+  "source_graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B05_graph.json",
+  "source_communities_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/communities/B05_louvain_communities.json",
+  "description": "GPT-based interpretation of Louvain-detected character communities. GPT is used only to interpret communities, not to detect them.",
+  "interpretations": [
+    {
+      "community_id": "B05_COM01",
+      "community_label": "aile ve hizmet/otorite ilişkileri çevresi",
+      "dominant_social_logic": "mixed_or_unclear",
+      "interpretation": "Bu topluluk, ağırlıklı olarak aile üyeleri ve ev içi ilişkilerle birlikte hizmet ve otorite ilişkilerini barındırmaktadır. Hoca Nefise Hanım, hem ana karakter olarak yüksek etkileşimde bulunmakta hem de falcılık/hocalık mesleğiyle toplulukta merkezi bir figürdür. Gülsüm Hanım ve annesi gibi ev hanımları ile Rıfkı Efendi ve Hacı Baba gibi yetişkin erkekler, topluluğun sosyal yapısını oluşturur. Gülsüm Hanım ile Hoca Nefise Hanım arasında belirgin bir hizmet-otorite ilişkisi (servant_employer) vardır. Ayrıca hayvan karakterler ve grup karakterler de topluluğa dahil edilmiştir. Ancak birçok ilişkinin türü net olarak çıkarılamamış, bu da topluluğun sosyal işlevinin tam olarak belirlenmesini zorlaştırmaktadır.",
+      "dominant_character_features": [
+        "ev hanımı",
+        "hoca / püfçü / falcı",
+        "memur",
+        "yaşça yetişkin ve yaşlı",
+        "alt ve orta-alt sınıf"
+      ],
+      "important_characters": [
+        "Hoca Nefise Hanım",
+        "Gülsüm Hanım",
+        "Gülsüm'ün annesi",
+        "Rıfkı Efendi",
+        "Hacı Baba"
+      ],
+      "important_relations": [
+        {
+          "source": "Gülsüm Hanım",
+          "target": "Hoca Nefise Hanım",
+          "relation_type": "servant_employer",
+          "weight": 52
+        }
+      ],
+      "uncertainties": [
+        "Birçok ilişkinin türü 'not_extracted' olarak belirtilmiş, bu nedenle topluluk içi sosyal dinamiklerin tam analizi yapılamamaktadır.",
+        "Bazı karakterlerin meslek ve yaş grubu bilgileri bilinmemektedir.",
+        "Hayvan ve grup karakterlerin topluluk içindeki işlevleri net değildir."
+      ],
+      "confidence": 70
+    },
+    {
+      "community_id": "B05_COM02",
+      "community_label": "hizmet/otorite ilişkileri çevresi",
+      "dominant_social_logic": "class_or_service_relation",
+      "interpretation": "Bu topluluk, romanda hizmet ve bakım rollerine sahip karakterlerin oluşturduğu bir sosyal çevreyi temsil etmektedir. Üçü kadın olan üyeler, farklı türde bakım ve hizmet işleriyle meşgulken, genç erkek öğrenci Vefa da bu çevrede yer almaktadır. Şöhret ve Saibe arasındaki güçlü tanışıklık ilişkisi, bu grubun merkezinde yer alan hizmet ilişkilerini vurgulamaktadır. Topluluk üyelerinin çoğunlukla orta ve alt-orta sınıf statüsünde olması, sosyal ve ekonomik bağlamda benzer bir katmanı işaret eder. Ancak, diğer ilişkilerin türü ve niteliği tam olarak çıkarılamamıştır, bu nedenle topluluğun anlatısal işlevi hakkında daha kesin yorumlar yapmak için kanıt yetersizdir.",
+      "dominant_character_features": [
+        "üfürükçü / bakıcı",
+        "iç güveyisi",
+        "beslemelikten bakıcı kadın",
+        "öğrenci",
+        "orta ve alt-orta sınıf",
+        "yetişkin kadınlar ve genç erkek"
+      ],
+      "important_characters": [
+        "Şöhret",
+        "Saibe"
+      ],
+      "important_relations": [
+        {
+          "source": "Saibe",
+          "target": "Şöhret",
+          "relation_type": "acquaintance",
+          "weight": 76
+        }
+      ],
+      "uncertainties": [
+        "Diğer ilişkilerin türü ve niteliği çıkarılamamıştır.",
+        "Topluluğun anlatısal işlevi hakkında kesin sonuçlar için kanıt yetersizdir."
+      ],
+      "confidence": 70
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "book_id": "B03",
+  "title": "Ferdâ-yı Garâm",
+  "source_graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B03_graph.json",
+  "algorithm": "networkx_greedy_modularity_communities",
+  "edge_weight": "cooccurrence weight",
+  "node_count": 10,
+  "edge_count": 33,
+  "community_count": 2,
+  "modularity": 0.019236975151493505,
+  "communities": [
+    {
+      "community_id": "B03_COM01",
+      "size": 8,
+      "internal_edge_count": 22,
+      "internal_edge_weight": 243,
+      "members": [
+        {
+          "char_id": "B03_C001",
+          "name": "Sermet Hanım",
+          "weighted_degree": 163,
+          "gender": "female",
+          "role": "main character",
+          "occupation": "unknown",
+          "wealth_status": "upper_middle",
+          "age_group": "teen"
+        },
+        {
+          "char_id": "B03_C002",
+          "name": "Macit Bey",
+          "weighted_degree": 160,
+          "gender": "male",
+          "role": "main character",
+          "occupation": "unknown",
+          "wealth_status": "upper_middle",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B03_C003",
+          "name": "Nevber Hanım",
+          "weighted_degree": 138,
+          "gender": "female",
+          "role": "main character",
+          "occupation": "household relative/friend, mediator",
+          "wealth_status": "wealthy",
+          "age_group": "teen"
+        },
+        {
+          "char_id": "B03_C007",
+          "name": "Hanımefendi",
+          "weighted_degree": 71,
+          "gender": "female",
+          "role": "supporting character",
+          "occupation": "ev hanımı",
+          "wealth_status": "wealthy",
+          "age_group": "old"
+        },
+        {
+          "char_id": "B03_C008",
+          "name": "Büyük Beyefendi",
+          "weighted_degree": 13,
+          "gender": "male",
+          "role": "background character",
+          "occupation": "unknown",
+          "wealth_status": "wealthy",
+          "age_group": "old"
+        },
+        {
+          "char_id": "B03_C009",
+          "name": "Hizmetçi kız",
+          "weighted_degree": 12,
+          "gender": "female",
+          "role": "minor character",
+          "occupation": "hizmetçi",
+          "wealth_status": "unknown",
+          "age_group": "unknown"
+        },
+        {
+          "char_id": "B03_C004",
+          "name": "Miss Morgan",
+          "weighted_degree": 6,
+          "gender": "female",
+          "role": "background character",
+          "occupation": "mürebbiye",
+          "wealth_status": "unknown",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B03_C010",
+          "name": "Madam",
+          "weighted_degree": 3,
+          "gender": "female",
+          "role": "minor/background character",
+          "occupation": "unknown",
+          "wealth_status": "unknown",
+          "age_group": "unknown"
+        }
+      ]
+    },
+    {
+      "community_id": "B03_COM02",
+      "size": 2,
+      "internal_edge_count": 1,
+      "internal_edge_weight": 11,
+      "members": [
+        {
+          "char_id": "B03_C005",
+          "name": "Macit'in annesi",
+          "weighted_degree": 57,
+          "gender": "female",
+          "role": "background character",
+          "occupation": "ev hanımı",
+          "wealth_status": "upper_middle",
+          "age_group": "adult"
+        },
+        {
+          "char_id": "B03_C006",
+          "name": "Macit'in babası",
+          "weighted_degree": 45,
+          "gender": "male",
+          "role": "background character",
+          "occupation": "unknown",
+          "wealth_status": "wealthy",
+          "age_group": "adult"
+        }
+      ]
+    }
+  ]
+}

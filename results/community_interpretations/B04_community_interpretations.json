@@ -1,0 +1,73 @@
+{
+  "book_id": "B04",
+  "title": "Böğürtlen",
+  "model": "gpt-4.1-mini",
+  "source_graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B04_graph.json",
+  "source_communities_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/communities/B04_louvain_communities.json",
+  "description": "GPT-based interpretation of Louvain-detected character communities. GPT is used only to interpret communities, not to detect them.",
+  "interpretations": [
+    {
+      "community_id": "B04_COM01",
+      "community_label": "zengin sosyal ve aile çevresi",
+      "dominant_social_logic": "mixed_or_unclear",
+      "interpretation": "Bu topluluk, ağırlıklı olarak zengin yetişkin bireylerden oluşmakta olup, hem aile bağları hem de sosyal çevre ilişkileriyle birbirine bağlıdır. Şekûre Hanım, Mahmûre Hanım ve Nigâr Hanım arasında güçlü aile ilişkileri (aile bağları) bulunurken, Nihat Bey ve Methi Bey ile olan sosyal çevre ilişkileri de belirgindir. Nihat Bey, topluluğun en yüksek etkileşim ağına sahip ana karakteri olarak merkezi bir rol oynamaktadır. Methi Bey ise subay mesleğiyle destekleyici bir karakter olarak yer almakta, ancak meslek bilgisi diğerlerine göre daha net. Toplulukta meslek bilgisi çoğunlukla bilinmemekte, bu da karakterlerin sosyal ve aile bağlarının ön planda olduğunu göstermektedir. Topluluğun sosyal ve aile ilişkilerinin iç içe geçtiği, ancak meslek ve diğer sosyal statülerin net olarak ayrışmadığı bir yapı olduğu söylenebilir.",
+      "dominant_character_features": [
+        "zengin",
+        "yetişkin",
+        "karışık cinsiyet (3 kadın, 2 erkek)",
+        "aile ve sosyal çevre ilişkileri"
+      ],
+      "important_characters": [
+        "Nihat Bey",
+        "Şekûre Hanım",
+        "Mahmûre Hanım",
+        "Nigâr Hanım",
+        "Methi Bey"
+      ],
+      "important_relations": [
+        "Şekûre Hanım - Mahmûre Hanım (aile, 20)",
+        "Şekûre Hanım - Nigâr Hanım (aile, 20)",
+        "Mahmûre Hanım - Nigâr Hanım (aile, 18)",
+        "Nihat Bey - Şekûre Hanım (sosyal çevre, 32)",
+        "Nihat Bey - Nigâr Hanım (sosyal çevre, 22)",
+        "Nihat Bey - Mahmûre Hanım (sosyal çevre, 21)",
+        "Nihat Bey - Methi Bey (sosyal çevre, 16)"
+      ],
+      "uncertainties": [
+        "Karakterlerin meslekleri çoğunlukla bilinmemekte",
+        "Topluluğun sosyal işlevi meslek ve statü açısından net değil"
+      ],
+      "confidence": 75
+    },
+    {
+      "community_id": "B04_COM02",
+      "community_label": "ana romantik ve üst sınıf sosyal çevre",
+      "dominant_social_logic": "romantic_conflict",
+      "interpretation": "Bu topluluk, ağırlıklı olarak zengin ve üst-orta sınıf yetişkinlerden oluşmakta olup, içinde genç bir ana karakter olan Müjgân Hanım ile Pertev Bey arasında güçlü ve yüksek güvenilirlikli romantik bir ilişki bulunmaktadır. Diğer üyeler daha az belirgin sosyal bağlara sahip olmakla birlikte, konsoloslukta görevli Kemal Nedim Bey ve diğer kadın karakterler arasında zayıf ama var olan ilişkiler mevcuttur. Topluluğun sosyal yapısı, romantik bağların yanı sıra sınıf temelli ilişkiler ve sosyal çevre etkileşimlerini de içermektedir. Ancak, diğer ilişkilerin türü ve derinliği net olarak çıkarılamamaktadır.",
+      "dominant_character_features": [
+        "üst-orta ve zengin sınıf",
+        "yetişkin ağırlıklı",
+        "çoğunlukla kadın",
+        "ana karakter ve önemli romantik bağ"
+      ],
+      "important_characters": [
+        "Müjgân Hanım",
+        "Pertev Bey"
+      ],
+      "important_relations": [
+        {
+          "source": "Pertev Bey",
+          "target": "Müjgân Hanım",
+          "relation_type": "romantic",
+          "weight": 31,
+          "relation_confidence": 95
+        }
+      ],
+      "uncertainties": [
+        "Diğer karakterler arasındaki ilişkilerin türü ve niteliği çıkarılamamıştır.",
+        "Bazı karakterlerin meslekleri ve sosyal statüleri belirsizdir."
+      ],
+      "confidence": 75
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "book_id": "B04",
+  "title": "Böğürtlen",
+  "source_graph_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/results/graphs/B04_graph.json",
+  "algorithm": "networkx_louvain_communities",
+  "random_seed": 42,
+  "edge_weight": "cooccurrence weight",
+  "node_count": 10,
+  "edge_count": 32,
+  "community_count": 2,
+  "modularity": 0.0005350278872077868,
+  "communities": [
+    {
+      "community_id": "B04_COM01",
+      "size": 5,
+      "internal_edge_count": 10,
+      "internal_edge_weight": 183,
+      "external_edge_weight": 181,
+      "gender_distribution": {
+        "female": 3,
+        "male": 2
+      },
+      "occupation_distribution": {
+        "unknown": 4,
+        "officer": 1
+      },
+      "wealth_status_distribution": {
+        "wealthy": 4,
+        "middle": 1
+      },
+      "age_group_distribution": {
+        "adult": 5
+      },
+      "internal_relation_distribution": {
+        "social_circle": 7,
+        "family": 3
+      },
+      "members": [
+        {
+          "char_id": "B04_C003",
+          "name": "Nihat Bey",
+          "weighted_degree": 151,
+          "gender": "male",
+          "role": "main character",
+          "occupation": "unknown",
+          "occupation_confidence": 0,
+          "wealth_status": "wealthy",
+          "wealth_status_confidence": 90,
+          "age_group": "adult",
+          "age_group_confidence": 85
+        },
+        {
+          "char_id": "B04_C004",
+          "name": "Şekûre Hanım",
+          "weighted_degree": 132,
+          "gender": "female",
+          "role": "important character",
+          "occupation": "unknown",
+          "occupation_confidence": 0,
+          "wealth_status": "wealthy",
+          "wealth_status_confidence": 90,
+          "age_group": "adult",
+          "age_group_confidence": 85
+        },
+        {
+          "char_id": "B04_C005",
+          "name": "Mahmûre Hanım",
+          "weighted_degree": 98,
+          "gender": "female",
+          "role": "important character",
+          "occupation": "unknown",
+          "occupation_confidence": 0,
+          "wealth_status": "wealthy",
+          "wealth_status_confidence": 90,
+          "age_group": "adult",
+          "age_group_confidence": 85
+        },
+        {
+          "char_id": "B04_C006",
+          "name": "Nigâr Hanım",
+          "weighted_degree": 97,
+          "gender": "female",
+          "role": "important character",
+          "occupation": "unknown",
+          "occupation_confidence": 0,
+          "wealth_status": "middle",
+          "wealth_status_confidence": 90,
+          "age_group": "adult",
+          "age_group_confidence": 85
+        },
+        {
+          "char_id": "B04_C007",
+          "name": "Methi Bey",
+          "weighted_degree": 69,
+          "gender": "male",
+          "role": "supporting character",
+          "occupation": "officer",
+          "occupation_confidence": 90,
+          "wealth_status": "wealthy",
+          "wealth_status_confidence": 85,
+          "age_group": "adult",
+          "age_group_confidence": 80
+        }
+      ]
+    },
+    {
+      "community_id": "B04_COM02",
+      "size": 5,
+      "internal_edge_count": 8,
+      "internal_edge_weight": 45,
+      "external_edge_weight": 181,
+      "gender_distribution": {
+        "female": 3,
+        "male": 2
+      },
+      "occupation_distribution": {
+        "unknown": 4,
+        "konsoloslukta görevli": 1
+      },
+      "wealth_status_distribution": {
+        "upper_middle": 2,
+        "wealthy": 2,
+        "unknown": 1
+      },
+      "age_group_distribution": {
+        "adult": 4,
+        "teen": 1
+      },
+      "internal_relation_distribution": {
+        "not_extracted": 7,
+        "romantic": 1
+      },
+      "members": [
+        {
+          "char_id": "B04_C002",
+          "name": "Müjgân Hanım",
+          "weighted_degree": 138,
+          "gender": "female",
+          "role": "main character",
+          "occupation": "unknown",
+          "occupation_confidence": 0,
+          "wealth_status": "upper_middle",
+          "wealth_status_confidence": 90,
+          "age_group": "teen",
+          "age_group_confidence": 95
+        },
+        {
+          "char_id": "B04_C001",
+          "name": "Pertev Bey",
+          "weighted_degree": 108,
+          "gender": "male",
+          "role": "main character",
+          "occupation": "unknown",
+          "occupation_confidence": 0,
+          "wealth_status": "wealthy",
+          "wealth_status_confidence": 90,
+          "age_group": "adult",
+          "age_group_confidence": 95
+        },
+        {
+          "char_id": "B04_C008",
+          "name": "Süheyla Hanım",
+          "weighted_degree": 12,
+          "gender": "female",
+          "role": "supporting character",
+          "occupation": "unknown",
+          "occupation_confidence": 0,
+          "wealth_status": "unknown",
+          "wealth_status_confidence": 0,
+          "age_group": "adult",
+          "age_group_confidence": 90
+        },
+        {
+          "char_id": "B04_C010",
+          "name": "Kemal Nedim Bey",
+          "weighted_degree": 7,
+          "gender": "male",
+          "role": "minor character",
+          "occupation": "konsoloslukta görevli",
+          "occupation_confidence": 90,
+          "wealth_status": "upper_middle",
+          "wealth_status_confidence": 80,
+          "age_group": "adult",
+          "age_group_confidence": 90
+        },
+        {
+          "char_id": "B04_C009",
+          "name": "Nebile Hanım",
+          "weighted_degree": 6,
+          "gender": "female",
+          "role": "minor character",
+          "occupation": "unknown",
+          "occupation_confidence": 0,
+          "wealth_status": "wealthy",
+          "wealth_status_confidence": 90,
+          "age_group": "adult",
+          "age_group_confidence": 95
+        }
+      ]
+    }
+  ]
+}

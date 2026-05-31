@@ -1,0 +1,486 @@
+{
+  "book_id": "B05",
+  "model": "gpt-4.1-mini",
+  "source_presence_file": "/Users/denizterziler/PycharmProjects/BookCharacterProject/predictions/B05/ensemble/B05_gpt_alias_ensemble_window_presence.json",
+  "input_character_fields": [
+    "canonical_name",
+    "aliases",
+    "gender",
+    "role",
+    "notes"
+  ],
+  "extracted_character_features": [
+    "occupation",
+    "wealth_status",
+    "age_group"
+  ],
+  "wealth_status_labels": [
+    "poor",
+    "lower_middle",
+    "middle",
+    "upper_middle",
+    "wealthy",
+    "unknown"
+  ],
+  "age_group_labels": [
+    "child_youth",
+    "teen",
+    "adult",
+    "old",
+    "unknown"
+  ],
+  "features": [
+    {
+      "char_id": "B05_C001",
+      "canonical_name": "Gülsüm Hanım",
+      "occupation": {
+        "value": "ev hanımı",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0001",
+          "B05_S0002",
+          "B05_S0003",
+          "B05_S0004",
+          "B05_S0036",
+          "B05_S0037",
+          "B05_S0038"
+        ]
+      },
+      "wealth_status": {
+        "value": "poor",
+        "confidence": 95,
+        "evidence_segments": [
+          "B05_S0035",
+          "B05_S0036",
+          "B05_S0037",
+          "B05_S0038",
+          "B05_S0255",
+          "B05_S0256"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0001",
+          "B05_S0002",
+          "B05_S0003",
+          "B05_S0004",
+          "B05_S0036",
+          "B05_S0037",
+          "B05_S0038"
+        ]
+      }
+    },
+    {
+      "char_id": "B05_C002",
+      "canonical_name": "Hoca Nefise Hanım",
+      "occupation": {
+        "value": "hoca / püfçü / falcı",
+        "confidence": 95,
+        "evidence_segments": [
+          "B05_S0001",
+          "B05_S0057",
+          "B05_S0058",
+          "B05_S0059",
+          "B05_S0060"
+        ]
+      },
+      "wealth_status": {
+        "value": "middle",
+        "confidence": 80,
+        "evidence_segments": [
+          "B05_S0057",
+          "B05_S0261"
+        ]
+      },
+      "age_group": {
+        "value": "old",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0001",
+          "B05_S0002",
+          "B05_S0003",
+          "B05_S0004"
+        ]
+      }
+    },
+    {
+      "char_id": "B05_C003",
+      "canonical_name": "Rıfkı Efendi",
+      "occupation": {
+        "value": "memur",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0020",
+          "B05_S0021"
+        ]
+      },
+      "wealth_status": {
+        "value": "lower_middle",
+        "confidence": 85,
+        "evidence_segments": [
+          "B05_S0020",
+          "B05_S0021"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0006",
+          "B05_S0020"
+        ]
+      }
+    },
+    {
+      "char_id": "B05_C004",
+      "canonical_name": "Hacı Baba",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "lower_middle",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0025"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 95,
+        "evidence_segments": [
+          "B05_S0011",
+          "B05_S0025"
+        ]
+      }
+    },
+    {
+      "char_id": "B05_C005",
+      "canonical_name": "Zübeyde",
+      "occupation": {
+        "value": "ev hanımı",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0005",
+          "B05_S0006"
+        ]
+      },
+      "wealth_status": {
+        "value": "poor",
+        "confidence": 85,
+        "evidence_segments": [
+          "B05_S0005",
+          "B05_S0006"
+        ]
+      },
+      "age_group": {
+        "value": "old",
+        "confidence": 95,
+        "evidence_segments": [
+          "B05_S0005",
+          "B05_S0006",
+          "B05_S0051",
+          "B05_S0052"
+        ]
+      }
+    },
+    {
+      "char_id": "B05_C006",
+      "canonical_name": "Vefa",
+      "occupation": {
+        "value": "öğrenci",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0006",
+          "B05_S0037"
+        ]
+      },
+      "wealth_status": {
+        "value": "lower_middle",
+        "confidence": 70,
+        "evidence_segments": [
+          "B05_S0006",
+          "B05_S0051"
+        ]
+      },
+      "age_group": {
+        "value": "child_youth",
+        "confidence": 95,
+        "evidence_segments": [
+          "B05_S0006",
+          "B05_S0051"
+        ]
+      }
+    },
+    {
+      "char_id": "B05_C007",
+      "canonical_name": "Gülsüm'ün annesi",
+      "occupation": {
+        "value": "ev hanımı",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0001",
+          "B05_S0032",
+          "B05_S0254"
+        ]
+      },
+      "wealth_status": {
+        "value": "poor",
+        "confidence": 95,
+        "evidence_segments": [
+          "B05_S0032",
+          "B05_S0037",
+          "B05_S0254"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0001",
+          "B05_S0032",
+          "B05_S0254"
+        ]
+      }
+    },
+    {
+      "char_id": "B05_C008",
+      "canonical_name": "Seher",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "lower_middle",
+        "confidence": 80,
+        "evidence_segments": [
+          "B05_S0256",
+          "B05_S0257"
+        ]
+      },
+      "age_group": {
+        "value": "teen",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0008",
+          "B05_S0009"
+        ]
+      }
+    },
+    {
+      "char_id": "B05_C009",
+      "canonical_name": "İmameciler ailesi",
+      "occupation": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "wealth_status": {
+        "value": "poor",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0004",
+          "B05_S0012",
+          "B05_S0256"
+        ]
+      },
+      "age_group": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      }
+    },
+    {
+      "char_id": "B05_C010",
+      "canonical_name": "Sarman",
+      "occupation": {
+        "value": "animal (cat)",
+        "confidence": 100,
+        "evidence_segments": [
+          "B05_S0002",
+          "B05_S0003",
+          "B05_S0008",
+          "B05_S0009",
+          "B05_S0010",
+          "B05_S0022",
+          "B05_S0056",
+          "B05_S0057"
+        ]
+      },
+      "wealth_status": {
+        "value": "wealthy",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0057"
+        ]
+      },
+      "age_group": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      }
+    },
+    {
+      "char_id": "B05_C011",
+      "canonical_name": "Tekir",
+      "occupation": {
+        "value": "animal",
+        "confidence": 100,
+        "evidence_segments": [
+          "B05_S0010"
+        ]
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      }
+    },
+    {
+      "char_id": "B05_C012",
+      "canonical_name": "Saibe",
+      "occupation": {
+        "value": "iç güveyisi",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0062",
+          "B05_S0063"
+        ]
+      },
+      "wealth_status": {
+        "value": "middle",
+        "confidence": 80,
+        "evidence_segments": [
+          "B05_S0062",
+          "B05_S0064"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 95,
+        "evidence_segments": [
+          "B05_S0062",
+          "B05_S0191"
+        ]
+      }
+    },
+    {
+      "char_id": "B05_C013",
+      "canonical_name": "Şöhret",
+      "occupation": {
+        "value": "üfürükçü / bakıcı",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0054",
+          "B05_S0055",
+          "B05_S0066",
+          "B05_S0067"
+        ]
+      },
+      "wealth_status": {
+        "value": "middle",
+        "confidence": 80,
+        "evidence_segments": [
+          "B05_S0055",
+          "B05_S0066",
+          "B05_S0067"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 85,
+        "evidence_segments": [
+          "B05_S0055",
+          "B05_S0066",
+          "B05_S0067"
+        ]
+      }
+    },
+    {
+      "char_id": "B05_C014",
+      "canonical_name": "Salim",
+      "occupation": {
+        "value": "memur",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0048"
+        ]
+      },
+      "wealth_status": {
+        "value": "unknown",
+        "confidence": 0,
+        "evidence_segments": []
+      },
+      "age_group": {
+        "value": "teen",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0048"
+        ]
+      }
+    },
+    {
+      "char_id": "B05_C015",
+      "canonical_name": "Küçük Şaban",
+      "occupation": {
+        "value": "kahveci çırağı",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0004"
+        ]
+      },
+      "wealth_status": {
+        "value": "lower_middle",
+        "confidence": 70,
+        "evidence_segments": [
+          "B05_S0004"
+        ]
+      },
+      "age_group": {
+        "value": "child_youth",
+        "confidence": 80,
+        "evidence_segments": [
+          "B05_S0004"
+        ]
+      }
+    },
+    {
+      "char_id": "B05_C016",
+      "canonical_name": "Sabbek",
+      "occupation": {
+        "value": "beslemelikten bakıcı kadın",
+        "confidence": 90,
+        "evidence_segments": [
+          "B05_S0025",
+          "B05_S0055",
+          "B05_S0057",
+          "B05_S0058"
+        ]
+      },
+      "wealth_status": {
+        "value": "lower_middle",
+        "confidence": 80,
+        "evidence_segments": [
+          "B05_S0025"
+        ]
+      },
+      "age_group": {
+        "value": "adult",
+        "confidence": 85,
+        "evidence_segments": [
+          "B05_S0025",
+          "B05_S0055"
+        ]
+      }
+    }
+  ]
+}
