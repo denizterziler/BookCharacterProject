@@ -1,0 +1,4 @@
+﻿book_id,relation_type,relation_count,average_cooccurrence_weight,female_character_mentions,male_character_mentions,unknown_gender_mentions,female_female_pair_count,male_male_pair_count,mixed_gender_pair_count,occupation_distribution,age_group_distribution,wealth_status_distribution
+B03,same_household,8,23.25,13,3,0,5,0,3,"unknown: 7; household relative/friend, mediator: 4; ev hanımı: 5",teen: 8; adult: 5; old: 3,upper_middle: 8; wealthy: 8
+B03,family,3,13.0,2,4,0,0,1,2,unknown: 4; ev hanımı: 2,adult: 6,upper_middle: 4; wealthy: 2
+B03,romantic,1,62.0,1,1,0,0,0,1,unknown: 2,teen: 1; adult: 1,upper_middle: 2

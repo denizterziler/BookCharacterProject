@@ -1,0 +1,7 @@
+﻿book_id,relation_type,relation_count,average_cooccurrence_weight,female_character_mentions,male_character_mentions,unknown_gender_mentions,female_female_pair_count,male_male_pair_count,mixed_gender_pair_count,occupation_distribution,age_group_distribution,wealth_status_distribution
+B04,social_circle,12,16.17,12,12,0,1,1,10,unknown: 19; officer: 5,adult: 22; teen: 2,wealthy: 18; middle: 4; upper_middle: 2
+B04,family,3,19.33,6,0,0,3,0,0,unknown: 6,adult: 6,wealthy: 4; middle: 2
+B04,same_household,2,21.5,4,0,0,2,0,0,unknown: 4,teen: 2; adult: 2,upper_middle: 2; wealthy: 2
+B04,acquaintance,1,31.0,1,1,0,0,0,1,unknown: 2,teen: 1; adult: 1,upper_middle: 1; wealthy: 1
+B04,friend,1,25.0,0,2,0,0,1,0,unknown: 2,adult: 2,wealthy: 2
+B04,romantic,1,31.0,1,1,0,0,0,1,unknown: 2,adult: 1; teen: 1,wealthy: 1; upper_middle: 1

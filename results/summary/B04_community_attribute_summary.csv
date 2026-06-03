@@ -1,0 +1,3 @@
+﻿book_id,community_id,community_size,members,female_count,male_count,unknown_gender_count,gender_distribution,occupation_distribution,age_group_distribution,wealth_status_distribution,internal_edge_count,internal_edge_weight,external_edge_weight
+B04,B04_COM01,5,Nihat Bey; Şekûre Hanım; Mahmûre Hanım; Nigâr Hanım; Methi Bey,3,2,0,male: 2; female: 3,unknown: 4; officer: 1,adult: 5,wealthy: 4; middle: 1,10,183,181
+B04,B04_COM02,5,Müjgân Hanım; Pertev Bey; Süheyla Hanım; Kemal Nedim Bey; Nebile Hanım,3,2,0,female: 3; male: 2,unknown: 4; konsoloslukta görevli: 1,teen: 1; adult: 4,upper_middle: 2; wealthy: 2; unknown: 1,8,45,181

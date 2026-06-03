@@ -1,0 +1,3 @@
+﻿book_id,community_id,community_size,members,female_count,male_count,unknown_gender_count,gender_distribution,occupation_distribution,age_group_distribution,wealth_status_distribution,internal_edge_count,internal_edge_weight,external_edge_weight
+B01,B01_COM01,5,Binnaz Hanım; Naşit Nefi Efendi; Şükriye Hanım; Nazikter; Latife,4,1,0,female: 4; male: 1,ilk harem: 1; kalem müdürü: 1; unknown: 2; hizmetçi: 1,unknown: 1; adult: 3; child_youth: 1,unknown: 1; wealthy: 2; middle: 1; poor: 1,10,150,157
+B01,B01_COM02,5,Fikriye Hanım; Emine Hanım; Hasibe Hanım; Hasan Efendi; Bedri Bey,3,2,0,female: 3; male: 2,ev hanımı: 2; unknown: 3,adult: 3; old: 2,lower_middle: 1; middle: 3; unknown: 1,10,79,157

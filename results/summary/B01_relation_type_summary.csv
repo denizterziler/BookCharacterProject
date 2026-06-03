@@ -1,0 +1,5 @@
+﻿book_id,relation_type,relation_count,average_cooccurrence_weight,female_character_mentions,male_character_mentions,unknown_gender_mentions,female_female_pair_count,male_male_pair_count,mixed_gender_pair_count,occupation_distribution,age_group_distribution,wealth_status_distribution
+B01,family,5,34.6,8,2,0,3,0,2,kalem müdürü: 2; ilk harem: 3; unknown: 2; ev hanımı: 3,adult: 7; unknown: 3,wealthy: 2; unknown: 3; middle: 4; lower_middle: 1
+B01,acquaintance,1,20.0,1,1,0,0,0,1,ev hanımı: 1; kalem müdürü: 1,adult: 2,middle: 1; wealthy: 1
+B01,romantic,1,18.0,1,1,0,0,0,1,ev hanımı: 1; kalem müdürü: 1,adult: 2,lower_middle: 1; wealthy: 1
+B01,social_circle,1,20.0,2,0,0,1,0,0,ev hanımı: 1; ilk harem: 1,adult: 1; unknown: 1,lower_middle: 1; unknown: 1

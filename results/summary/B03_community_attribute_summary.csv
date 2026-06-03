@@ -1,0 +1,3 @@
+﻿book_id,community_id,community_size,members,female_count,male_count,unknown_gender_count,gender_distribution,occupation_distribution,age_group_distribution,wealth_status_distribution,internal_edge_count,internal_edge_weight,external_edge_weight
+B03,B03_COM01,8,Sermet Hanım; Macit Bey; Nevber Hanım; Hanımefendi; Büyük Beyefendi; Hizmetçi kız; Miss Morgan; Madam,6,2,0,female: 6; male: 2,"unknown: 4; household relative/friend, mediator: 1; ev hanımı: 1; hizmetçi: 1; mürebbiye: 1",teen: 2; adult: 2; old: 2; unknown: 2,upper_middle: 2; wealthy: 3; unknown: 3,22,243,80
+B03,B03_COM02,2,Macit'in annesi; Macit'in babası,1,1,0,female: 1; male: 1,ev hanımı: 1; unknown: 1,adult: 2,upper_middle: 1; wealthy: 1,1,11,80

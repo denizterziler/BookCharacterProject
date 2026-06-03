@@ -1,0 +1,3 @@
+﻿book_id,relation_type,relation_count,average_cooccurrence_weight,female_character_mentions,male_character_mentions,unknown_gender_mentions,female_female_pair_count,male_male_pair_count,mixed_gender_pair_count,occupation_distribution,age_group_distribution,wealth_status_distribution
+B02,acquaintance,5,21.4,0,6,4,0,1,0,superstitious treasure-seeker and occult enthusiast: 2; angelic figure: 4; thread-spinner: 3; iplik eğirici: 1,adult: 6; unknown: 4,wealthy: 2; unknown: 4; lower_middle: 3; poor: 1
+B02,friend,5,25.4,0,6,4,0,2,0,thread-spinner: 1; iplik eğirici: 3; superstitious treasure-seeker and occult enthusiast: 2; angelic figure: 4,adult: 6; unknown: 4,lower_middle: 1; poor: 3; wealthy: 2; unknown: 4

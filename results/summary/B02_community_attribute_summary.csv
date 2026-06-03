@@ -1,0 +1,5 @@
+﻿book_id,community_id,community_size,members,female_count,male_count,unknown_gender_count,gender_distribution,occupation_distribution,age_group_distribution,wealth_status_distribution,internal_edge_count,internal_edge_weight,external_edge_weight
+B02,B02_COM01,9,Ebulfazl Enverî; Agop; Kirkor; Mahur; Lahur; Artin Ağa; Nasrullah Efendi; Zeynep Hanım; Bedros Ağa,1,6,2,male: 6; unknown: 2; female: 1,superstitious treasure-seeker and occult enthusiast: 1; thread-spinner: 1; iplik eğirici: 1; angelic figure: 2; hanende (singer): 1; alchemy researcher and occult scientist: 1; ev hanımı: 1; ulema: 1,adult: 4; unknown: 3; old: 2,wealthy: 2; lower_middle: 1; poor: 1; unknown: 4; middle: 1,22,257,69
+B02,B02_COM02,5,Abdullah Karuni; Mehmet Karuni; İbn el-Mahşur; Derviş Cebeli; Ali Hacip,0,5,0,male: 5,"tüccar: 1; unknown: 1; derviş: 1; derviş, simya ve esrar ile ilgili: 1; hizmetçi: 1",adult: 2; unknown: 3,wealthy: 2; unknown: 3,10,21,30
+B02,B02_COM03,2,Nurullah Hasip; Mevlüde,1,1,0,male: 1; female: 1,unknown: 2,child_youth: 1; teen: 1,middle: 1; upper_middle: 1,1,4,29
+B02,B02_COM04,2,Kekre; Mekre,0,0,2,unknown: 2,unknown: 2,unknown: 2,unknown: 2,1,2,14

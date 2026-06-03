@@ -5,7 +5,7 @@ from pyvis.network import Network
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 
-BOOK_ID = "B05"
+BOOK_ID = "B01"
 
 GRAPH_PATH = (
     PROJECT_ROOT / "results" / "graphs" / f"{BOOK_ID}_graph.json"
@@ -407,175 +407,223 @@ def main():
     legend_items = build_legend_html(color_map, interpretation_lookup)
 
     injection = f"""
-<style>
-  body {{
-    margin: 0;
-    overflow: hidden;
-    background: #1a1a2e;
-  }}
-
-  #legend {{
-    position: fixed;
-    top: 16px;
-    left: 16px;
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 10px;
-    padding: 14px 16px;
-    font-family: sans-serif;
-    color: #ffffff;
-    font-size: 13px;
-    z-index: 999;
-    backdrop-filter: blur(6px);
-    max-width: 260px;
-  }}
-
-  #legend h3 {{
-    margin: 0 0 10px 0;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #aaaaaa;
-  }}
-
-  .legend-item {{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 6px;
-    cursor: default;
-  }}
-
-  .legend-dot {{
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    border: 1.5px solid rgba(255,255,255,0.3);
-  }}
-
-  .legend-label {{
-    line-height: 1.3;
-    font-size: 12px;
-  }}
-
-  #info-panel {{
-    position: fixed;
-    bottom: 20px;
-    right: 16px;
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.18);
-    border-radius: 10px;
-    padding: 16px 18px;
-    font-family: sans-serif;
-    color: #ffffff;
-    font-size: 13px;
-    z-index: 999;
-    backdrop-filter: blur(6px);
-    width: 280px;
-    display: none;
-    line-height: 1.7;
-  }}
-
-  #info-panel b {{
-    color: #aaaaaa;
-    font-weight: normal;
-  }}
-
-  #info-panel .name {{
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 8px;
-  }}
-
-  #info-panel .close-btn {{
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    cursor: pointer;
-    color: #aaaaaa;
-    font-size: 16px;
-    line-height: 1;
-  }}
-
-  #hint {{
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 20px;
-    padding: 6px 16px;
-    font-family: sans-serif;
-    font-size: 12px;
-    color: #bbbbbb;
-    pointer-events: none;
-    z-index: 998;
-  }}
-</style>
-
-<div id="legend">
-  <h3>Communities</h3>
-  {legend_items}
-</div>
-
-<div id="info-panel">
-  <span class="close-btn" onclick="document.getElementById('info-panel').style.display='none'">✕</span>
-  <div class="name" id="ip-name"></div>
-  <div id="ip-body"></div>
-</div>
-
-<div id="hint">Click a node for details · Scroll to zoom · Drag to pan</div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {{
-    var checkNetwork = setInterval(function () {{
-      if (typeof network !== "undefined") {{
-        clearInterval(checkNetwork);
-
-        network.once("stabilizationIterationsDone", function () {{
-          network.setOptions({{ physics: {{ enabled: false }} }});
-        }});
-
-        network.on("click", function (params) {{
-          if (params.nodes.length > 0) {{
-            var nodeId = params.nodes[0];
-
-            if (String(nodeId).startsWith("ANCHOR_")) {{
-              return;
-            }}
-
-            var nodeData = network.body.data.nodes.get(nodeId);
-            var panel = document.getElementById("info-panel");
-
-            var rawDetails = nodeData.details || "";
-            var tmp = document.createElement("div");
-            tmp.innerHTML = rawDetails;
-
-            var inner = tmp.querySelector("div")
-              ? tmp.querySelector("div").innerHTML
-              : rawDetails;
-
-            var nameMatch = inner.match(/<b[^>]*>(.*?)<\\/b>/);
-            var name = nameMatch ? nameMatch[1] : (nodeData.title || nodeId);
-
-            var body = inner.replace(/<b[^>]*>.*?<\\/b><br><br>/, "");
-
-            document.getElementById("ip-name").textContent = name;
-            document.getElementById("ip-body").innerHTML = body;
-
-            panel.style.display = "block";
-          }} else {{
-            document.getElementById("info-panel").style.display = "none";
-          }}
-        }});
+    <style>
+      body {{
+        margin: 0;
+        overflow: hidden;
+        background: #1a1a2e;
       }}
-    }}, 100);
-  }});
-</script>
-"""
+
+      #legend {{
+        position: fixed;
+        top: 16px;
+        left: 16px;
+        background: rgba(255,255,255,0.07);
+        border: 1px solid rgba(255,255,255,0.15);
+        border-radius: 10px;
+        padding: 14px 16px;
+        font-family: sans-serif;
+        color: #ffffff;
+        font-size: 13px;
+        z-index: 999;
+        backdrop-filter: blur(6px);
+        max-width: 260px;
+      }}
+
+      #legend h3 {{
+        margin: 0 0 10px 0;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #aaaaaa;
+      }}
+
+      .legend-item {{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 6px;
+        cursor: default;
+      }}
+
+      .legend-dot {{
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        border: 1.5px solid rgba(255,255,255,0.3);
+      }}
+
+      .legend-label {{
+        line-height: 1.3;
+        font-size: 12px;
+      }}
+
+      #info-panel {{
+        position: fixed;
+        bottom: 20px;
+        right: 16px;
+        background: rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.18);
+        border-radius: 10px;
+        padding: 16px 18px;
+        font-family: sans-serif;
+        color: #ffffff;
+        font-size: 13px;
+        z-index: 999;
+        backdrop-filter: blur(6px);
+        width: 280px;
+        display: none;
+        line-height: 1.7;
+      }}
+
+      #info-panel b {{
+        color: #aaaaaa;
+        font-weight: normal;
+      }}
+
+      #info-panel .name {{
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 8px;
+      }}
+
+      #info-panel .close-btn {{
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        cursor: pointer;
+        color: #aaaaaa;
+        font-size: 16px;
+        line-height: 1;
+      }}
+
+      #hint {{
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(255,255,255,0.06);
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 20px;
+        padding: 6px 16px;
+        font-family: sans-serif;
+        font-size: 12px;
+        color: #bbbbbb;
+        pointer-events: none;
+        z-index: 998;
+      }}
+
+      #export-png-btn {{
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        z-index: 1000;
+        background: rgba(255,255,255,0.12);
+        color: white;
+        border: 1px solid rgba(255,255,255,0.25);
+        border-radius: 8px;
+        padding: 8px 14px;
+        font-family: sans-serif;
+        font-size: 13px;
+        cursor: pointer;
+        backdrop-filter: blur(6px);
+      }}
+
+      #export-png-btn:hover {{
+        background: rgba(255,255,255,0.22);
+      }}
+    </style>
+
+    <div id="legend">
+      <h3>Communities</h3>
+      {legend_items}
+    </div>
+
+    <div id="info-panel">
+      <span class="close-btn" onclick="document.getElementById('info-panel').style.display='none'">✕</span>
+      <div class="name" id="ip-name"></div>
+      <div id="ip-body"></div>
+    </div>
+
+    <div id="hint">Click a node for details · Scroll to zoom · Drag to pan</div>
+
+    <button id="export-png-btn">Export PNG</button>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {{
+        var checkNetwork = setInterval(function () {{
+          if (typeof network !== "undefined") {{
+            clearInterval(checkNetwork);
+
+            network.once("stabilizationIterationsDone", function () {{
+              network.setOptions({{ physics: {{ enabled: false }} }});
+            }});
+
+            var exportButton = document.getElementById("export-png-btn");
+
+            exportButton.addEventListener("click", function () {{
+              network.fit({{
+                animation: false
+              }});
+
+              setTimeout(function () {{
+                var canvas = document.querySelector("#mynetwork canvas");
+
+                if (!canvas) {{
+                  alert("Canvas not found.");
+                  return;
+                }}
+
+                var image = canvas.toDataURL("image/png");
+
+                var link = document.createElement("a");
+                link.href = image;
+                link.download = "{BOOK_ID}_character_cooccurrence_graph.png";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}, 500);
+            }});
+
+            network.on("click", function (params) {{
+              if (params.nodes.length > 0) {{
+                var nodeId = params.nodes[0];
+
+                if (String(nodeId).startsWith("ANCHOR_")) {{
+                  return;
+                }}
+
+                var nodeData = network.body.data.nodes.get(nodeId);
+                var panel = document.getElementById("info-panel");
+
+                var rawDetails = nodeData.details || "";
+                var tmp = document.createElement("div");
+                tmp.innerHTML = rawDetails;
+
+                var inner = tmp.querySelector("div")
+                  ? tmp.querySelector("div").innerHTML
+                  : rawDetails;
+
+                var nameMatch = inner.match(/<b[^>]*>(.*?)<\\/b>/);
+                var name = nameMatch ? nameMatch[1] : (nodeData.title || nodeId);
+
+                var body = inner.replace(/<b[^>]*>.*?<\\/b><br><br>/, "");
+
+                document.getElementById("ip-name").textContent = name;
+                document.getElementById("ip-body").innerHTML = body;
+
+                panel.style.display = "block";
+              }} else {{
+                document.getElementById("info-panel").style.display = "none";
+              }}
+            }});
+          }}
+        }}, 100);
+      }});
+    </script>
+    """
 
     html = OUTPUT_PATH.read_text(encoding="utf-8")
     html = html.replace("</body>", injection + "\n</body>")
